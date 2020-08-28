@@ -78,9 +78,9 @@
                 </ul>
                 <div class="header__callback">
                     <ul class="header-contacts">
-                        <li class="header-contacts__phone">
+                        {{--<li class="header-contacts__phone">
                             <p class="header-contacts__city js-choose-city">Выбрать город</p>
-                        </li>
+                        </li>--}}
                         <li class="header-contacts__phone">
                             <a href="tel:+74956262555" class="header-contacts__tel">+7 495 62-62-555</a>
                             <p class="header-contacts__city js-choose-city">Москва</p>

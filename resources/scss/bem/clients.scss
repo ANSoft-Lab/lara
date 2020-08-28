@@ -44,7 +44,7 @@
             padding-top: 0;
 
             .clients__decorated::before {
-                content: '>';
+                content: none;
                 position: absolute;
                 top: 50%;
                 left: 10px;

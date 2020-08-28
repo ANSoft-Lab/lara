@@ -124,7 +124,7 @@
             </h2>
             <ul class="clients__list">
                 <li class="clients__list-item">
-                    <span class="clients__decorated">60</span> <p class="clients__info">тыс.<br/>человек</p>
+                    <span class="clients__decorated">60000+</span> <p class="clients__info">человек</p>
                 </li>
                 <li class="clients__list-item">
                     <span class="clients__decorated">80</span> <p class="clients__info">компаний</p>
@@ -134,6 +134,7 @@
                 </li>
             </ul>
         </section>
+        {{--
         <section class="location-section">
             <div class="blue-info">
                     <h2 class="about__title">
@@ -150,6 +151,7 @@
 
             </div>
         </section>
+        --}}
         <section class="principles">
             <h2 class="about__title">
                 Наши принципы и&nbsp;цели
@@ -331,6 +333,7 @@
 
             </div>
         </section>
+        {{--
         <section class="collective">
             <h2 class="about__title about__title_underline">
                 Коллектив
@@ -776,5 +779,6 @@
             </ul>
             <button class="collective__btn js-show-section" type="button" name="button">Показать всех сотрудников</button>
         </section>
+        --}}
     </div>
 @endsection

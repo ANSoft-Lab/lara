@@ -5,8 +5,8 @@
                 <img src="/icon/logo.svg" alt="finist">
             </a>
             <div class="footer__list-wrap">
-                <p class="footer__subtitle">
-                    О нас
+                <p class="footer__subtitle" href="/about">
+                    <a href="/about">О нас</a>
                 </p>
                 <ul class="footer__list">
                     <li class="footer__list-item">

@@ -24,7 +24,9 @@ class Finist {
 
         // Слайдер с картами
 
-        new Glide('.glide').mount()
+        if($('.glide').length) {
+            new Glide('.glide').mount();
+        }
 
         if (document.querySelector('.js-show-section')) {
             this.hiddenSections = [...document.querySelectorAll('.js-hidden-section')];
@@ -37,7 +39,7 @@ class Finist {
 
         //  Выбор города
         $(document).on('click', '.js-choose-city', function() {
-            console.log(th.openModal);
+            console.log(th);
             th.openModal.bind(th);
 
             return false;
