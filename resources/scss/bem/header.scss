@@ -114,10 +114,12 @@
 .header-contacts {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 30px;
 
     &__callback {
         display: block;
-        margin: 5px 0 10px;
+        text-align: right;
+        margin: 20px 0 10px;
         font-weight: 300;
         font-size: 16px;
         line-height: 1.37;
@@ -129,9 +131,9 @@
     &__vacancies {
         position: relative;
         display: flex;
+        justify-content: flex-end;
         align-items: center;
         font-size: 15px;
-        padding-left: 64px;
         line-height: 3.3;
         margin-top: 9px;
         letter-spacing: 0.05em;
@@ -141,30 +143,15 @@
         &::before {
             content: '';
             display: block;
-            position: absolute;
-            left: 0;
             width: 34px;
             height: 34px;
             border-radius: 50%;
-            background-color: #EAEEEE;
-        }
-
-        &::after {
-            content: '';
-            display: block;
-            position: absolute;
-            left: 0;
-            width: 34px;
-            height: 34px;
-            border-radius: 50%;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-image: url('../../icon/vacancies.svg');
+            background: #EAEEEE url('../../icon/vacancies.svg') center center no-repeat;
+            margin-right: 20px;
         }
     }
 
     &__phone {
-        width: 50%;
         margin-bottom: 16px;
     }
 
@@ -532,6 +519,10 @@
          margin-left: -1115px;
      }
 
+}
+
+.hidden {
+    display: none !important;
 }
 
 // overwright for safari10+

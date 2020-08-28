@@ -37,13 +37,14 @@ class Finist {
 
         var th = this;
 
-        //  Выбор города
-        $(document).on('click', '.js-choose-city', function() {
-            console.log(th);
-            th.openModal.bind(th);
+        this.city = 'moscow';
+        this.showCity();
 
-            return false;
-        });
+        //  Выбор города
+        $(document).on('click', '.js-choose-city', th.openModal.bind(th));
+        $(document).on('click', '.js-modal-close', th.closeModal.bind(th));
+        $(document).on('click', '.js_set_city', th.setCity.bind(th));
+
         this.cityModalBtn = document.querySelector('.js-choose-city');
         this.cityModal = document.querySelector('.js-overlay');
         //this.cityModalBtn.addEventListener('click', this.openModal.bind(this));
@@ -76,16 +77,30 @@ class Finist {
     }
 
     openModal() {
-        console.log('open');
-
         this.cityModal.classList.remove('m-hidden');
 
-        this.closeModalBtn = document.querySelector('.js-modal-close');
-        this.closeModalBtn.addEventListener('click', this.closeModal.bind(this));
+        return false;
     }
 
     closeModal() {
         this.cityModal.classList.add('m-hidden');
+    }
+
+    setCity(evt) {
+        var form = $(evt.target.closest('form'));
+
+        this.city = form.find('[name=city]:checked').val();
+
+        this.showCity();
+        this.closeModal();
+
+        return false;
+    }
+
+    showCity() {
+        $('.js-city-show').addClass('hidden');
+
+        $('.js-city-show.city_' + this.city).removeClass('hidden');
     }
 
     goUp() {

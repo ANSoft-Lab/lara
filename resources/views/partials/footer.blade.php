@@ -67,28 +67,28 @@
         </div>
         <div class="footer__mid">
             <ul class="footer__phone-list">
-                <li class="footer__phone-item">
+                <li class="footer__phone-item js-city-show city_moscow">
                     <a href="tel:+74956262555" class="footer__tel">+7 495 62-62-555</a>
-                    <p class="footer__city">
+                    <p class="footer__city js-choose-city">
                         Москва
                     </p>
                 </li>
-                <li class="footer__phone-item">
+                <li class="footer__phone-item js-city-show city_spb hidden">
                     <a href="tel:+78124494325" class="footer__tel">+7 812 449-43-25</a>
-                    <p class="footer__city">
+                    <p class="footer__city js-choose-city">
                         Санкт-Петербург
                     </p>
                 </li>
-                <li class="footer__phone-item">
+                <li class="footer__phone-item js-city-show city_nn hidden">
                     <a href="tel:+78312809697" class="footer__tel">+7 831 280-96-97</a>
-                    <p class="footer__city">
+                    <p class="footer__city js-choose-city">
                         Нижний Новгород
                     </p>
                 </li>
 
-                <li class="footer__phone-item">
+                <li class="footer__phone-item js-city-show city_ryazan hidden">
                     <a href="tel:+74912434107" class="footer__tel">+7 4912 434-107</a>
-                    <p class="footer__city">
+                    <p class="footer__city js-choose-city">
                         Рязань
                     </p>
                 </li>
