@@ -1,0 +1,47 @@
+.blue-info {
+    padding: 57px 10px 62px 28px;
+    background: #DCE2E3;
+    border-radius: 10px;
+    margin-bottom: 70px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.history-partners {
+    margin-bottom: 87px;
+}
+
+@media screen and (min-width: 768px) {
+    .blue-info {
+        padding: 60px 40px;
+    }
+
+    .history-partners {
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .blue-info {
+        padding: 60px 40px;
+    }
+
+    .history-partners {
+        width: 1340px;
+        margin-bottom: 77px;
+        display: flex;
+        justify-content: space-between;
+
+        .blue-info {
+            width: 50%;
+            margin-bottom: 0;
+            margin-right: 30px;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
