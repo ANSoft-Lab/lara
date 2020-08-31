@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('about', function () {
     return view('templates.about');
 })->name('about');
+
+Route::get('kis', function () {
+    return view('templates.kis');
+})->name('kis');

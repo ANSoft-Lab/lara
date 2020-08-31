@@ -1,0 +1,51 @@
+.panels {
+    margin-top: 64px;
+    margin-bottom: 80px;
+
+    .about__title {
+        margin-bottom: 20px;
+    }
+
+    .panel {
+        &__img {
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .panels {
+        margin: 80px 20px 70px;
+
+        &__line {
+            display: flex;
+            justify-content: space-between;
+
+            .blue-info {
+                width: 30%;
+
+                &:last-of-type {
+                    margin-bottom: 70px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .panels {
+        width: 1326px;
+        margin: 80px auto 125px;
+
+        .panel {
+            &__img {
+                height: 350px;
+                align-items: center;
+                display: flex;
+            }
+        }
+    }
+}
