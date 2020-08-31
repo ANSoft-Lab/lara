@@ -74,10 +74,23 @@ class Finist {
         //         item.nextElementSibling.classList.toggle('m-hidden');
         //     });
         // });
+        
+        this.openModal();
     }
 
     openModal() {
-        this.cityModal.classList.remove('m-hidden');
+        var th = this;
+
+        th.cityModal.classList.remove('m-hidden');
+        if(th.city) {
+            $(th.cityModal).find('[name=city]').each(function() {
+                $(this).prop('checked', false);
+
+                if($(this).val() == th.city) {
+                    $(this).prop('checked', true);
+                }
+            });
+        }
 
         return false;
     }

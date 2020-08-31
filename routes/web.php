@@ -19,4 +19,4 @@ Route::get('/', function () {
 
 Route::get('about', function () {
     return view('templates.about');
-});
+})->name('about');

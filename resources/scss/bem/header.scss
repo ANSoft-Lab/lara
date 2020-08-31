@@ -46,6 +46,16 @@
             height: 13px;
             width: 11px;
         }
+
+        &__city-option {
+            position: absolute;
+            left: 57px;
+            top: 63px;
+            z-index: 10;
+            font-size: 10px;
+            border-bottom: 1px dashed #272727;
+            cursor: pointer;
+        }
     }
 
     &__callback {

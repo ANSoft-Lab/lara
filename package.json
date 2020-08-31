@@ -24,10 +24,12 @@
     "vue-template-compiler": "^2.6.11"
   },
   "dependencies": {
+    "autoprefixer": "^9.8.6",
     "axios": "^0.20.0",
     "babel-core": "^6.26.3",
     "babel-preset-es2015-ie": "^6.7.0",
     "jquery": "^3.5.1",
+    "postcss-loader": "^3.0.0",
     "webpack": "^4.44.1"
   }
 }

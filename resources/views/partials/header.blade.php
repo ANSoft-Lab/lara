@@ -78,9 +78,6 @@
                 </ul>
                 <div class="header__callback">
                     <ul class="header-contacts">
-                        {{--<li class="header-contacts__phone">
-                            <p class="header-contacts__city js-choose-city">Выбрать город</p>
-                        </li>--}}
                         <li class="header-contacts__phone js-city-show city_moscow">
                             <a href="tel:+74956262555" class="header-contacts__tel">+7 495 62-62-555</a>
                             <p class="header-contacts__city js-choose-city">Москва</p>
@@ -111,6 +108,7 @@
         <a class="header__location js-choose-city js-city-show city_spb hidden">Санкт-Петербург</a>
         <a class="header__location js-choose-city js-city-show city_nn hidden">Нижний Новгород</a>
         <a class="header__location js-choose-city js-city-show city_ryazan hidden">Рязань</a>
+        <a class="header__location__city-option js-choose-city">Выбрать город</a>
         <a href="" class="header__discount">Экономьте на страховке до 50%</a>
         <a href="" class="header__insurance">
             Страховой случай
