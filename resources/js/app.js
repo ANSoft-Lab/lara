@@ -35,6 +35,9 @@ class Finist {
             this.showSectionsBtn.addEventListener('click', this.showSections.bind(this));
         }
 
+        this.cityModalBtn = document.querySelector('.js-choose-city');
+        this.cityModal = document.querySelector('.js-overlay');
+
         var th = this;
 
         this.city = 'moscow';
@@ -45,9 +48,11 @@ class Finist {
         $(document).on('click', '.js-modal-close', th.closeModal.bind(th));
         $(document).on('click', '.js_set_city', th.setCity.bind(th));
 
-        this.cityModalBtn = document.querySelector('.js-choose-city');
-        this.cityModal = document.querySelector('.js-overlay');
-        //this.cityModalBtn.addEventListener('click', this.openModal.bind(this));
+        $(this.cityModal).on('click', function(e) {
+            if($(e.target).closest('.modal').length < 1) {
+                th.closeModal();
+            }
+        });
 
         this.closeBtn = [...document.querySelectorAll('.js-contacts-close')];
 
