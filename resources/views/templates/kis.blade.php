@@ -92,691 +92,85 @@
                 </div>
             </div>
         </section>
-        <section class="icon-section">
-            <ul class="icon-list">
-                <li class="icon-list__item">
-                    <img src="/icon/icon-list/test.svg" alt="Выбор">
-                    <p class="about__info icon-list__text">
-                        Умный выбор программы&nbsp;страхования
-                    </p>
-                </li>
-                <li class="icon-list__item">
-                    <img src="/icon/icon-list/discount.svg" alt="Выбор">
-                    <p class="about__info icon-list__text">
-                        Скидки от страховой компании
-                    </p>
-                </li>
-                <li class="icon-list__item">
-                    <img src="/icon/icon-list/truck.svg" alt="Выбор">
-                    <p class="about__info icon-list__text">
-                        Бесплатная<br/>доставка
-                    </p>
-                </li>
-                <li class="icon-list__item">
-                    <img src="/icon/icon-list/law.svg" alt="Выбор">
-                    <p class="about__info icon-list__text">
-                        Юридическая помощь
-                    </p>
-                </li>
-                <li class="icon-list__item">
-                    <img src="/icon/icon-list/trust.svg" alt="Выбор">
-                    <p class="about__info icon-list__text">
-                        Более 25 компаний&#8209;партнеров
-                    </p>
-                </li>
-                <li class="icon-list__item">
-                    <img src="/icon/icon-list/money.svg" alt="Выбор">
-                    <p class="about__info icon-list__text">
-                        Наши услуги для&nbsp;вас&nbsp;бесплатны
-                    </p>
-                </li>
-            </ul>
-        </section>
-        {{--
-        <section class="location-section">
-            <div class="blue-info">
-                    <h2 class="about__title">
-                        Где нас найти
-                    </h2>
-                    <p class="about__info">
-                        Более 150 сотрудников
-                        в&nbsp;Москве, Санкт-Петербурге, Рязани и&nbsp;Нижнем Новгороде ждут Вас. Также Вы&nbsp;в&nbsp;любой момент можете заполнить форму заказа полиса
-                        на&nbsp;сайте, позвонить
-                        нам или обратиться
-                        к&nbsp;консультанту он-лайн.
-                    </p>
-
-
-            </div>
-        </section>
-        --}}
-        <section class="principles">
-            <h2 class="about__title">
-                Наши принципы и&nbsp;цели
+        <section class="best-price">
+            <h2 class="about__title mb-20">
+                Мы гарантируем лучшую цену на полис ипотечного страхования
             </h2>
-            <ul class="principles__list">
-                <li class="principles__item">
-                    Предоставление клиенту
-                    максимально полной информации
-                    и качественного сервиса
-                </li>
-                <li class="principles__item">
-                    Самые выгодные
-                    ценовые предложения
-                    и страховые программы
-                </li>
-                <li class="principles__item">
-                    Индивидуальный гибкий
-                    подход к нуждам клиентам
-                </li>
-                <li class="principles__item">
-                    Обеспечение страховой
-                    защиты на профессиональном
-                    уровне
-                </li>
-                <li class="principles__item">
-                    Сохранение времени,
-                    нервов и денег
-                    наших клиентов
-                </li>
-                <li class="principles__item">
-                    Работа только
-                    с зарекомендовавшими
-                    себя надёжными партнёрами
-                </li
-                >
-                <li class="principles__item">
-                    Популяризация страховых
-                    инструментов в России
-                </li>
-                <li class="principles__item">
-                    Развитие цивилизованного
-                    рынка страховых услуг
-                    по самым высоким стандартам
-                </li>
-            </ul>
-        </section>
-        <section class="operation">
-            <div class="operation__text">
-                <h2 class="about__title">
-                    Удобство
-                    и&nbsp;оперативность
-                    работы
+            <div class="gray-bg b-radius-20 p-40 mb-40">
+                <h2 class="about__title mb-20">
+                    Мы сотрудничаем только с аккредитованными компаниями
                 </h2>
-                <p class="about__info">
-                    Мы постоянно совершенствуем рабочие процессы,
-                    чтобы обеспечить максимальную скорость и
-                    эффективность. Обслуживание должно быть
-                    быстрым, удобным и понятным, чтобы клиенты
-                    не теряли время.
-                </p>
-                <p class="about__info">
-                    Системы обмена информацией
-                    со страховыми кампаниями обеспечивает
-                    поступление информации к страховщикам
-                    без проволочек. Клиентские базы
-                    и системы связи «Финист»
-                    не только ускоряют процесс работы и
-                    уменьшают вероятность ошибок и сбоев,
-                    но и надёжно охраняют конфиденциальную
-                    информацию клиентов.
-                </p>
-                <a href="" class="about__info operation__link">
-                    Презентация о Страховом представительстве "Финист"
-                </a>
-            </div>
-            <div>
-                <div class="operation__logo">
-                    <img src="/icon/logo.svg" alt="">
+                <div class="partners-logos d-flex flex-wrap justify-content-space-around align-content-center mb-40">
+                    <a href="">
+                        <picture>
+                            <source srcset="/icon/partners/ingos.svg" media="(min-width: 768px)">
+                            <img src="/icon/partners/ingos.svg" alt="Ингосстрах" class="p-logo">
+                        </picture>
+                    </a>
+                    <a href="">
+                        <picture>
+                            <source srcset="/icon/partners/ergo.jpg" media="(min-width: 768px)">
+                            <img src="/icon/partners/ergo.jpg" alt="Ergo" class="p-logo">
+                        </picture>
+                    </a>
+                    <a href="">
+                        <picture>
+                            <source srcset="/icon/partners/reso-logo.png" media="(min-width: 768px)">
+                            <img src="/icon/partners/reso-logo.png" alt="Ресо" class="p-logo">
+                        </picture>
+                    </a>
+                    <a href="">
+                        <picture>
+                            <source srcset="/icon/partners/alfastrahovanie.jpg" media="(min-width: 768px)">
+                            <img src="/icon/partners/alfastrahovanie.jpg" alt="Альфа Страхование" class="p-logo">
+                        </picture>
+                    </a>
+                    <a href="">
+                        <picture>
+                            <source srcset="/icon/partners/liberty.png" media="(min-width: 768px)">
+                            <img src="/icon/partners/liberty.png" alt="Liberty" class="p-logo">
+                        </picture>
+                    </a>
+                    <a href="">
+                        <picture>
+                            <source srcset="/icon/partners/vsk.jpg" media="(min-width: 768px)">
+                            <img src="/icon/partners/vsk.jpg" alt="ВСК" class="p-logo">
+                        </picture>
+                    </a>
                 </div>
-
+                <h3 class="fs-26 text-center mb-20">Наши услуги бесплатны!</h3>
+                <div class="d-flex flex-wrap justify-content-between align-content-center">
+                    <div class="w-50">
+                        <h3 class="fs-26">Мы сотрудничаем с основными банками&nbsp;&mdash; ипотечными кредиторами</h3>
+                        <div class="text">
+                            Знаем специфику их работы, требования и правила оформления документации. Благодаря этому опыту, мы заранее можем предостеречь наших клиентов и предложить им выгодные и правильные решения.
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap shadow-blocks w-50">
+                        <div class="shadow-block b-radius mr-10 mb-10">
+                            <a href="#">Сбербанк</a>
+                        </div>
+                        <div class="shadow-block b-radius mr-10 mb-10">
+                            <a href="#">АльфаБанк</a>
+                        </div>
+                        <div class="shadow-block b-radius mr-10 mb-10">
+                            <a href="#">ВТБ</a>
+                        </div>
+                        <div class="shadow-block b-radius mr-10 mb-10">
+                            <a href="#">Газпромбанк</a>
+                        </div>
+                        <div class="shadow-block b-radius mr-10 mb-10">
+                            <a href="#">МеталлИнвестБанк</a>
+                        </div>
+                        <div class="shadow-block b-radius mr-10 mb-10">
+                            <a href="#">Открытие</a>
+                        </div>
+                        <div class="shadow-block b-radius mr-10 mb-10">
+                            <a href="#">Уралсиб</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="leaders">
-            <div class="leaders__content">
-                <h2 class="about__title about__title_underline">
-                    Руководство компании
-                </h2>
-                <ul class="leaders__list">
-                    <li class="leaders__item">
-                        <div class="leaders__img-wrap">
-                            <img src="/img/leaders/tyurin.jpg" alt="" class="leaders__img">
-                        </div>
-                        <div class="leaders__text">
-                            <h3 class="leaders__name">Тюрин Михаил Викторович</h3>
-                            <p class="about__info">
-                                <span class="about__info_strong">Должность:</span> управляющий партнёр
-                            </p>
-                            <p class="about__info">
-                                <span class="about__info_strong">Карьера:</span> С 2003 г.
-                                по н.в. «Финансы и страхование «Финист».
-                                Управляющий партнёр.
-                            </p>
-                            <p class="about__info">
-                                Создал с нуля один
-                                из крупнейших брокеров России.
-                            </p>
-                            <p class="about__info">
-                                Построил собственную
-                                сеть офисов продаж
-                                в Московском регионе
-                                и с филиалом в г.Рязань.
-                            </p>
-                            <p class="about__info">
-                                Сформировал каналы продаж
-                                страховых продуктов: дилерский,
-                                офисный (4 офиса), агентский
-                                (более 150 агентов), корпоративный.
-                            </p>
-                            <p class="about__info">
-                                Разрабатывает и внедряет
-                                эксклюзивные продукты,
-                                созданные специально
-                                для Компании, в розничный
-                                и агентский каналы.
-                            </p>
-                            <p class="about__info">
-                                Закончил Российскую
-                                Экономическую Академию
-                                им. Г.В.Плеханова (МЭО).
-                            </p>
-                        </div>
-                    </li>
-                    <li class="leaders__item">
-                        <div class="leaders__img-wrap">
-                            <img src="/img/leaders/holin.jpg" alt="" class="leaders__img">
-                        </div>
-                        <div class="leaders__text">
-                            <h3 class="leaders__name">Холин Владимир Евгеньевич</h3>
-                            <p class="about__info">
-                                <span class="about__info_strong">Должность:</span>
-                                 Председатель правления ГК Финист
-                            </p>
-                            <p class="about__info">
-                                «В 2005 году мне хотелось создать своё предприятие,
-                                и когда мы встретились
-                                с Михаилом, и оказалось,
-                                что он развивает страхового брокера, мы договорились сделать это вместе.
-                            </p>
-                            <p class="about__info">
-                                Уже через месяц мы нашли офис в Марьино.
-                                Именно тогда зарождался FINIST,
-                                который стал обновлённым до неузнаваемости
-                                ПрофГарантом. В 2007 году
-                                мы создали корпоративный отдел,
-                                список партнёров- страховых компаний
-                                расширился до двадцати. Начали работу
-                                с юридическими лицами, заслугой чего
-                                стало комплексное обслуживание всего
-                                автопарка Ространснадзора, нашего
-                                первого федерального клиента.
-                            </p>
-                            <p class="about__info">
-                                В 2008 году состоялось
-                                открытие первого офиса
-                                в Рязани, на тот момент
-                                в виде агентского офиса.
-                            </p>
-                            <p class="about__info">
-                                В 2009 году мы завершили
-                                создание агентского подразделения
-                                и построили сеть из 50 агентов,
-                                некоторые из которых до сих
-                                пор отлично работают
-                                в нашей компании.»
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-
-            </div>
-        </section>
-        {{--
-        <section class="collective">
-            <h2 class="about__title about__title_underline">
-                Коллектив
-            </h2>
-            <ul class="collective__list">
-                <li class="collective__section">
-                    <ul class="collective__inner-list">
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Долгова Юлия
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Москва и г. Рязань
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Кожендов Александр
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Санкт-Петербург
-                                и г. Нижний Новгород
-                            </p>
-                        </li>
-                    </ul>
-                </li>
-                <li class="collective__section js-hidden-section m-hidden">
-                    <ul class="collective__inner-list">
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Долгова Юлия
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Москва и г. Рязань
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Кожендов Александр
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Санкт-Петербург
-                                и г. Нижний Новгород
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Долгова Юлия
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Москва и г. Рязань
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Кожендов Александр
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Санкт-Петербург
-                                и г. Нижний Новгород
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Долгова Юлия
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Москва и г. Рязань
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Кожендов Александр
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Санкт-Петербург
-                                и г. Нижний Новгород
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Долгова Юлия
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Москва и г. Рязань
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Кожендов Александр
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Санкт-Петербург
-                                и г. Нижний Новгород
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Долгова Юлия
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Москва и г. Рязань
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Кожендов Александр
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Санкт-Петербург
-                                и г. Нижний Новгород
-                            </p>
-                        </li>
-                    </ul>
-                </li>
-                <li class="collective__section js-hidden-section m-hidden">
-                    <ul class="collective__inner-list">
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Долгова Юлия
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Москва и г. Рязань
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Кожендов Александр
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Санкт-Петербург
-                                и г. Нижний Новгород
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Долгова Юлия
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Москва и г. Рязань
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Кожендов Александр
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Санкт-Петербург
-                                и г. Нижний Новгород
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Долгова Юлия
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Москва и г. Рязань
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Кожендов Александр
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Санкт-Петербург
-                                и г. Нижний Новгород
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Долгова Юлия
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Москва и г. Рязань
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Кожендов Александр
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Санкт-Петербург
-                                и г. Нижний Новгород
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Долгова Юлия
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Москва и г. Рязань
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Кожендов Александр
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Санкт-Петербург
-                                и г. Нижний Новгород
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Долгова Юлия
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Москва и г. Рязань
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Кожендов Александр
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Санкт-Петербург
-                                и г. Нижний Новгород
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Долгова Юлия
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Москва и г. Рязань
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Кожендов Александр
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Санкт-Петербург
-                                и г. Нижний Новгород
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Долгова Юлия
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Москва и г. Рязань
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Кожендов Александр
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Санкт-Петербург
-                                и г. Нижний Новгород
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Долгова Юлия
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Москва и г. Рязань
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Кожендов Александр
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Санкт-Петербург
-                                и г. Нижний Новгород
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Долгова Юлия
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Москва и г. Рязань
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Кожендов Александр
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Санкт-Петербург
-                                и г. Нижний Новгород
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Долгова Юлия
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Москва и г. Рязань
-                            </p>
-                        </li>
-                        <li class="collective__item">
-                            <div class="collective__img-wrap">
-                                <img src="" alt="">
-                            </div>
-                            <p class="collective__name">
-                                Кожендов Александр
-                            </p>
-                            <p class="collective__status">
-                                Начальник управления
-                                по г. Санкт-Петербург
-                                и г. Нижний Новгород
-                            </p>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <button class="collective__btn js-show-section" type="button" name="button">Показать всех сотрудников</button>
-        </section>
-        --}}
     </div>
 @endsection

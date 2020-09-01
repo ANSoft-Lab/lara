@@ -1,6 +1,7 @@
 @import "./node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import './node_modules/css-reset-and-normalize/scss/reset-and-normalize';
 @import "fonts";
+@import "bem/custom";
 @import "bem/header";
 @import "bem/offer-links";
 @import "bem/cooperation";
@@ -15,6 +16,7 @@
 @import "bem/reasons";
 @import "bem/panels";
 @import "bem/plus-minus";
+@import "bem/best-price";
 
 // О компании
 
