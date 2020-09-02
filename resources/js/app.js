@@ -1,32 +1,158 @@
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-
 require('./bootstrap');
+window.$ = window.jQuery = require('jquery');
 
-window.Vue = require('vue');
+import Glide from '@glidejs/glide'
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
+class Finist {
+    constructor() {
 
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+        // Кнопка "Наверх"
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+        this.scrollTop = document.querySelector('.js-scroll-top');
+        this.scrollTop.addEventListener('click', this.goUp.bind(this));
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+        // Мобильное меню
 
-const app = new Vue({
-    el: '#app',
-});
+        this.burger = document.querySelector('.js-burger');
+        this.mobileMenu = document.querySelector('.js-mobile-menu');
+        this.burger.addEventListener('click', this.toggleMenu.bind(this));
+
+        // Десктопное меню
+
+        this.dropdownList = [...document.querySelectorAll('.js-dropdown-list')];
+        this.dropdownMenuItem = [...document.querySelectorAll('.js-dropdown-item')];
+
+        // Слайдер с картами
+
+        if($('.glide').length) {
+            new Glide('.glide').mount();
+        }
+
+        if (document.querySelector('.js-show-section')) {
+            this.hiddenSections = [...document.querySelectorAll('.js-hidden-section')];
+            this.showSectionsBtn = document.querySelector('.js-show-section');
+
+            this.showSectionsBtn.addEventListener('click', this.showSections.bind(this));
+        }
+
+        this.cityModalBtn = document.querySelector('.js-choose-city');
+        this.cityModal = document.querySelector('.js-overlay');
+
+        var th = this;
+
+        this.city = 'moscow';
+        this.showCity();
+
+        //  Выбор города
+        $(document).on('click', '.js-choose-city', th.openModal.bind(th));
+        $(document).on('click', '.js-modal-close', th.closeModal.bind(th));
+        $(document).on('click', '.js_set_city', th.setCity.bind(th));
+
+        $(this.cityModal).on('click', function(e) {
+            if($(e.target).closest('.modal').length < 1) {
+                th.closeModal();
+            }
+        });
+
+        this.closeBtn = [...document.querySelectorAll('.js-contacts-close')];
+
+        this.closeBtn.forEach((btn) => {
+            btn.addEventListener('click', function (evt) {
+                btn.closest('.js-contacts-block').classList.add('m-hidden');
+            });
+        });
+
+        this.dropdownList.forEach((item) => {
+            item.addEventListener('click', function (evt) {
+                item.classList.toggle('m-visible');
+                item.closest('.js-list-item').classList.toggle('m-visible');
+            });
+        });
+
+        this.dropdownMenuItem.forEach((item) => item.addEventListener('click', this.showDropdown.bind(this)));
+
+        // this.dropdownMenuItem.forEach((item) => {
+        //     item.addEventListener('click', function (evt) {
+        //         evt.preventDefault();
+        //         item.classList.toggle('m-visible');
+        //         item.closest('.header-menu__item').classList.toggle('m-active');
+        //         item.nextElementSibling.classList.toggle('m-hidden');
+        //     });
+        // });
+        
+        this.openModal();
+    }
+
+    openModal() {
+        var th = this;
+
+        th.cityModal.classList.remove('m-hidden');
+        if(th.city) {
+            $(th.cityModal).find('[name=city]').each(function() {
+                $(this).prop('checked', false);
+
+                if($(this).val() == th.city) {
+                    $(this).prop('checked', true);
+                }
+            });
+        }
+
+        return false;
+    }
+
+    closeModal() {
+        this.cityModal.classList.add('m-hidden');
+    }
+
+    setCity(evt) {
+        var form = $(evt.target.closest('form'));
+
+        this.city = form.find('[name=city]:checked').val();
+
+        this.showCity();
+        this.closeModal();
+
+        return false;
+    }
+
+    showCity() {
+        $('.js-city-show').addClass('hidden');
+
+        $('.js-city-show.city_' + this.city).removeClass('hidden');
+    }
+
+    goUp() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+
+    showSections() {
+        this.showSectionsBtn.classList.add('m-hidden');
+        this.hiddenSections.forEach((section) => {
+            section.classList.remove('m-hidden');
+        })
+    }
+
+    toggleMenu() {
+        this.burger.classList.toggle('m-cross');
+        this.mobileMenu.classList.toggle('m-hidden');
+    }
+
+    showDropdown(evt) {
+        evt.preventDefault();
+        let clicked = evt.target;
+
+        this.dropdownMenuItem.forEach((item) =>  {
+            if (item != clicked) {
+                item.classList.remove('m-visible');
+                item.closest('.header-menu__item').classList.remove('m-active');
+                item.nextElementSibling.classList.add('m-hidden');
+            }
+        })
+
+        clicked.classList.toggle('m-visible');
+        clicked.closest('.header-menu__item').classList.toggle('m-active');
+        clicked.nextElementSibling.classList.toggle('m-hidden');
+    }
+
+}
+new Finist();

@@ -1,5 +1,4 @@
 .qna {
-    margin: 0;
     padding-top: 54px;
 
     &__text {
@@ -197,7 +196,8 @@ _:-ms-fullscreen, :root .qna__dropdown {
 @media screen and (min-width: 1440px) {
     .qna {
         width: 1326px;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
 
         &__text {
             margin: 0;

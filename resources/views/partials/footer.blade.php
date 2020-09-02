@@ -20,7 +20,7 @@
                         </a>
                     </li>
                     <li class="footer__list-item">
-                        <a href="" class="footer__link">
+                        <a href="{{ route('team') }}" class="footer__link">
                             Коллектив
                         </a>
                     </li>
@@ -47,7 +47,7 @@
                         </a>
                     </li>
                     <li class="footer__list-item">
-                        <a href="" class="footer__link">
+                        <a href="{{ route('faq') }}" class="footer__link">
                             Вопросы и ответы
                         </a>
                     </li>
