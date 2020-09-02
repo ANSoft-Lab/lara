@@ -1,7 +1,7 @@
 <header class="header">
     <div class="header__top">
         <a href="/" class="header__logo">
-            <img src="/icon/logo.svg" alt="finist">
+            <img src="/icon/finist_logo.svg" alt="finist">
         </a>
         <div class="header-mob">
             <div class="header-burger js-burger">

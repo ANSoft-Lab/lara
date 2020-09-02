@@ -17,9 +17,9 @@ Route::get('/', function () {
     return view('templates.main');
 });
 
-Route::get('about', function () {
-    return view('templates.about');
-})->name('about');
+// Route::get('about', function () {
+//     return view('templates.about');
+// })->name('about');
 
 Route::get('kis', function () {
     return view('templates.kis');
@@ -35,9 +35,16 @@ Route::get('team', function () {
 
 //Auth::routes();
 
-//Route::get('home', 'HomeController@index')->name('home');
-
-Route::group(['prefix' => config('backpack.base.route_prefix', 'admin'), 'middleware' => ['web', 'auth'], 'namespace' => 'Admin'], function () {
-    // Backpack\MenuCRUD
+Route::group([
+    'prefix' => config('backpack.base.route_prefix', 'admin'), 
+    'middleware' => array_merge(
+        (array) config('backpack.base.web_middleware', 'web'),
+        (array) config('backpack.base.middleware_key', 'admin')
+    ),
+    'namespace' => 'Admin',
+], function () {
     Route::crud('menu-item', 'MenuItemCrudController');
 });
+
+Route::get('{page}/{subs?}', ['uses' => 'PageController@index'])
+    ->where(['page' => '^(((?=(?!adminpanel))(?=(?!\/)).))*$', 'subs' => '.*']);
