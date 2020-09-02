@@ -24,3 +24,20 @@ Route::get('about', function () {
 Route::get('kis', function () {
     return view('templates.kis');
 })->name('kis');
+
+Route::get('faq', function () {
+    return view('templates.faq');
+})->name('faq');
+
+Route::get('team', function () {
+    return view('templates.team');
+})->name('team');
+
+//Auth::routes();
+
+//Route::get('home', 'HomeController@index')->name('home');
+
+Route::group(['prefix' => config('backpack.base.route_prefix', 'admin'), 'middleware' => ['web', 'auth'], 'namespace' => 'Admin'], function () {
+    // Backpack\MenuCRUD
+    Route::crud('menu-item', 'MenuItemCrudController');
+});
