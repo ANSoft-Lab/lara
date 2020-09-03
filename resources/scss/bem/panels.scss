@@ -8,8 +8,12 @@
 
     .panel {
         &__img {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            
             img {
-                max-width: 100%;
+                max-width: 80%;
                 max-height: 100%;
             }
         }
@@ -42,9 +46,7 @@
 
         .panel {
             &__img {
-                height: 350px;
-                align-items: center;
-                display: flex;
+                height: 300px;
             }
         }
     }
