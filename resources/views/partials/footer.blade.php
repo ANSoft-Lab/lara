@@ -21,7 +21,7 @@
                             </a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="{{ route('team') }}" class="footer__link">
+                            <a href="/team" class="footer__link">
                                 Коллектив
                             </a>
                         </li>

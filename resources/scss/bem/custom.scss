@@ -59,12 +59,28 @@
         &-40 {
             margin-bottom: 40px;
         }
+
+        &-sm {
+            @media screen and (max-width: 767px) {
+                &-20 {
+                    margin-bottom: 20px;
+                }
+            }
+        }
     }
 }
 
 .w {
     &-50 {
         width: 50%;
+    }
+
+    @media screen and (min-width: 768px) {
+        &-md {
+            &-50 {
+                width: 50%;
+            }
+        }
     }
 }
 
@@ -88,9 +104,20 @@
     }
 }
 
-.d-flex {
-    display: flex;
+.d {
+    &-flex {
+        display: flex;
+    }
+
+    @media screen and (min-width: 768px) {
+        &-md {
+            &-flex {
+                display: flex;
+            }
+        }
+    }
 }
+
 
 .flex-wrap {
     flex-wrap: wrap;

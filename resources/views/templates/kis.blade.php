@@ -139,14 +139,14 @@
                     </a>
                 </div>
                 <h3 class="fs-26 text-center mb-20">Наши услуги бесплатны!</h3>
-                <div class="d-flex flex-wrap justify-content-between align-content-center">
-                    <div class="w-50">
+                <div class="d-md-flex flex-wrap justify-content-between align-content-center">
+                    <div class="w-md-50 mb-sm-20">
                         <h3 class="fs-26 mb-10">Мы сотрудничаем с основными банками&nbsp;&mdash; ипотечными кредиторами</h3>
                         <div class="text">
                             Знаем специфику их работы, требования и правила оформления документации. Благодаря этому опыту, мы заранее можем предостеречь наших клиентов и предложить им выгодные и правильные решения.
                         </div>
                     </div>
-                    <div class="d-flex flex-wrap shadow-blocks w-50">
+                    <div class="d-flex flex-wrap shadow-blocks w-md-50">
                         <div class="shadow-block b-radius mr-10 mb-10">
                             <a href="#">Сбербанк</a>
                         </div>
