@@ -47,7 +47,7 @@
                         </a>
                     </li>
                     <li class="footer__list-item">
-                        <a href="{{ route('faq') }}" class="footer__link">
+                        <a href="/faq" class="footer__link">
                             Вопросы и ответы
                         </a>
                     </li>

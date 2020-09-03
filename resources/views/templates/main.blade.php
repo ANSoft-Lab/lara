@@ -177,7 +177,7 @@
                 </li>
             </ul>
             <div class="cooperation__btn-wrap">
-                <a href="{{ route('about') }}" class="cooperation__link">Детально о компании</a>
+                <a href="/about" class="cooperation__link">Детально о компании</a>
             </div>
         </section>
         <section class="all-sorts">
