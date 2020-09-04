@@ -61,7 +61,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="/" class="additional__arrow"></a>
+                    <a href="https://finist.ru/strahovanie/vzr/calc/" class="additional__arrow"></a>
                 </li>
                 <li class="additional__item">
                     <div class="additional__content">
@@ -78,70 +78,25 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="/" class="additional__arrow"></a>
+                    <a href="https://finist.ru/strahovanie/dms/" class="additional__arrow"></a>
                 </li>
-                {{--
-                <li class="additional__item">
-                    <div class="additional__content">
-                        <p class="additional__subtitle">Страхование имущества</p>
-                        <ul class="additional__services">
-                            <li class="additional__service-item">
-                                Добровольное
-                            </li>
-                            <li class="additional__service-item">
-                                Медицинское страхование
-                            </li>
-                            <li class="additional__service-item">
-                                Личное страхование
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="/" class="additional__arrow"></a>
-                </li>
-                --}}
                 <li class="additional__item">
                     <div class="additional__content">
                         <p class="additional__subtitle">Зелёная карта</p>
-                        {{--
-                        <ul class="additional__services">
-                            <li class="additional__service-item">
-                                Добровольное
-                            </li>
-                            <li class="additional__service-item">
-                                Медицинское страхование
-                            </li>
-                            <li class="additional__service-item">
-                                Личное страхование
-                            </li>
-                        </ul>
-                        --}}
                     </div>
-                    <a href="/" class="additional__arrow"></a>
+                    <a href="https://finist.ru/strahovanie/osago/" class="additional__arrow"></a>
                 </li>
                 <li class="additional__item">
                     <div class="additional__content">
                         <p class="additional__subtitle">Строительно-монтажные работы</p>
-                        {{--
-                        <ul class="additional__services">
-                            <li class="additional__service-item">
-                                Добровольное
-                            </li>
-                            <li class="additional__service-item">
-                                Медицинское страхование
-                            </li>
-                            <li class="additional__service-item">
-                                Личное страхование
-                            </li>
-                        </ul>
-                        --}}
                     </div>
-                    <a href="/" class="additional__arrow"></a>
+                    <a href="https://finist.ru/korporativnoe_strahovanie/strahovanie_smr/" class="additional__arrow"></a>
                 </li>
                 <li class="additional__item">
                     <div class="additional__content">
                         <p class="additional__subtitle">Страхование потребительских кредитов</p>
                     </div>
-                    <a href="/" class="additional__arrow"></a>
+                    <a href="https://ipoteka-strahovka.ru" class="additional__arrow"></a>
                 </li>
             </ul>
         </section>
@@ -184,7 +139,7 @@
             <h2 class="all-sorts__title">
                 Все виды страхования
             </h2>
-            <a href="" class="all-sorts__link">
+            <a href="https://finist.ru" class="all-sorts__link">
                 Смотреть все
             </a>
         </section>
