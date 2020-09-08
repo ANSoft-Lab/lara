@@ -11,3 +11,7 @@
 <li class="nav-item">
     <a class="nav-link" href="{{ backpack_url('user') }}"><i class="nav-icon la la-users"></i> {{ trans('backpack::base.menu.users') }}</a>
 </li>
+
+<li class='nav-item'>
+    <a class='nav-link' href='{{ backpack_url('blocks') }}'><i class='nav-icon la la-cube'></i> <span>Блоки</span></a>
+</li>

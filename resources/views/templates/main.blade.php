@@ -32,6 +32,7 @@
                 <div class="offer-links__arrow"></div>
             </a>
         </section>
+        @customblock('test-code')
         <section class="cooperation">
             <div class="cooperation__content">
                 <h2 class="cooperation__title">

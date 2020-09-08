@@ -64,7 +64,7 @@
                         </li>
                     </ul>
                 </div>
-                <a href="" class="footer__vacancies">Вакансии</a>
+                <a href="https://finist.ru/job/" class="footer__vacancies">Вакансии</a>
             </div>
             <div class="footer__mid">
                 <ul class="footer__phone-list">
