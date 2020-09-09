@@ -91,8 +91,24 @@
                             <p class="header-contacts__city js-choose-city">Нижний Новгород</p>
                         </li>
                         <li class="header-contacts__phone js-city-show city_ryazan hidden">
-                            <a href="tel:+74912434107" class="header-contacts__tel">+7 4912 434-107</a>
+                            <a href="tel:+74912392016" class="header-contacts__tel">+7 (4912) 392-016</a>
                             <p class="header-contacts__city js-choose-city">Рязань</p>
+                        </li>
+                        <li class="header-contacts__phone js-city-show city_voronezh hidden">
+                            <a href="tel:+74732067297" class="header-contacts__tel">+7 (473) 206-72-97</a>
+                            <p class="header-contacts__city js-choose-city">Воронеж</p>
+                        </li>
+                        <li class="header-contacts__phone js-city-show city_kazan hidden">
+                            <a href="tel:+78435671911" class="header-contacts__tel">+7 (843) 567-19-11</a>
+                            <p class="header-contacts__city js-choose-city">Казань</p>
+                        </li>
+                        <li class="header-contacts__phone js-city-show city_samara hidden">
+                            <a href="tel:+7463790582" class="header-contacts__tel">+7 (463) 790-582</a>
+                            <p class="header-contacts__city js-choose-city">Самара</p>
+                        </li>
+                        <li class="header-contacts__phone js-city-show city_krasnodar hidden">
+                            <a href="tel:+7612982446" class="header-contacts__tel">+7 (612) 982-446</a>
+                            <p class="header-contacts__city js-choose-city">Краснодар</p>
                         </li>
                     </ul>
                     <div class="header-callback">
@@ -108,6 +124,10 @@
         <a class="header__location js-choose-city js-city-show city_spb hidden">Санкт-Петербург</a>
         <a class="header__location js-choose-city js-city-show city_nn hidden">Нижний Новгород</a>
         <a class="header__location js-choose-city js-city-show city_ryazan hidden">Рязань</a>
+        <a class="header__location js-choose-city js-city-show city_voronezh hidden">Воронеж</a>
+        <a class="header__location js-choose-city js-city-show city_kazan hidden">Казань</a>
+        <a class="header__location js-choose-city js-city-show city_samara hidden">Самара</a>
+        <a class="header__location js-choose-city js-city-show city_krasnodar hidden">Краснодар</a>
         <a class="header__location__city-option js-choose-city">Выбрать город</a>
         <a href="" class="header__discount">Экономьте на страховке до 50%</a>
         <a href="" class="header__insurance">

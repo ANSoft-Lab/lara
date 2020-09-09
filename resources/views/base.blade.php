@@ -36,6 +36,22 @@
                     <input id="ryz" type="radio" name="city" value="ryazan" class="modal__checkbox">
                     <label for="ryz" class="modal__label js-city">Рязань</label>
                 </div>
+                <div class="modal__group">
+                    <input id="city-voronezh" type="radio" name="city" value="voronezh" class="modal__checkbox">
+                    <label for="city-voronezh" class="modal__label js-city">Воронеж</label>
+                </div>
+                <div class="modal__group">
+                    <input id="city-kazan" type="radio" name="city" value="kazan" class="modal__checkbox">
+                    <label for="city-kazan" class="modal__label js-city">Казань</label>
+                </div>
+                <div class="modal__group">
+                    <input id="city-samara" type="radio" name="city" value="samara" class="modal__checkbox">
+                    <label for="city-samara" class="modal__label js-city">Самара</label>
+                </div>
+                <div class="modal__group">
+                    <input id="city-krasnodar" type="radio" name="city" value="krasnodar" class="modal__checkbox">
+                    <label for="city-krasnodar" class="modal__label js-city">Краснодар</label>
+                </div>
                 <button type="button" class="modal__btn js_set_city">Выбрать</button>
             </form>
 		</div>

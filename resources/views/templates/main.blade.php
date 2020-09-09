@@ -260,6 +260,18 @@
                     <li data-city="ryz" class="contacts__tab glide__bullet" data-glide-dir="=3">
                         рязань
                     </li>
+                    <li data-city="voronezh" class="contacts__tab glide__bullet" data-glide-dir="=4">
+                        воронеж
+                    </li>
+                    <li data-city="kazan" class="contacts__tab glide__bullet" data-glide-dir="=5">
+                        казань
+                    </li>
+                    <li data-city="samara" class="contacts__tab glide__bullet" data-glide-dir="=6">
+                        самара
+                    </li>
+                    <li data-city="krasnodar" class="contacts__tab glide__bullet" data-glide-dir="=7">
+                        краснодар
+                    </li>
                 </ul>
             </div>
             <div class="js-map-slider contacts__slider glide__track" data-glide-el="track">
@@ -322,11 +334,59 @@
                                 <span class="contacts__subtitle">Адрес: </span>Рязань, ул. Маяковского д. 1а корп. Е БЦ "Капитал-Атрон"
                             </p>
                             <p class="contacts__item">
-                                <span class="contacts__subtitle">Телефон:</span> +7 (4912) 434-107
+                                <span class="contacts__subtitle">Телефон:</span>+7 (4912) 392-016
                             </p>
                             <p class="contacts__item">
                                 <span class="contacts__subtitle">График работы:</span>
                                 Пн-Пт: 9:00-19:00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contacts__map js-map glide__slide">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A18f8a45551d3e32e77abaed520c711a832d388a7ca8e76e1e836b17c82bbfa27&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false"></script>
+                        <div class="contacts__block js-contacts-block">
+                            <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
+                            <p class="contacts__item">
+                                <span class="contacts__subtitle">Адрес: Воронеж, ул. Текстильщиков 5, стр.1</span>
+                            </p>
+                            <p class="contacts__item">
+                                <span class="contacts__subtitle">Телефон: +7 (473) 206-72-97</span> 
+                            </p>
+                            <p class="contacts__item">
+                                <span class="contacts__subtitle">График работы:</span>
+                                Пн-Пт: 9:00-19:00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contacts__map js-map glide__slide">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acbf05086f2ae4b63a1fe729e2e4736cb73822b0ad270212db5b481c2a29cb9e2&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false"></script>
+                        <div class="contacts__block js-contacts-block">
+                            <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
+                            <p class="contacts__item">
+                                <span class="contacts__subtitle">Адрес: Казань, ул. Петербургская 74</span>
+                            </p>
+                            <p class="contacts__item">
+                                <span class="contacts__subtitle">Телефон: +7 (843) 567-19-11</span> 
+                            </p>
+                            <p class="contacts__item">
+                                <span class="contacts__subtitle">График работы:</span>
+                                Пн-Пт: 9:00-19:00
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contacts__map js-map glide__slide">
+                        <div class="contacts__block js-contacts-block">
+                            <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
+                            <p class="contacts__item">
+                                <span class="contacts__subtitle">Телефон: +7 (463) 790-582</span> 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contacts__map js-map glide__slide">
+                        <div class="contacts__block js-contacts-block">
+                            <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
+                            <p class="contacts__item">
+                                <span class="contacts__subtitle">Телефон: +7 (612) 982-446</span> 
                             </p>
                         </div>
                     </div>
