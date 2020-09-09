@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('templates.main');
-});
+// Route::get('/', function () {
+//     return view('templates.main');
+// });
 
 // Route::get('about', function () {
 //     return view('templates.about');

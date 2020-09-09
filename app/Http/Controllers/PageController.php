@@ -9,6 +9,10 @@ class PageController extends Controller
 {
     public function index($slug, $subs = null)
     {
+        if(! $slug) {
+            $slug = '/';
+        }
+        
         $page = Page::findBySlug($slug);
 
         if (! $page)

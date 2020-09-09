@@ -71,6 +71,11 @@ trait PageTemplates
 
     private function simple()
     {
-        
+        $this->crud->addField([
+            'name' => 'content',
+            'label' => trans('backpack::pagemanager.content'),
+            //'type' => 'wysiwyg',
+            'placeholder' => trans('backpack::pagemanager.content_placeholder'),
+        ]);
     }
 }
