@@ -5,7 +5,7 @@ namespace App\Models;
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
 
-class Document extends Model
+class Employee extends Model
 {
     use CrudTrait;
 
@@ -14,8 +14,7 @@ class Document extends Model
     | GLOBAL VARIABLES
     |--------------------------------------------------------------------------
     */
-
-    protected $table = 'documents';
+    protected $table = 'employees';
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     protected $guarded = ['id'];
@@ -34,6 +33,10 @@ class Document extends Model
     | RELATIONS
     |--------------------------------------------------------------------------
     */
+    public function department()
+    {
+        return $this->belongsTo('App\Models\Department');
+    }
 
     /*
     |--------------------------------------------------------------------------
@@ -52,11 +55,11 @@ class Document extends Model
     | MUTATORS
     |--------------------------------------------------------------------------
     */
-    public function setPathAttribute($value)
+    public function setPhotoAttribute($value)
     {
-        $attribute_name = "path";
+        $attribute_name = "photo";
         $disk = "public";
-        $destination_path = "uploads/documents";
+        $destination_path = "uploads/employees";
 
         $this->uploadFileToDisk($value, $attribute_name, $disk, $destination_path);
 

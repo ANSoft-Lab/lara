@@ -5,7 +5,7 @@ namespace App\Models;
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
 
-class Document extends Model
+class City extends Model
 {
     use CrudTrait;
 
@@ -15,7 +15,7 @@ class Document extends Model
     |--------------------------------------------------------------------------
     */
 
-    protected $table = 'documents';
+    protected $table = 'cities';
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     protected $guarded = ['id'];
@@ -52,14 +52,4 @@ class Document extends Model
     | MUTATORS
     |--------------------------------------------------------------------------
     */
-    public function setPathAttribute($value)
-    {
-        $attribute_name = "path";
-        $disk = "public";
-        $destination_path = "uploads/documents";
-
-        $this->uploadFileToDisk($value, $attribute_name, $disk, $destination_path);
-
-        // return $this->attributes[{$attribute_name}]; // uncomment if this is a translatable field
-    }
 }

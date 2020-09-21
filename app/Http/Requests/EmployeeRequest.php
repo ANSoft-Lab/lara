@@ -2,10 +2,10 @@
 
 namespace App\Http\Requests;
 
-//use App\Http\Requests\Request;
+use App\Http\Requests\Request;
 use Illuminate\Foundation\Http\FormRequest;
 
-class DocumentRequest extends FormRequest
+class EmployeeRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -26,9 +26,7 @@ class DocumentRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|min:5|max:255',
-            'title' => 'required|min:5|max:255',
-            'path' => 'required|file|mimes:doc,docx,xls,xlsx,txt,rtf,ppt,pptx,csv,jpg',
+            // 'name' => 'required|min:5|max:255'
         ];
     }
 

@@ -14,5 +14,11 @@ class DatabaseSeeder extends Seeder
         $this->call(MainBlocksSeeder::class);
 
         $this->call(PagesSeeder::class);
+
+        $this->call(CitiesSeeder::class);
+
+        $this->call(DepartmentsSeeder::class);
+
+        $this->call(EmployeesSeeder::class);
     }
 }

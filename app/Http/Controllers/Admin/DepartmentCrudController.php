@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\DocumentRequest;
-use App\Models\Document;
+use App\Http\Requests\DepartmentRequest;
+use App\Models\Department;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
 use Backpack\CRUD\app\Http\Controllers\Operations\DeleteOperation;
@@ -13,11 +13,11 @@ use Backpack\CRUD\app\Http\Controllers\Operations\UpdateOperation;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
 /**
- * Class DocumentCrudController
+ * Class DepartmentCrudController
  * @package App\Http\Controllers\Admin
  * @property-read \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $crud
  */
-class DocumentCrudController extends CrudController
+class DepartmentCrudController extends CrudController
 {
     use ListOperation;
     use CreateOperation;
@@ -32,9 +32,9 @@ class DocumentCrudController extends CrudController
      */
     public function setup()
     {
-        CRUD::setModel(Document::class);
-        CRUD::setRoute(config('backpack.base.route_prefix') . '/document');
-        CRUD::setEntityNameStrings('документ', 'документы');
+        CRUD::setModel(Department::class);
+        CRUD::setRoute(config('backpack.base.route_prefix') . '/department');
+        CRUD::setEntityNameStrings('отдел', 'отделы');
     }
 
     /**
@@ -45,23 +45,15 @@ class DocumentCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-        //CRUD::setFromDb(); // columns
         CRUD::addColumn([
-            'name' => 'title',
-            'label' => trans('backpack::base.documents.title'),
+            'name' => 'name',
+            'label' => trans('backpack::base.departments.name'),
         ]);
 
         CRUD::addColumn([
-            'name' => 'publish',
-            'label' => trans('backpack::base.documents.publish'),
-            'type' => 'boolean',
+            'name' => 'city',
+            'label' => trans('backpack::base.departments.city'),
         ]);
-
-        /**
-         * Columns can be defined using the fluent syntax or array syntax:
-         * - CRUD::column('price')->type('number');
-         * - CRUD::addColumn(['name' => 'price', 'type' => 'number']); 
-         */
     }
 
     /**
@@ -72,30 +64,19 @@ class DocumentCrudController extends CrudController
      */
     protected function setupCreateOperation()
     {
-        CRUD::setValidation(DocumentRequest::class);
+        CRUD::setValidation(DepartmentRequest::class);
 
         CRUD::addField([
-            'name' => 'title',
-            'label' => trans('backpack::base.documents.title'),
-            'allows_null' => false,
-        ]);
-        CRUD::addField([
             'name' => 'name',
-            'label' => trans('backpack::base.documents.name'),
+            'label' => trans('backpack::base.departments.name'),
             'allows_null' => false,
         ]);
         CRUD::addField([
-            'name' => 'path',
-            'label' => trans('backpack::base.documents.file'),
-            'type' => 'upload',
-            'disk' => 'public',
-            'upload' => true,
-        ]);
-        CRUD::addField([
-            'name' => 'publish',
-            'label' => trans('backpack::base.documents.publish'),
-            'type' => 'checkbox',
-            'default' => 1,
+            'name' => 'city_id',
+            'label' => trans('backpack::base.departments.city'),
+            'type' => 'relationship',
+            'model' => 'App\Models\City',
+            'placeholder' => 'Выбрать город',
         ]);
     }
 

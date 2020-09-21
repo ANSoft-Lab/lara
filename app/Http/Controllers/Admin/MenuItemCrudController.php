@@ -23,7 +23,7 @@ class MenuItemCrudController extends CrudController
     {
         CRUD::setModel(MenuItem::class);
         CRUD::setRoute(config('backpack.base.route_prefix') . '/menu-item');
-        CRUD::setEntityNameStrings('menu item', 'menu items');
+        CRUD::setEntityNameStrings('пункт меню', 'пункты меню');
 
         CRUD::enableReorder('name', 3);
     }

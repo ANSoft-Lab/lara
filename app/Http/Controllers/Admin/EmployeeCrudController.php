@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\DocumentRequest;
-use App\Models\Document;
+use App\Http\Requests\EmployeeRequest;
+use App\Models\Employee;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
 use Backpack\CRUD\app\Http\Controllers\Operations\DeleteOperation;
@@ -13,11 +13,11 @@ use Backpack\CRUD\app\Http\Controllers\Operations\UpdateOperation;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
 /**
- * Class DocumentCrudController
+ * Class EmployeeCrudController
  * @package App\Http\Controllers\Admin
  * @property-read \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $crud
  */
-class DocumentCrudController extends CrudController
+class EmployeeCrudController extends CrudController
 {
     use ListOperation;
     use CreateOperation;
@@ -32,9 +32,9 @@ class DocumentCrudController extends CrudController
      */
     public function setup()
     {
-        CRUD::setModel(Document::class);
-        CRUD::setRoute(config('backpack.base.route_prefix') . '/document');
-        CRUD::setEntityNameStrings('документ', 'документы');
+        CRUD::setModel(Employee::class);
+        CRUD::setRoute(config('backpack.base.route_prefix') . '/employee');
+        CRUD::setEntityNameStrings('сотрудник', 'сотрудники');
     }
 
     /**
@@ -45,23 +45,20 @@ class DocumentCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-        //CRUD::setFromDb(); // columns
         CRUD::addColumn([
-            'name' => 'title',
-            'label' => trans('backpack::base.documents.title'),
+            'name' => 'name',
+            'label' => trans('backpack::base.employees.name'),
         ]);
 
         CRUD::addColumn([
-            'name' => 'publish',
-            'label' => trans('backpack::base.documents.publish'),
-            'type' => 'boolean',
+            'name' => 'position',
+            'label' => trans('backpack::base.employees.position'),
         ]);
 
-        /**
-         * Columns can be defined using the fluent syntax or array syntax:
-         * - CRUD::column('price')->type('number');
-         * - CRUD::addColumn(['name' => 'price', 'type' => 'number']); 
-         */
+        CRUD::addColumn([
+            'name' => 'department',
+            'label' => trans('backpack::base.employees.department'),
+        ]);
     }
 
     /**
@@ -72,30 +69,33 @@ class DocumentCrudController extends CrudController
      */
     protected function setupCreateOperation()
     {
-        CRUD::setValidation(DocumentRequest::class);
+        CRUD::setValidation(EmployeeRequest::class);
 
         CRUD::addField([
-            'name' => 'title',
-            'label' => trans('backpack::base.documents.title'),
-            'allows_null' => false,
-        ]);
-        CRUD::addField([
             'name' => 'name',
-            'label' => trans('backpack::base.documents.name'),
+            'label' => trans('backpack::base.employees.name'),
             'allows_null' => false,
         ]);
         CRUD::addField([
-            'name' => 'path',
-            'label' => trans('backpack::base.documents.file'),
-            'type' => 'upload',
-            'disk' => 'public',
-            'upload' => true,
+            'name' => 'position',
+            'label' => trans('backpack::base.employees.position'),
         ]);
         CRUD::addField([
-            'name' => 'publish',
-            'label' => trans('backpack::base.documents.publish'),
-            'type' => 'checkbox',
-            'default' => 1,
+            'name' => 'department_id',
+            'label' => trans('backpack::base.employees.department'),
+            'type' => 'relationship',
+            'model' => 'App\Models\Department',
+            'placeholder' => 'Выбрать отдел',
+        ]);
+
+        CRUD::addField([
+            'name' => 'photo',
+            'label' => trans('backpack::base.employees.photo'),
+            'type' => 'image',
+            'disk' => 'public',
+            // 'crop' => true,
+            // 'aspect_ratio' => 1,
+            'upload' => true,
         ]);
     }
 

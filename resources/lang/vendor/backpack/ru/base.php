@@ -73,6 +73,9 @@ return [
         'users' => 'Пользователи',
         'blocks' => 'Блоки',
         'documents' => 'Документы',
+        'cities' => 'Регионы',
+        'departments' => 'Отделы',
+        'employees' => 'Сотрудники',
     ],
 
     'documents' => [
@@ -80,5 +83,24 @@ return [
         'title' => 'Название файла (для пользователей)',
         'publish' => 'Опубликован',
         'file' => 'Файл'
+    ],
+
+    'cities' => [
+        'name' => 'Название',
+        'show_order' => 'Порядок',
+    ],
+
+    'departments' => [
+        'name' => 'Название',
+        'city' => 'Город',
+        'show_order' => 'Порядок',
+    ],
+
+    'employees' => [
+        'name' => 'Имя',
+        'department' => 'Отдел',
+        'position' => 'Должность',
+        'photo' => 'Фото',
+        'show_order' => 'Порядок',
     ],
 ];

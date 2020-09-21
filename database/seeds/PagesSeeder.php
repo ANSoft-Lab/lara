@@ -38,7 +38,7 @@ class PagesSeeder extends Seeder
                 }
             }
         } else {
-            echo "\n\rТаблица блоков не найдена\n\r";
+            echo "\n\rТаблица страниц не найдена\n\r";
         }
 
     }
