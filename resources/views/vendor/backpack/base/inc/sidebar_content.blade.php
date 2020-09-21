@@ -13,5 +13,6 @@
 </li>
 
 <li class='nav-item'>
-    <a class='nav-link' href='{{ backpack_url('blocks') }}'><i class='nav-icon la la-cube'></i> <span>Блоки</span></a>
+    <a class='nav-link' href='{{ backpack_url('blocks') }}'><i class='nav-icon la la-cube'></i> <span>{{ trans('backpack::base.menu.blocks') }}</span></a>
 </li>
+<li class='nav-item'><a class='nav-link' href='{{ backpack_url('document') }}'><i class='nav-icon la la-file'></i> {{ trans('backpack::base.menu.documents') }}</a></li>
