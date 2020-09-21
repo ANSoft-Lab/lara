@@ -93,9 +93,9 @@ class EmployeeCrudController extends CrudController
             'label' => trans('backpack::base.employees.photo'),
             'type' => 'image',
             'disk' => 'public',
-            // 'crop' => true,
+            'crop' => false,
             // 'aspect_ratio' => 1,
-            'upload' => true,
+            //'upload' => true,
         ]);
     }
 
