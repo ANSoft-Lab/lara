@@ -15,7 +15,7 @@ class Department extends Model
     |--------------------------------------------------------------------------
     */
     public $blockcrud_title = 'Отделы';
-    public $blockcrud_ignore = true;
+    public $blockcrud_template = 'blocks.departments';
 
     protected $table = 'departments';
     // protected $primaryKey = 'id';
@@ -39,6 +39,11 @@ class Department extends Model
     public function city()
     {
         return $this->belongsTo('App\Models\City');
+    }
+
+    public function employees()
+    {
+        return $this->hasMany('App\Models\Employee')->orderBy('show_order');
     }
 
     /*

@@ -102,16 +102,10 @@
         Коллектив
     </h2>
     <ul class="collective__list">
-        @forelse ($items->groupBy(function ($emp, $key) {
-                if($emp->department) {
-                    return $emp->department->name;
-                } else {
-                    return 'яяяя'; //Без отдела будут последними в списке
-                }
-            })->sort() as $dep => $employees)
+        @forelse ($items as $item)
             <li class="collective__section">
                 <ul class="collective__inner-list">
-                    @forelse ($employees as $employee)
+                    @foreach ($item->employees as $employee)
                         <li class="collective__item">
                             <div class="collective__img-wrap">
                                 @if ($employee->photo)
@@ -126,9 +120,7 @@
                                 {{ $employee->department->name ?? '' }}
                             </p>
                         </li>
-                    @empty
-
-                    @endforelse
+                    @endforeach
                 </ul>
             </li>
         @empty

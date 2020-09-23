@@ -15,7 +15,7 @@ class Document extends Model
     |--------------------------------------------------------------------------
     */
     public $blockcrud_title = 'Документы';
-    public $blockcrud_ignore = true;
+    public $blockcrud_template = 'blocks.documents';
 
     protected $table = 'documents';
     // protected $primaryKey = 'id';
