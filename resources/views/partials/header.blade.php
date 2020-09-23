@@ -21,17 +21,17 @@
                                 </a>
                             </li>
                             <li class="inner-list__item">
-                                <a href="https://finist.ru/refinansirovanie" class="header-menu__link">
+                                <a href="{{ config('app.old_url') }}/refinansirovanie" class="header-menu__link">
                                     Рефинансирование и кредитование
                                 </a>
                             </li>
                             <li class="inner-list__item">
-                                <a href="https://finist.ru/strahovanie/kasko/" class="header-menu__link">
+                                <a href="{{ config('app.old_url') }}/strahovanie/kasko/" class="header-menu__link">
                                     Автострахование
                                 </a>
                             </li>
                             <li class="inner-list__item">
-                                <a href="https://finist.ru/strahovanie/strahovanie_imuchestva/" class="header-menu__link">Страхование имущества</a>
+                                <a href="{{ config('app.old_url') }}/strahovanie/strahovanie_imuchestva/" class="header-menu__link">Страхование имущества</a>
                             </li>
                         </ul>
                     </li>
@@ -41,37 +41,37 @@
                         </a>
                         <ul class="inner-list js-inner-list m-hidden">
                             <li class="inner-list__item">
-                                <a href="https://finist.ru/strahovanie/kasko/" class="header-menu__link">
+                                <a href="{{ config('app.old_url') }}/strahovanie/kasko/" class="header-menu__link">
                                     КАСКО
                                 </a>
                             </li>
                             <li class="inner-list__item">
-                                <a href="https://finist.ru/strahovanie/osago/" class="header-menu__link">
+                                <a href="{{ config('app.old_url') }}/strahovanie/osago/" class="header-menu__link">
                                     ОСАГО
                                 </a>
                             </li>
                             <li class="inner-list__item">
-                                <a href="https://finist.ru/strahovanie/vzr/calc/" class="header-menu__link">
+                                <a href="{{ config('app.old_url') }}/strahovanie/vzr/calc/" class="header-menu__link">
                                     Страхование туристов
                                 </a>
                             </li>
                             <li class="inner-list__item">
-                                <a href="https://finist.ru/strahovanie/strahovanie_imuchestva/" class="header-menu__link">Страхование имущества</a>
+                                <a href="{{ config('app.old_url') }}/strahovanie/strahovanie_imuchestva/" class="header-menu__link">Страхование имущества</a>
                             </li>
                         </ul>
                     </li>
                     <li class="header-menu__item">
-                        <a href="https://finist.ru/korporativnoe_strahovanie/" class="header-menu__link">
+                        <a href="{{ config('app.old_url') }}/korporativnoe_strahovanie/" class="header-menu__link">
                             Партнерам
                         </a>
                     </li>
                     <li class="header-menu__item">
-                        <a href="https://finist.ru/kontakty/" class="header-menu__link">
+                        <a href="{{ config('app.old_url') }}/kontakty/" class="header-menu__link">
                             Офисы
                         </a>
                     </li>
                     <li class="header-menu__item">
-                        <a href="https://finist.ru/group/" class="header-menu__link">
+                        <a href="{{ config('app.old_url') }}/group/" class="header-menu__link">
                             Тех. центры ГК Finist
                         </a>
                     </li>
@@ -112,8 +112,8 @@
                         </li>
                     </ul>
                     <div class="header-callback">
-                        <a href="https://finist.ru/kontakty/" class="header-contacts__callback">Обратный звонок</a>
-                        <a href="https://finist.ru/job/" class="header-contacts__vacancies">Вакансии</a>
+                        <a href="{{ config('app.old_url') }}/kontakty/" class="header-contacts__callback">Обратный звонок</a>
+                        <a href="{{ config('app.old_url') }}/job/" class="header-contacts__vacancies">Вакансии</a>
                     </div>
                 </div>
             </nav>

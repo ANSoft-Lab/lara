@@ -11,12 +11,12 @@
                     </p>
                     <ul class="footer__list">
                         <li class="footer__list-item">
-                            <a href="https://finist.ru/group/" class="footer__link">
+                            <a href="{{ config('app.old_url') }}/group/" class="footer__link">
                                 Группа компаний Финист
                             </a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="https://finist.ru/rukovodstvo-kompanii/" class="footer__link">
+                            <a href="{{ config('app.old_url') }}/rukovodstvo-kompanii/" class="footer__link">
                                 Руководство компании
                             </a>
                         </li>
@@ -26,12 +26,12 @@
                             </a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="https://finist.ru/cooperation/" class="footer__link">
+                            <a href="{{ config('app.old_url') }}/cooperation/" class="footer__link">
                                 Сотрудничество
                             </a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="https://finist.ru/strahovie_kompanii_vibor_kasko/" class="footer__link">
+                            <a href="{{ config('app.old_url') }}/strahovie_kompanii_vibor_kasko/" class="footer__link">
                                 Партнеры
                             </a>
                         </li>
@@ -43,7 +43,7 @@
                     </p>
                     <ul class="footer__list">
                         <li class="footer__list-item">
-                            <a href="https://finist.ru/kontakty/otzyvy/" class="footer__link">
+                            <a href="{{ config('app.old_url') }}/kontakty/otzyvy/" class="footer__link">
                                 Отзывы
                             </a>
                         </li>
@@ -53,18 +53,18 @@
                             </a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="https://finist.ru/chto-delat-pri-nastuplenii-strakhovogo-sluchaya/" class="footer__link">
+                            <a href="{{ config('app.old_url') }}/chto-delat-pri-nastuplenii-strakhovogo-sluchaya/" class="footer__link">
                                 Страховой случай
                             </a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="https://finist.ru/rekvizity/" class="footer__link">
+                            <a href="{{ config('app.old_url') }}/rekvizity/" class="footer__link">
                                 Реквизиты
                             </a>
                         </li>
                     </ul>
                 </div>
-                <a href="https://finist.ru/job/" class="footer__vacancies">Вакансии</a>
+                <a href="{{ config('app.old_url') }}/job/" class="footer__vacancies">Вакансии</a>
             </div>
             <div class="footer__mid">
                 <ul class="footer__phone-list">

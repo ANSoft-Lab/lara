@@ -61,7 +61,7 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="https://finist.ru/strahovanie/vzr/calc/" class="additional__arrow"></a>
+                    <a href="{{ config('app.old_url') }}/strahovanie/vzr/calc/" class="additional__arrow"></a>
                 </li>
                 <li class="additional__item">
                     <div class="additional__content">
@@ -78,19 +78,19 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="https://finist.ru/strahovanie/dms/" class="additional__arrow"></a>
+                    <a href="{{ config('app.old_url') }}/strahovanie/dms/" class="additional__arrow"></a>
                 </li>
                 <li class="additional__item">
                     <div class="additional__content">
                         <p class="additional__subtitle">Зелёная карта</p>
                     </div>
-                    <a href="https://finist.ru/strahovanie/osago/" class="additional__arrow"></a>
+                    <a href="{{ config('app.old_url') }}/strahovanie/osago/" class="additional__arrow"></a>
                 </li>
                 <li class="additional__item">
                     <div class="additional__content">
                         <p class="additional__subtitle">Строительно-монтажные работы</p>
                     </div>
-                    <a href="https://finist.ru/korporativnoe_strahovanie/strahovanie_smr/" class="additional__arrow"></a>
+                    <a href="{{ config('app.old_url') }}/korporativnoe_strahovanie/strahovanie_smr/" class="additional__arrow"></a>
                 </li>
                 <li class="additional__item">
                     <div class="additional__content">
@@ -139,7 +139,7 @@
             <h2 class="all-sorts__title">
                 Все виды страхования
             </h2>
-            <a href="https://finist.ru" class="all-sorts__link">
+            <a href="{{ config('app.old_url') }}" class="all-sorts__link">
                 Смотреть все
             </a>
         </section>
