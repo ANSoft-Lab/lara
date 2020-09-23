@@ -14,6 +14,8 @@ class Document extends Model
     | GLOBAL VARIABLES
     |--------------------------------------------------------------------------
     */
+    public $blockcrud_title = 'Документы';
+    public $blockcrud_ignore = true;
 
     protected $table = 'documents';
     // protected $primaryKey = 'id';

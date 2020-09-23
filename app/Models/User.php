@@ -12,11 +12,8 @@ class User extends Authenticatable
     use CrudTrait;
     use Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
+    public $blockcrud_ignore = true;
+
     protected $fillable = [
         'name', 'email', 'password',
     ];

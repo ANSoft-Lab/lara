@@ -17,6 +17,9 @@ class Employee extends Model
     | GLOBAL VARIABLES
     |--------------------------------------------------------------------------
     */
+    public $blockcrud_title = 'Сотрудники';
+    public $blockcrud_template = 'blocks.team';
+
     protected $table = 'employees';
     // protected $primaryKey = 'id';
     // public $timestamps = false;

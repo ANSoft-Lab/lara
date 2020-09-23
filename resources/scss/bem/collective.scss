@@ -17,6 +17,10 @@
         overflow: hidden;
         background-color: #efefef;
         margin-bottom: 14px;
+
+        img {
+            max-width: 100%;
+        }
     }
 
     &__name {

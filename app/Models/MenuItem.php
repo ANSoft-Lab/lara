@@ -9,6 +9,8 @@ class MenuItem extends Model
 {
     use CrudTrait;
 
+    public $blockcrud_ignore = true;
+    
     protected $table = 'menu_items';
     protected $fillable = [
         'name', 

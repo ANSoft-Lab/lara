@@ -14,6 +14,8 @@ class Department extends Model
     | GLOBAL VARIABLES
     |--------------------------------------------------------------------------
     */
+    public $blockcrud_title = 'Отделы';
+    public $blockcrud_ignore = true;
 
     protected $table = 'departments';
     // protected $primaryKey = 'id';

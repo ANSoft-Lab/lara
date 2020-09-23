@@ -11,7 +11,7 @@
         "php": "^7.2.5",
         "backpack/crud": "4.1.*",
         "backpack/pagemanager": "^3.0",
-        "designcoda/backpack-blockcrud": "1.7",
+        "designcoda/backpack-blockcrud": "2.0",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^6.3",

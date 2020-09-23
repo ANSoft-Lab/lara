@@ -14,6 +14,8 @@ class City extends Model
     | GLOBAL VARIABLES
     |--------------------------------------------------------------------------
     */
+    public $blockcrud_title = 'Города';
+    public $blockcrud_ignore = true;
 
     protected $table = 'cities';
     // protected $primaryKey = 'id';
