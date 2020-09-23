@@ -16,11 +16,6 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('templates.main');
 // });
-
-// Route::get('about', function () {
-//     return view('templates.about');
-// })->name('about');
-
 Route::get('kis', function () {
     return view('templates.kis');
 })->name('kis');
@@ -28,10 +23,6 @@ Route::get('kis', function () {
 Route::get('faq', function () {
     return view('templates.faq');
 })->name('faq');
-
-Route::get('team', function () {
-    return view('templates.team');
-})->name('team');
 
 //Auth::routes();
 
