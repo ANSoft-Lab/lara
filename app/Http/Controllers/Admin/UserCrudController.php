@@ -25,6 +25,11 @@ class UserCrudController extends CrudController
     use DeleteOperation;
     use ShowOperation;
 
+    protected $roles = [
+        'user' => 'обычный',
+        'admin' => 'админ',
+    ];
+
     /**
      * Configure the CrudPanel object. Apply settings to all operations.
      * 
@@ -48,7 +53,13 @@ class UserCrudController extends CrudController
         CRUD::column('name')->label('Имя');
         CRUD::column('email');
         //CRUD::column('email_verified_at');
-        CRUD::column('role')->label('Роль');
+        CRUD::addColumn([
+            'name' => 'role',
+            'label' => 'Роль',
+            'type' => 'select_from_array',
+            'options' => $this->roles,
+        ]);
+
         CRUD::column('created_at')->type('date')->label('Создан');
         //CRUD::column('updated_at');
 
@@ -69,11 +80,27 @@ class UserCrudController extends CrudController
     {
         CRUD::setValidation(UserRequest::class);
 
-        CRUD::field('name');
-        CRUD::field('email');
-        CRUD::field('email_verified_at');
-        CRUD::field('password');
-        CRUD::field('remember_token');
+        CRUD::addField([
+            'label' => 'Имя',
+            'name' => 'name',
+        ]);
+
+        CRUD::addField([
+            'label' => 'Email',
+            'name' => 'email',
+            'allows_null' => 'false',
+        ]);
+
+        CRUD::addField([
+            'label' => 'Роль',
+            'type' => 'select_from_array',
+            'name' => 'role',
+            'options' => $this->roles,
+        ]);
+
+        //CRUD::field('email_verified_at');
+        //CRUD::field('password');
+        //CRUD::field('remember_token');
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:
