@@ -28,7 +28,7 @@ class DocumentRequest extends FormRequest
         return [
             'name' => 'required|min:5|max:255',
             'title' => 'required|min:5|max:255',
-            'path' => 'required|file|mimes:doc,docx,xls,xlsx,txt,rtf,ppt,pptx,csv,jpg',
+            'path' => 'required|file|mimes:doc,docx,xls,xlsx,txt,rtf,ppt,pptx,csv,jpg,pdf',
         ];
     }
 

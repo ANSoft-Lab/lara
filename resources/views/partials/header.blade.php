@@ -117,6 +117,70 @@
                     </div>
                 </div>
             </nav>
+            {{--
+            <nav class="header__nav header-menu__wrap js-mobile-menu">
+                <ul class="header-menu">
+                    @foreach (App\Models\MenuItem::getTree(); as $item)
+                        <li class="header-menu__item">
+                            <a href="{{ $item->url() }}" class="header-menu__link{{ $item->children->count() > 0 ? ' m-dropdown js-dropdown-item' : '' }}">
+                                {{ $item->name }}
+                            </a>
+                            @if ($item->children->count() > 0)
+                                <ul class="inner-list js-inner-list m-hidden">
+                                    @foreach ($item->children as $child)
+                                        <li class="inner-list__item">
+                                            <a href="{{ $child->url() }}" class="header-menu__link">
+                                                {{ $child->name }}
+                                            </a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            @endif
+                        </li>
+                    @endforeach
+                </ul>
+                <div class="header__callback">
+                    <ul class="header-contacts">
+                        <li class="header-contacts__phone js-city-show city_moscow">
+                            <a href="tel:+74956262555" class="header-contacts__tel">+7 495 62-62-555</a>
+                            <p class="header-contacts__city js-choose-city">Москва</p>
+                        </li>
+                        <li class="header-contacts__phone js-city-show city_spb hidden">
+                            <a href="tel:+78124494325" class="header-contacts__tel">+7 812 449-43-25</a>
+                            <p class="header-contacts__city js-choose-city">Санкт-Петербург</p>
+                        </li>
+                        <li class="header-contacts__phone js-city-show city_nn hidden">
+                            <a href="tel:+78312809697" class="header-contacts__tel">+7 831 280-96-97</a>
+                            <p class="header-contacts__city js-choose-city">Нижний Новгород</p>
+                        </li>
+                        <li class="header-contacts__phone js-city-show city_ryazan hidden">
+                            <a href="tel:+74912392016" class="header-contacts__tel">+7 (4912) 392-016</a>
+                            <p class="header-contacts__city js-choose-city">Рязань</p>
+                        </li>
+                        <li class="header-contacts__phone js-city-show city_voronezh hidden">
+                            <a href="tel:+74732067297" class="header-contacts__tel">+7 (473) 206-72-97</a>
+                            <p class="header-contacts__city js-choose-city">Воронеж</p>
+                        </li>
+                        <li class="header-contacts__phone js-city-show city_kazan hidden">
+                            <a href="tel:+78435671911" class="header-contacts__tel">+7 (843) 567-19-11</a>
+                            <p class="header-contacts__city js-choose-city">Казань</p>
+                        </li>
+                        <li class="header-contacts__phone js-city-show city_samara hidden">
+                            <a href="tel:+7463790582" class="header-contacts__tel">+7 (463) 790-582</a>
+                            <p class="header-contacts__city js-choose-city">Самара</p>
+                        </li>
+                        <li class="header-contacts__phone js-city-show city_krasnodar hidden">
+                            <a href="tel:+7612982446" class="header-contacts__tel">+7 (612) 982-446</a>
+                            <p class="header-contacts__city js-choose-city">Краснодар</p>
+                        </li>
+                    </ul>
+                    <div class="header-callback">
+                        <a href="{{ config('app.old_url') }}/kontakty/" class="header-contacts__callback">Обратный звонок</a>
+                        <a href="{{ config('app.old_url') }}/job/" class="header-contacts__vacancies">Вакансии</a>
+                    </div>
+                </div>
+            </nav>
+            --}}
         </div>
     </div>
     <div class="header-location">

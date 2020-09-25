@@ -19,6 +19,11 @@ class MenuItemCrudController extends CrudController
     use DeleteOperation;
     use ReorderOperation;
 
+    protected $menu_type_options = [
+        'top' => 'верхнее',
+        'bottom' => 'нижнее',
+    ];
+
     public function setup()
     {
         CRUD::setModel(MenuItem::class);
@@ -43,6 +48,19 @@ class MenuItemCrudController extends CrudController
             'attribute' => 'name',
             'model' => MenuItem::class,
         ]);
+
+        CRUD::addColumn([
+            'label' => 'Вид меню',
+            'type' => 'select_from_array',
+            'name' => 'menu_type',
+            'options' => $this->menu_type_options,
+        ]);
+
+        CRUD::addColumn([
+            'name' => 'publish',
+            'label' => trans('backpack::base.documents.publish'),
+            'type' => 'boolean',
+        ]);
     }
 
     protected function setupCreateOperation()
@@ -66,6 +84,23 @@ class MenuItemCrudController extends CrudController
             'label' => 'Тип',
             'type' => 'page_or_link',
             'page_model' => '\Backpack\PageManager\app\Models\Page',
+            'template' => 'vendor.backpack.crud.fields.page_or_link',
+        ]);
+
+        
+        CRUD::addField([
+            'label' => 'Вид меню',
+            'type' => 'select_from_array',
+            'name' => 'menu_type',
+            'options' => $this->menu_type_options,
+        ]);
+
+
+        CRUD::addField([
+            'name' => 'publish',
+            'label' => trans('backpack::base.menu_model.publish'),
+            'type' => 'checkbox',
+            'default' => 1,
         ]);
     }
 

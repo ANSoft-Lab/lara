@@ -18,15 +18,17 @@ class MenuItem extends Model
         'link', 
         'page_id', 
         'parent_id',
+        'menu_type',
+        'publish',
     ];
 
     /**
      * Get all menu items, in a hierarchical collection.
      * Only supports 2 levels of indentation.
      */
-    public static function getTree()
+    public static function getTree($menu_type = 'top')
     {
-        $menu = self::orderBy('lft')->get();
+        $menu = self::orderBy('lft')->where('menu_type', $menu_type)->where('publish', 1)->get();
 
         if ($menu->count()) {
             foreach ($menu as $k => $menu_item) {
@@ -60,7 +62,7 @@ class MenuItem extends Model
 
     public function page()
     {
-        return $this->belongsTo('App\Models\Page', 'page_id');
+        return $this->belongsTo('Backpack\PageManager\app\Models\Page', 'page_id');
     }
 
     public function url()
@@ -72,6 +74,10 @@ class MenuItem extends Model
 
             case 'internal_link':
                 return is_null($this->link) ? '#' : url($this->link);
+                break;
+
+            case 'old_link':
+                return is_null($this->link) ? '#' : config('app.old_url') . '/' . $this->link;
                 break;
 
             default: //page_link
