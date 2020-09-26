@@ -64,6 +64,26 @@
                         </li>
                     </ul>
                 </div>
+                {{--
+                @foreach (App\Models\MenuItem::getTree('bottom'); as $item)
+                    <div class="footer__list-wrap">
+                        <p class="footer__subtitle" href="/about">
+                            <a href="{{ $item->url() }}">{{ $item->name }}</a>
+                        </p>
+                        @if ($item->children->count() > 0)
+                            <ul class="footer__list">
+                                @foreach ($item->children as $child)
+                                    <li class="footer__list-item">
+                                        <a href="{{ $child->url() }}" class="footer__link">
+                                            {{ $child->name }}
+                                        </a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        @endif
+                    </div>
+                @endforeach
+                --}}
                 <a href="{{ config('app.old_url') }}/job/" class="footer__vacancies">Вакансии</a>
             </div>
             <div class="footer__mid">

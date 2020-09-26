@@ -19,10 +19,6 @@ class MenuItemCrudController extends CrudController
     use DeleteOperation;
     use ReorderOperation;
 
-    protected $menu_type_options = [
-        'top' => 'верхнее',
-        'bottom' => 'нижнее',
-    ];
 
     public function setup()
     {
@@ -53,7 +49,7 @@ class MenuItemCrudController extends CrudController
             'label' => 'Вид меню',
             'type' => 'select_from_array',
             'name' => 'menu_type',
-            'options' => $this->menu_type_options,
+            'options' => MenuItem::$menu_types,
         ]);
 
         CRUD::addColumn([
@@ -75,7 +71,7 @@ class MenuItemCrudController extends CrudController
             'type' => 'select',
             'name' => 'parent_id',
             'entity' => 'parent',
-            'attribute' => 'name',
+            'attribute' => 'name_with_type',
             'model' => MenuItem::class,
         ]);
 
@@ -92,7 +88,7 @@ class MenuItemCrudController extends CrudController
             'label' => 'Вид меню',
             'type' => 'select_from_array',
             'name' => 'menu_type',
-            'options' => $this->menu_type_options,
+            'options' => MenuItem::$menu_types,
         ]);
 
 

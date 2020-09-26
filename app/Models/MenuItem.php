@@ -9,6 +9,11 @@ class MenuItem extends Model
 {
     use CrudTrait;
 
+    public static $menu_types = [
+        'top' => 'верхнее',
+        'bottom' => 'нижнее',
+    ];
+
     public $blockcrud_ignore = true;
     
     protected $table = 'menu_items';
@@ -28,7 +33,7 @@ class MenuItem extends Model
      */
     public static function getTree($menu_type = 'top')
     {
-        $menu = self::orderBy('lft')->where('menu_type', $menu_type)->where('publish', 1)->get();
+        $menu = self::where('menu_type', $menu_type)->where('publish', 1)->orderBy('lft')->get();
 
         if ($menu->count()) {
             foreach ($menu as $k => $menu_item) {
@@ -86,5 +91,24 @@ class MenuItem extends Model
                 }
                 break;
         }
+    }
+
+    /*
+    |--------------------------------------------------------------------------
+    | MUTATORS
+    |--------------------------------------------------------------------------
+    */
+
+    public function getMenuTypeRusAttribute() {
+        if(isset(self::$menu_types[$this->menu_type])) {
+            return self::$menu_types[$this->menu_type];
+        }
+
+        return $this->menu_type;
+    }
+
+    public function getNameWithTypeAttribute()
+    {
+        return $this->name . ' (' . $this->menu_type_rus . ')';
     }
 }
