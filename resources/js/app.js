@@ -1,7 +1,8 @@
 require('./bootstrap');
 window.$ = window.jQuery = require('jquery');
 
-import Glide from '@glidejs/glide'
+import Cookies from 'js-cookie';
+import Glide from '@glidejs/glide';
 
 class Finist {
     constructor() {
@@ -41,6 +42,11 @@ class Finist {
         var th = this;
 
         this.city = 'moscow';
+        if(Cookies.get('city')) {
+            this.city = Cookies.get('city');
+        } else {
+            this.openModal();
+        }
         this.showCity();
 
         //  Выбор города
@@ -79,8 +85,6 @@ class Finist {
         //         item.nextElementSibling.classList.toggle('m-hidden');
         //     });
         // });
-        
-        this.openModal();
     }
 
     openModal() {
@@ -108,6 +112,7 @@ class Finist {
         var form = $(evt.target.closest('form'));
 
         this.city = form.find('[name=city]:checked').val();
+        Cookies.set('city', this.city);
 
         this.showCity();
         this.closeModal();

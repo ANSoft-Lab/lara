@@ -129,8 +129,8 @@
         <a class="header__location js-choose-city js-city-show city_samara hidden">Самара</a>
         <a class="header__location js-choose-city js-city-show city_krasnodar hidden">Краснодар</a>
         <a class="header__location__city-option js-choose-city">Выбрать город</a>
-        <a href="" class="header__discount">Экономьте на страховке до 50%</a>
-        <a href="" class="header__insurance">
+        <div class="header__discount">Экономьте на страховке до 50%</div>
+        <a href="{{ config('app.old_url') }}/chto-delat-pri-nastuplenii-strakhovogo-sluchaya/" class="header__insurance">
             Страховой случай
             <div class="offer-links__arrow"></div>
         </a>
