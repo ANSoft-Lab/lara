@@ -8,6 +8,7 @@
                 <span class="header-burger__item"></span>
                 <span class="header-burger__item"></span>
             </div>
+            {{--
             <nav class="header__nav header-menu__wrap js-mobile-menu">
                 <ul class="header-menu">
                     <li class="header-menu__item">
@@ -117,7 +118,7 @@
                     </div>
                 </div>
             </nav>
-            {{--
+            --}}
             <nav class="header__nav header-menu__wrap js-mobile-menu">
                 <ul class="header-menu">
                     @foreach (App\Models\MenuItem::getTree(); as $item)
@@ -180,7 +181,6 @@
                     </div>
                 </div>
             </nav>
-            --}}
         </div>
     </div>
     <div class="header-location">

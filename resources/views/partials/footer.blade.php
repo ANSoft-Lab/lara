@@ -5,6 +5,7 @@
                 <a href="/" class="footer__logo">
                     <img src="/icon/logo.svg" alt="finist">
                 </a>
+                {{--
                 <div class="footer__list-wrap">
                     <p class="footer__subtitle" href="/about">
                         <a href="/about">О нас</a>
@@ -64,7 +65,7 @@
                         </li>
                     </ul>
                 </div>
-                {{--
+                --}}
                 @foreach (App\Models\MenuItem::getTree('bottom'); as $item)
                     <div class="footer__list-wrap">
                         <p class="footer__subtitle" href="/about">
@@ -83,7 +84,6 @@
                         @endif
                     </div>
                 @endforeach
-                --}}
                 <a href="{{ config('app.old_url') }}/job/" class="footer__vacancies">Вакансии</a>
             </div>
             <div class="footer__mid">
