@@ -15,7 +15,7 @@ class User extends Authenticatable
     public $blockcrud_ignore = true;
 
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'role',
     ];
 
     /**
