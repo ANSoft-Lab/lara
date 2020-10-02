@@ -7,7 +7,7 @@
                 </a>
                 <div class="footer__list-wrap">
                     <p class="footer__subtitle" href="/about">
-                        <a href="/about">О нас</a>
+                        <a href="{{ config('app.old_url') }}/finist/company/">О нас</a>
                     </p>
                     <ul class="footer__list">
                         <li class="footer__list-item">
@@ -31,7 +31,7 @@
                             </a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="{{ config('app.old_url') }}/strahovie_kompanii_vibor_kasko/" class="footer__link">
+                            <a href="{{ config('app.old_url') }}/korporativnoe_strahovanie/" class="footer__link">
                                 Партнеры
                             </a>
                         </li>
@@ -115,21 +115,21 @@
                         </p>
                     </li>
                 </ul>
-                <a href="" class="footer__callback">Обратный звонок</a>
+                <a href="{{ config('app.old_url') }}/kontakty" class="footer__callback">Обратный звонок</a>
             </div>
         </div>
         <div class="footer__bottom">
             <div class="footer__btn-wrap">
-                <a href="" class="footer__questions">Остались вопросы?!</a>
+                <a href="{{ config('app.old_url') }}/kontakty/ask_question/" class="footer__questions">Остались вопросы?!</a>
             </div>
             <ul class="footer__socials">
                 <li class="footer__social-icon">
-                    <a href="" class="footer__social-link">
+                    <a href="https://www.facebook.com/finist.ru" class="footer__social-link">
                         <img src="/icon/socials/fb.svg" alt="facebook">
                     </a>
                 </li>
                 <li class="footer__social-icon">
-                    <a href="" class="footer__social-link">
+                    <a href="https://vk.com/gkfinist" class="footer__social-link">
                         <img src="/icon/socials/vk.svg" alt="vkontakte">
                     </a>
                 </li>
