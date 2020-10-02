@@ -21,7 +21,7 @@
                             </a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="/team" class="footer__link">
+                            <a href="{{ config('app.old_url') }}/finist/company/nashi_sotrudniki/" class="footer__link">
                                 Коллектив
                             </a>
                         </li>
@@ -48,7 +48,7 @@
                             </a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="/faq" class="footer__link">
+                            <a href="{{ config('app.old_url') }}/kontakty/ask_question/" class="footer__link">
                                 Вопросы и ответы
                             </a>
                         </li>

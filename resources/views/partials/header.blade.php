@@ -16,7 +16,7 @@
                         </a>
                         <ul class="inner-list js-inner-list m-hidden">
                             <li class="inner-list__item">
-                                <a href="/kis" class="header-menu__link">
+                                <a href="https://ipoteka-strahovka.ru/" class="header-menu__link">
                                     Комплексное ипотечное страхование
                                 </a>
                             </li>
