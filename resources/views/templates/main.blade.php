@@ -38,7 +38,7 @@
                     Партнёрам для&nbsp;сотрудничества
                 </h2>
                 <div class="cooperation__btn-wrap">
-                    <a href='' class="cooperation__link">Подробнее</a>
+                    <a href="{{ config('app.old_url') }}/korporativnoe_strahovanie" class="cooperation__link">Подробнее</a>
                 </div>
             </div>
             <div class="cooperation__decoration"></div>

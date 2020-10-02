@@ -5,67 +5,6 @@
                 <a href="/" class="footer__logo">
                     <img src="/icon/logo.svg" alt="finist">
                 </a>
-                {{--
-                <div class="footer__list-wrap">
-                    <p class="footer__subtitle" href="/about">
-                        <a href="/about">О нас</a>
-                    </p>
-                    <ul class="footer__list">
-                        <li class="footer__list-item">
-                            <a href="{{ config('app.old_url') }}/group/" class="footer__link">
-                                Группа компаний Финист
-                            </a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a href="{{ config('app.old_url') }}/rukovodstvo-kompanii/" class="footer__link">
-                                Руководство компании
-                            </a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a href="/team" class="footer__link">
-                                Коллектив
-                            </a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a href="{{ config('app.old_url') }}/cooperation/" class="footer__link">
-                                Сотрудничество
-                            </a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a href="{{ config('app.old_url') }}/strahovie_kompanii_vibor_kasko/" class="footer__link">
-                                Партнеры
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__list-wrap">
-                    <p class="footer__subtitle">
-                        Дополнительно
-                    </p>
-                    <ul class="footer__list">
-                        <li class="footer__list-item">
-                            <a href="{{ config('app.old_url') }}/kontakty/otzyvy/" class="footer__link">
-                                Отзывы
-                            </a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a href="/faq" class="footer__link">
-                                Вопросы и ответы
-                            </a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a href="{{ config('app.old_url') }}/chto-delat-pri-nastuplenii-strakhovogo-sluchaya/" class="footer__link">
-                                Страховой случай
-                            </a>
-                        </li>
-                        <li class="footer__list-item">
-                            <a href="{{ config('app.old_url') }}/rekvizity/" class="footer__link">
-                                Реквизиты
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                --}}
                 @foreach (App\Models\MenuItem::getTree('bottom'); as $item)
                     <div class="footer__list-wrap">
                         <p class="footer__subtitle" href="/about">
@@ -135,21 +74,21 @@
                         </p>
                     </li>
                 </ul>
-                <a href="" class="footer__callback">Обратный звонок</a>
+                <a href="{{ config('app.old_url') }}/kontakty" class="footer__callback">Обратный звонок</a>
             </div>
         </div>
         <div class="footer__bottom">
             <div class="footer__btn-wrap">
-                <a href="" class="footer__questions">Остались вопросы?!</a>
+                <a href="{{ config('app.old_url') }}/kontakty/ask_question/" class="footer__questions">Остались вопросы?!</a>
             </div>
             <ul class="footer__socials">
                 <li class="footer__social-icon">
-                    <a href="" class="footer__social-link">
+                    <a href="https://www.facebook.com/finist.ru" class="footer__social-link">
                         <img src="/icon/socials/fb.svg" alt="facebook">
                     </a>
                 </li>
                 <li class="footer__social-icon">
-                    <a href="" class="footer__social-link">
+                    <a href="https://vk.com/gkfinist" class="footer__social-link">
                         <img src="/icon/socials/vk.svg" alt="vkontakte">
                     </a>
                 </li>

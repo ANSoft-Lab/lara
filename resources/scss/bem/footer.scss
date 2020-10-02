@@ -219,6 +219,7 @@
         &__vacancies {
             position: absolute;
             margin-top: 95px;
+            z-index: 10;
         }
 
         &__link {
@@ -246,7 +247,7 @@
         &__callback {
             position: absolute;
             margin-bottom: 20px;
-            left: 220px;
+            //left: 220px;
             bottom: 0;
         }
 

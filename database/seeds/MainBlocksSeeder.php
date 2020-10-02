@@ -335,7 +335,7 @@ class MainBlocksSeeder extends Seeder
                                     <div class="js-map-slider contacts__slider glide__track" data-glide-el="track">
                                         <div class="contacts__wrapper glide__slides">
                                             <div class="contacts__map js-map glide__slide">
-                                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A66dc4eb5441aedcc29dfbd100faf3edc5a73001ca0ca7ed7f2149025acdfaadc&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false"></script>
+                                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0b75fc5d80c44e1955ed9540feb13208dee817641b958fc862006325c2cc8644&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false;baloon=true;"></script>
                                                 <div class="contacts__block js-contacts-block">
                                                     <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
                                                     <p class="contacts__item">
@@ -353,7 +353,7 @@ class MainBlocksSeeder extends Seeder
                                                 </div>
                                             </div>
                                             <div class="contacts__map js-map glide__slide">
-                                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A564f97283846ae46b9c2010fdf2f03c6a63d356a9b9fb928a55d6089abd205c4&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false"></script>
+                                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A239c24f62b0f7f593773890c9cfc1af5d5556169f03455213e1b5d9c20596953&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false"></script>
                                                 <div class="contacts__block js-contacts-block">
                                                     <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
                                                     <p class="contacts__item">
@@ -369,7 +369,7 @@ class MainBlocksSeeder extends Seeder
                                                 </div>
                                             </div>
                                             <div class="contacts__map js-map glide__slide">
-                                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2307135fb93f25c4b90bfd27f9acb1bd35de89a736627d8b5efd14fb6876b943&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false"></script>
+                                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A78bfdc45b898e27e3d293878990b3bc6e88e86c6c7c85605f758869a5f7253d4&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false"></script>
                                                 <div class="contacts__block js-contacts-block">
                                                     <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
                                                     <p class="contacts__item">
@@ -385,7 +385,7 @@ class MainBlocksSeeder extends Seeder
                                                 </div>
                                             </div>
                                             <div class="contacts__map js-map glide__slide">
-                                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb0c6c13d0fd9fe8d7a0b9ff21a31b186c98c4219e10567b0027c706d72ff3b8&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false"></script>
+                                                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac9d10d3fe4225e5b31f6afd5a09a46aec8c68d8af738b81aa0516bee60923a9e&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false"></script>
                                                 <div class="contacts__block js-contacts-block">
                                                     <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
                                                     <p class="contacts__item">
