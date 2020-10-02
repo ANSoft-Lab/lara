@@ -127,7 +127,6 @@
 
     &__callback {
         display: block;
-        text-align: right;
         margin: 20px 0 10px;
         font-weight: 300;
         font-size: 16px;
@@ -140,7 +139,6 @@
     &__vacancies {
         position: relative;
         display: flex;
-        justify-content: flex-end;
         align-items: center;
         font-size: 15px;
         line-height: 3.3;
@@ -479,6 +477,19 @@
                 border-radius: 0 0 15px;
             }
         }
+
+        
+        &-callback {
+            a {
+                text-align: right;
+            }
+        }
+
+        &-contacts {
+            &__vacancies {
+                justify-content: flex-end;
+            }
+        }
     }
 
     .header-location {
@@ -563,9 +574,18 @@
         &__location {
             &__city-option {
                 position: absolute;
-                left: 115px;
+                left: auto;
+                right: 15px;
                 top: 90px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 768px) {
+    .header {
+        &-callback {
+            margin-left: auto;
         }
     }
 }
