@@ -36,25 +36,36 @@ class Finist {
             this.showSectionsBtn.addEventListener('click', this.showSections.bind(this));
         }
 
-        this.cityModalBtn = document.querySelector('.js-choose-city');
-        this.cityModal = document.querySelector('.js-overlay');
+        this.cityModal = document.querySelector('#choose-city');
 
         var th = this;
 
         this.city = 'moscow';
+
         if(Cookies.get('city')) {
             this.city = Cookies.get('city');
         } else {
             this.openModal();
         }
+        
+        if(th.city && this.cityModal) {
+            $(th.cityModal).find('[name=city]').each(function() {
+                $(this).prop('checked', false);
+
+                if($(this).val() == th.city) {
+                    $(this).prop('checked', true);
+                }
+            });
+        }
+
         this.showCity();
 
         //  Выбор города
-        $(document).on('click', '.js-choose-city', th.openModal.bind(th));
+        $(document).on('click', '.js-open-modal', th.openModal.bind(th));
         $(document).on('click', '.js-modal-close', th.closeModal.bind(th));
         $(document).on('click', '.js_set_city', th.setCity.bind(th));
 
-        $(this.cityModal).on('click', function(e) {
+        $('.js-overlay').on('click', function(e) {
             if($(e.target).closest('.modal').length < 1) {
                 th.closeModal();
             }
@@ -87,25 +98,17 @@ class Finist {
         // });
     }
 
-    openModal() {
-        var th = this;
+    openModal(e) {
+        var btn = $(e.target.closest('.js-open-modal')),
+            modal = $('#' + btn.attr('data-modal'));
 
-        th.cityModal.classList.remove('m-hidden');
-        if(th.city) {
-            $(th.cityModal).find('[name=city]').each(function() {
-                $(this).prop('checked', false);
-
-                if($(this).val() == th.city) {
-                    $(this).prop('checked', true);
-                }
-            });
-        }
+        modal.removeClass('m-hidden');
 
         return false;
     }
 
     closeModal() {
-        this.cityModal.classList.add('m-hidden');
+        $('.js-overlay').addClass('m-hidden');
     }
 
     setCity(evt) {

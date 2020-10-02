@@ -12,18 +12,21 @@
     <a class="nav-link" href="{{ backpack_url('user') }}"><i class="nav-icon la la-users"></i> {{ trans('backpack::base.menu.users') }}</a>
 </li>
 
-<li class='nav-item'>
-    <a class='nav-link' href='{{ backpack_url('blocks') }}'><i class='nav-icon la la-cube'></i> <span>{{ trans('backpack::base.menu.blocks') }}</span></a>
+<li class="nav-item">
+    <a class="nav-link" href="{{ backpack_url('blocks') }}"><i class="nav-icon la la-cube"></i> <span>{{ trans('backpack::base.menu.blocks') }}</span></a>
 </li>
-<li class='nav-item'>
-    <a class='nav-link' href='{{ backpack_url('document') }}'><i class='nav-icon la la-file'></i> {{ trans('backpack::base.menu.documents') }}</a>
+<li class="nav-item">
+    <a class="nav-link" href="{{ backpack_url('document') }}"><i class="nav-icon la la-file"></i> {{ trans('backpack::base.menu.documents') }}</a>
 </li>
-<li class='nav-item'>
-    <a class='nav-link' href='{{ backpack_url('city') }}'><i class='nav-icon la la-globe'></i> {{ trans('backpack::base.menu.cities') }}</a>
+<li class="nav-item">
+    <a class="nav-link" href="{{ backpack_url('city') }}"><i class="nav-icon la la-globe"></i> {{ trans('backpack::base.menu.cities') }}</a>
 </li>
-<li class='nav-item'>
-    <a class='nav-link' href='{{ backpack_url('department') }}'><i class='nav-icon la la-address-book'></i> {{ trans('backpack::base.menu.departments') }}</a>
+<li class="nav-item">
+    <a class="nav-link" href="{{ backpack_url('department') }}"><i class="nav-icon la la-address-book"></i> {{ trans('backpack::base.menu.departments') }}</a>
 </li>
-<li class='nav-item'>
-    <a class='nav-link' href='{{ backpack_url('employee') }}'><i class='nav-icon la la-user-tie'></i> {{ trans('backpack::base.menu.employees') }}</a>
+<li class="nav-item">
+    <a class="nav-link" href="{{ backpack_url('employee') }}"><i class="nav-icon la la-user-tie"></i> {{ trans('backpack::base.menu.employees') }}</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="{{ backpack_url('feedback') }}"><i class="nav-icon la la-phone"></i> {{ trans('backpack::base.menu.feedback') }}</a>
 </li>

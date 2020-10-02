@@ -30,6 +30,21 @@ class PagesSeeder extends Seeder
                     'created_at' => $date,
                     'updated_at' => $date,
                 ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Комплексное ипотечное страхование',
+                    'title' => 'Комплексное ипотечное страхование',
+                    'slug' => 'kis',
+                    'content' => "
+                        @customblock('plus-minus')
+                        @customblock('kis-desc')
+                        @customblock('kis-insurance')
+                        @customblock('kis-best-price')
+                        @customblock('kis-faq')
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
             ];
 
             foreach($pages as $page) {

@@ -76,6 +76,7 @@ return [
         'cities' => 'Регионы',
         'departments' => 'Отделы',
         'employees' => 'Сотрудники',
+        'feedback' => 'Заявки',
     ],
 
     'menu_model' => [

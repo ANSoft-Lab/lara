@@ -90,43 +90,43 @@
                 <ul class="footer__phone-list">
                     <li class="footer__phone-item js-city-show city_moscow">
                         <a href="tel:+74956262555" class="footer__tel">+7 495 62-62-555</a>
-                        <p class="footer__city js-choose-city">
+                        <p class="footer__city js-open-modal" data-modal="choose-city">
                             Москва
                         </p>
                     </li>
                     <li class="footer__phone-item js-city-show city_spb hidden">
                         <a href="tel:+78124494325" class="footer__tel">+7 812 449-43-25</a>
-                        <p class="footer__city js-choose-city">
+                        <p class="footer__city js-open-modal" data-modal="choose-city">
                             Санкт-Петербург
                         </p>
                     </li>
                     <li class="footer__phone-item js-city-show city_nn hidden">
                         <a href="tel:+78312809697" class="footer__tel">+7 831 280-96-97</a>
-                        <p class="footer__city js-choose-city">
+                        <p class="footer__city js-open-modal" data-modal="choose-city">
                             Нижний Новгород
                         </p>
                     </li>
                     <li class="footer__phone-item js-city-show city_ryazan hidden">
                         <a href="tel:+74912392016" class="footer__tel">+7 (4912) 392-016</a>
-                        <p class="footer__city js-choose-city">
+                        <p class="footer__city js-open-modal" data-modal="choose-city">
                             Рязань
                         </p>
                     </li>
                     <li class="footer__phone-item js-city-show city_voronezh hidden">
                         <a href="tel:+74732067297" class="footer__tel">+7 (473) 206-72-97</a>
-                        <p class="footer__city js-choose-city">Воронеж</p>
+                        <p class="footer__city js-open-modal" data-modal="choose-city">Воронеж</p>
                     </li>
                     <li class="footer__phone-item js-city-show city_kazan hidden">
                         <a href="tel:+78435671911" class="footer__tel">+7 (843) 567-19-11</a>
-                        <p class="footer__city js-choose-city">Казань</p>
+                        <p class="footer__city js-open-modal" data-modal="choose-city">Казань</p>
                     </li>
                     <li class="footer__phone-item js-city-show city_samara hidden">
                         <a href="tel:+7463790582" class="footer__tel">+7 (463) 790-582</a>
-                        <p class="footer__city js-choose-city">Самара</p>
+                        <p class="footer__city js-open-modal" data-modal="choose-city">Самара</p>
                     </li>
                     <li class="footer__phone-item js-city-show city_krasnodar hidden">
                         <a href="tel:+7612982446" class="footer__tel">+7 (612) 982-446</a>
-                        <p class="footer__city js-choose-city">Краснодар</p>
+                        <p class="footer__city js-open-modal" data-modal="choose-city">Краснодар</p>
                     </li>
                     <li class="footer__phone-item">
                         <a href="tel:+74956602165" class="footer__tel">+7 495 660-21-65</a>

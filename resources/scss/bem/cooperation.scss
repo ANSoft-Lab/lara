@@ -26,7 +26,10 @@
         color: #272727;
         letter-spacing: 0.03em;
         background-color: #F2CB4D;
+        border: none;
         border-radius: 500px;
+        cursor: pointer;
+        outline: none !important;
     }
 
     &__outline {
