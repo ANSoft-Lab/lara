@@ -74,12 +74,13 @@
                         </p>
                     </li>
                 </ul>
-                <a href="{{ config('app.old_url') }}/kontakty" class="footer__callback">Обратный звонок</a>
+                {{--<a href="{{ config('app.old_url') }}/kontakty" class="footer__callback">Обратный звонок</a>--}}
+                @include('blockcrud.modals.feedback', ['modal_title' => 'Обратный звонок', 'btn_class' => 'footer__callback'])
             </div>
         </div>
         <div class="footer__bottom">
             <div class="footer__btn-wrap">
-                <a href="{{ config('app.old_url') }}/kontakty/ask_question/" class="footer__questions">Остались вопросы?!</a>
+                @include('blockcrud.modals.feedback', ['modal_title' => 'Остались вопросы?!'])
             </div>
             <ul class="footer__socials">
                 <li class="footer__social-icon">

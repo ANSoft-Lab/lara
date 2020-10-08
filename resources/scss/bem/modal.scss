@@ -107,9 +107,8 @@
         position: absolute;
         z-index: -1;
         opacity: 0;
-
         
-        +label::after {
+        +label::before {
             content: '';
             display: inline-block;
             width: 18px;

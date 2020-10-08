@@ -21,12 +21,12 @@ class PagesSeeder extends Seeder
                     'title' => 'Главная',
                     'slug' => '/',
                     'content' => "@customblock('offer_links-html')
-                                @customblock('cooperation-html')
+                                @customblock('cooperation')
                                 @customblock('additional_ins-html')
                                 @customblock('reasons-html')
                                 @customblock('all_sorts-html')
                                 @customblock('partners_slider-html')
-                                @customblock('contacts_map-html')",
+                                @customblock('contacts_map')",
                     'created_at' => $date,
                     'updated_at' => $date,
                 ],
@@ -41,6 +41,13 @@ class PagesSeeder extends Seeder
                         @customblock('kis-insurance')
                         @customblock('kis-best-price')
                         @customblock('kis-faq')
+                        <section class=\"about\">
+                            <h2 class=\"about__title about__title_underline\">Документация</h2>
+                        </section>
+
+                        @customblock('documents')
+
+                        <br><br><br><br>
                     ",
                     'created_at' => $date,
                     'updated_at' => $date,

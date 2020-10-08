@@ -1,9 +1,9 @@
-<button class="cooperation__link js-open-modal" data-modal="feedback">Оставить заявку</button>
-<div class="modal__overlay js-overlay m-hidden" id="feedback">
+<button class="{{ $btn_class ?? 'cooperation__link' }} js-open-modal" data-modal="feedback-{{ $rand_str = Str::random(20) }}">{{ $modal_title ?? 'Оставить заявку' }}</button>
+<div class="modal__overlay js-overlay m-hidden" id="feedback-{{ $rand_str }}">
     <div class="modal">
         <div class="modal__close js-modal-close"></div>
         <h2 class="modal__title">
-            Оставить заявку
+            {{ $modal_title ?? 'Оставить заявку' }}
         </h2>
         <div class="form-area">
             <form action="{{ route('feedback_send') }}" class="modal__form">

@@ -27,10 +27,10 @@ class FeedbackStore extends FormRequest
         return [
             'name' => 'required|min:2',
             'phone' => [
-                'min:2',
                 Rule::requiredIf(function () { // Если в поле required указано поле phone
                     return in_array('phone', request('required'));
                 }),
+                'min:2',
             ],
         ];
     }
