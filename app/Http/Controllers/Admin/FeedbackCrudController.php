@@ -35,7 +35,7 @@ class FeedbackCrudController extends CrudController
         CRUD::setModel(Feedback::class);
         CRUD::setRoute(config('backpack.base.route_prefix') . '/feedback');
         CRUD::setEntityNameStrings('feedback', 'feedback');
-        CRUD::denyAccess(['create']);
+        CRUD::denyAccess(['create', 'update']);
     }
 
     /**
@@ -46,13 +46,50 @@ class FeedbackCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-        CRUD::setFromDb(); // columns
+        CRUD::addColumn([
+            'name' => 'name',
+            'label' => trans('backpack::base.feedback.name'),
+        ]);
+        CRUD::addColumn([
+            'name' => 'phone',
+            'label' => trans('backpack::base.feedback.phone'),
+        ]);
+        CRUD::addColumn([
+            'name' => 'created_at',
+            'label' => trans('backpack::base.feedback.created_at'),
+        ]);
+    }
 
-        /**
-         * Columns can be defined using the fluent syntax or array syntax:
-         * - CRUD::column('price')->type('number');
-         * - CRUD::addColumn(['name' => 'price', 'type' => 'number']); 
-         */
+    protected function setupShowOperation()
+    {
+        CRUD::set('show.setFromDb', false);
+        
+        CRUD::addColumn([
+            'name' => 'name',
+            'label' => trans('backpack::base.feedback.name'),
+        ]);
+        CRUD::addColumn([
+            'name' => 'phone',
+            'label' => trans('backpack::base.feedback.phone'),
+        ]);
+        CRUD::addColumn([
+            'name' => 'created_at',
+            'label' => trans('backpack::base.feedback.created_at'),
+        ]);
+        CRUD::addColumn([
+            'name' => 'status',
+            'label' => trans('backpack::base.feedback.status'),
+        ]);
+        CRUD::addColumn([
+            'name' => 'type',
+            'label' => trans('backpack::base.feedback.type'),
+        ]);
+
+        //Temp hide columns
+        CRUD::removeColumn('type');
+        CRUD::removeColumn('status');
+        CRUD::removeColumn('email');
+        CRUD::removeColumn('message');
     }
 
     /**
@@ -65,13 +102,26 @@ class FeedbackCrudController extends CrudController
     {
         CRUD::setValidation(FeedbackRequest::class);
 
-        CRUD::setFromDb(); // fields
-
-        /**
-         * Fields can be defined using the fluent syntax or array syntax:
-         * - CRUD::field('price')->type('number');
-         * - CRUD::addField(['name' => 'price', 'type' => 'number'])); 
-         */
+        CRUD::addField([
+            'name' => 'name',
+            'label' => trans('backpack::base.feedback.name'),
+        ]);
+        CRUD::addField([
+            'name' => 'phone',
+            'label' => trans('backpack::base.feedback.phone'),
+        ]);
+        CRUD::addField([
+            'name' => 'status',
+            'label' => trans('backpack::base.feedback.status'),
+        ]);
+        CRUD::addField([
+            'name' => 'type',
+            'label' => trans('backpack::base.feedback.type'),
+        ]);
+        CRUD::addField([
+            'name' => 'created_at',
+            'label' => trans('backpack::base.feedback.created_at'),
+        ]);
     }
 
     /**

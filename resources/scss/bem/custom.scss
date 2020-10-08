@@ -141,3 +141,10 @@
         align-content: flex-end;
     }
 }
+
+.errors-area {
+    .error-text {
+        color: red;
+        font-style: italic;
+    }
+}

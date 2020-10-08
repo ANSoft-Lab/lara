@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('templates.main');
-// });
+Route::post('feedback_send', 'FeedbackController@store')->name('feedback_send');
 Route::get('faq', function () {
     return view('templates.faq');
 })->name('faq');
@@ -35,3 +33,7 @@ Route::group([
 
 Route::get('{page}/{subs?}', ['uses' => 'PageController@index'])
     ->where(['page' => '^(((?=(?!adminpanel))(?=(?!\/)).))*$', 'subs' => '.*']);
+
+Route::get('/', function () {
+    return view('templates.main');
+});

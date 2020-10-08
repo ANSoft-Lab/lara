@@ -5,16 +5,22 @@
         <h2 class="modal__title">
             Оставить заявку
         </h2>
-        <form action="" class="modal__form">
-            <div class="modal__group">
-                <label for="name" class="modal__label">Ваше имя</label>
-                <input id="name" type="text" name="name" class="modal__input">
-            </div>
-            <div class="modal__group">
-                <label for="phone" class="modal__label">Телефон</label>
-                <input id="phone" type="text" name="phone" class="modal__input">
-            </div>
-            <button type="button" class="modal__btn js_send">Отправить</button>
-        </form>
+        <div class="form-area">
+            <form action="{{ route('feedback_send') }}" class="modal__form">
+                <div class="modal__group">
+                    <label for="name" class="modal__label">Ваше имя*</label>
+                    <input id="name" type="text" name="name" class="modal__input" required>
+                </div>
+                <div class="modal__group">
+                    <label for="phone" class="modal__label">Телефон*</label>
+                    <input id="phone" type="text" name="phone" class="modal__input" required>
+                    <input type="hidden" name="required[]" value="phone">
+                </div>
+                <div class="errors-area">
+
+                </div>
+                <button type="button" class="modal__btn js_send mt-3">Отправить</button>
+            </form>
+        </div>
     </div>
 </div>

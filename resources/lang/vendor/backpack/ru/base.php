@@ -110,4 +110,12 @@ return [
         'photo' => 'Фото',
         'show_order' => 'Порядок',
     ],
+
+    'feedback' => [
+        'name' => 'Имя',
+        'phone' => 'Телефон',
+        'created_at' => 'Дата',
+        'type' => 'Тип',
+        'status' => 'Статус',
+    ],
 ];

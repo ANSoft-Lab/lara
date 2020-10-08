@@ -64,6 +64,7 @@ class Finist {
         $(document).on('click', '.js-open-modal', th.openModal.bind(th));
         $(document).on('click', '.js-modal-close', th.closeModal.bind(th));
         $(document).on('click', '.js_set_city', th.setCity.bind(th));
+        $(document).on('click', '.js_send', th.sendForm.bind(th));
 
         $('.js-overlay').on('click', function(e) {
             if($(e.target).closest('.modal').length < 1) {
@@ -103,6 +104,67 @@ class Finist {
             modal = $('#' + btn.attr('data-modal'));
 
         modal.removeClass('m-hidden');
+
+        return false;
+    }
+
+    sendRequest(form) {
+        var formData = form.serialize(),
+            url = form.attr('action');
+
+        if(url) {
+            $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                type: 'POST',
+                url: url,
+                data: formData,
+                beforeSend: function() {
+                    console.log('before');
+                },
+                success: function (result) {
+                    var errorsArea = form.find('.errors-area');
+                    errorsArea.html(result);
+
+                    if(result.errors) {
+                        $.each(result.errors, function (key, value) {
+                            let newError = $('<div class="error-text mt-3">' + value + '</div>');
+            
+                            errorsArea.append(newError);
+                        });
+                    } else if(result.message) {
+                        $(form.closest('.form-area')).html(result.message);
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    if( jqXHR.status === 422 ) {
+                        var errorsObj = $.parseJSON(jqXHR.responseText),
+                            errorsArea = form.find('.errors-area');
+
+                        $.each(errorsObj.errors, function (key, value) {
+                            let newError = $('<div class="error-text mt-3">' + value + '</div>');
+            
+                            errorsArea.append(newError);
+                        });
+                    } else {
+                        console.log(jqXHR);
+                        console.log(textStatus);
+                        console.log(errorThrown);
+                    }
+                }
+            });
+        }
+    }
+
+    sendForm(e) {
+        var form = $(e.target.closest('form'));
+
+        if(form) {
+            form.find('.errors-area').html('');
+            this.sendRequest(form);
+        }
 
         return false;
     }
