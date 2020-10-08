@@ -1,6 +1,5 @@
 <section class="contacts glide">
     <div class="contacts__scroll-wrap">
-        <!-- <ul class="contacts__tablist js-pagination"> -->
         <ul class="contacts__tablist js-tabs glide__bullets" data-glide-el="controls[nav]">
             <li data-city="msk" class="contacts__tab glide__bullet m-active" data-glide-dir="=0">
                 москва, центральный&nbsp;офис

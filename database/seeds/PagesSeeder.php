@@ -20,12 +20,12 @@ class PagesSeeder extends Seeder
                     'name' => 'Главная',
                     'title' => 'Главная',
                     'slug' => '/',
-                    'content' => "@customblock('offer_links-html')
+                    'content' => "@customblock('offer_links')
                                 @customblock('cooperation')
-                                @customblock('additional_ins-html')
-                                @customblock('reasons-html')
-                                @customblock('all_sorts-html')
-                                @customblock('partners_slider-html')
+                                @customblock('additional_ins')
+                                @customblock('reasons')
+                                @customblock('all_sorts')
+                                @customblock('partners_slider')
                                 @customblock('contacts_map')",
                     'created_at' => $date,
                     'updated_at' => $date,

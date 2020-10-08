@@ -31,7 +31,6 @@
                 <li>Самостоятельное решение вопросов со страховой компанией при наступлении страхового случая.</li>
             </ul>
             <div class="cooperation__btn-wrap">
-                {{--<a href="#" class="cooperation__outline">Бесплатная консультация</a>--}}
                 @include('blockcrud.modals.feedback', ['modal_title' => 'Бесплатная консультация', 'btn_class' => 'cooperation__outline'])
             </div>
         </div>
