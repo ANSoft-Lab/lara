@@ -1,6 +1,10 @@
 <?php
 
+namespace Database\Seeders;
+
+use DB;
 use Illuminate\Database\Seeder;
+use Schema;
 
 class CitiesSeeder extends Seeder
 {
