@@ -31,7 +31,7 @@
                 <li>Самостоятельное решение вопросов со страховой компанией при наступлении страхового случая.</li>
             </ul>
             <div class="cooperation__btn-wrap">
-                @include('blockcrud.modals.feedback', ['modal_title' => 'Бесплатная консультация', 'btn_class' => 'cooperation__outline'])
+                @customblock('feedback', ['modal_title' => 'Бесплатная консультация', 'btn_class' => 'cooperation__outline'])
             </div>
         </div>
     </div>
