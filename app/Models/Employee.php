@@ -28,6 +28,12 @@ class Employee extends Model
     // protected $fillable = [];
     // protected $hidden = [];
     // protected $dates = [];
+    protected $fakeColumns = [
+        'blocks',
+    ];
+    protected $casts = [
+        'extra_info' => 'array',
+    ];
 
     /*
     |--------------------------------------------------------------------------
@@ -45,11 +51,22 @@ class Employee extends Model
         return $this->belongsTo('App\Models\Department');
     }
 
+    public function blocks()
+    {
+        return $this->belongsToMany('Backpack\BlockCRUD\app\Models\BlockItem', 'block_entity', 'block_id', 'entity_id')->using('App\HelpModels\BlockSync')->withTimestamps()->wherePivot('entity_class', 'App\Models\Employee');
+    }
+
     /*
     |--------------------------------------------------------------------------
     | SCOPES
     |--------------------------------------------------------------------------
     */
+    public function scopeBlock($query, $block)
+    {
+        return $query->whereHas('blocks', function($q) use($block) {
+            $q->where('slug', $block);
+        });
+    }
 
     /*
     |--------------------------------------------------------------------------

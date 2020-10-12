@@ -97,6 +97,20 @@ class EmployeeCrudController extends CrudController
             // 'aspect_ratio' => 1,
             //'upload' => true,
         ]);
+
+        CRUD::addField([
+            'label' => trans('backpack::base.employees.show_block'),
+            'hint' => 'если не указан фильтр, будут показаны все сотрудники',
+            'name' => 'blocks',
+            'type' => 'select2_multiple',
+            'entity' => 'blocks',
+            'pivot' => true,
+            'options'   => (function ($query) {
+                return $query->where('model', 'App\Models\Employee')->get();
+            }),
+            'attribute' => 'name',
+            'model'     => "Backpack\BlockCRUD\app\Models\BlockItem",
+        ]);
     }
 
     /**
