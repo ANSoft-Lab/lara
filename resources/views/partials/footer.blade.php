@@ -7,7 +7,7 @@
                 </a>
                 @foreach (App\Models\MenuItem::getTree('bottom'); as $item)
                     <div class="footer__list-wrap">
-                        <p class="footer__subtitle" href="/about">
+                        <p class="footer__subtitle">
                             <a href="{{ $item->url() }}">{{ $item->name }}</a>
                         </p>
                         @if ($item->children->count() > 0)
