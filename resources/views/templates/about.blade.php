@@ -223,7 +223,7 @@
                     но и надёжно охраняют конфиденциальную
                     информацию клиентов.
                 </p>
-                <a href="" class="about__info operation__link">
+                <a href="{{ url('/misc/FINIST_WM_08.pdf') }}" target="_blank" class="about__info operation__link">
                     Презентация о Страховом представительстве "Финист"
                 </a>
             </div>
