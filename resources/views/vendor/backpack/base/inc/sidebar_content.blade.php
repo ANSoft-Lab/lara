@@ -30,3 +30,6 @@
 <li class="nav-item">
     <a class="nav-link" href="{{ backpack_url('feedback') }}"><i class="nav-icon la la-phone"></i> {{ trans('backpack::base.menu.feedback') }}</a>
 </li>
+<li class='nav-item'>
+    <a class='nav-link' href='{{ backpack_url('faq') }}'><i class='nav-icon la la-question'></i> {{ trans('backpack::base.menu.faq') }}</a>
+</li>

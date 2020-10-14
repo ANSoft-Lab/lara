@@ -15,6 +15,8 @@ class Feedback extends Model
     |--------------------------------------------------------------------------
     */
 
+    public $blockcrud_ignore = true;
+
     protected $table = 'feedback';
     // protected $primaryKey = 'id';
     // public $timestamps = false;

@@ -4,11 +4,8 @@ namespace App\Models;
 
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Str;
-use Intervention\Image\ImageManagerStatic as Image;
-use Storage;
 
-class Employee extends Model
+class Faq extends Model
 {
     use CrudTrait;
 
@@ -17,20 +14,17 @@ class Employee extends Model
     | GLOBAL VARIABLES
     |--------------------------------------------------------------------------
     */
-    public $blockcrud_title = 'Сотрудники';
-    public $blockcrud_template = 'blocks.team';
 
-    protected $table = 'employees';
+    public $blockcrud_title = 'Вопросы';
+    public $blockcrud_template = 'blocks.faq';
+
+    protected $table = 'faq';
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     protected $guarded = ['id'];
-    protected $with = ['department'];
     // protected $fillable = [];
     // protected $hidden = [];
     // protected $dates = [];
-    protected $casts = [
-        'extra_info' => 'array',
-    ];
 
     /*
     |--------------------------------------------------------------------------
@@ -43,17 +37,12 @@ class Employee extends Model
     | RELATIONS
     |--------------------------------------------------------------------------
     */
-    public function department()
-    {
-        return $this->belongsTo('App\Models\Department');
-    }
-
     public function blocks()
     {
         return $this->belongsToMany('Backpack\BlockCRUD\app\Models\BlockItem', 'block_entity', 'block_id', 'entity_id')
                     ->using('App\HelpModels\BlockSync')
                     ->withTimestamps()
-                    ->wherePivot('entity_class', 'App\Models\Employee');
+                    ->wherePivot('entity_class', 'App\Models\Faq');
     }
 
     /*
@@ -65,7 +54,7 @@ class Employee extends Model
     {
         return $query->whereHas('blocks', function($q) use($block) {
             $q->where('slug', $block);
-        });
+        })->orderBy('show_order');
     }
 
     /*
@@ -79,28 +68,4 @@ class Employee extends Model
     | MUTATORS
     |--------------------------------------------------------------------------
     */
-    public function setPhotoAttribute($value)
-    {
-        $attribute_name = "photo";
-        $disk = 'public'; 
-        $destination_path = "uploads/employees"; 
-
-        // if the image was erased
-        if ($value==null) {
-            Storage::disk($disk)->delete($this->{$attribute_name});
-            $this->attributes[$attribute_name] = null;
-        }
-
-        // if a base64 was sent, store it in the db
-        if (Str::startsWith($value, 'data:image'))
-        {
-            $image = Image::make($value)->encode('jpg', 90);
-            $filename = md5($value . time()) . '.jpg';
-            Storage::disk($disk)->put($destination_path . '/' . $filename, $image->stream());
-            Storage::disk($disk)->delete($this->{$attribute_name});
-
-            $public_destination_path = $destination_path;
-            $this->attributes[$attribute_name] = $public_destination_path . '/' . $filename;
-        }
-    }
 }

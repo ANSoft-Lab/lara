@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
         $this->call(MainBlocksSeeder::class);
         $this->call(KisBlocksSeeder::class);
         $this->call(TeamBlocksSeeder::class);
+        $this->call(FaqBlocksSeeder::class);
 
         $this->call(PagesSeeder::class);
 
@@ -27,5 +28,6 @@ class DatabaseSeeder extends Seeder
 
         $this->call(MenuSeeder::class);
 
+        $this->call(FaqSeeder::class);
     }
 }

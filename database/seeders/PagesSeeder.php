@@ -44,14 +44,17 @@ class PagesSeeder extends Seeder
                         @customblock('kis-desc')
                         @customblock('kis-insurance')
                         @customblock('kis-best-price')
-                        @customblock('kis-faq')
+                        @customblock('kis-faq', 'block(\"kis-faq\")')
+                        <br><br>
                         <section class=\"about\">
                             <h2 class=\"about__title about__title_underline\">Документация</h2>
                         </section>
 
                         @customblock('documents')
 
-                        <br><br><br><br>
+                        <br><br>
+                        @customblock('kis-team', 'block(\"kis-team\")')
+                        <br><br>
                     ",
                     'created_at' => $date,
                     'updated_at' => $date,
@@ -64,6 +67,30 @@ class PagesSeeder extends Seeder
                     'content' => "
                         @customblock('bosses')
                         @customblock('employees')
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Вопросы и ответы',
+                    'title' => 'Вопросы и ответы',
+                    'slug' => 'faq',
+                    'content' => "
+                        <div class=\"about\">
+                            <section class=\"qna mb-40\">
+                                <div class=\"qna__text\">
+                                    <h2 class=\"qna__title\">Вопросы и ответы</h2>
+                                    <p class=\"qna__info\">
+                                        В данном разделе сайта
+                                        вы найдете ответы на
+                                        наиболее часто встречающиеся
+                                        вопросы относительно страхования
+                                    </p>
+                                </div>
+                            </section>
+                            @customblock('faq-main', 'block(\"faq-main\")')
+                        </div>
                     ",
                     'created_at' => $date,
                     'updated_at' => $date,

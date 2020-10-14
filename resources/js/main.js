@@ -86,7 +86,6 @@ class Finist {
             let item = th.dropdownList[i];
 
             item.addEventListener('click', function (evt) {
-                let item = $(this);
                 item.classList.toggle('m-visible');
                 item.closest('.js-list-item').classList.toggle('m-visible');
             });

@@ -14,9 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('feedback_send', 'FeedbackController@store')->name('feedback_send');
-Route::get('faq', function () {
-    return view('templates.faq');
-})->name('faq');
 
 //Auth::routes();
 
