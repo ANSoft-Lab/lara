@@ -16,6 +16,6 @@
     </main>
     @include('partials.footer')
     @include('modals.choose_city')
-    <script src="/js/app.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

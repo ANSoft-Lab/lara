@@ -1,3 +1,4 @@
+
 require('./bootstrap');
 window.$ = window.jQuery = require('jquery');
 
@@ -20,8 +21,8 @@ class Finist {
 
         // Десктопное меню
 
-        this.dropdownList = [...document.querySelectorAll('.js-dropdown-list')];
-        this.dropdownMenuItem = [...document.querySelectorAll('.js-dropdown-item')];
+        this.dropdownList = document.querySelectorAll('.js-dropdown-list');
+        this.dropdownMenuItem = document.querySelectorAll('.js-dropdown-item');
 
         // Слайдер с картами
 
@@ -30,7 +31,7 @@ class Finist {
         }
 
         if (document.querySelector('.js-show-section')) {
-            this.hiddenSections = [...document.querySelectorAll('.js-hidden-section')];
+            this.hiddenSections = document.querySelectorAll('.js-hidden-section');
             this.showSectionsBtn = document.querySelector('.js-show-section');
 
             this.showSectionsBtn.addEventListener('click', this.showSections.bind(this));
@@ -71,22 +72,30 @@ class Finist {
 
         this.showCity();
 
-        this.closeBtn = [...document.querySelectorAll('.js-contacts-close')];
+        this.closeBtn = document.querySelectorAll('.js-contacts-close');
 
-        this.closeBtn.forEach((btn) => {
-            btn.addEventListener('click', function (evt) {
-                btn.closest('.js-contacts-block').classList.add('m-hidden');
+        for(let i = 0; i < th.closeBtn.length; ++i) {
+            let btn = th.closeBtn[i];
+
+            btn.addEventListener('click', function () {
+                btn.closest('.js-contacts-block').addClass('m-hidden');
             });
-        });
+        }
 
-        this.dropdownList.forEach((item) => {
+        for(let i = 0; i < th.dropdownList.length; ++i) {
+            let item = th.dropdownList[i];
+
             item.addEventListener('click', function (evt) {
+                let item = $(this);
                 item.classList.toggle('m-visible');
                 item.closest('.js-list-item').classList.toggle('m-visible');
             });
-        });
+        }
 
-        this.dropdownMenuItem.forEach((item) => item.addEventListener('click', this.showDropdown.bind(this)));
+        for(let i = 0; i < th.dropdownMenuItem.length; ++i) {
+            let item = th.dropdownMenuItem[i];
+            item.addEventListener('click', this.showDropdown.bind(this));
+        }
 
         // this.dropdownMenuItem.forEach((item) => {
         //     item.addEventListener('click', function (evt) {
@@ -99,7 +108,7 @@ class Finist {
     }
 
     openModal(e) {
-        var btn = $(e.target.closest('.js-open-modal')),
+        var btn = $(e.target).closest('.js-open-modal'),
             modal = $('#' + btn.attr('data-modal'));
 
         modal.removeClass('m-hidden');
@@ -158,7 +167,7 @@ class Finist {
     }
 
     sendForm(e) {
-        var form = $(e.target.closest('form'));
+        var form = $(e.target).closest('form');
 
         if(form) {
             form.find('.errors-area').html('');
@@ -173,7 +182,7 @@ class Finist {
     }
 
     setCity(evt) {
-        var form = $(evt.target.closest('form'));
+        var form = $(evt.target).closest('form');
 
         this.city = form.find('[name=city]:checked').val();
         Cookies.set('city', this.city);

@@ -277,6 +277,12 @@
             margin-top: -1px;
             padding: 50px 24px;
         }
+
+        &-contacts {
+            &__phone {
+                margin-left: auto;
+            }
+        }
     }
 
     .header-location {
@@ -292,7 +298,7 @@
 
         .header-menu__link {
             padding: 10px 15px;
-            max-width: unset;
+            max-width: auto;
         }
     }
 
@@ -390,7 +396,7 @@
             position: absolute;
             background-color: transparent;
             width: 350px;
-            right: unset;
+            right: auto;
             top: 8px;
             margin-left: 980px;
             z-index: 6;
