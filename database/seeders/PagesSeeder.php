@@ -56,6 +56,18 @@ class PagesSeeder extends Seeder
                     'created_at' => $date,
                     'updated_at' => $date,
                 ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Коллектив',
+                    'title' => 'Коллектив',
+                    'slug' => 'team',
+                    'content' => "
+                        @customblock('bosses')
+                        @customblock('employees')
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
             ];
 
             foreach($pages as $page) {
