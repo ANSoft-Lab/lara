@@ -95,7 +95,30 @@ class PagesSeeder extends Seeder
                     'created_at' => $date,
                     'updated_at' => $date,
                 ],
+                [
+                    'template' => 'simple',
+                    'name' => 'О компании',
+                    'title' => 'О компании',
+                    'slug' => 'about',
+                    'content' => "
+                        <div class=\"about\">
+                            @customblock('about-company')
+                            @customblock('about-icons')
+                            @customblock('about-history')
+                            @customblock('about-clients')
+                            @customblock('about-principles')
+                            @customblock('about-operation')
+                            @customblock('bosses')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
             ];
+
+            if(DB::table('pages')->where('slug', 'about')->where('template', 'about')->first()) {
+                DB::table('pages')->where('slug', 'about')->where('template', 'about')->delete();
+            }
 
             foreach($pages as $page) {
                 if(! DB::table('pages')->where('slug', $page['slug'])->first()) {

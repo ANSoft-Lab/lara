@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call(KisBlocksSeeder::class);
         $this->call(TeamBlocksSeeder::class);
         $this->call(FaqBlocksSeeder::class);
+        $this->call(AboutBlocksSeeder::class);
 
         $this->call(PagesSeeder::class);
 

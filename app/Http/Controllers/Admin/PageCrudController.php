@@ -92,10 +92,10 @@ class PageCrudController extends CrudController
         $this->crud->addField([
             'name' => 'template',
             'label' => trans('backpack::pagemanager.template'),
-            'type' => 'select_page_template',
-            'view_namespace'  => 'pagemanager::fields',
-            'options' => $this->getTemplatesArray(),
-            'value' => $template,
+            'type' => 'hidden',
+            // 'view_namespace'  => 'pagemanager::fields',
+            // 'options' => $this->getTemplatesArray(),
+            'value' => 'simple', //$template,
             'allows_null' => false,
             'wrapperAttributes' => [
                 'class' => 'form-group col-md-6',
@@ -105,23 +105,17 @@ class PageCrudController extends CrudController
             'name' => 'name',
             'label' => trans('backpack::pagemanager.page_name'),
             'type' => 'text',
-            'wrapperAttributes' => [
-                'class' => 'form-group col-md-6',
-            ],
-            // 'disabled' => 'disabled'
         ]);
         $this->crud->addField([
             'name' => 'title',
             'label' => trans('backpack::pagemanager.page_title'),
             'type' => 'text',
-            // 'disabled' => 'disabled'
         ]);
         $this->crud->addField([
             'name' => 'slug',
             'label' => trans('backpack::pagemanager.page_slug'),
             'type' => 'text',
             'hint' => trans('backpack::pagemanager.page_slug_hint'),
-            // 'disabled' => 'disabled'
         ]);
     }
 
