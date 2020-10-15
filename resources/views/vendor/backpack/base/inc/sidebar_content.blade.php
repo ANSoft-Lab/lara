@@ -33,3 +33,4 @@
 <li class='nav-item'>
     <a class='nav-link' href='{{ backpack_url('faq') }}'><i class='nav-icon la la-question'></i> {{ trans('backpack::base.menu.faq') }}</a>
 </li>
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('elfinder') }}\"><i class="nav-icon la la-files-o"></i> <span>{{ trans('backpack::crud.file_manager') }}</span></a></li>

@@ -74,7 +74,10 @@ trait PageTemplates
         $this->crud->addField([
             'name' => 'content',
             'label' => trans('backpack::pagemanager.content'),
-            //'type' => 'wysiwyg',
+            'type' => 'textarea',
+            'attributes' => [
+                'rows' => 10,
+            ],
             'placeholder' => trans('backpack::pagemanager.content_placeholder'),
         ]);
     }

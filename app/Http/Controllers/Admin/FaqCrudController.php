@@ -81,7 +81,7 @@ class FaqCrudController extends CrudController
         CRUD::addField([
             'name' => 'answer',
             'label' => trans('backpack::base.faq.answer'),
-            'type' => 'wysiwyg',
+            'type' => 'ckeditor',
         ]);
         CRUD::addField([
             'name' => 'publish',
