@@ -54,7 +54,12 @@ class Faq extends Model
     {
         return $query->whereHas('blocks', function($q) use($block) {
             $q->where('slug', $block);
-        })->orderBy('show_order');
+        })->where('publish', 1)->orderBy('show_order');
+    }
+
+    public function active($query)
+    {
+        return $query->where('publish', 1)->orderBy('show_order');
     }
 
     /*

@@ -2,7 +2,6 @@
 
 namespace App\Http\Requests;
 
-use App\Http\Requests\Request;
 use Illuminate\Foundation\Http\FormRequest;
 
 class FaqRequest extends FormRequest
@@ -26,7 +25,7 @@ class FaqRequest extends FormRequest
     public function rules()
     {
         return [
-            'question' => 'required|min:5|max:255',
+            'question' => 'required|min:2|max:255',
         ];
     }
 
