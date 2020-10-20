@@ -16,3 +16,4 @@ yarn-error.log
 /info
 composer.lock
 yarn.lock
+/storage/app/blockcrud

@@ -78,6 +78,7 @@ class FaqCrudController extends CrudController
             'label' => trans('backpack::base.faq.question'),
             'allows_null' => false,
         ]);
+
         CRUD::addField([
             'name' => 'answer',
             'label' => trans('backpack::base.faq.answer'),

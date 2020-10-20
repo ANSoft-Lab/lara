@@ -19,6 +19,13 @@ class FaqBlocksSeeder extends Seeder
             $date = date('Y-m-d H:i:s');
 
             $blocks = [
+                [   'name' => 'Вопросы и ответы (инфо)',
+                    'slug' => 'faq-intro',
+                    'type' => 'template',
+                    'model_id' => 'blockcrud.templates.faq.intro',
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
                 [   'name' => 'Вопросы и ответы',
                     'slug' => 'faq-main',
                     'type' => 'model',

@@ -1,5 +1,5 @@
 <section class="collective">
-    <h2 class="about__title about__title_underline">
+    <h2 class="about__title about__title_underline{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}">
         Коллектив
     </h2>
     <ul class="collective__list">

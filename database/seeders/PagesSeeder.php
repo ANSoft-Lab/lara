@@ -46,12 +46,7 @@ class PagesSeeder extends Seeder
                         @customblock('kis-best-price')
                         @customblock('kis-faq', 'block(\"kis-faq\")')
                         <br><br>
-                        <section class=\"about\">
-                            <h2 class=\"about__title about__title_underline\">Документация</h2>
-                        </section>
-
                         @customblock('documents')
-
                         <br><br>
                         @customblock('kis-team', 'block(\"kis-team\")')
                         <br><br>
@@ -77,20 +72,8 @@ class PagesSeeder extends Seeder
                     'title' => 'Вопросы и ответы',
                     'slug' => 'faq',
                     'content' => "
-                        <div class=\"about\">
-                            <section class=\"qna mb-40\">
-                                <div class=\"qna__text\">
-                                    <h2 class=\"qna__title\">Вопросы и ответы</h2>
-                                    <p class=\"qna__info\">
-                                        В данном разделе сайта
-                                        вы найдете ответы на
-                                        наиболее часто встречающиеся
-                                        вопросы относительно страхования
-                                    </p>
-                                </div>
-                            </section>
-                            @customblock('faq-main', 'block(\"faq-main\")')
-                        </div>
+                        @customblock('faq-intro')
+                        @customblock('faq-main', 'block(\"faq-main\")')
                     ",
                     'created_at' => $date,
                     'updated_at' => $date,

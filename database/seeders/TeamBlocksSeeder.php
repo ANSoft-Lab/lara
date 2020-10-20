@@ -22,7 +22,7 @@ class TeamBlocksSeeder extends Seeder
                 [   'name' => 'Руководство',
                     'slug' => 'bosses',
                     'type' => 'template',
-                    'model_id' => 'blockcrud.html.team.bosses',
+                    'model_id' => 'blockcrud.templates.team.bosses',
                     'created_at' => $date,
                     'updated_at' => $date,
                 ],
