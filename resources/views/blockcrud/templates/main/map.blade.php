@@ -1,28 +1,28 @@
 <section class="contacts glide">
     <div class="contacts__scroll-wrap">
         <ul class="contacts__tablist js-tabs glide__bullets" data-glide-el="controls[nav]">
-            <li data-city="msk" class="contacts__tab glide__bullet m-active{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}" data-glide-dir="=0">
+            <li data-city="msk" class="contacts__tab glide__bullet m-active" data-glide-dir="=0">
                 москва, центральный&nbsp;офис
             </li>
-            <li data-city="spb" class="contacts__tab glide__bullet{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}" data-glide-dir="=1">
+            <li data-city="spb" class="contacts__tab glide__bullet" data-glide-dir="=1">
                 санкт-петербург
             </li>
-            <li data-city="nnv" class="contacts__tab glide__bullet{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}" data-glide-dir="=2">
+            <li data-city="nnv" class="contacts__tab glide__bullet" data-glide-dir="=2">
                 нижний новгород
             </li>
-            <li data-city="ryz" class="contacts__tab glide__bullet{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}" data-glide-dir="=3">
+            <li data-city="ryz" class="contacts__tab glide__bullet" data-glide-dir="=3">
                 рязань
             </li>
-            <li data-city="voronezh" class="contacts__tab glide__bullet{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}" data-glide-dir="=4">
+            <li data-city="voronezh" class="contacts__tab glide__bullet" data-glide-dir="=4">
                 воронеж
             </li>
-            <li data-city="kazan" class="contacts__tab glide__bullet{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}" data-glide-dir="=5">
+            <li data-city="kazan" class="contacts__tab glide__bullet" data-glide-dir="=5">
                 казань
             </li>
-            <li data-city="samara" class="contacts__tab glide__bullet{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}" data-glide-dir="=6">
+            <li data-city="samara" class="contacts__tab glide__bullet" data-glide-dir="=6">
                 самара
             </li>
-            <li data-city="krasnodar" class="contacts__tab glide__bullet{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}" data-glide-dir="=7">
+            <li data-city="krasnodar" class="contacts__tab glide__bullet" data-glide-dir="=7">
                 краснодар
             </li>
         </ul>
@@ -35,16 +35,16 @@
                     <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
                     <div class="contacts__item">
                         <span class="contacts__subtitle">Адрес: </span>
-                        <span class="{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}">Москва, 3-й Монетчиковский переулок, дом 11, стр 1</span>
+                        <span class="">Москва, 3-й Монетчиковский переулок, дом 11, стр 1</span>
                     </div>
                     <div class="contacts__item">
                         <span class="contacts__subtitle">Телефон:</span> +7 (495) 62-62-555, +7&nbsp;(495) 626-26-26
                         (отдел страхования доб. 714)
-</div>
+                    </div>
                     <div class="contacts__item">
                         <span class="contacts__subtitle">График работы:</span>
                         Пн-Пт: 9:00-19:00
-</div>
+                    </div>
                 </div>
             </div>
             <div class="contacts__map js-map glide__slide">
@@ -53,14 +53,14 @@
                     <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
                     <div class="contacts__item">
                         <span class="contacts__subtitle">Адрес: </span>Санкт-Петербург, Боровая улица дом 32 , БЦ "Стелс", 7 этаж. 728 кабинет
-</div>
+                    </div>
                     <div class="contacts__item">
                         <span class="contacts__subtitle">Телефон: </span>+7 812 449-43-25
-</div>
+                    </div>
                     <div class="contacts__item">
                         <span class="contacts__subtitle">График работы: </span>
                         Пн-Пт: 10:00-18:30
-</div>
+                    </div>
                 </div>
             </div>
             <div class="contacts__map js-map glide__slide">
@@ -69,14 +69,14 @@
                     <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
                     <div class="contacts__item">
                         <span class="contacts__subtitle">Адрес: </span>Нижний Новгород, ул. Костина, д.3
-</div>
+                    </div>
                     <div class="contacts__item">
                         <span class="contacts__subtitle">Телефон: </span>+7 (831) 280-96-97
-</div>
+                    </div>
                     <div class="contacts__item">
                         <span class="contacts__subtitle">График работы: </span>
                         Пн-Вс: 9:00-19:00
-</div>
+                    </div>
                 </div>
             </div>
             <div class="contacts__map js-map glide__slide">
@@ -85,14 +85,14 @@
                     <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
                     <div class="contacts__item">
                         <span class="contacts__subtitle">Адрес: </span>Рязань, ул. Маяковского д. 1а корп. Е БЦ "Капитал-Атрон"
-</div>
+                    </div>
                     <div class="contacts__item">
                         <span class="contacts__subtitle">Телефон:</span>+7 (4912) 392-016
-</div>
+                    </div>
                     <div class="contacts__item">
                         <span class="contacts__subtitle">График работы:</span>
                         Пн-Пт: 9:00-19:00
-</div>
+                    </div>
                 </div>
             </div>
             <div class="contacts__map js-map glide__slide">
@@ -101,14 +101,14 @@
                     <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
                     <div class="contacts__item">
                         <span class="contacts__subtitle">Адрес: Воронеж, ул. Текстильщиков 5, стр.1</span>
-</div>
+                    </div>
                     <div class="contacts__item">
                         <span class="contacts__subtitle">Телефон: +7 (473) 206-72-97</span> 
-</div>
+                    </div>
                     <div class="contacts__item">
                         <span class="contacts__subtitle">График работы:</span>
                         Пн-Пт: 9:00-19:00
-</div>
+                    </div>
                 </div>
             </div>
             <div class="contacts__map js-map glide__slide">
@@ -117,14 +117,14 @@
                     <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
                     <div class="contacts__item">
                         <span class="contacts__subtitle">Адрес: Казань, ул. Петербургская 74</span>
-</div>
+                    </div>
                     <div class="contacts__item">
                         <span class="contacts__subtitle">Телефон: +7 (843) 567-19-11</span> 
-</div>
+                    </div>
                     <div class="contacts__item">
                         <span class="contacts__subtitle">График работы:</span>
                         Пн-Пт: 9:00-19:00
-</div>
+                    </div>
                 </div>
             </div>
             <div class="contacts__map js-map glide__slide">
@@ -132,7 +132,7 @@
                     <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
                     <div class="contacts__item">
                         <span class="contacts__subtitle">Телефон: +7 (463) 790-582</span> 
-</div>
+                    </div>
                 </div>
             </div>
             <div class="contacts__map js-map glide__slide">
@@ -140,7 +140,7 @@
                     <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
                     <div class="contacts__item">
                         <span class="contacts__subtitle">Телефон: +7 (612) 982-446</span> 
-</div>
+                    </div>
                 </div>
             </div>
         </div>

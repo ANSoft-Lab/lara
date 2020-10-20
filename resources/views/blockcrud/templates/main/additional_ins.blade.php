@@ -1,5 +1,5 @@
 <section class="additional">
-    <h2 class="additional__title{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}">Дополнительные виды&nbsp;страхования</h2>
+    <h2 class="additional__title">Дополнительные виды&nbsp;страхования</h2>
     <ul class="additional__list">
         <li class="additional__item">
             <div class="additional__content">

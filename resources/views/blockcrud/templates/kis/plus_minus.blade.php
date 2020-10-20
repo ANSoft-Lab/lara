@@ -1,11 +1,19 @@
 <section class="plus_minus">
-    <h2 class="about__title{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}">
-        Причины обратиться к нам:
+    <h2 class="about__title{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}"
+    @if (isset($edit_mode))
+        contenteditable="true" id="kis_plus_1"
+    @endif
+    >
+        {!! $kis_plus_1 ?? 'Причины обратиться к нам:' !!}
     </h2>
     <div class="plus_minus__line">
         <div class="plus_minus__panel plus">
-            <h2 class="about__title about__title_tab{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}">
-                Оформление полиса ипотечного страхования нашими специалистами:
+            <h2 class="about__title about__title_tab{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}"
+            @if (isset($edit_mode))
+                contenteditable="true" id="kis_plus_2"
+            @endif
+            >
+                {!! $kis_plus_2 ?? 'Оформление полиса ипотечного страхования нашими специалистами:' !!}
             </h2>
             <ul class="plus_minus__list">
                 <li>Подберём оптимальные предложения от <strong>ТОП-10</strong> страховых компаний в течение рабочего дня;</li>
@@ -20,8 +28,12 @@
             </div>
         </div>
         <div class="plus_minus__panel minus">
-            <h2 class="about__title about__title_tab{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}">
-                Самостоятельное оформление полиса ипотечного страхования это:
+            <h2 class="about__title about__title_tab{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}"
+            @if (isset($edit_mode))
+                contenteditable="true" id="kis_plus_3"
+            @endif
+            >
+                {!! $kis_plus_3 ?? 'Самостоятельное оформление полиса ипотечного страхования это:' !!}
             </h2>
             <ul class="plus_minus__list">
                 <li>Потеря времени и сил на поиск подходящей страховой компании;</li>

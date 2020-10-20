@@ -1,6 +1,6 @@
 <section class="leaders">
     <div class="leaders__content">
-        <h2 class="about__title about__title_underline{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}">
+        <h2 class="about__title about__title_underline">
             Руководство компании
         </h2>
         <ul class="leaders__list">

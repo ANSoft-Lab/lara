@@ -1,5 +1,5 @@
 <section class="clients">
-    <h2 class="about__title{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}">
+    <h2 class="about__title">
         Наши клиенты
     </h2>
     <ul class="clients__list">

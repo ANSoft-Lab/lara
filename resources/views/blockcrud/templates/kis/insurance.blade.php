@@ -1,5 +1,5 @@
 <section class="panels mort_ins">
-    <h2 class="about__title{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}">
+    <h2 class="about__title">
         Страхование ипотечного кредита включает
     </h2>
     <div class="panels__line">

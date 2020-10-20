@@ -10,7 +10,7 @@ function refreshPreview(e) {
     var codeBlock = e.target.closest('.blockcrud_code_editor');
 
     var previewCode = codeBlock.querySelector('.blockcrud_code_source textarea').value,
-        shadowBlock = codeBlock.querySelector('.blockcrud_code_preview preview-code').shadowRoot,
+        shadowBlock = codeBlock.querySelector('.blockcrud_code_preview .blockcrud_preview_area').shadowRoot,
         oldWrapper = shadowBlock.querySelector('.shadow_wrapper');
 
     shadowBlock.removeChild(oldWrapper);
@@ -76,4 +76,60 @@ function toggleInput(e) {
             }
         }
     }
+}
+
+var editorBlocks = document.querySelectorAll('.blockcrud-editable');
+
+for (let i = 0; i < editorBlocks.length; i++) {
+    var editorBlock = editorBlocks[i];
+    
+    editorBlock.addEventListener('click', enableEditor);
+}
+
+ var codePreviews = document.querySelectorAll('.blockcrud-code-preview .blockcrud_preview_area');
+
+for (let i = 0; i < codePreviews.length; i++) {
+    if(codePreviews[i].shadowRoot) {
+        var anchors = codePreviews[i].shadowRoot.querySelectorAll('a');
+        for (let a = 0; a < anchors.length; a++) {
+            anchors[a].setAttribute('title', anchors[a].getAttribute('href'));
+            anchors[a].removeAttribute('href');
+        }
+
+        var outerForm = codePreviews[i].closest('form');
+        var editorBlocksShadow = codePreviews[i].shadowRoot.querySelectorAll('.blockcrud-editable');
+
+        for (let j = 0; j < editorBlocksShadow.length; j++) {
+            var editorBlockShadow = editorBlocksShadow[j];
+            
+            editorBlockShadow.addEventListener('input', function(e) {
+                enableEditor(e, outerForm);
+            }, false);
+            editorBlockShadow.addEventListener('change', function(e) {
+                enableEditor(e, outerForm);
+            }, false);
+            editorBlockShadow.addEventListener('keyup', function(e) {
+                enableEditor(e, outerForm);
+            }, false);
+            editorBlockShadow.addEventListener('blur', function(e) {
+                enableEditor(e, outerForm);
+            }, false);
+        }
+    }
+}
+
+function enableEditor(e, outerForm) {
+    var field = e.target.closest('.blockcrud-editable'),
+        arrName = field.closest('.shadow_wrapper').getAttribute('name'),
+        input = outerForm.querySelector('#field_' + field.id);
+
+    if(! input) {
+        input = document.createElement('textarea');
+        input.id = 'field_' + field.id;
+        input.setAttribute('name', arrName + '[' + field.id + ']');
+        input.style.display = 'none';
+        outerForm.appendChild(input);
+    }
+
+    input.value = field.innerHTML;
 }

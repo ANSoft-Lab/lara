@@ -83,6 +83,7 @@ class FaqCrudController extends CrudController
             'name' => 'answer',
             'label' => trans('backpack::base.faq.answer'),
             'type' => 'ckeditor',
+            'template' => 'vendor.backpack.crud.fields.ckeditor',
         ]);
         CRUD::addField([
             'name' => 'publish',
