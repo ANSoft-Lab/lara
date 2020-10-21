@@ -83,7 +83,7 @@ class Employee extends Model
     {
         $attribute_name = "photo";
         $disk = 'public'; 
-        $destination_path = "uploads/employees"; 
+        $destination_path = "uploaded/employees"; 
 
         // if the image was erased
         if ($value==null) {

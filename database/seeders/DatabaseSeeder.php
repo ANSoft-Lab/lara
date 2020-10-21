@@ -30,5 +30,8 @@ class DatabaseSeeder extends Seeder
         $this->call(MenuSeeder::class);
 
         $this->call(FaqSeeder::class);
+
+        //Fixes
+        $this->call(FixPhotosPathSeeder::class);
     }
 }

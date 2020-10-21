@@ -62,7 +62,7 @@ class Document extends Model
     {
         $attribute_name = "path";
         $disk = "public";
-        $destination_path = "uploads/documents";
+        $destination_path = "uploaded/documents";
 
         $this->uploadFileToDisk($value, $attribute_name, $disk, $destination_path);
 
