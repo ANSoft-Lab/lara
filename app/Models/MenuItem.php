@@ -78,7 +78,7 @@ class MenuItem extends Model
                 break;
 
             case 'internal_link':
-                return is_null($this->link) ? '#' : url($this->link);
+                return is_null($this->link) ? '#' : config('app.url') . '/' . $this->link;
                 break;
 
             case 'old_link':
@@ -87,7 +87,7 @@ class MenuItem extends Model
 
             default: //page_link
                 if ($this->page) {
-                    return url($this->page->slug);
+                    return config('app.url') . '/' . $this->page->slug;
                 }
                 break;
         }
