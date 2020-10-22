@@ -6,7 +6,7 @@
             {{ $modal_title ?? 'Оставить заявку' }}
         </h2>
         <div class="form-area">
-            <form action="{{ route('feedback_send') }}" class="modal__form">
+            <form action="{{ route('feedback_send', [], false) }}" class="modal__form">
                 <div class="modal__group">
                     <label for="name" class="modal__label">Ваше имя*</label>
                     <input id="name" type="text" name="name" class="modal__input" required>
