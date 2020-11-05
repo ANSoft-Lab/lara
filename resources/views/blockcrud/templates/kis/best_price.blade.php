@@ -21,12 +21,14 @@
                     <img src="/icon/partners/ingos.svg" alt="Ингосстрах" class="p-logo">
                 </picture>
             </a>
+            {{--
             <a href="https://www.ergo.ee/ru" target="_blank">
                 <picture>
                     <source srcset="/icon/partners/ergo.jpg" media="(min-width: 768px)">
                     <img src="/icon/partners/ergo.jpg" alt="Ergo" class="p-logo">
                 </picture>
             </a>
+            --}}
             <a href="https://www.reso.ru/" target="_blank">
                 <picture>
                     <source srcset="/icon/partners/reso-logo.png" media="(min-width: 768px)">
@@ -39,12 +41,20 @@
                     <img src="/icon/partners/alfastrahovanie.jpg" alt="Альфа Страхование" class="p-logo">
                 </picture>
             </a>
+            <a href="https://renins.com/" target="_blank">
+                <picture>
+                    <source srcset="/icon/partners/renes.jpg" media="(min-width: 768px)">
+                    <img src="/icon/partners/renes.jpg" alt="Ренессанс" class="p-logo">
+                </picture>
+            </a>
+            {{--
             <a href="https://sovcomins.ru/" target="_blank">
                 <picture>
                     <source srcset="/icon/partners/liberty.png" media="(min-width: 768px)">
                     <img src="/icon/partners/liberty.png" alt="Liberty" class="p-logo">
                 </picture>
             </a>
+            --}}
             <a href="https://www.vsk.ru/" target="_blank">
                 <picture>
                     <source srcset="/icon/partners/vsk.jpg" media="(min-width: 768px)">

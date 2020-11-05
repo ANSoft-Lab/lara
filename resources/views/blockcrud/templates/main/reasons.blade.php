@@ -34,7 +34,7 @@
         </li>
     </ul>
     <div class="cooperation__btn-wrap">
-        <a href="{{ config('app.old_url') }}/finist/company/" class="cooperation__link{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}"
+        <a href="/about" class="cooperation__link{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}"
         @if (isset($edit_mode))
             contenteditable="true" id="main_reasons_2"
         @endif
