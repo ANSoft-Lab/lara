@@ -129,7 +129,7 @@ class Finist {
                 url: url,
                 data: formData,
                 beforeSend: function() {
-                    console.log('before');
+                    //console.log('before');
                 },
                 success: function (result) {
                     var errorsArea = form.find('.errors-area');

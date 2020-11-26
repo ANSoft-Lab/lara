@@ -38,7 +38,7 @@
                         <span class="">Москва, 3-й Монетчиковский переулок, дом 11, стр 1</span>
                     </div>
                     <div class="contacts__item">
-                        <span class="contacts__subtitle">Телефон:</span> +7 (495) 62-62-555, +7&nbsp;(495) 626-26-26
+                        <span class="contacts__subtitle">Телефон:</span>+7 (495) 660-00-98, +7 (495) 62-62-555, +7&nbsp;(495) 626-26-26
                         (отдел страхования доб. 714)
                     </div>
                     <div class="contacts__item">

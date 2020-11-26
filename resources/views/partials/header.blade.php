@@ -32,7 +32,8 @@
                 <div class="header__callback">
                     <ul class="header-contacts">
                         <li class="header-contacts__phone js-city-show city_moscow">
-                            <a href="tel:+74956262555" class="header-contacts__tel">+7 495 62-62-555</a>
+                            <a href="tel:+74956262555" class="header-contacts__tel">+7 495 62-62-555</a><br> 
+                            <a href="tel:+74956600098" class="header-contacts__tel">+7 495 660-00-98</a>
                             <p class="header-contacts__city js-open-modal" data-modal="choose-city">Москва</p>
                         </li>
                         <li class="header-contacts__phone js-city-show city_spb hidden">
