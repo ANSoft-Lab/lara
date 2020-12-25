@@ -5,11 +5,17 @@
                 <a href="/" class="footer__logo">
                     <img src="/icon/logo.svg" alt="finist">
                 </a>
-                @foreach (App\Models\MenuItem::getTree('bottom'); as $item)
+                @foreach (App\Models\MenuItem::getTree('bottom') as $item)
                     <div class="footer__list-wrap">
-                        <p class="footer__subtitle">
-                            <a href="{{ $item->url() }}">{{ $item->name }}</a>
-                        </p>
+                        @if($item->name === 'Дополнительно')
+                            <p class="footer__subtitle">
+                                {{ $item->name }}
+                            </p>
+                            @else
+                            <p class="footer__subtitle">
+                                <a href="{{ $item->url() }}">{{ $item->name }}</a>
+                            </p>
+                            @endif
                         @if ($item->children->count() > 0)
                             <ul class="footer__list">
                                 @foreach ($item->children as $child)
@@ -81,7 +87,7 @@
         </div>
         <div class="footer__bottom">
             <div class="footer__btn-wrap">
-                @include('blockcrud.modals.feedback', ['modal_title' => 'Остались вопросы?!'])
+                @include('blockcrud.modals.feedback', ['modal_title' => 'Остались вопросы?'])
             </div>
             <ul class="footer__socials">
                 <li class="footer__social-icon">
@@ -101,7 +107,7 @@
                 Сайт защищён reCAPTCHA с применением Политики конфиденциальности и Условий использования от Google.
             </p>
             <p class="footer__dates">
-                © 2003 – 2020  «Финист»
+                © 2003 – {{now()->year}}  «Финист»
             </p>
             <button class="footer__scroll-top js-scroll-top"></button>
         </div>

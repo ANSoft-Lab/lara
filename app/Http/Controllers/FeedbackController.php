@@ -2,16 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\FeedbackStore;
 use App\Models\Feedback;
+use Illuminate\Http\JsonResponse;
+use App\Http\Requests\FeedbackStore;
 
 class FeedbackController extends Controller
 {
-    public function store(FeedbackStore $request)
+    /**
+     * Store feedback
+     * @param  \App\Models\Feedback  $feedback
+     * @param  \App\Http\Requests\FeedbackStore  $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function store(Feedback $feedback, FeedbackStore $request): JsonResponse
     {
-        $feedback = new Feedback;
-        
+
         $feedback->fill($request->all());
         $feedback->save();
 
