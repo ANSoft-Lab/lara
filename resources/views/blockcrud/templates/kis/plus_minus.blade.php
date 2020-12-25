@@ -23,8 +23,8 @@
                 <li>Окажем содействие в урегулировании вопросов со страховой компанией при наступлении страхового случая;</li>
                 <li>Прикрепим персонального специалиста, который будет помогать Вам по всем вопросам страхования.</li>
             </ul>
-            <div class="cooperation__btn-wrap">
-                @customblock('feedback')
+            <div class="footer__btn-wrap">
+                @include('blockcrud.modals.feedback', ['modal_title' => 'Оставить заявку', 'link' => false])
             </div>
         </div>
     </div>
