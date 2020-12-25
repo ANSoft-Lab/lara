@@ -4,7 +4,7 @@
         contenteditable="true" id="kis_desc_1"
     @endif
     >
-        {!! $kis_desc_1 ?? 'Описание Комплексного Ипотечного Страхования (далее КИС)' !!}
+        {!! $kis_desc_1 ?? 'Описание Комплексного Ипотечного Страхования' !!}
     </h2>
     <div class="about__info{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}"
     @if (isset($edit_mode))
