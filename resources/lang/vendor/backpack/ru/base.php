@@ -116,6 +116,7 @@ return [
     'feedback' => [
         'name' => 'Имя',
         'phone' => 'Телефон',
+        'message' => 'Сообщение',
         'created_at' => 'Дата',
         'type' => 'Тип',
         'status' => 'Статус',

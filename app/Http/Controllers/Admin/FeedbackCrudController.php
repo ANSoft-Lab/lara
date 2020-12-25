@@ -27,7 +27,7 @@ class FeedbackCrudController extends CrudController
 
     /**
      * Configure the CrudPanel object. Apply settings to all operations.
-     * 
+     *
      * @return void
      */
     public function setup()
@@ -40,7 +40,7 @@ class FeedbackCrudController extends CrudController
 
     /**
      * Define what happens when the List operation is loaded.
-     * 
+     *
      * @see  https://backpackforlaravel.com/docs/crud-operation-list-entries
      * @return void
      */
@@ -55,6 +55,10 @@ class FeedbackCrudController extends CrudController
             'label' => trans('backpack::base.feedback.phone'),
         ]);
         CRUD::addColumn([
+            'name' => 'message',
+            'label' => trans('backpack::base.feedback.message'),
+        ]);
+        CRUD::addColumn([
             'name' => 'created_at',
             'label' => trans('backpack::base.feedback.created_at'),
         ]);
@@ -63,7 +67,7 @@ class FeedbackCrudController extends CrudController
     protected function setupShowOperation()
     {
         CRUD::set('show.setFromDb', false);
-        
+
         CRUD::addColumn([
             'name' => 'name',
             'label' => trans('backpack::base.feedback.name'),
@@ -71,6 +75,10 @@ class FeedbackCrudController extends CrudController
         CRUD::addColumn([
             'name' => 'phone',
             'label' => trans('backpack::base.feedback.phone'),
+        ]);
+        CRUD::addColumn([
+            'name' => 'message',
+            'label' => trans('backpack::base.feedback.message'),
         ]);
         CRUD::addColumn([
             'name' => 'created_at',
@@ -94,7 +102,7 @@ class FeedbackCrudController extends CrudController
 
     /**
      * Define what happens when the Create operation is loaded.
-     * 
+     *
      * @see https://backpackforlaravel.com/docs/crud-operation-create
      * @return void
      */
@@ -126,7 +134,7 @@ class FeedbackCrudController extends CrudController
 
     /**
      * Define what happens when the Update operation is loaded.
-     * 
+     *
      * @see https://backpackforlaravel.com/docs/crud-operation-update
      * @return void
      */
