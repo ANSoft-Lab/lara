@@ -82,12 +82,12 @@
                     </li>
                 </ul>
                 {{--<a href="{{ config('app.old_url') }}/kontakty" class="footer__callback">Обратный звонок</a>--}}
-                @include('blockcrud.modals.feedback', ['modal_title' => 'Обратный звонок', 'btn_class' => 'footer__callback'])
+                @include('blockcrud.modals.feedback', ['modal_title' => 'Обратный звонок', 'btn_class' => 'footer__callback', 'link' => false])
             </div>
         </div>
         <div class="footer__bottom">
             <div class="footer__btn-wrap">
-                @include('blockcrud.modals.feedback', ['modal_title' => 'Остались вопросы?'])
+                @include('blockcrud.modals.feedback', ['modal_title' => 'Остались вопросы?', 'link' => false])
             </div>
             <ul class="footer__socials">
                 <li class="footer__social-icon">

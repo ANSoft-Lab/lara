@@ -32,7 +32,7 @@
                 <div class="header__callback">
                     <ul class="header-contacts">
                         <li class="header-contacts__phone js-city-show city_moscow">
-                            <a href="tel:+74956262555" class="header-contacts__tel">+7 495 62-62-555</a><br> 
+                            <a href="tel:+74956262555" class="header-contacts__tel">+7 495 62-62-555</a><br>
                             <a href="tel:+74956600098" class="header-contacts__tel">+7 495 660-00-98</a>
                             <p class="header-contacts__city js-open-modal" data-modal="choose-city">Москва</p>
                         </li>
@@ -83,7 +83,9 @@
         <a class="header__location js-open-modal js-city-show city_samara hidden" data-modal="choose-city">Самара</a>
         <a class="header__location js-open-modal js-city-show city_krasnodar hidden" data-modal="choose-city">Краснодар</a>
         <a class="header__location__city-option js-open-modal" data-modal="choose-city">Выбрать город</a>
-        <div class="header__discount">Экономьте на страховке до 50%</div>
+        <div class="header__discount">
+            @include('blockcrud.modals.feedback', ['modal_title' => 'Экономьте на страховке до 50%', 'link' => true])
+        </div>
         <a href="{{ config('app.old_url') }}/chto-delat-pri-nastuplenii-strakhovogo-sluchaya/" class="header__insurance">
             Страховой случай
             <div class="offer-links__arrow"></div>
