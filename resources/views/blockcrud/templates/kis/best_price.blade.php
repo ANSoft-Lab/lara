@@ -88,25 +88,25 @@
             </div>
             <div class="d-flex flex-wrap shadow-blocks w-md-50">
                 <div class="shadow-block b-radius mr-10 mb-10">
-                    <a href="https://www.sberbank.ru/" target="_blank">Сбербанк</a>
+                    <p>Сбербанк</p>
                 </div>
                 <div class="shadow-block b-radius mr-10 mb-10">
-                    <a href="https://alfabank.ru/" target="_blank">АльфаБанк</a>
+                    <p>АльфаБанк</p>
                 </div>
                 <div class="shadow-block b-radius mr-10 mb-10">
-                    <a href="https://www.vtb.ru/" target="_blank">ВТБ</a>
+                    <p>ВТБ</p>
                 </div>
                 <div class="shadow-block b-radius mr-10 mb-10">
-                    <a href="https://www.gazprombank.ru/" target="_blank">Газпромбанк</a>
+                    <p>Газпромбанк</p>
                 </div>
                 <div class="shadow-block b-radius mr-10 mb-10">
-                    <a href="https://metallinvestbank.ru/" target="_blank">МеталлИнвестБанк</a>
+                    <p>МеталлИнвестБанк</p>
                 </div>
                 <div class="shadow-block b-radius mr-10 mb-10">
-                    <a href="https://www.open.ru/" target="_blank">Открытие</a>
+                    <p>Открытие</p>
                 </div>
                 <div class="shadow-block b-radius mr-10 mb-10">
-                    <a href="https://www.uralsib.ru/" target="_blank">Уралсиб</a>
+                    <p>Уралсиб</p>
                 </div>
             </div>
         </div>
