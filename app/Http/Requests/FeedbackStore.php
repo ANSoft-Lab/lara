@@ -32,6 +32,7 @@ class FeedbackStore extends FormRequest
                 }),
                 'min:2',
             ],
+            'message' => 'required',
         ];
     }
 
@@ -42,6 +43,7 @@ class FeedbackStore extends FormRequest
             'name.min' => 'Имя должно содержать 2 или более символов',
             'phone.required' => 'Введите телефон',
             'phone.min' => 'Телефон должен содержать 2 или более символов',
+            'message' => 'Дополнительно'
         ];
     }
 }

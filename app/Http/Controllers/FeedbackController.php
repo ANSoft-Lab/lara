@@ -10,15 +10,14 @@ class FeedbackController extends Controller
 {
     /**
      * Store feedback
+     *
      * @param  \App\Models\Feedback  $feedback
      * @param  \App\Http\Requests\FeedbackStore  $request
      * @return \Illuminate\Http\JsonResponse
      */
     public function store(Feedback $feedback, FeedbackStore $request): JsonResponse
     {
-
-        $feedback->fill($request->all());
-        $feedback->save();
+        $feedback->create($request->validated());
 
         return response()->json([
             'message' => 'Заявка принята',
