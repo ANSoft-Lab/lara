@@ -87,26 +87,26 @@
                 </div>
             </div>
             <div class="d-flex flex-wrap shadow-blocks w-md-50">
-                <div class="shadow-block b-radius mr-10 mb-10">
-                    <p>Сбербанк</p>
+                <div class="shadow-block b-radius cm-5">
+                    <img class="bank-logo" src="/img/sber.png">
                 </div>
-                <div class="shadow-block b-radius mr-10 mb-10">
-                    <p>АльфаБанк</p>
+                <div class="shadow-block b-radius cm-5">
+                    <img class="bank-logo" src="/img/alfa.jpg">
                 </div>
-                <div class="shadow-block b-radius mr-10 mb-10">
-                    <p>ВТБ</p>
+                <div class="shadow-block b-radius cm-5">
+                    <img class="bank-logo" src="/img/vtb.png">
                 </div>
-                <div class="shadow-block b-radius mr-10 mb-10">
-                    <p>Газпромбанк</p>
+                <div class="shadow-block b-radius cm-5">
+                    <img class="bank-logo" src="/img/gazprombank.jpg">
                 </div>
-                <div class="shadow-block b-radius mr-10 mb-10">
-                    <p>МеталлИнвестБанк</p>
+                <div class="shadow-block b-radius cm-5">
+                    <img class="bank-logo" src="/img/metallinvestbank.png">
                 </div>
-                <div class="shadow-block b-radius mr-10 mb-10">
-                    <p>Открытие</p>
+                <div class="shadow-block b-radius cm-5">
+                    <img class="bank-logo" src="/img/otkrytie.png">
                 </div>
-                <div class="shadow-block b-radius mr-10 mb-10">
-                    <p>Уралсиб</p>
+                <div class="shadow-block b-radius cm-5">
+                    <img class="bank-logo" src="/img/uralsib.gif">
                 </div>
             </div>
         </div>
