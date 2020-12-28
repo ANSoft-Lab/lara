@@ -1,4 +1,5 @@
-<section class="qna mb-40">
+<section class="qna mb-40 123">
+    <h2 class="about__title mb-20">Часто задаваемые вопросы</h2>
     <ul class="qna__list">
         @foreach ($items as $item)
             <li class="qna__list-item js-list-item">
