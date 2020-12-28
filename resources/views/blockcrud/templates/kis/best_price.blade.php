@@ -4,7 +4,7 @@
         contenteditable="true" id="kis_best_1"
     @endif
     >
-        {!! $kis_best_1 ?? 'Мы гарантируем лучшую цену на полис ипотечного страхования. Для вас!' !!}
+        {!! $kis_best_1 ?? 'Мы гарантируем лучшую цену на полис ипотечного страхования. Для вас наши услуги бесплатны!' !!}
     </h2>
     <div class="gray-bg b-radius-20 p-40 mb-40">
         <h2 class="about__title mb-40{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}"
