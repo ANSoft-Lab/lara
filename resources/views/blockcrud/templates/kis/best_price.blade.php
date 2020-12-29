@@ -67,7 +67,7 @@
             contenteditable="true" id="kis_best_3"
         @endif
         >
-            {!! $kis_best_3 ?? 'Наши услуги бесплатны!' !!}
+            {!! $kis_best_3 ?? '' !!}
         </h3>
         <div class="d-md-flex flex-wrap justify-content-between align-content-center">
             <div class="w-md-50 mb-sm-20">
