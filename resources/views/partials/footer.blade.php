@@ -8,7 +8,7 @@
                 @foreach (App\Models\MenuItem::getTree('bottom') as $item)
                     <div class="footer__list-wrap">
                         @if($item->name === 'Дополнительно')
-                            <p class="footer__subtitle">
+                            <p class="footer__subtitle" hidden>
                                 {{ $item->name }}
                             </p>
                         @else
