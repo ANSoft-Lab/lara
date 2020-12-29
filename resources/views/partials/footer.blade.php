@@ -11,11 +11,11 @@
                             <p class="footer__subtitle">
                                 {{ $item->name }}
                             </p>
-                            @else
+                        @else
                             <p class="footer__subtitle">
                                 <a href="{{ $item->url() }}">{{ $item->name }}</a>
                             </p>
-                            @endif
+                        @endif
                         @if ($item->children->count() > 0)
                             <ul class="footer__list">
                                 @foreach ($item->children as $child)
@@ -85,9 +85,13 @@
                 @include('blockcrud.modals.feedback', ['modal_title' => 'Обратный звонок', 'btn_class' => 'footer__callback', 'link' => false])
             </div>
         </div>
+        <div style="display: flex; justify-content: center">
+            <div style="width: 300px">
+                @include('blockcrud.modals.feedback', ['modal_title' => 'Остались вопросы?', 'link' => false])
+            </div>
+        </div>
         <div class="footer__bottom">
             <div class="footer__btn-wrap">
-                @include('blockcrud.modals.feedback', ['modal_title' => 'Остались вопросы?', 'link' => false])
             </div>
             <ul class="footer__socials">
                 <li class="footer__social-icon">
@@ -107,7 +111,7 @@
                 Сайт защищён reCAPTCHA с применением Политики конфиденциальности и Условий использования от Google.
             </p>
             <p class="footer__dates">
-                © 2003 – {{now()->year}}  «Финист»
+                © 2003 – {{now()->year}} «Финист»
             </p>
             <button class="footer__scroll-top js-scroll-top"></button>
         </div>
