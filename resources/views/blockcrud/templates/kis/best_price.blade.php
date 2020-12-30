@@ -71,19 +71,19 @@
         </h3>
         <div class="d-md-flex flex-wrap justify-content-between align-content-center">
             <div class="w-md-50 mb-sm-20">
-                <h3 class="fs-26 mb-10{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}"
-                @if (isset($edit_mode))
-                    contenteditable="true" id="kis_best_4"
-                @endif
-                >
-                    {!! $kis_best_4 ?? 'Мы сотрудничаем с основными банками&nbsp;&mdash; ипотечными кредиторами' !!}
-                </h3>
+{{--                <h3 class="fs-26 mb-10{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}"--}}
+{{--                @if (isset($edit_mode))--}}
+{{--                    contenteditable="true" id="kis_best_4"--}}
+{{--                @endif--}}
+{{--                >--}}
+{{--                    {!! $kis_best_4 ?? 'Мы сотрудничаем с основными банками&nbsp;&mdash; ипотечными кредиторами' !!}--}}
+{{--                </h3>--}}
                 <div class="text{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}"
                 @if (isset($edit_mode))
                     contenteditable="true" id="kis_best_5"
                 @endif
                 >
-                    {!! $kis_best_5 ?? 'знаем специфику их работы, требования и правила оформления документации. Благодаря этому опыту, мы заранее можем предостеречь наших клиентов и предложить им выгодные и правильные решения.' !!}
+                    {!! $kis_best_5 ?? 'Мы сотрудничаем с основными банками&nbsp;&mdash; ипотечными кредиторами, знаем специфику их работы, требования и правила оформления документации. Благодаря этому опыту, мы заранее можем предостеречь наших клиентов и предложить им выгодные и правильные решения.' !!}
                 </div>
             </div>
             <div class="d-flex flex-wrap shadow-blocks w-md-50">
