@@ -3,6 +3,10 @@
     padding: 0 12px;
     overflow: hidden;
 
+    &_url {
+        text-decoration: none;
+    }
+
     &__content {
         min-height: 237px;
     }
@@ -183,20 +187,24 @@
 
         &__list {
             margin-bottom: 72px;
+            justify-content: center;
         }
 
         &__item {
-            width: calc(50% - 45px);
-            margin-right: 90px;
+            width: 30%;
+            margin: 20px 20px;
+            //margin-right: 90px;
+            height: 280px;
 
+            text-decoration: none;
             &:nth-of-type(even) {
-                margin-right: 0;
+                //margin-right: 0;
             }
 
             &:first-of-type {
                 &::after {
                     width: 189px;
-                    height: 265px;
+                    height: 250px;
                     left: auto;
                     right: 10px;
                     top: 0;
@@ -204,6 +212,7 @@
             }
 
             &:nth-of-type(2) {
+                margin-right: 19px;
                 &::after {
                     width: 169px;
                     height: 250px;
@@ -234,6 +243,7 @@
             }
 
             &:nth-of-type(5) {
+                margin-right: 20px;
                 &::after {
                     width: 169px;
                     height: 220px;
@@ -245,8 +255,8 @@
         }
 
         &__subtitle {
-            padding: 32px 190px 0 50px;
-            font-size: 26px;
+            padding: 22px 144px 0 17px;
+            font-size: 19px;
         }
 
         &__services {

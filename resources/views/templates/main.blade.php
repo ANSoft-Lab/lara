@@ -349,7 +349,7 @@
                                 <span class="contacts__subtitle">Адрес: Воронеж, ул. Текстильщиков 5, стр.1</span>
                             </p>
                             <p class="contacts__item">
-                                <span class="contacts__subtitle">Телефон: +7 (473) 206-72-97</span> 
+                                <span class="contacts__subtitle">Телефон: +7 (473) 206-72-97</span>
                             </p>
                             <p class="contacts__item">
                                 <span class="contacts__subtitle">График работы:</span>
@@ -365,7 +365,7 @@
                                 <span class="contacts__subtitle">Адрес: Казань, ул. Петербургская 74</span>
                             </p>
                             <p class="contacts__item">
-                                <span class="contacts__subtitle">Телефон: +7 (843) 567-19-11</span> 
+                                <span class="contacts__subtitle">Телефон: +7 (843) 567-19-11</span>
                             </p>
                             <p class="contacts__item">
                                 <span class="contacts__subtitle">График работы:</span>
@@ -377,7 +377,7 @@
                         <div class="contacts__block js-contacts-block">
                             <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
                             <p class="contacts__item">
-                                <span class="contacts__subtitle">Телефон: +7 (463) 790-582</span> 
+                                <span class="contacts__subtitle">Телефон: +7 (463) 790-582</span>
                             </p>
                         </div>
                     </div>
@@ -385,7 +385,7 @@
                         <div class="contacts__block js-contacts-block">
                             <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
                             <p class="contacts__item">
-                                <span class="contacts__subtitle">Телефон: +7 (612) 982-446</span> 
+                                <span class="contacts__subtitle">Телефон: +7 (612) 982-446</span>
                             </p>
                         </div>
                     </div>
