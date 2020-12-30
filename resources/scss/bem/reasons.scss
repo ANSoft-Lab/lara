@@ -208,6 +208,7 @@ _:-ms-fullscreen, :root .reasons__dropdown {
         }
 
         &__list-item {
+            height: 20px;
             padding: 20px 185px 20px 160px;
         }
 
@@ -216,6 +217,7 @@ _:-ms-fullscreen, :root .reasons__dropdown {
         }
 
         &__list-title {
+            line-height: 0;
             padding: 0;
 
             &.m-visible {

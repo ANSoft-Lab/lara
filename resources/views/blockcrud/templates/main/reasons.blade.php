@@ -33,11 +33,11 @@
             </p>
         </li>
     </ul>
-    <div class="cooperation__btn-wrap">
-        <a href="/about" class="cooperation__link{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}"
-        @if (isset($edit_mode))
-            contenteditable="true" id="main_reasons_2"
-        @endif
-        >{!! $main_reasons_2 ?? 'Детально о компании' !!}</a>
-    </div>
+{{--    <div class="cooperation__btn-wrap">--}}
+{{--        <a href="/about" class="cooperation__link{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}"--}}
+{{--        @if (isset($edit_mode))--}}
+{{--            contenteditable="true" id="main_reasons_2"--}}
+{{--        @endif--}}
+{{--        >{!! $main_reasons_2 ?? 'Детально о компании' !!}</a>--}}
+{{--    </div>--}}
     </section>
