@@ -70,6 +70,17 @@ trait PageTemplates
         // ]);
     }
 
+    private function default()
+    {        
+        $this->crud->addField([
+            'name' => 'content',
+            'label' => trans('backpack::pagemanager.content'),
+            'type' => 'ckeditor',
+            'template' => 'vendor.backpack.crud.fields.ckeditor',
+            'placeholder' => trans('backpack::pagemanager.content_placeholder'),
+        ]);
+    }
+
     private function simple()
     {        
         $blocks = BlockItem::active()->get();
@@ -81,27 +92,38 @@ trait PageTemplates
                 'title' => $block->name,
             ];
         }
+
+        // $this->crud->addField([
+        //     'name' => 'content',
+        //     'label' => trans('backpack::pagemanager.content_blocks'),
+        //     'type' => 'sortable_blocks',
+        //     'view_namespace' => 'blockcrud::templates',
+        //     // 'extra_plugins' => ['htmlbuttons'],
+        //     // 'options'       => [
+        //     //     'enterMode' => 3, //div instead of p
+        //     //     'extraAllowedContent' => 'blockcrud',
+        //     //     'entities' => false,
+        //     //     'htmlbuttons' => [
+        //     //         [
+        //     //             'name' => 'button1',
+        //     //             'icon' => 'puzzle.png',
+        //     //             'title' => 'Вставить блок',
+        //     //             'items' => $blocks_buttons,
+        //     //         ],
+        //     //     ],
+                
+        //     // ],
+        //     'placeholder' => trans('backpack::pagemanager.content_placeholder'),
+        // ]);
         
         $this->crud->addField([
-            'name' => 'content',//'content',
-            'label' => trans('backpack::pagemanager.content'),
-            'type' => 'ckeditor',
-            'template' => 'vendor.backpack.crud.fields.ckeditor',
-            'extra_plugins' => ['htmlbuttons'],
-            'options'       => [
-                'enterMode' => 3, //div instead of p
-                'extraAllowedContent' => 'blockcrud',
-                'entities' => false,
-                'htmlbuttons' => [
-                    [
-                        'name' => 'button1',
-                        'icon' => 'puzzle.png',
-                        'title' => 'Вставить блок',
-                        'items' => $blocks_buttons,
-                    ],
-                ],
-                
-            ],
+            'name' => 'content',
+            'label' => trans('backpack::pagemanager.content_blocks'),
+            'label_preview' => trans('backpack::pagemanager.preview'),
+            'type' => 'edit_page',
+            'preview_for' => 'content',
+            'fake' => true,
+            'view_namespace' => 'blockcrud::templates',
             'placeholder' => trans('backpack::pagemanager.content_placeholder'),
         ]);
     }

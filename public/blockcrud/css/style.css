@@ -11,3 +11,13 @@
 .blockcrud_hidden {
     display: none !important;
 }
+
+.blockcrud_code_preview {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5), inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.blockcrud_sortable .drag {
+    position:relative;
+    cursor:default;
+    z-index:1;
+}

@@ -3,7 +3,9 @@ var codeBlocks = document.querySelectorAll('.blockcrud_code_editor');
 for (let i = 0; i < codeBlocks.length; i++) {
     var codeBlock = codeBlocks[i];
     
-    codeBlock.querySelector('.blockcrud_code_source textarea').addEventListener('keyup', refreshPreview);
+    if(codeBlock.querySelector('.blockcrud_code_source textarea')) {
+        codeBlock.querySelector('.blockcrud_code_source textarea').addEventListener('keyup', refreshPreview);
+    }
 }
 
 function refreshPreview(e) {
@@ -28,20 +30,22 @@ for (let j = 0; j < toggleBlocks.length; j++) {
     var toggleBlock = toggleBlocks[j],
         conditions = toggleBlock.querySelectorAll('.blockcrud_toggle_when');
 
-    toggleBlock.classList.add('blockcrud_hidden');
+    if(conditions.length) {
+        toggleBlock.classList.add('blockcrud_hidden');
 
-    for (let c = 0; c < conditions.length; c++) {
-        let input = document.querySelector('[name=' + conditions[c].getAttribute('name').replace('cond_', '') + ']');
+        for (let c = 0; c < conditions.length; c++) {
+            let input = document.querySelector('[name=' + conditions[c].getAttribute('name').replace('cond_', '') + ']');
 
-        if(input && ! input.getAttribute('data-listen')) {
-            input.addEventListener('change', toggleInput);
-            input.addEventListener('select', toggleInput);
-            input.setAttribute('data-listen', true);
+            if(input && ! input.getAttribute('data-listen')) {
+                input.addEventListener('change', toggleInput);
+                input.addEventListener('select', toggleInput);
+                input.setAttribute('data-listen', true);
 
-            setTimeout(function() {
-                var evt = new Event('change');
-                input.dispatchEvent(evt);
-            }, 500);
+                setTimeout(function() {
+                    var evt = new Event('change');
+                    input.dispatchEvent(evt);
+                }, 500);
+            }
         }
     }
 }
