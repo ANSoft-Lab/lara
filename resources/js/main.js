@@ -212,6 +212,11 @@ class Finist {
     toggleMenu() {
         this.burger.classList.toggle('m-cross');
         this.mobileMenu.classList.toggle('m-hidden');
+        if($(this.burger).hasClass('m-cross')) {
+            $('main').css('padding-top', $(this.mobileMenu).height());
+        } else {
+            $('main').css('padding-top', 0);
+        }
     }
 
     showDropdown(evt) {
