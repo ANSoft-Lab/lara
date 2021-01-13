@@ -20,7 +20,8 @@ class FeedbackController extends Controller
         $feedback->create($request->validated());
 
         return response()->json([
-            'message' => 'Заявка принята',
+            'status' => 200,
+            'message' => 'Заявка принята. Менеджер свяжется с вами в течение часа!',
         ]);
     }
 }
