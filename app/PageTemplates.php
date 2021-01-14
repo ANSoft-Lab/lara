@@ -2,7 +2,6 @@
 
 namespace App;
 
-use Backpack\BlockCRUD\app\Models\BlockItem;
 trait PageTemplates
 {
     /*
@@ -83,39 +82,6 @@ trait PageTemplates
 
     private function simple()
     {        
-        $blocks = BlockItem::active()->get();
-
-        foreach($blocks as $block) {
-            $blocks_buttons[] = [
-                'name' => $block->name,
-                'html' => "<div>@customblock('" . $block->slug . "')</div>",
-                'title' => $block->name,
-            ];
-        }
-
-        // $this->crud->addField([
-        //     'name' => 'content',
-        //     'label' => trans('backpack::pagemanager.content_blocks'),
-        //     'type' => 'sortable_blocks',
-        //     'view_namespace' => 'blockcrud::templates',
-        //     // 'extra_plugins' => ['htmlbuttons'],
-        //     // 'options'       => [
-        //     //     'enterMode' => 3, //div instead of p
-        //     //     'extraAllowedContent' => 'blockcrud',
-        //     //     'entities' => false,
-        //     //     'htmlbuttons' => [
-        //     //         [
-        //     //             'name' => 'button1',
-        //     //             'icon' => 'puzzle.png',
-        //     //             'title' => 'Вставить блок',
-        //     //             'items' => $blocks_buttons,
-        //     //         ],
-        //     //     ],
-                
-        //     // ],
-        //     'placeholder' => trans('backpack::pagemanager.content_placeholder'),
-        // ]);
-        
         $this->crud->addField([
             'name' => 'content',
             'label' => trans('backpack::pagemanager.content_blocks'),

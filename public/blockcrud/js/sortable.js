@@ -65,6 +65,9 @@ $(document).ready(function(){
                     }
                 }
             };
+
+            var dragParent = drag.parent();
+            
             // отпускаем клавишу мыши
             var mouseUp = function(){
                 // завершаем выполнение функции
@@ -76,8 +79,9 @@ $(document).ready(function(){
                     // возвращаем z-позицию на уровень остальных элементов
                     drag.css({'z-index':1, 'background-color':'transparent'});
                 });
-                // здесь сохраняем новый порядок элементов
-                // (cookie или post-запрос на сервер, зависит от поставленной задачи)
+
+                // активация события
+                dragParent.trigger('changeSortable', [drag]);
             };
             // подключаем выполнение функций перемещения и отпускания клавиши мыши
             // завершаем выполнение функции, если нажата правая клавиша мыши
@@ -90,4 +94,5 @@ $(document).ready(function(){
     }
     
     $('.drag').draggable();
+    
 });
