@@ -15,12 +15,10 @@
             {!! $kis_best_2 ?? 'Мы сотрудничаем только с аккредитованными компаниями' !!}
         </h2>
         <div class="partners-logos d-flex flex-wrap justify-content-space-around align-content-center mb-40">
-            <a href="https://www.ingos.ru/" target="_blank">
                 <picture>
                     <source srcset="/icon/partners/ingos.svg" media="(min-width: 768px)">
                     <img src="/icon/partners/ingos.svg" alt="Ингосстрах" class="p-logo">
                 </picture>
-            </a>
             {{--
             <a href="https://www.ergo.ee/ru" target="_blank">
                 <picture>
@@ -29,24 +27,18 @@
                 </picture>
             </a>
             --}}
-            <a href="https://www.reso.ru/" target="_blank">
                 <picture>
                     <source srcset="/icon/partners/reso-logo.png" media="(min-width: 768px)">
                     <img src="/icon/partners/reso-logo.png" alt="Ресо" class="p-logo">
                 </picture>
-            </a>
-            <a href="https://www.alfastrah.ru/" target="_blank">
                 <picture>
                     <source srcset="/icon/partners/alfastrahovanie.jpg" media="(min-width: 768px)">
                     <img src="/icon/partners/alfastrahovanie.jpg" alt="Альфа Страхование" class="p-logo">
                 </picture>
-            </a>
-            <a href="https://renins.com/" target="_blank">
                 <picture>
                     <source srcset="/icon/partners/renes.jpg" media="(min-width: 768px)">
                     <img src="/icon/partners/renes.jpg" alt="Ренессанс" class="p-logo">
                 </picture>
-            </a>
             {{--
             <a href="https://sovcomins.ru/" target="_blank">
                 <picture>
@@ -55,12 +47,10 @@
                 </picture>
             </a>
             --}}
-            <a href="https://www.vsk.ru/" target="_blank">
                 <picture>
                     <source srcset="/icon/partners/vsk.jpg" media="(min-width: 768px)">
                     <img src="/icon/partners/vsk.jpg" alt="ВСК" class="p-logo">
                 </picture>
-            </a>
         </div>
         <h3 class="fs-26 text-center mb-20{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}"
         @if (isset($edit_mode))

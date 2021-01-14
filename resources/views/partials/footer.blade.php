@@ -86,8 +86,8 @@
             </div>
         </div>
         <div style="display: flex; justify-content: center">
-            <div style="width: 300px">
-                @include('blockcrud.modals.feedback', ['modal_title' => 'Остались вопросы?', 'link' => false])
+            <div style="width: 350px">
+                @include('blockcrud.modals.feedback', ['modal_title' => 'Заказать обратный звонок', 'link' => false])
             </div>
         </div>
         <div class="footer__bottom">
