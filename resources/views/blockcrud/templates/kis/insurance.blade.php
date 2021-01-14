@@ -10,9 +10,7 @@
             <div class="panel__img d-flex mb-20">
                 <img src="/img/001.svg" alt="Имущество">
             </div>
-            <div class="about__info">
-                Риск утраты объекта
-            </div>
+            <span class="info">Риски гибели, утраты или повреждения объекта залога (только конструктивные элементы)</span>
         </div>
         <div class="panel blue-info">
             <h2 class="about__title">
@@ -21,9 +19,7 @@
             <div class="panel__img d-flex mb-20">
                 <img src="/img/002.svg" alt="Имущество">
             </div>
-            <div class="about__info">
-                Риски смерти и вреда здоровью
-            </div>
+            <span class="info">Риски смерти, утраты трудоспособности заемщика/созаемщика</span>
         </div>
         <div class="panel blue-info">
             <h2 class="about__title">
@@ -32,9 +28,7 @@
             <div class="panel__img d-flex mb-20">
                 <img src="/img/003.svg" alt="Имущество">
             </div>
-            <div class="about__info">
-                Риск утраты права собственности
-            </div>
+            <span class="info">Риск потери права собственности на объект залога</span>
         </div>
     </div>
 </section>
