@@ -7,7 +7,7 @@
     <div class="modal">
         <div class="modal__close js-modal-close"></div>
         <h2 class="modal__title">
-            {{ $modal_title ?? 'Оставить заявку' }}
+            Заказать обратный звонок
         </h2>
         <div class="form-area">
             <form action="{{ route('feedback_send', [], false) }}" class="modal__form">
