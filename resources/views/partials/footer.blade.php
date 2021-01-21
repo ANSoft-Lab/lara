@@ -1,10 +1,11 @@
 <footer class="gray-bg">
     <div class="footer">
-        <div class="footer__sections">
-            <div class="footer__top">
                 <a href="/" class="footer__logo">
                     <img src="/icon/logo.svg" alt="finist">
                 </a>
+        <div class="footer__sections">
+            <div class="footer__top">
+                <div class="footer__logo">&nbsp;</div>
                 @foreach (App\Models\MenuItem::getTree('bottom') as $item)
                     <div class="footer__list-wrap">
                         @if($item->name === 'Дополнительно')
