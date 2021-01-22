@@ -1,6 +1,7 @@
 .partners {
     margin-top: 64px;
     margin-bottom: 80px;
+    height: 200px;
 
     &__list {
         display: flex;
@@ -32,6 +33,7 @@
 @media screen and (min-width: 768px) {
     .partners {
         margin: 80px 20px 70px;
+        height: 100px;
 
         &__list-item {
             width: calc(100% / 3);
@@ -45,7 +47,7 @@
         width: 1326px;
         margin: 80px auto 125px;
         position: relative;
-        height: 48px;
+        height: 150px;
         overflow-x: hidden;
         transform: translate3d(0, 0, 0);
 
