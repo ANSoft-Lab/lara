@@ -43,8 +43,6 @@ class Finist {
 
         var th = this;
 
-        $(document).on('click', '#map-help', th.closeHelp.bind(th))
-
         //  Выбор города
         $(document).on('click', '.js-open-modal', th.openModal.bind(th));
         $(document).on('click', '.js-modal-close', th.closeModal.bind(th));
