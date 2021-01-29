@@ -27,6 +27,7 @@
             </li>
         </ul>
     </div>
+    <div id="map-help" class="help">Кликните по метке для подробной информации.</div>
     <div class="js-map-slider contacts__slider glide__track" data-glide-el="track">
         <div class="contacts__wrapper glide__slides">
             <div class="contacts__map js-map glide__slide">

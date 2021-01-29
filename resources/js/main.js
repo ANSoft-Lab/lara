@@ -13,6 +13,8 @@ class Finist {
         this.scrollTop = document.querySelector('.js-scroll-top');
         this.scrollTop.addEventListener('click', this.goUp.bind(this));
 
+        this.help = $('#map-help');
+
         // Мобильное меню
 
         this.burger = document.querySelector('.js-burger');
@@ -26,7 +28,7 @@ class Finist {
 
         // Слайдер с картами
 
-        if($('.glide').length) {
+        if ($('.glide').length) {
             new Glide('.glide').mount();
         }
 
@@ -41,30 +43,32 @@ class Finist {
 
         var th = this;
 
+        $(document).on('click', '#map-help', th.closeHelp.bind(th))
+
         //  Выбор города
         $(document).on('click', '.js-open-modal', th.openModal.bind(th));
         $(document).on('click', '.js-modal-close', th.closeModal.bind(th));
         $(document).on('click', '.js_set_city', th.setCity.bind(th));
         $(document).on('click', '.js_send', th.sendForm.bind(th));
-        $('.js-overlay').on('click', function(e) {
-            if($(e.target).closest('.modal').length < 1) {
+        $('.js-overlay').on('click', function (e) {
+            if ($(e.target).closest('.modal').length < 1) {
                 th.closeModal();
             }
         });
 
         this.city = 'moscow';
 
-        if(Cookies.get('city')) {
+        if (Cookies.get('city')) {
             this.city = Cookies.get('city');
         } else {
             $('.header__location__city-option').click();
         }
 
-        if(th.city && this.cityModal) {
-            $(th.cityModal).find('[name=city]').each(function() {
+        if (th.city && this.cityModal) {
+            $(th.cityModal).find('[name=city]').each(function () {
                 $(this).prop('checked', false);
 
-                if($(this).val() == th.city) {
+                if ($(this).val() == th.city) {
                     $(this).prop('checked', true);
                 }
             });
@@ -74,7 +78,7 @@ class Finist {
 
         this.closeBtn = document.querySelectorAll('.js-contacts-close');
 
-        for(let i = 0; i < th.closeBtn.length; ++i) {
+        for (let i = 0; i < th.closeBtn.length; ++i) {
             let btn = th.closeBtn[i];
 
             btn.addEventListener('click', function () {
@@ -82,7 +86,7 @@ class Finist {
             });
         }
 
-        for(let i = 0; i < th.dropdownList.length; ++i) {
+        for (let i = 0; i < th.dropdownList.length; ++i) {
             let item = th.dropdownList[i];
 
             item.addEventListener('click', function (evt) {
@@ -91,7 +95,7 @@ class Finist {
             });
         }
 
-        for(let i = 0; i < th.dropdownMenuItem.length; ++i) {
+        for (let i = 0; i < th.dropdownMenuItem.length; ++i) {
             let item = th.dropdownMenuItem[i];
             item.addEventListener('click', this.showDropdown.bind(this));
         }
@@ -138,7 +142,7 @@ class Finist {
                     if(result.errors) {
                         $.each(result.errors, function (key, value) {
                             let newError = $('<div class="error-text mt-3">' + value + '</div>');
-            
+
                             errorsArea.append(newError);
                         });
                     } else if(result.message) {
@@ -152,7 +156,7 @@ class Finist {
 
                         $.each(errorsObj.errors, function (key, value) {
                             let newError = $('<div class="error-text mt-3">' + value + '</div>');
-            
+
                             errorsArea.append(newError);
                         });
                     } else {
