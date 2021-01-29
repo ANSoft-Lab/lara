@@ -215,7 +215,7 @@ class Finist {
         this.burger.classList.toggle('m-cross');
         this.mobileMenu.classList.toggle('m-hidden');
         if($(this.burger).hasClass('m-cross')) {
-            $('main').css('padding-top', $(this.mobileMenu).height());
+            $('main').css('padding-top', $(this.mobileMenu).height() - 45);
         } else {
             $('main').css('padding-top', 0);
         }
