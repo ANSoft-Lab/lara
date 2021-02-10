@@ -1,6 +1,11 @@
 @extends('base')
 @section('content')
     <div class="container-i" style="height: 100%; min-height: 100%">
-        <iframe id="ifr" class="iframe" src="http://refin.finist.ru/landing" width="100%" height="4200px" scrolling="no" style="min-height: 100%"></iframe>
+        <iframe
+            id="ifr"
+            src="http://refin.finist.ru/landing"
+            width="100%"
+            style="display: block; min-height: 100%"
+            scrolling="no"></iframe>
     </div>
 @endsection
