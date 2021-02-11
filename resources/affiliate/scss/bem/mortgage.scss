@@ -4,10 +4,11 @@
 	padding: 0 20px;
 	padding-top: 28px;
 	padding-bottom: 173px;
-	background-image: url(/images/mortgage.png);
+	background-image: url(../../img/affiliate/images/mortgage.png);
 	background-repeat: no-repeat;
 	background-size: 270px 391px;
 	background-position: right bottom;
+
 	&__title{
 		font-weight: 500;
 		font-size: 18px;
@@ -53,7 +54,7 @@
 		padding-left: 0;
 		padding-right: 0;
 		padding-bottom: 0;
-		
+
 		&__title{
 			text-align: center;
 			font-size: 20px;
@@ -61,7 +62,7 @@
 		}
 		&__content{
 			background: #F7F7F7;
-			background-image: url(/images/mortgage-tablet.png);
+			background-image: url(../../img/affiliate/images/mortgage-tablet.png);
 			background-size: 342px 317px;
 			background-repeat: no-repeat;
 			background-position: right bottom;
@@ -115,6 +116,6 @@
 	}
 	// .breadcrumbs{
 	// 	width: 1326px;
-	// 	margin: 0 auto;	
+	// 	margin: 0 auto;
 	// }
 }
