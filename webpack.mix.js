@@ -12,10 +12,19 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/main.js', 'public/js')
-     .js('resources/js/app.js', 'public/js')
+    .js('resources/js/app.js', 'public/js')
+    .js('resources/affiliate/js/affiliate.js', 'public/js')
+    .scripts([
+        'resources/affiliate/js/swiper-bundle.js',
+        'resources/affiliate/js/autosize.min.js',
+        'resources/affiliate/js/simplebar.min.js',
+        'resources/affiliate/js/simple_js.js'
+    ], 'public/js/new.js')
+
     .sass('resources/scss/style.scss', 'public/css')
-        .options({
-            postCss: [
-                require('postcss-css-variables')()
-            ]
-        }).version();
+    .sass('resources/affiliate/scss/affiliate.scss', 'public/css')
+    .options({
+        postCss: [
+            require('postcss-css-variables')()
+        ]
+    }).version();
