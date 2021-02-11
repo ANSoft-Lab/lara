@@ -1,0 +1,423 @@
+.footer {
+    margin: 0;
+    padding: 48px 30px 17px;
+
+    &_btn-wrap {
+        width: 100%;
+    }
+
+    &__list-wrap {
+        margin-bottom: 25px;
+    }
+
+    &__logo {
+        display: none;
+    }
+
+    &__subtitle, &__link {
+        margin-bottom: 23px;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.04em;
+        color: #272727;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    &__link {
+        font-weight: 300;
+        margin-bottom: 0;
+        text-decoration: none;
+    }
+
+    &__vacancies {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        margin: 37px 0;
+        padding-left: 64px;
+        font-size: 15px;
+        line-height: 1.27;
+        letter-spacing: 0.05em;
+        text-decoration-line: underline;
+        color: #272727;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background-color: #EAEEEE;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('../../icon/vacancies.svg');
+        }
+    }
+
+    &__phone-item {
+        margin-bottom: 20px;
+    }
+
+    &__tel {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.05em;
+        color: #272727;
+        text-decoration: none;
+    }
+
+    &__city {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.25;
+        color: #000000;
+    }
+
+    &__callback {
+        display: block;
+        margin: 45px 0 35px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.37;
+        letter-spacing: 0.03em;
+        text-decoration-line: underline;
+        color: #272727;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    &__questions {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 1.29;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        letter-spacing: 0.03em;
+        color: #272727;
+        background: #F2CB4D;
+        border-radius: 33px;
+        text-decoration: none;
+    }
+
+    &__socials {
+        margin: 55px auto;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__social-icon {
+        margin: 0 30px;
+    }
+
+    &__copyright {
+        margin-bottom: 0;
+    }
+
+    &__disclaimer, &__dates {
+        margin-bottom: 53px;
+        font-size: 12px;
+        line-height: 1.58;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #272727;
+    }
+
+    &__scroll-top {
+        position: relative;
+        width: 47px;
+        height: 47px;
+        border: none;
+        border-radius: 50%;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        background: #F2CB4D;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+
+        &:focus {
+            outline: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            left: 14px;
+            top: 16px;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 11px solid #272727;
+        }
+    }
+}
+
+// overwright for safari10+
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+
+       .footer__vacancies {
+
+           &::after {
+               margin-top: -20px;
+           }
+      }
+   }
+}
+
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: 60px 20px 40px;
+        &__logo {
+            display: inline-block;
+            width: 220px;
+            z-index: 2;
+
+            img {
+                width: 110px;
+                height: 38px;
+            }
+        }
+
+        &__list-wrap {
+            width: calc(50% - 110px);
+            margin-bottom: 40px;
+        }
+
+        &__top {
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        &__vacancies {
+            position: absolute;
+            margin-top: 95px;
+            z-index: 10;
+        }
+
+        &__link {
+            line-height: 2.19;
+        }
+
+        &__phone-list {
+            display: -ms-flexbox;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 220px;
+            justify-content: flex-end;
+        }
+
+        .footer__phone-item {
+            margin-bottom: 20px;
+            width: 50%;
+        }
+
+        &__mid {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        &__callback {
+            position: absolute;
+            margin-bottom: 20px;
+            //left: 220px;
+            bottom: 0;
+        }
+
+        &__bottom {
+            display: -ms-flexbox;
+            display: flex;
+            margin-left: 220px;
+            margin-bottom: 56px;
+        }
+
+        &__questions {
+            max-width: 230px;
+            margin: 0;
+        }
+
+        &__socials {
+            margin: 0;
+            justify-content: flex-start;
+        }
+
+        &__social-icon {
+            margin-left: 0;
+            margin-right: 35px;
+        }
+
+        &__copyright {
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        &__disclaimer {
+            text-align: left;
+            max-width: 400px;
+            margin-bottom: 30px;
+        }
+
+        &__dates {
+            margin-bottom: 0;
+        }
+
+        &__scroll-top {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+        &__btn-wrap {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .footer {
+        padding: 60px 50px 40px;
+        width: 1326px;
+        margin:  0 auto;
+
+        &__sections {
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        &__logo {
+            width: auto;
+            margin-right: 300px;
+            position: relative;
+            right: 30px;
+            top: 55px;
+
+            img {
+                width: 141px;
+                height: 46px;
+            }
+        }
+
+        &__list-wrap {
+            width: 269px;
+            margin-right: 30px;
+
+            &:last-of-type {
+                margin-right: 20px;
+            }
+        }
+
+        &__phone-list {
+            margin-left: 0;
+        }
+
+        &__tel {
+            font-size: 16px;
+        }
+
+        &__city {
+            font-size: 14px;
+        }
+
+        &__callback {
+            left: 0;
+            bottom: 60px;
+        }
+
+        &__bottom {
+            position: relative;
+            margin-left: 850px;
+        }
+
+        &__btn-wrap {
+            width: 100%;
+        }
+
+        &__copyright {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__disclaimer {
+            max-width: 500px;
+            margin-right: 352px;
+            margin-bottom: 0;
+        }
+
+        &__scroll-top {
+            position: fixed;
+            right: 45px;
+            top: auto;
+            bottom: 65px;
+        }
+
+        &__socials {
+            position: absolute;
+            left: -170px;
+            top: 113px;
+            z-index: 4;
+        }
+        &__vacancies {
+            left: 300px;
+        }
+    }
+
+    _:-ms-fullscreen, :root .footer {
+
+        &__phone-list {
+            width: 450px;
+        }
+
+        &__vacancies {
+            margin-left: -775px;
+
+            &::after {
+                margin-top: -25px;
+            }
+
+            &::before {
+                margin-top: -5px;
+            }
+        }
+    }
+}

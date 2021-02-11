@@ -1,0 +1,217 @@
+.qna {
+    margin: 0;
+    padding-top: 54px;
+
+    &__text {
+        margin: 0 12px;
+    }
+
+    &__title {
+        margin-bottom: 48px;
+        font-size: 26px;
+        line-height: 1.54;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #272727;
+    }
+
+    &__info {
+        margin-bottom: 32px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.87;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #272727;
+    }
+
+    &__list {
+        padding-bottom: 30px;
+    }
+
+    &__list-title {
+        position: relative;
+        padding-left: 60px;
+        font-size: 15px;
+        line-height: 1.47;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #272727;
+
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            left: 14px;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 11px solid #98A2A4;
+            transition-duration: 0.3s;
+        }
+
+        &.m-visible {
+
+            &::after {
+                border-top: none;
+                border-bottom: 11px solid #98A2A4;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                display: flex;
+                width: 47px;
+                height: 47px;
+                top: 50%;
+                left: 0;
+                transform: translate(0, -50%);
+                margin-right: 13px;
+                border-radius: 50%;
+                background-color: rgba(220,226,227,0.65);
+            }
+
+            & + .qna__dropdown {
+                display: block;
+            }
+        }
+    }
+
+    &__dropdown {
+        display: none;
+        padding: 35px 0 0;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.04em;
+        color: #272727;
+        transition-duration: 0.3s;
+    }
+
+    &__list-item {
+        position: relative;
+        padding: 32px 17px 10px 10px;
+        background-color: #F0F0F0;
+        transition-duration: 0.3s;
+        cursor: pointer;
+
+        &.m-visible {
+            background-color: #F7F7F7;
+            padding-bottom: 30px;
+
+            .qna__dropdown {
+                display: block;
+            }
+        }
+    }
+}
+
+_:-ms-fullscreen, :root .qna__dropdown {
+    display: block;
+ }
+
+@media screen and (min-width: 768px) {
+    .qna {
+        padding-top: 87px;
+
+        &__text {
+            padding-right: 20px;
+            padding-left: 60px;
+            margin: 0 20px;
+            display: flex;
+        }
+
+        &__title, &__info {
+            text-align: left;
+            width: 50%;
+        }
+
+        &__title {
+            white-space: nowrap;
+        }
+
+        &__info {
+            margin-bottom: 60px;
+        }
+
+        &__list {
+            margin: 0 20px;
+            padding-bottom: 0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        &__list-title {
+            padding-left: 70px;
+
+            &::after {
+                left: -10px;
+            }
+
+            &.m-visible {
+
+                &::before {
+                    left: -24px;
+                }
+            }
+        }
+
+        &__list-item {
+            padding: 30px 40px 20px 60px;
+
+            &:first-of-type {
+                padding-top: 50px;
+            }
+
+            &:last-of-type {
+                padding-bottom: 40px;
+            }
+
+            &.m-visible {
+                padding-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .qna {
+        width: 1326px;
+        margin: 0 auto;
+
+        &__text {
+            margin: 0;
+        }
+
+        &__title {
+            font-size: 34px;
+            margin-right: 125px;
+            width: auto;
+        }
+
+        &__list-item {
+            padding: 32px 185px 20px 160px;
+        }
+
+        &__list {
+            margin: 0;
+        }
+
+        &__list-title {
+            padding: 0;
+
+            &.m-visible {
+                &::before {
+                    left: -97px;
+                }
+            }
+
+            &::after {
+                left: -83px;
+            }
+        }
+    }
+}

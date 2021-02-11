@@ -1,0 +1,120 @@
+.mortgage{
+	background: #F7F7F7;
+	margin: 0;
+	padding: 0 20px;
+	padding-top: 28px;
+	padding-bottom: 173px;
+	background-image: url(/images/mortgage.png);
+	background-repeat: no-repeat;
+	background-size: 270px 391px;
+	background-position: right bottom;
+	&__title{
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: left;
+		letter-spacing: 0.5px;
+		color: #272727;
+	}
+	&__text{
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.8px;
+		color: #272727;
+		margin-top: 18px;
+	}
+	&__list{
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.8px;
+		color: #272727;
+		margin-top: 20px;
+	}
+	&__item{
+		padding-left: 42px;
+		position: relative;
+		margin-bottom: 14px;
+		&::before{
+			content: '';
+			width: 22px;
+			display: inline-block;
+			background-color:  #272727;
+			height: 1px;
+			position: absolute;
+			left: 0;
+			top: 10px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.mortgage{
+		background: transparent;
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+		
+		&__title{
+			text-align: center;
+			font-size: 20px;
+			line-height: 24px;
+		}
+		&__content{
+			background: #F7F7F7;
+			background-image: url(/images/mortgage-tablet.png);
+			background-size: 342px 317px;
+			background-repeat: no-repeat;
+			background-position: right bottom;
+			min-height: 319px;
+			margin-top: 30px;
+			padding-right: 40px;
+			padding-left: 40px;
+			padding-top: 34px;
+			padding-right: 241px;
+		}
+		&__text{
+			font-size: 16px;
+			line-height: 26px;
+			letter-spacing: 0.8px;
+		}
+		&__list{
+			font-size: 16px;
+			line-height: 26px;
+			letter-spacing: 0.8px;
+		}
+		&__item{
+			padding-left: 60px;
+			margin-bottom: 24px;
+			&::before{
+				width: 40px;
+				top: 16px;
+			}
+		}
+	}
+}
+@media screen and (min-width: 1440px) {
+	.mortgage{
+		margin: 0 auto;
+		&__title{
+			font-size: 26px;
+			line-height: 32px;
+			text-align: left;
+		}
+		&__content{
+			margin-top: 34px;
+			border-radius: 10px;
+			min-height: 306px;
+		}
+		&__text{
+			max-width: 700px;
+		}
+		&__list{
+			margin-top: 34px;
+			max-width: 650px;
+		}
+	}
+	// .breadcrumbs{
+	// 	width: 1326px;
+	// 	margin: 0 auto;	
+	// }
+}

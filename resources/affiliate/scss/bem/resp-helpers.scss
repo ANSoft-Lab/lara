@@ -1,0 +1,39 @@
+.from{
+	&_tablet{
+		display: none;
+	}
+	&_desk{
+		display: none;
+	}
+}
+.to{
+	&_tablet{
+	}
+	&_desc{
+	}
+}
+@media screen and (min-width: 768px) {
+	.from{
+		&_tablet{
+			display: block;
+		}
+	}
+	.to{
+		&_tablet{
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.from{
+		&_desk{
+			display: block;
+		}
+	}
+	.to{
+		&_desk{
+			display: none;
+		}
+	}
+}

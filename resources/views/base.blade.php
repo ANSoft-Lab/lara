@@ -7,6 +7,9 @@
 
     <title>Финансы и страхование FINIST</title>
     <link rel="stylesheet" type="text/css" href="{{mix('/css/style.css')}}">
+    @if(request()->path() === 'affiliate')
+    <link rel="stylesheet" type="text/css" href="{{mix('/css/affiliate.css')}}">
+    @endif
     <link rel="icon" type="image/png" href="/icon/favicon.png"/>
 </head>
 <body>
@@ -19,6 +22,11 @@
     @include('modals.choose_city')
 </div>
     <script src="{{mix('/js/main.js')}}"></script>
+
+   @if(request()->path() === 'affiliate')
+    <script src="{{mix('/js/affiliate.js')}}"></script>
+    <script src="{{mix('/js/new.js')}}"></script>
+   @endif
    @if(request()->path() === 'kis')
     <script src="{{mix('/js/app.js')}}"></script>
    @endif

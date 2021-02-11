@@ -1,0 +1,45 @@
+.breadcrumbs{
+	margin: 0 12px;
+	// width: 100%;
+	margin-bottom: 14px;
+	a{
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: 0.005em;
+		color: #98A2A4;
+		text-decoration: none;
+		&:not([href]){
+			font-weight: 500;
+		}
+		&:not(:last-child){
+			margin-right: 6px;
+			&::after{
+				content: '/';
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 15px;
+				letter-spacing: 0.005em;
+				color: #98A2A4;
+				margin-left: 10px;
+			}
+		}
+	}
+}
+@media screen and (min-width: 768px) {
+	.breadcrumbs{
+		margin: 0 20px;
+		margin-bottom: 14px;
+		margin-top: 7px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.breadcrumbs{
+		width: 1326px;
+		margin: 0 auto;	
+		a{
+			font-size: 14px;
+		}
+	}
+}

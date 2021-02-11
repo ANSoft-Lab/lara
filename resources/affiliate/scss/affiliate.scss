@@ -1,0 +1,54 @@
+@import "./node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import './node_modules/css-reset-and-normalize/scss/reset-and-normalize';
+@import "fonts";
+@import "bem/header";
+@import "bem/offer-links";
+//@import "bem/cooperation";
+@import "bem/additional";
+@import "bem/for-free";
+@import "bem/qna";
+@import "bem/all-sorts";
+@import "bem/partners";
+@import "bem/contacts";
+@import "bem/footer";
+@import "bem/modal";
+
+// Свайпери
+
+@import "swiper-bundle";
+@import "simplebar";
+
+// О компании
+
+@import "bem/about";
+@import "bem/icon-list";
+@import "bem/blue-info";
+@import "bem/clients";
+@import "bem/location";
+@import "bem/principles";
+@import "bem/operation";
+@import "bem/leaders";
+@import "bem/collective";
+
+// О компании
+
+
+@import "bem/breadcrumbs";
+@import "bem/affiliate";
+@import "bem/how-to-earn";
+@import "bem/you-get";
+@import "bem/advantages";
+@import "bem/mortgage";
+@import "bem/partner-banks";
+@import "bem/approval";
+@import "bem/refinance";
+@import "bem/steps";
+@import "bem/team";
+@import "bem/chat";
+
+
+@import "bem/resp-helpers";
+
+body {
+    font-family: 'Formular', Arial, sans-serif;
+}
