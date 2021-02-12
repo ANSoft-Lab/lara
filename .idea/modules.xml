@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/finist.iml" filepath="$PROJECT_DIR$/.idea/finist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/finist-v2-backend.iml" filepath="$PROJECT_DIR$/.idea/finist-v2-backend.iml" />
     </modules>
   </component>
 </project>

@@ -241,3 +241,23 @@ class Finist {
 
 }
 new Finist();
+
+$(document).ready(function(){
+    $('.ins__faq__item').on('click', e=>{
+        e.stopPropagation();
+
+        const t = $(e.currentTarget);
+
+        $('.ins__faq__item').not(t).removeClass('active').find('.ins__faq__content').slideUp(500);
+
+        const isOpened = t.hasClass('active');
+
+        if(!isOpened){
+            t.addClass('active').find('.ins__faq__content').slideDown(500);
+        }
+        else {
+            t.removeClass('active').find('.ins__faq__content').slideUp(500);
+        }
+
+    });
+});
