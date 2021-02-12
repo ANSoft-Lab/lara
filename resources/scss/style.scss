@@ -1,5 +1,6 @@
 @import "./node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import './node_modules/css-reset-and-normalize/scss/reset-and-normalize';
+@import '_mixins';
 @import "fonts";
 @import "bem/custom";
 @import "bem/header";
