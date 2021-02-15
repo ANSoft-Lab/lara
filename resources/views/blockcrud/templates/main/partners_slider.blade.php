@@ -19,8 +19,8 @@
         <li class="partners__list-item">
             <a href="№" class="partners__link">
                 <picture>
-                    <source srcset="/icon/partners/logo-zeta.png" media="(min-width: 768px)">
-                    <img src="/icon/partners/logo-zeta-m.png" alt="tnkf" class="partners__logo">
+                    <source srcset="/icon/partners/logo-zetta.png" media="(min-width: 768px)">
+                    <img src="/icon/partners/logo-zetta-m.png" alt="tnkf" class="partners__logo">
                 </picture>
             </a>
         </li>
@@ -75,8 +75,8 @@
         <li class="partners__list-item">
             <a href="№" class="partners__link">
                 <picture>
-                    <source srcset="/icon/partners/logo-zeta.png" media="(min-width: 768px)">
-                    <img src="/icon/partners/logo-zeta-m.png" alt="tnkf" class="partners__logo">
+                    <source srcset="/icon/partners/logo-zetta.png" media="(min-width: 768px)">
+                    <img src="/icon/partners/logo-zetta-m.png" alt="tnkf" class="partners__logo">
                 </picture>
             </a>
         </li>
@@ -131,8 +131,8 @@
         <li class="partners__list-item">
             <a href="№" class="partners__link">
                 <picture>
-                    <source srcset="/icon/partners/logo-zeta.png" media="(min-width: 768px)">
-                    <img src="/icon/partners/logo-zeta-m.png" alt="tnkf" class="partners__logo">
+                    <source srcset="/icon/partners/logo-zetta.png" media="(min-width: 768px)">
+                    <img src="/icon/partners/logo-zetta-m.png" alt="tnkf" class="partners__logo">
                 </picture>
             </a>
         </li>
@@ -187,8 +187,8 @@
         <li class="partners__list-item">
             <a href="№" class="partners__link">
                 <picture>
-                    <source srcset="/icon/partners/logo-zeta.png" media="(min-width: 768px)">
-                    <img src="/icon/partners/logo-zeta-m.png" alt="tnkf" class="partners__logo">
+                    <source srcset="/icon/partners/logo-zetta.png" media="(min-width: 768px)">
+                    <img src="/icon/partners/logo-zetta-m.png" alt="tnkf" class="partners__logo">
                 </picture>
             </a>
         </li>
