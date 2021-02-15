@@ -4,7 +4,7 @@
             <a href="№" class="partners__link">
                 <picture>
                     <source srcset="/icon/partners/logo-soglasie.png" media="(min-width: 768px)">
-                    <img src="/icon/partners/logo-soglasie.png" alt="tnkf" class="partners__logo">
+                    <img src="/icon/partners/logo-soglasie-m.png" alt="tnkf" class="partners__logo">
                 </picture>
             </a>
         </li>
@@ -60,7 +60,7 @@
             <a href="№" class="partners__link">
                 <picture>
                     <source srcset="/icon/partners/logo-soglasie.png" media="(min-width: 768px)">
-                    <img src="/icon/partners/logo-soglasie.png" alt="tnkf" class="partners__logo">
+                    <img src="/icon/partners/logo-soglasie-m.png" alt="tnkf" class="partners__logo">
                 </picture>
             </a>
         </li>
@@ -92,7 +92,7 @@
             <a href="№" class="partners__link">
                 <picture>
                     <source srcset="/icon/partners/logo-soglasie.png" media="(min-width: 768px)">
-                    <img src="/icon/partners/logo-soglasie.png" alt="tnkf" class="partners__logo">
+                    <img src="/icon/partners/logo-soglasie-m.png" alt="tnkf" class="partners__logo">
                 </picture>
             </a>
         </li>
