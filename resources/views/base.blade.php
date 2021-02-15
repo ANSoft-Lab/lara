@@ -10,12 +10,17 @@
     <link rel="icon" type="image/png" href="/icon/favicon.png"/>
 </head>
 <body>
+<div id="app">
     @include('partials.header')
     <main>
         @yield('content')
     </main>
     @include('partials.footer')
     @include('modals.choose_city')
+</div>
     <script src="{{mix('/js/main.js')}}"></script>
+   @if(request()->path() === 'kis')
+    <script src="{{mix('/js/app.js')}}"></script>
+   @endif
 </body>
 </html>
