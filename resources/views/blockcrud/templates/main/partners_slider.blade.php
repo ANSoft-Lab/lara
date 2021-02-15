@@ -1,10 +1,26 @@
 <section class="partners">
     <ul class="partners__list">
         <li class="partners__list-item">
-            <a href="#" class="partners__link">
+            <a href="№" class="partners__link">
                 <picture>
-                    <source srcset="/icon/partners/domrf.png" media="(min-width: 768px)">
-                    <img src="/icon/partners/domrf-m.png" alt="domrf" class="partners__logo">
+                    <source srcset="/icon/partners/polis-garant.png" media="(min-width: 768px)">
+                    <img src="/icon/partners/polis-garant-m.png" alt="tnkf" class="partners__logo">
+                </picture>
+            </a>
+        </li>
+        <li class="partners__list-item">
+            <a href="№" class="partners__link">
+                <picture>
+                    <source srcset="/icon/partners/logo-zeta.png" media="(min-width: 768px)">
+                    <img src="/icon/partners/logo-zeta-m.png" alt="tnkf" class="partners__logo">
+                </picture>
+            </a>
+        </li>
+        <li class="partners__list-item">
+            <a href="№" class="partners__link">
+                <picture>
+                    <source srcset="/icon/partners/logo-soglasie.png" media="(min-width: 768px)">
+                    <img src="/icon/partners/logo-soglasie-m.png" alt="tnkf" class="partners__logo">
                 </picture>
             </a>
         </li>
@@ -33,10 +49,26 @@
             </a>
         </li>
         <li class="partners__list-item">
-            <a href="#" class="partners__link">
+            <a href="№" class="partners__link">
                 <picture>
-                    <source srcset="/icon/partners/domrf.png" media="(min-width: 768px)">
-                    <img src="/icon/partners/domrf-m.png" alt="domrf" class="partners__logo">
+                    <source srcset="/icon/partners/polis-garant.png" media="(min-width: 768px)">
+                    <img src="/icon/partners/polis-garant-m.png" alt="tnkf" class="partners__logo">
+                </picture>
+            </a>
+        </li>
+        <li class="partners__list-item">
+            <a href="№" class="partners__link">
+                <picture>
+                    <source srcset="/icon/partners/logo-zeta.png" media="(min-width: 768px)">
+                    <img src="/icon/partners/logo-zeta-m.png" alt="tnkf" class="partners__logo">
+                </picture>
+            </a>
+        </li>
+        <li class="partners__list-item">
+            <a href="№" class="partners__link">
+                <picture>
+                    <source srcset="/icon/partners/logo-soglasie.png" media="(min-width: 768px)">
+                    <img src="/icon/partners/logo-soglasie-m.png" alt="tnkf" class="partners__logo">
                 </picture>
             </a>
         </li>
@@ -65,10 +97,26 @@
             </a>
         </li>
         <li class="partners__list-item">
-            <a href="#" class="partners__link">
+            <a href="№" class="partners__link">
                 <picture>
-                    <source srcset="/icon/partners/domrf.png" media="(min-width: 768px)">
-                    <img src="/icon/partners/domrf-m.png" alt="domrf" class="partners__logo">
+                    <source srcset="/icon/partners/polis-garant.png" media="(min-width: 768px)">
+                    <img src="/icon/partners/polis-garant-m.png" alt="tnkf" class="partners__logo">
+                </picture>
+            </a>
+        </li>
+        <li class="partners__list-item">
+            <a href="№" class="partners__link">
+                <picture>
+                    <source srcset="/icon/partners/logo-zeta.png" media="(min-width: 768px)">
+                    <img src="/icon/partners/logo-zeta-m.png" alt="tnkf" class="partners__logo">
+                </picture>
+            </a>
+        </li>
+        <li class="partners__list-item">
+            <a href="№" class="partners__link">
+                <picture>
+                    <source srcset="/icon/partners/logo-soglasie.png" media="(min-width: 768px)">
+                    <img src="/icon/partners/logo-soglasie-m.png" alt="tnkf" class="partners__logo">
                 </picture>
             </a>
         </li>
@@ -97,10 +145,26 @@
             </a>
         </li>
         <li class="partners__list-item">
-            <a href="#" class="partners__link">
+            <a href="№" class="partners__link">
                 <picture>
-                    <source srcset="/icon/partners/domrf.png" media="(min-width: 768px)">
-                    <img src="/icon/partners/domrf-m.png" alt="domrf" class="partners__logo">
+                    <source srcset="/icon/partners/polis-garant.png" media="(min-width: 768px)">
+                    <img src="/icon/partners/polis-garant-m.png" alt="tnkf" class="partners__logo">
+                </picture>
+            </a>
+        </li>
+        <li class="partners__list-item">
+            <a href="№" class="partners__link">
+                <picture>
+                    <source srcset="/icon/partners/logo-zeta.png" media="(min-width: 768px)">
+                    <img src="/icon/partners/logo-zeta-m.png" alt="tnkf" class="partners__logo">
+                </picture>
+            </a>
+        </li>
+        <li class="partners__list-item">
+            <a href="№" class="partners__link">
+                <picture>
+                    <source srcset="/icon/partners/logo-soglasie.png" media="(min-width: 768px)">
+                    <img src="/icon/partners/logo-soglasie-m.png" alt="tnkf" class="partners__logo">
                 </picture>
             </a>
         </li>
