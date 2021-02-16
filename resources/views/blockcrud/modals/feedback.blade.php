@@ -21,7 +21,7 @@
                     <input type="hidden" name="required[]" value="phone">
                 </div>
                 <div class="modal__group">
-                    <label for="message" class="modal__label">Ваш вопрос</label>
+{{--                    <label for="message" class="modal__label">Ваш вопрос</label>--}}
                     <textarea id="message" name="message" class="modal__input" required rows="5" style="border: 1px solid black">Ваш вопрос</textarea>
                 </div>
                 <div class="errors-area">
