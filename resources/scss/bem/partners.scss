@@ -47,7 +47,7 @@
         width: 1326px;
         margin: 80px auto 125px;
         position: relative;
-        height: 150px;
+        height: 100px;
         overflow-x: hidden;
         transform: translate3d(0, 0, 0);
 
@@ -56,8 +56,8 @@
             flex-wrap: nowrap;
             position: absolute;
             transform: translate3d(0, 0, 0);
-            -webkit-animation: scroll 20s linear infinite;
-            animation: scroll 20s linear infinite;
+            -webkit-animation: scroll 50s linear infinite;
+            animation: scroll 50s linear infinite;
         }
 
 
