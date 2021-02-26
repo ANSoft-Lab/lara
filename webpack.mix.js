@@ -17,4 +17,4 @@ mix.js('resources/js/main.js', 'public/js')
             postCss: [
                 require('postcss-css-variables')()
             ]
-        });
+        }).version();

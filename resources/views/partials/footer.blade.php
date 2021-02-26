@@ -1,10 +1,11 @@
 <footer class="gray-bg">
     <div class="footer">
-        <div class="footer__sections">
-            <div class="footer__top">
                 <a href="/" class="footer__logo">
                     <img src="/icon/logo.svg" alt="finist">
                 </a>
+        <div class="footer__sections">
+            <div class="footer__top">
+                <div class="footer__logo">&nbsp;</div>
                 @foreach (App\Models\MenuItem::getTree('bottom') as $item)
                     <div class="footer__list-wrap">
                         @if($item->name === 'Дополнительно')
@@ -82,7 +83,7 @@
                     </li>
                 </ul>
                 {{--<a href="{{ config('app.old_url') }}/kontakty" class="footer__callback">Обратный звонок</a>--}}
-                @include('blockcrud.modals.feedback', ['modal_title' => 'Обратный звонок', 'btn_class' => 'footer__callback', 'link' => false])
+{{--                @include('blockcrud.modals.feedback', ['modal_title' => 'Обратный звонок', 'btn_class' => 'footer__callback', 'link' => false])--}}
             </div>
         </div>
         <div style="display: flex; justify-content: center">

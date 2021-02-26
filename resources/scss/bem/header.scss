@@ -36,7 +36,7 @@
         z-index: 3;
         letter-spacing: 0.03em;
         text-decoration: underline;
-                                
+
         &__city-option {
             border-bottom: 1px dashed #272727;
             cursor: pointer;
@@ -275,7 +275,7 @@
         &__callback {
             display: flex;
             margin-top: -1px;
-            padding: 30px 24px;
+            padding: 10px 24px;
         }
 
         &-contacts {
@@ -306,7 +306,7 @@
         display: flex;
         align-items: center;
         width: 100%;
-        padding: 65px 24px 34px;
+        padding: 65px 24px 0px;
 
         &__link {
             max-width: 120px;
@@ -409,7 +409,7 @@
             margin: 0;
             padding: 26px 37px 33px 26px;
             background-color: #f7f7f7;
-            
+
             &__city-option {
                 position: absolute;
                 left: 47px;
@@ -484,7 +484,7 @@
             }
         }
 
-        
+
         &-callback {
             a {
                 text-align: right;
@@ -501,7 +501,7 @@
     .header-location {
         position: absolute;
         margin-left: 195px;
-        z-index: 6;
+        z-index: 5;
     }
 
     .header-menu {

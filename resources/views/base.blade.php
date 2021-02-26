@@ -6,7 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Финансы и страхование FINIST</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{mix('/css/style.css')}}">
     <link rel="icon" type="image/png" href="/icon/favicon.png"/>
 </head>
 <body>
@@ -16,6 +16,6 @@
     </main>
     @include('partials.footer')
     @include('modals.choose_city')
-    <script src="/js/main.js"></script>
+    <script src="{{mix('/js/main.js')}}"></script>
 </body>
 </html>

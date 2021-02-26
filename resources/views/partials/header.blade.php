@@ -66,7 +66,9 @@
                         </li>
                     </ul>
                     <div class="header-callback">
-                        <a href="{{ config('app.old_url') }}/kontakty/" class="header-contacts__callback">Обратный звонок</a>
+                        <a href="{{ config('app.old_url') }}/kontakty/" class="header-contacts__callback">
+                            @include('blockcrud.modals.feedback', ['modal_title' => 'Обратный звонок', 'link' => true])
+                        </a>
                         <a href="{{ config('app.old_url') }}/job/" class="header-contacts__vacancies">Вакансии</a>
                     </div>
                 </div>

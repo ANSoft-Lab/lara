@@ -1,9 +1,11 @@
+.idea
 /node_modules
 /public/hot
 /public/storage
 /public/images
 /public/js
 /public/css
+/public/mix-manifest.json
 /storage/*.key
 /vendor
 .env
@@ -16,4 +18,5 @@ yarn-error.log
 /info
 composer.lock
 yarn.lock
+package-lock.json
 /storage/app/blockcrud

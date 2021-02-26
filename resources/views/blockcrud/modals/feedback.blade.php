@@ -7,22 +7,22 @@
     <div class="modal">
         <div class="modal__close js-modal-close"></div>
         <h2 class="modal__title">
-            {{ $modal_title ?? 'Оставить заявку' }}
+            Заказать обратный звонок
         </h2>
         <div class="form-area">
             <form action="{{ route('feedback_send', [], false) }}" class="modal__form">
                 <div class="modal__group">
-                    <label for="name" class="modal__label">Ваше имя*</label>
-                    <input id="name" type="text" name="name" class="modal__input" required>
+{{--                    <label for="name" class="modal__label">Ваше имя*</label>--}}
+                    <input id="name" type="text" name="name" class="modal__input" required placeholder="Ваше имя">
                 </div>
                 <div class="modal__group">
-                    <label for="phone" class="modal__label">Телефон*</label>
-                    <input id="phone" type="text" name="phone" class="modal__input" required>
+{{--                    <label for="phone" class="modal__label">Телефон*</label>--}}
+                    <input id="phone" type="text" name="phone" class="modal__input" required placeholder="Телефон">
                     <input type="hidden" name="required[]" value="phone">
                 </div>
                 <div class="modal__group">
-                    <label for="message" class="modal__label">Ваш вопрос</label>
-                    <textarea id="message" name="message" class="modal__input" required rows="5" style="border: 1px solid black"></textarea>
+{{--                    <label for="message" class="modal__label"></label>--}}
+                    <textarea id="message" name="message" class="modal__input" required rows="5" style="border: 1px solid black" placeholder="Ваш вопрос"></textarea>
                 </div>
                 <div class="errors-area">
 
