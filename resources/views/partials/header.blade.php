@@ -10,7 +10,7 @@
             </div>
             <nav class="header__nav header-menu__wrap js-mobile-menu">
                 <ul class="header-menu">
-                    @foreach (App\Models\MenuItem::getTree(); as $item)
+                    @foreach (App\Models\MenuItem::getTree() as $item)
                         <li class="header-menu__item">
                             <a href="{{ $item->url() }}" class="header-menu__link{{ $item->children->count() > 0 ? ' m-dropdown js-dropdown-item' : '' }}">
                                 {{ $item->name }}

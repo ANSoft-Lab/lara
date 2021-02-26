@@ -2,7 +2,6 @@
 
 namespace App;
 
-use Backpack\BlockCRUD\app\Models\BlockItem;
 trait PageTemplates
 {
     /*
@@ -70,38 +69,27 @@ trait PageTemplates
         // ]);
     }
 
-    private function simple()
+    private function default()
     {        
-        $blocks = BlockItem::active()->get();
-
-        foreach($blocks as $block) {
-            $blocks_buttons[] = [
-                'name' => $block->name,
-                'html' => "<div>@customblock('" . $block->slug . "')</div>",
-                'title' => $block->name,
-            ];
-        }
-        
         $this->crud->addField([
-            'name' => 'content',//'content',
+            'name' => 'content',
             'label' => trans('backpack::pagemanager.content'),
             'type' => 'ckeditor',
             'template' => 'vendor.backpack.crud.fields.ckeditor',
-            'extra_plugins' => ['htmlbuttons'],
-            'options'       => [
-                'enterMode' => 3, //div instead of p
-                'extraAllowedContent' => 'blockcrud',
-                'entities' => false,
-                'htmlbuttons' => [
-                    [
-                        'name' => 'button1',
-                        'icon' => 'puzzle.png',
-                        'title' => 'Вставить блок',
-                        'items' => $blocks_buttons,
-                    ],
-                ],
-                
-            ],
+            'placeholder' => trans('backpack::pagemanager.content_placeholder'),
+        ]);
+    }
+
+    private function simple()
+    {        
+        $this->crud->addField([
+            'name' => 'content',
+            'label' => trans('backpack::pagemanager.content_blocks'),
+            'label_preview' => trans('backpack::pagemanager.preview'),
+            'type' => 'edit_page',
+            'preview_for' => 'content',
+            'fake' => true,
+            'view_namespace' => 'blockcrud::templates',
             'placeholder' => trans('backpack::pagemanager.content_placeholder'),
         ]);
     }

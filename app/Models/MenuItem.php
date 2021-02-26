@@ -72,6 +72,8 @@ class MenuItem extends Model
 
     public function url()
     {
+        $this->link = ltrim($this->link, '/');
+        
         switch ($this->type) {
             case 'external_link':
                 return $this->link;

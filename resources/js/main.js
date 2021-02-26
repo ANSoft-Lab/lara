@@ -23,9 +23,9 @@ class Finist {
 
         // Десктопное меню
 
-        // this.dropdownList = document.querySelectorAll('.js-dropdown-list');
-        //this.dropdownMenuItem = document.querySelectorAll('.js-dropdown-item');
-       // this.dropdownMenuItem = document.querySelectorAll('.qna__list-item');
+        this.dropdownList = document.querySelectorAll('.js-dropdown-list');
+        this.dropdownMenuItem = document.querySelectorAll('.js-dropdown-item');
+        // this.dropdownMenuItem = document.querySelectorAll('.qna__list-item');
 
         // Слайдер с картами
 
@@ -85,28 +85,19 @@ class Finist {
             });
         }
 
-        // for (let i = 0; i < th.dropdownList.length; ++i) {
-        //     let item = th.dropdownList[i];
-        //
-        //     item.addEventListener('click', function (evt) {
-        //         item.classList.toggle('m-visible');
-        //         item.closest('.js-list-item').classList.toggle('m-visible');
-        //     });
-        // }
+        for (let i = 0; i < th.dropdownList.length; ++i) {
+            let item = th.dropdownList[i];
+        
+            item.addEventListener('click', function (evt) {
+                item.classList.toggle('m-visible');
+                item.closest('.js-list-item').classList.toggle('m-visible');
+            });
+        }
 
-        // for (let i = 0; i < th.dropdownMenuItem.length; ++i) {
-        //     let item = th.dropdownMenuItem[i];
-        //     item.addEventListener('click', this.showDropdown.bind(this));
-        // }
-
-        // this.dropdownMenuItem.forEach((item) => {
-        //     item.addEventListener('click', function (evt) {
-        //         evt.preventDefault();
-        //         item.classList.toggle('m-visible');
-        //         item.closest('.header-menu__item').classList.toggle('m-active');
-        //         item.nextElementSibling.classList.toggle('m-hidden');
-        //     });
-        // });
+        for (let i = 0; i < th.dropdownMenuItem.length; ++i) {
+            let item = th.dropdownMenuItem[i];
+            item.addEventListener('click', this.showDropdown.bind(this));
+        }
     }
 
     openModal(e) {
