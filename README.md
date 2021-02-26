@@ -1,4 +1,4 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# FINIST
 
 ## Техническая информация    
 [Laravel 8](https://laravel.com/docs/8.x) - общий фреймворк  
