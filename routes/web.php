@@ -18,7 +18,7 @@ Route::post('feedback_send', 'FeedbackController@store')->name('feedback_send');
 //Auth::routes();
 
 Route::group([
-    'prefix' => config('backpack.base.route_prefix', 'admin'), 
+    'prefix' => config('backpack.base.route_prefix', 'admin'),
     'middleware' => array_merge(
         (array) config('backpack.base.web_middleware', 'web'),
         (array) config('backpack.base.middleware_key', 'admin')
@@ -26,6 +26,10 @@ Route::group([
     'namespace' => 'Admin',
 ], function () {
     Route::crud('menu-item', 'MenuItemCrudController');
+});
+
+Route::get('/autoinsurance', function() {
+    return view('templates.autoinsurance');
 });
 
 Route::get('{page}/{subs?}', ['uses' => 'PageController@index'])
