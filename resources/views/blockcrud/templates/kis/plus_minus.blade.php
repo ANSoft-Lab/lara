@@ -4,7 +4,7 @@
         contenteditable="true" id="kis_plus_1"
     @endif
     >
-        {!! $kis_plus_1 ?? 'Причины обратиться к нам:' !!}
+        {!! $kis_plus_1 ?? 'Комплексное ипотечное страхование' !!}
     </h2>
     <div class="plus_minus__line">
         <div class="plus_minus__panel plus">

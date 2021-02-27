@@ -1,5 +1,5 @@
 <section class="offer-links">
-    <a href="https://ipoteka-strahovka.ru/" class="offer-links__item">
+    <a href="/kis" class="offer-links__item">
         <div class="offer-links__wrap">
             <img src="/img/offers/1.jpg" alt="" class="offer-links__img">
         </div>
@@ -13,7 +13,7 @@
         </div>
         <p class="offer-links__text">Рефинанси&shy;рование и кредитование</p>
     </a>
-    <a href="{{ config('app.old_url') }}/strahovanie/kasko/" target="_blank" class="offer-links__item">
+    <a href="/autoinsurance" class="offer-links__item">
         <div class="offer-links__wrap">
             <img src="/img/offers/3.jpg" alt="" class="offer-links__img">
         </div>

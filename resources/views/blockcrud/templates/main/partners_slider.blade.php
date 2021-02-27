@@ -1,5 +1,5 @@
 <section class="partners">
-    <ul class="partners__list">\
+    <ul class="partners__list">
         <li class="partners__list-item">
             <a href="#" class="partners__link">
                 <picture>
