@@ -186,6 +186,14 @@
                     </a>
                 </li>
                 <li class="partners__list-item">
+                    <a href="#" class="partners__link">
+                        <picture>
+                            <source srcset="/icon/partners/domrf.png" media="(min-width: 768px)">
+                            <img src="/icon/partners/domrf-m.png" alt="reso" class="partners__logo">
+                        </picture>
+                    </a>
+                </li>
+                <li class="partners__list-item">
                     <a href="" class="partners__link">
                         <picture>
                             <source srcset="/icon/partners/ingos.png" media="(min-width: 768px)">
