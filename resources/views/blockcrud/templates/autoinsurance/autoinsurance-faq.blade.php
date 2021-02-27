@@ -1,120 +1,8 @@
-@extends('base')
-
-@section('content')
-
-    <div class="ins">
-
-      
-
-      <div class="ins__content">
-        
-        <h2 class="ins__title ins__title_underline">Наши продукты</h2>
-        
-        <div class="additional__list">
-          <a class="ins__item" href="/strahovanie/kasko/">
-            <div class="ins__item__content">
-              <p class="ins__item__subtitle">Каско</p>
-              <p class="ins__item__description">Добровольное страхование автомобиля, защищает ваше имущество в случае ДТП (не зависимо от того, кто является виновником ДТП) или угона.</p>
-            </div>
-          </a>
-
-          <a class="ins__item" href="/strahovanie/gap/">
-            <div class="ins__item__content">
-              <p class="ins__item__subtitle">GAP</p>
-              <p class="ins__item__description">GAP (Guaranteed Asset Protection) &#151; опция к Каско, позволяющая получить полную выплату по рыночной стоимости без учета амортизационного износа.</p>
-            </div>
-          </a>
-          <a class="ins__item" href="/strahovanie/osago/">
-            <div class="ins__item__content">
-              <p class="ins__item__subtitle">ОСАГО</p>
-              <p class="ins__item__description">Обязательное страхование ответственности на случай ДТП. Является обязательным для использования автомобиля на территории РФ.</p>
-            </div>
-          </a>
-          <a class="ins__item" href="/strahovanie/kasko/">
-            <div class="ins__item__content">
-              <p class="ins__item__subtitle">Франшиза</p>
-              <p class="ins__item__description">Опция к полису Каско, которая существенно снижает его стоимость, но при страховом случае клиент получит возмещение за минусом заранее установленной суммы (франшизы).</p>
-            </div>
-          </a>
-          <a class="ins__item" href="/strahovanie/osago/">
-            <div class="ins__item__content">
-              <p class="ins__item__subtitle">ДГО</p>
-              <p class="ins__item__description">Лимит ответственности по ОСАГО может быть увеличен до нескольких миллионов рублей за счет добровольного страхования гражданской ответственности (ДГО).</p>
-            </div>
-          </a>
-          <a class="ins__item" href="/strahovanie/greencard/">
-            <div class="ins__item__content">
-              <p class="ins__item__subtitle">Зелёная карта</p>
-              <p class="ins__item__description">Зелёная карта — это аналог полиса ОСАГО, но действующий за пределами РФ для туристов, путешествующих на автомобиле. Является обязательным.</p>
-            </div>
-          </a>
-        </div>
-
-      </div>
-
-      <div class="ins__news">
-
-        <div class="ins__content">
-
-          <h2 class="ins__title ins__title_underline">Новости</h2>
-
-          <div class="ins__news__items">
-            <a href="#" class="ins__news__item">
-              <h2 class="ins__news__item__title">Далеко-далеко, за, словесными.</h2>
-              <p class="ins__news__item__description">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты...</p>
-            </a>
-            <a href="#" class="ins__news__item">
-              <h2 class="ins__news__item__title">Далеко-далеко, за, словесными.</h2>
-              <p class="ins__news__item__description">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты... Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты...</p>
-            </a>
-            <a href="#" class="ins__news__item">
-              <h2 class="ins__news__item__title">Далеко-далеко, за, словесными.</h2>
-              <p class="ins__news__item__description">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты...</p>
-            </a>
-            <a href="#" class="ins__news__item">
-              <h2 class="ins__news__item__title">Далеко-далеко, за, словесными.</h2>
-              <p class="ins__news__item__description">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты...</p>
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="ins__news ins__news--company">
-
-        <div class="ins__content">
-
-          <h2 class="ins__title ins__title_underline">Новости компании</h2>
-
-          <div class="ins__news__items">
-            <a href="#" class="ins__news__item">
-              <h2 class="ins__news__item__title">Далеко-далеко, за, словесными.</h2>
-              <p class="ins__news__item__description">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты...</p>
-            </a>
-            <a href="#" class="ins__news__item">
-              <h2 class="ins__news__item__title">Далеко-далеко, за, словесными.</h2>
-              <p class="ins__news__item__description">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты... Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты...</p>
-            </a>
-            <a href="#" class="ins__news__item">
-              <h2 class="ins__news__item__title">Далеко-далеко, за, словесными.</h2>
-              <p class="ins__news__item__description">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты...</p>
-            </a>
-            <a href="#" class="ins__news__item">
-              <h2 class="ins__news__item__title">Далеко-далеко, за, словесными.</h2>
-              <p class="ins__news__item__description">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты...</p>
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-
       <div class="ins__faq">
 
         <div class="ins__content">
 
-          <h2 class="ins__title ins__title_underline">ЧаВо</h2>
+          <h2 class="ins__title ins__title_underline">Частые вопросы</h2>
 
           <div class="ins__faq__items">
 
@@ -159,11 +47,11 @@
                 <p>Здесь так же присутствуют сложности и нюансы, сталкиваясь с которыми, возникают сомнения в том, так ли это удобно и реальна ли в действительности экономия времени. Ведь довольно часто, клиенты автосалонов так же сталкиваются с очередями, и время ожидания может составлять до двух недель.</p>
                 <p>Что ВАЖНО!!! Автосалоны, в желании привязать к себе клиентов, что если договор будет заключен не через них, то удаленного урегулирования не будет.  Это конечно неправда. Страховой компании все равно  где вы оформили полис</p>
                 <ul>
-                  <li>у  брокера или агента</li>
+                  <li>у брокера или агента</li>
                   <li>напрямую в компании</li>
-                  <li>или в самом салоне </li>
+                  <li>или в самом салоне</li>
                 </ul>
-                <p>удалённое урегулирование  будет в любом случае.</p>
+                <p>удалённое урегулирование будет в любом случае.</p>
               </div>
             </div>
 
@@ -173,8 +61,8 @@
                 <p>При покупке КАСКО, ОСАГО  или КАСКО с ОСАГО наш представитель выезжает по адресу доставки, привозит готовые документы.</p>
                 <p>Территория доставки:</p>
                 <ul>
-                  <li>Москва и Московская область до  10 км от МКАДА – бесплатно</li>
-                  <li>Московская область  более 10 км от МКАДА и до  30 км.  – 500 руб.</li>
+                  <li>Москва и Московская область до  10 км от МКАД – бесплатно</li>
+                  <li>Московская область  более 10 км от МКАД и до  30 км.  – 500 руб.</li>
                   <li>Московская область  более 30 км от МКАД  - 1000 руб.</li>
                   <li>Доставка возможна ежедневно, без выходных и праздничных дней с 10:00 до 19:00 часов</li>
                 </ul>
@@ -244,13 +132,6 @@
               <h3 class="ins__faq__title">9. Что такое электронные полисы? почему не стоит бояться?</h3>
               <div class="ins__faq__content">
                 <p>Е-полис — это электронная версия полиса. Отличие электронного КАСКО от бумажного полиса только в способе оформления. </br>Все страховые компании имеют возможность оформить электронный полис. Е-полис и бумажная версия имеют равные права </br>Полис всегда можно проверить на подлинность.</p>
-                <ul>
-                  <li>Далеко-далеко за словесными горами в стране.</li>
-                  <li>Использовало проектах текстами маленькая, свой.</li>
-                  <li>Обеспечивает дал но города своих!</li>
-                  <li>Ведущими вершину пояс все? Использовало.</li>
-                  <li>Переписали даже даль власти заглавных.</li>
-                </ul>
               </div>
             </div>
 
@@ -260,13 +141,12 @@
                 <p>Документы необходимые для оформления каско и осаго:</p>
                 <ul>
                   <li>Паспорт собственника кем выдан + прописка</li>
-                  <li>стс с 2-х сторон</li>
+                  <li>СТС с 2-х сторон</li>
                   <li>права с 2-х сторон всех допущенных </li>
-                  <li>птс с 2-х сторон в развернутом виде</li>
+                  <li>ПТС с 2-х сторон в развернутом виде</li>
                   <li>предыдущий  полис КАСКО (доки вот вложении)</li>
                   <li>предыдущий полис ОСАГО</li>
                 </ul>
-                <p>(Во вложение образцы)</p>
               </div>
             </div>
 
@@ -293,10 +173,10 @@
               <div class="ins__faq__content">
                 <p>Оплатить страховой полис можно несколькими способами:</p>
                 <ul>
-                  <li>Напрямую в ск ,офисе ( наличным ,безналичным расчетом)</li>
-                  <li>На официальном сайте , по ссылке</li>
-                  <li>По выставленному счету, с использованием банковских карт, через работников банка ( наличными, безналично)</li>
-                  <li>Используя наличные денежные средства, банковские карты через устройства самообслуживания ( банкоматы, платежные терминалы)</li>
+                  <li>Напрямую в страховой компании, в офисе (наличным, безналичным расчетом)</li>
+                  <li>На официальном сайте, по ссылке</li>
+                  <li>По выставленному счету, с использованием банковских карт, через работников банка (наличными, безналично)</li>
+                  <li>Используя наличные денежные средства, банковские карты через устройства самообслуживания (банкоматы, платежные терминалы)</li>
                 </ul>
               </div>
             </div>
@@ -306,197 +186,3 @@
         </div>  
 
       </div>
-
-      <section class="partners">
-        <ul class="partners__list">
-          <li class="partners__list-item">
-            <a href="" class="partners__link">
-              <picture>
-                <source srcset="/icon/partners/tnkf.png" media="(min-width: 768px)">
-                  <img src="/icon/partners/tnkf-m.png" alt="tnkf" class="partners__logo">
-                </picture>
-              </a>
-            </li>
-            <li class="partners__list-item">
-              <a href="" class="partners__link">
-                <picture>
-                  <source srcset="/icon/partners/reso.png" media="(min-width: 768px)">
-                    <img src="/icon/partners/reso-m.png" alt="reso" class="partners__logo">
-                  </picture>
-                </a>
-              </li>
-              <li class="partners__list-item">
-                <a href="" class="partners__link">
-                  <picture>
-                    <source srcset="/icon/partners/ingos.png" media="(min-width: 768px)">
-                      <img src="/icon/partners/ingos-m.png" alt="ingosstrakh" class="partners__logo">
-                    </picture>
-                  </a>
-                </li>
-                <li class="partners__list-item">
-                  <a href="" class="partners__link">
-                    <picture>
-                      <source srcset="/icon/partners/tnkf.png" media="(min-width: 768px)">
-                        <img src="/icon/partners/tnkf-m.png" alt="tnkf" class="partners__logo">
-                      </picture>
-                    </a>
-                  </li>
-                  <li class="partners__list-item">
-                    <a href="" class="partners__link">
-                      <picture>
-                        <source srcset="/icon/partners/reso.png" media="(min-width: 768px)">
-                          <img src="/icon/partners/reso-m.png" alt="reso" class="partners__logo">
-                        </picture>
-                      </a>
-                    </li>
-                    <li class="partners__list-item">
-                      <a href="" class="partners__link">
-                        <picture>
-                          <source srcset="/icon/partners/ingos.png" media="(min-width: 768px)">
-                            <img src="/icon/partners/ingos-m.png" alt="ingosstrakh" class="partners__logo">
-                          </picture>
-                        </a>
-                      </li>
-                      <li class="partners__list-item">
-                        <a href="" class="partners__link">
-                          <picture>
-                            <source srcset="/icon/partners/tnkf.png" media="(min-width: 768px)">
-                              <img src="/icon/partners/tnkf-m.png" alt="tnkf" class="partners__logo">
-                            </picture>
-                          </a>
-                        </li>
-                        <li class="partners__list-item">
-                          <a href="" class="partners__link">
-                            <picture>
-                              <source srcset="/icon/partners/reso.png" media="(min-width: 768px)">
-                                <img src="/icon/partners/reso-m.png" alt="reso" class="partners__logo">
-                              </picture>
-                            </a>
-                          </li>
-                          <li class="partners__list-item">
-                            <a href="" class="partners__link">
-                              <picture>
-                                <source srcset="/icon/partners/ingos.png" media="(min-width: 768px)">
-                                  <img src="/icon/partners/ingos-m.png" alt="ingosstrakh" class="partners__logo">
-                                </picture>
-                              </a>
-                            </li>
-                            <li class="partners__list-item">
-                              <a href="" class="partners__link">
-                                <picture>
-                                  <source srcset="/icon/partners/tnkf.png" media="(min-width: 768px)">
-                                    <img src="/icon/partners/tnkf-m.png" alt="tnkf" class="partners__logo">
-                                  </picture>
-                                </a>
-                              </li>
-                              <li class="partners__list-item">
-                                <a href="" class="partners__link">
-                                  <picture>
-                                    <source srcset="/icon/partners/reso.png" media="(min-width: 768px)">
-                                      <img src="/icon/partners/reso-m.png" alt="reso" class="partners__logo">
-                                    </picture>
-                                  </a>
-                                </li>
-                                <li class="partners__list-item">
-                                  <a href="" class="partners__link">
-                                    <picture>
-                                      <source srcset="/icon/partners/ingos.png" media="(min-width: 768px)">
-                                        <img src="/icon/partners/ingos-m.png" alt="ingosstrakh" class="partners__logo">
-                                      </picture>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </section>
-      
-      <section>
-
-        <!-- teams content here -->
-
-      </section>
-
-      <div class="ins__reviews">
-
-        <div class="ins__content">
-
-          <h2 class="ins__title ins__title_underline">Клиенты о нас</h2>
-
-          <div class="ins__reviews__items">
-
-            <a href="#" class="ins__reviews__item">
-
-              <div class="ins__reviews__item__imgWrapper">
-                <div class="ins__reviews__item__img" style="background-image: url('/img/autoinsurance/example-reviewer.jpg')"></div>
-              </div>
-
-              <h4 class="ins__reviews__item__title">Далеко-далеко за словесными горами в стране.</h4>
-
-              <div class="ins__reviews__item__content">
-                <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные, тексты. Эта дорогу себя страну которое свою домах парадигматическая власти своего, встретил буквоград языком родного до взгляд вершину толку всемогущая бросил.</p>
-                <p>Семантика, лучше. Своего рукопись безорфографичный прямо великий переулка даже эта путь большой пустился последний текстов строчка однажды агентство запятой, сбить грустный lorem. Одна, запятых повстречался что то свою не однажды.</p>
-              </div>
-
-              <span class="ins__reviews__item__date">12.02.2021</span>
-
-            </a>
-
-            <a href="#" class="ins__reviews__item">
-
-              <div class="ins__reviews__item__imgWrapper">
-                <div class="ins__reviews__item__img" style="background-image: url('/img/autoinsurance/example-reviewer.jpg')"></div>
-              </div>
-
-              <h4 class="ins__reviews__item__title">Далеко-далеко за словесными горами в стране.</h4>
-
-              <div class="ins__reviews__item__content">
-                <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные, тексты. Эта дорогу себя страну которое свою домах парадигматическая власти своего, встретил буквоград языком родного до взгляд вершину толку всемогущая бросил.</p>
-                <p>Семантика, лучше. Своего рукопись безорфографичный прямо великий переулка даже эта путь большой пустился последний текстов строчка однажды агентство запятой, сбить грустный lorem. Одна, запятых повстречался что то свою не однажды.</p>
-              </div>
-
-              <span class="ins__reviews__item__date">12.02.2021</span>
-
-            </a>
-
-            <a href="#" class="ins__reviews__item">
-
-              <div class="ins__reviews__item__imgWrapper">
-                <div class="ins__reviews__item__img" style="background-image: url('/img/autoinsurance/example-reviewer.jpg')"></div>
-              </div>
-
-              <h4 class="ins__reviews__item__title">Далеко-далеко за словесными горами в стране.</h4>
-
-              <div class="ins__reviews__item__content">
-                <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные, тексты. Эта дорогу себя страну которое свою домах парадигматическая власти своего, встретил буквоград языком родного до взгляд вершину толку всемогущая бросил.</p>
-                <p>Семантика, лучше. Своего рукопись безорфографичный прямо великий переулка даже эта путь большой пустился последний текстов строчка однажды агентство запятой, сбить грустный lorem. Одна, запятых повстречался что то свою не однажды.</p>
-              </div>
-
-              <span class="ins__reviews__item__date">12.02.2021</span>
-
-            </a>
-
-            <a href="#" class="ins__reviews__item">
-
-              <div class="ins__reviews__item__imgWrapper">
-                <div class="ins__reviews__item__img" style="background-image: url('/img/autoinsurance/example-reviewer.jpg')"></div>
-              </div>
-
-              <h4 class="ins__reviews__item__title">Далеко-далеко за словесными горами в стране.</h4>
-
-              <div class="ins__reviews__item__content">
-                <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные, тексты. Эта дорогу себя страну которое свою домах парадигматическая власти своего, встретил буквоград языком родного до взгляд вершину толку всемогущая бросил.</p>
-                <p>Семантика, лучше. Своего рукопись безорфографичный прямо великий переулка даже эта путь большой пустился последний текстов строчка однажды агентство запятой, сбить грустный lorem. Одна, запятых повстречался что то свою не однажды.</p>
-              </div>
-
-              <span class="ins__reviews__item__date">12.02.2021</span>
-
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-@endsection

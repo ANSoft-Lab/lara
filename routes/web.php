@@ -28,10 +28,6 @@ Route::group([
     Route::crud('menu-item', 'MenuItemCrudController');
 });
 
-Route::get('/autoinsurance', function() {
-    return view('templates.autoinsurance');
-});
-
 Route::get('{page}/{subs?}', ['uses' => 'PageController@index'])
     ->where(['page' => '^(((?=(?!adminpanel))(?=(?!\/)).))*$', 'subs' => '.*']);
 

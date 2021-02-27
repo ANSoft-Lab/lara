@@ -82,6 +82,7 @@
             background-repeat: no-repeat;
             background-size: contain;
             position: absolute;
+            max-width: 140px;
         }
 
         &:first-of-type {
@@ -100,7 +101,7 @@
                 right: 10px;
                 width: 175px;
                 height: 175px;
-                background-image: url('../../img/autoinsurance/04.svg');
+                background-image: url('../../img/autoinsurance/04_fair_deal.svg');
             }
         }
 
@@ -120,7 +121,7 @@
                 right: 10px;
                 width: 137px;
                 height: 175px;
-                background-image: url('../../img/autoinsurance/01.svg');
+                background-image: url('../../img/autoinsurance/011_econom_deal.svg');
             }
         }
 
