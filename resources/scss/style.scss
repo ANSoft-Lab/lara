@@ -32,8 +32,13 @@
 @import "bem/leaders";
 @import "bem/collective";
 @import "bem/auto-insurance";
+@import "bem/ipoteka";
 
 @import "bem/map";
+
+
+// chunks
+@import "bem/chunks/_accordion";
 
 body {
     font-family: 'Formular', Arial, sans-serif;

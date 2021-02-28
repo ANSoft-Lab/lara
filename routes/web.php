@@ -32,6 +32,10 @@ Route::get('/autoinsurance', function() {
     return view('templates.autoinsurance');
 });
 
+Route::get('/ipoteka', function() {
+    return view('templates.ipoteka');
+});
+
 Route::get('{page}/{subs?}', ['uses' => 'PageController@index'])
     ->where(['page' => '^(((?=(?!adminpanel))(?=(?!\/)).))*$', 'subs' => '.*']);
 
