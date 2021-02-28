@@ -63,6 +63,12 @@
         margin: 1% 1%;
         text-decoration: none;
 
+        &__description {
+            padding:10px 160px 20px 20px;
+            color:#272727;
+            line-height:20px;
+        }
+
         @include m(1999) {
             width: 48%;
         }
