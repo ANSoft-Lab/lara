@@ -1,12 +1,14 @@
 <template>
-    <section class="ins__faq__items">
-        <div class="ins__faq__item js-list-item" @click="showDropdown" v-for="item in faq" :key="item.id">
-            <h3 class="ins__faq__title js-dropdown-list">
-                {{item.question}}
-            </h3>
-            <div class="ins__faq__content" v-html="item.answer">
-            </div>
-        </div>
+    <section class="qna mb-40">
+        <ul class="qna__list">
+            <li class="qna__list-item js-list-item" @click="showDropdown" v-for="item in faq" :key="item.id">
+                <p class="qna__list-title js-dropdown-list">
+                    {{item.question}}
+                </p>
+                <p class="qna__dropdown" v-html="item.answer">
+                </p>
+            </li>
+        </ul>
     </section>
 </template>
 <script>

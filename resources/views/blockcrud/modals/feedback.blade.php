@@ -1,5 +1,5 @@
 @if (isset($link))
-    <a class="js-open-modal" data-modal="feedback-{{ $rand_str = Str::random(20) }}" style="cursor: pointer">{{$modal_title}}</a>
+    <a class="js-open-modal {{ $btn_class ?? '' }}" data-modal="feedback-{{ $rand_str = Str::random(20) }}">{{$modal_title}}</a>
 @else
     <button class="{{ $btn_class ?? 'cooperation__link' }} js-open-modal" data-modal="feedback-{{ $rand_str = Str::random(20) }}">{{ $modal_title ?? 'Оставить заявку' }}</button>
 @endif

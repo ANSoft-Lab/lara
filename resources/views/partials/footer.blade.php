@@ -30,7 +30,6 @@
                         @endif
                     </div>
                 @endforeach
-                <a href="{{ config('app.old_url') }}/job/" class="footer__vacancies">Вакансии</a>
             </div>
             <div class="footer__mid">
                 <ul class="footer__phone-list">
@@ -84,11 +83,12 @@
                 </ul>
                 {{--<a href="{{ config('app.old_url') }}/kontakty" class="footer__callback">Обратный звонок</a>--}}
 {{--                @include('blockcrud.modals.feedback', ['modal_title' => 'Обратный звонок', 'btn_class' => 'footer__callback', 'link' => false])--}}
+                <a href="{{ config('app.old_url') }}/job/" class="footer__vacancies">Вакансии</a>
             </div>
         </div>
         <div style="display: flex; justify-content: center">
             <div style="width: 350px">
-                @include('blockcrud.modals.feedback', ['modal_title' => 'Заказать обратный звонок', 'link' => false])
+                @include('blockcrud.modals.feedback', ['modal_title' => 'Заказать обратный звонок', 'link' => false, 'btn_class' => 'modal__btn'])
             </div>
         </div>
         <div class="footer__bottom">

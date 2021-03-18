@@ -1,3 +1,7 @@
+.js-open-modal {
+    cursor: pointer;
+}
+
 .modal {
 
     &__overlay {
@@ -53,10 +57,12 @@
 
     &__btn {
         margin: 63px auto 0;
-        width: 230px;
+        padding: 20px 30px;
+        text-align: center !important;
+        width: auto;
         font-weight: 500;
         font-size: 17px;
-        line-height: 52px;
+        line-height: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -67,6 +73,11 @@
         border-radius: 500px;
         cursor: pointer;
         outline: none !important;
+
+        &__small {
+            margin: 5px auto 0;
+            padding: 10px 20px;
+        }
     }
 
     &__group {
@@ -101,6 +112,7 @@
     &__input {
         border: none;
         border-bottom: 1px solid #272727;
+        width: 100%;
     }
 
     &__checkbox {

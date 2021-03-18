@@ -12,8 +12,8 @@
 
           <a class="ins__item" href="https://corp.finist.ru/strahovanie/kalkulator_kasko_online/">
             <div class="ins__item__content">
-              <p class="ins__item__subtitle">GAP</p>
-              <p class="ins__item__description">GAP (Guaranteed Asset Protection) &#151; опция к Каско, позволяющая получить полную выплату по рыночной стоимости без учета амортизационного износа.</p>
+              <p class="ins__item__subtitle">GAP (Guaranteed Asset Protection)</p>
+              <p class="ins__item__description">Смысл GAP &#151; постоянная страховая сумма. В&nbsp;большинстве страховых по рискам «Тотал» и «Хищение/Угон» мы получаем возмещение с&nbsp;учетом амортизации, а не&nbsp;полную сумму. Чтобы узнать условия по&nbsp;GAP у&nbsp;конкретной страховой, вы всегда можете пообщаться с нашим специалистом.</p>
             </div>
           </a>
           <a class="ins__item" href="/strahovanie/osago/">
@@ -25,7 +25,7 @@
           <a class="ins__item" href="https://corp.finist.ru/strahovanie/kalkulator_kasko_online/">
             <div class="ins__item__content">
               <p class="ins__item__subtitle">Франшиза</p>
-              <p class="ins__item__description">Опция к полису Каско, которая существенно снижает его стоимость, но при страховом случае клиент получит возмещение за минусом заранее установленной суммы (франшизы).</p>
+              <p class="ins__item__description">Франшиза — это сумма, которая не возмещается страховой компанией при наступлении убытка по&nbsp;Каско. В&nbsp;большинстве случаев выражена в&nbsp;фиксированной сумме. При выборе франшизы нужно понимать, чем выше её размер, тем меньше сама стоимость полиса.</p>
             </div>
           </a>
           <a class="ins__item" href="/strahovanie/osago/">
