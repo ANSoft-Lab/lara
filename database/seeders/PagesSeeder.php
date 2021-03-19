@@ -97,6 +97,19 @@ class PagesSeeder extends Seeder
                     'created_at' => $date,
                     'updated_at' => $date,
                 ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Тех. центры Finist',
+                    'title' => 'Тех. центры Finist',
+                    'slug' => 'group',
+                    'content' => "
+                        <div class=\"group\">
+                            @customblock('group-content')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
             ];
 
             if(DB::table('pages')->where('slug', 'about')->where('template', 'about')->first()) {
