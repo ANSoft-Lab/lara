@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
         $this->call(FaqBlocksSeeder::class);
         $this->call(AboutBlocksSeeder::class);
         $this->call(GroupBlocksSeeder::class);
+        $this->call(ContactBlocksSeeder::class);
 
         $this->call(PagesSeeder::class);
 

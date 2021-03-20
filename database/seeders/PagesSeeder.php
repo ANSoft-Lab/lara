@@ -110,6 +110,19 @@ class PagesSeeder extends Seeder
                     'created_at' => $date,
                     'updated_at' => $date,
                 ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Контакты',
+                    'title' => 'Контакты',
+                    'slug' => 'kontakty',
+                    'content' => "
+                        <div class=\"contacts\">
+                            @customblock('contacts-content')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
             ];
 
             if(DB::table('pages')->where('slug', 'about')->where('template', 'about')->first()) {

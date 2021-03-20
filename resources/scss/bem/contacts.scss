@@ -105,6 +105,35 @@
         // display: inline-flex;
         height: 445px;
     }
+    &--cp{
+        padding: 40px 0 60px;
+        .contacts__slider {
+            height: auto;
+            min-height: 445px;
+        }
+        .contacts__map {
+            height: auto;
+            min-height: 445px;
+            background-color: transparent;
+        }
+    }
+    &__map-info {
+        padding: 30px 0 0;
+        h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0 0 15px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.4;
+            font-weight: 300;
+            margin: 10px 0;
+            b {
+                font-weight: 700;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
