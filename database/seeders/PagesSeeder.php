@@ -123,6 +123,175 @@ class PagesSeeder extends Seeder
                     'created_at' => $date,
                     'updated_at' => $date,
                 ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Рефинансирование',
+                    'title' => 'Рефинансирование',
+                    'slug' => 'refinansirovanie',
+                    'content' => "
+                        <div class=\"refinancing\">
+                            @customblock('refinancing-content')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Страхование имущества физических лиц',
+                    'title' => 'Страхование имущества физических лиц',
+                    'slug' => 'strahovanie/strahovanie_imuchestva',
+                    'content' => "
+                        <div class=\"strahovanie\">
+                            @customblock('insurance-fiz')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Страхование КАСКО',
+                    'title' => 'Страхование КАСКО',
+                    'slug' => 'strahovanie/kasko',
+                    'content' => "
+                        <div class=\"strahovanie\">
+                            @customblock('insurance-kasko')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Страхование ОСАГО',
+                    'title' => 'Страхование ОСАГО',
+                    'slug' => 'strahovanie/osago',
+                    'content' => "
+                        <div class=\"strahovanie\">
+                            @customblock('insurance-osago')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Страхование туристов',
+                    'title' => 'Страхование туристов',
+                    'slug' => 'strahovanie/vzr',
+                    'content' => "
+                        <div class=\"strahovanie\">
+                            @customblock('insurance-vzr')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Страхование туристов (калькулятор)',
+                    'title' => 'Страхование туристов на отдыхе и в поездке',
+                    'slug' => 'strahovanie/vzr/calc',
+                    'content' => "
+                        <div class=\"strahovanie\">
+                            @customblock('insurance-calc')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Добровольное медицинское страхование',
+                    'title' => 'Добровольное медицинское страхование',
+                    'slug' => 'strahovanie/dms',
+                    'content' => "
+                        <div class=\"strahovanie\">
+                            @customblock('insurance-dms')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Наши преимущества',
+                    'title' => 'Наши преимущества',
+                    'slug' => 'nashi-preimushhestva',
+                    'content' => "
+                        <div class=\"advantages\">
+                            @customblock('advantages-content')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Корпоративное страхование',
+                    'title' => 'Корпоративное страхование',
+                    'slug' => 'korporativnoe_strahovanie',
+                    'content' => "
+                        <div class=\"strahovanie\">
+                            @customblock('corpinsurance-index')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Страхование застройщиков',
+                    'title' => 'Страхование застройщиков',
+                    'slug' => 'korporativnoe_strahovanie/strahovanie_zastroyshikov',
+                    'content' => "
+                        <div class=\"strahovanie\">
+                            @customblock('corpinsurance-developer')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Страхование бизнеса',
+                    'title' => 'Страхование бизнеса и финансовых рисков',
+                    'slug' => 'korporativnoe_strahovanie/strahovanie_bisnessa',
+                    'content' => "
+                        <div class=\"strahovanie\">
+                            @customblock('corpinsurance-developer')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Страхование ответственности',
+                    'title' => 'Страхование ответственности юридических лиц',
+                    'slug' => 'korporativnoe_strahovanie/strahovanie_otvetstvennosti',
+                    'content' => "
+                        <div class=\"strahovanie\">
+                            @customblock('corpinsurance-responsibility')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Страхование имущества юридических лиц',
+                    'title' => 'Страхование имущества юридических лиц',
+                    'slug' => 'korporativnoe_strahovanie/strahovanie_imuchestva',
+                    'content' => "
+                        <div class=\"strahovanie\">
+                            @customblock('corpinsurance-yur')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
             ];
 
             if(DB::table('pages')->where('slug', 'about')->where('template', 'about')->first()) {

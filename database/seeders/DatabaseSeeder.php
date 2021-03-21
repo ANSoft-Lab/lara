@@ -20,6 +20,19 @@ class DatabaseSeeder extends Seeder
         $this->call(AboutBlocksSeeder::class);
         $this->call(GroupBlocksSeeder::class);
         $this->call(ContactBlocksSeeder::class);
+        $this->call(RefinancingBlocksSeeder::class);
+        $this->call(InsuranceFizBlocksSeeder::class);
+        $this->call(InsuranceKaskoBlocksSeeder::class);
+        $this->call(InsuranceOsagoBlocksSeeder::class);
+        $this->call(InsuranceVzrBlocksSeeder::class);
+        $this->call(InsuranceVzrCalcBlocksSeeder::class);
+        $this->call(InsuranceDmsBlocksSeeder::class);
+        $this->call(AdvantagesBlocksSeeder::class);
+        $this->call(CorpInsuranceBlocksSeeder::class);
+        $this->call(CorpInsuranceDeveloperBlocksSeeder::class);
+        $this->call(CorpInsuranceBussinesBlocksSeeder::class);
+        $this->call(CorpInsuranceResponsibilityBlocksSeeder::class);
+        $this->call(CorpInsuranceYurBlocksSeeder::class);
 
         $this->call(PagesSeeder::class);
 
