@@ -12,6 +12,10 @@ class PageController extends Controller
         if(! $slug) {
             $slug = '/';
         }
+
+        if($subs) {
+            $slug = $slug . '/' . $subs;
+        }
         
         $page = Page::findBySlug($slug);
 
