@@ -19,7 +19,7 @@
         </div>
         <p class="offer-links__text">Автострахова&shy;ние</p>
     </a>
-    <a href="{{ config('app.old_url') }}/strahovanie/strahovanie_imuchestva/" target="_blank" class="offer-links__item">
+    <a href="/strahovanie/strahovanie_imuchestva" target="_blank" class="offer-links__item">
         <div class="offer-links__wrap">
             <img src="/img/offers/4.jpg" alt="" class="offer-links__img">
         </div>
