@@ -33,6 +33,14 @@ class DatabaseSeeder extends Seeder
         $this->call(CorpInsuranceBussinesBlocksSeeder::class);
         $this->call(CorpInsuranceResponsibilityBlocksSeeder::class);
         $this->call(CorpInsuranceYurBlocksSeeder::class);
+        $this->call(CorpInsuranceCargoBlocksSeeder::class);
+        $this->call(CorpInsuranceBuildingBlocksSeeder::class);
+        $this->call(InstructionBlocksSeeder::class);
+        $this->call(InstructionAutoBlocksSeeder::class);
+        $this->call(InstructionVzrBlocksSeeder::class);
+        $this->call(InstructionImuBlocksSeeder::class);
+        $this->call(InstructionDmsBlocksSeeder::class);
+        $this->call(InstructionNsBlocksSeeder::class);
 
         $this->call(PagesSeeder::class);
 

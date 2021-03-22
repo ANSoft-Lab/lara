@@ -25,9 +25,9 @@
         color: #000;
         letter-spacing: .04em;
         margin: 15px 0;
-    }
-    b, .bold {
-        font-weight: 700;
+        b {
+            font-weight: 700;
+        }
     }
     a {
         outline: none;
@@ -54,29 +54,6 @@
             letter-spacing: .04em;
             margin: 5px 0;
         }
-        ul {
-            margin-left: 20px;
-        }
-        &.list-style-none {
-            list-style: none;
-        }
-    }
-    ol {
-        list-style: decimal;
-        list-style-position: inside;
-        margin: 15px 0;
-        padding: 0;
-        font-size: 16px;
-        line-height: 1.4;
-        font-weight: 300;
-        color: #000;
-        li {
-            letter-spacing: .04em;
-            margin: 5px 0;
-        }
-        ol {
-            margin-left: 20px;
-        }
     }
     img {
         vertical-align: top;
@@ -93,31 +70,7 @@
             }
         }
     }
-    .radio-list {
-        li {
-            margin: 10px 0;
-        }
-        input[type="radio"] {
-            vertical-align: top;
-            width: 20px;
-            height: 20px;
-            margin-top: 2px;
-        }
-    }
-    .btn {
-        cursor: pointer;
-        display: inline-block;
-        vertical-align: top;
-        min-width: 140px;
-        letter-spacing: 0.03em;
-        color: #272727;
-        background: #F2CB4D;
-        font-weight: 500;
-        font-size: 17px;
-        line-height: 20px;
-        padding: 10px 20px;
-        text-align: center;
-        margin-top: 20px;
-        border-radius: 50px;
+    .bold {
+        font-weight: 700;
     }
 }

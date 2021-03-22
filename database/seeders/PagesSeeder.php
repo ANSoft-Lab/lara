@@ -292,6 +292,110 @@ class PagesSeeder extends Seeder
                     'created_at' => $date,
                     'updated_at' => $date,
                 ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Страхование грузов при перевозке',
+                    'title' => 'Страхование грузов при перевозке',
+                    'slug' => 'korporativnoe_strahovanie/strahovanie_gryzov',
+                    'content' => "
+                        <div class=\"strahovanie\">
+                            @customblock('corpinsurance-cargo')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Страхование строительства',
+                    'title' => 'Страхование СМР. Страхование строительства.',
+                    'slug' => 'korporativnoe_strahovanie/strahovanie_smr',
+                    'content' => "
+                        <div class=\"strahovanie\">
+                            @customblock('corpinsurance-building')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Что делать при наступлении страхового случая?',
+                    'title' => 'Что делать при наступлении страхового случая?',
+                    'slug' => 'chto-delat-pri-nastuplenii-strakhovogo-sluchaya',
+                    'content' => "
+                        <div class=\"instruction\">
+                            @customblock('instruction-index')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Наступление страхового случая (Авто)',
+                    'title' => 'Автострахование',
+                    'slug' => 'chto-delat-pri-nastuplenii-strakhovogo-sluchaya/auto',
+                    'content' => "
+                        <div class=\"instruction\">
+                            @customblock('instruction-auto')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Наступление страхового случая (ВЗР)',
+                    'title' => 'Страховой случай при путешествиях',
+                    'slug' => 'chto-delat-pri-nastuplenii-strakhovogo-sluchaya/vzr',
+                    'content' => "
+                        <div class=\"instruction\">
+                            @customblock('instruction-vzr')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Наступление страхового случая (Имущество)',
+                    'title' => 'Повреждение застрахованного имущества',
+                    'slug' => 'chto-delat-pri-nastuplenii-strakhovogo-sluchaya/imu',
+                    'content' => "
+                        <div class=\"instruction\">
+                            @customblock('instruction-imu')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Наступление страхового случая (ДМС)',
+                    'title' => 'Медицинская помощь по ДМС',
+                    'slug' => 'chto-delat-pri-nastuplenii-strakhovogo-sluchaya/dms',
+                    'content' => "
+                        <div class=\"instruction\">
+                            @customblock('instruction-dms')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Наступление страхового случая (НС)',
+                    'title' => 'Произошёл несчастный случай',
+                    'slug' => 'chto-delat-pri-nastuplenii-strakhovogo-sluchaya/ns',
+                    'content' => "
+                        <div class=\"instruction\">
+                            @customblock('instruction-ns')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
             ];
 
             if(DB::table('pages')->where('slug', 'about')->where('template', 'about')->first()) {

@@ -251,4 +251,10 @@ $(document).ready(function(){
         }
 
     });
+
+   $('#ins_btn').click(function() {                                        
+       if($('input[name=ins]').filter(':checked').val() != undefined) {
+        window.location.href = $('input[name=ins]').filter(':checked').val();
+       }
+   });
 });
