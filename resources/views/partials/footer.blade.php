@@ -83,7 +83,7 @@
                 </ul>
                 {{--<a href="{{ config('app.old_url') }}/kontakty" class="footer__callback">Обратный звонок</a>--}}
 {{--                @include('blockcrud.modals.feedback', ['modal_title' => 'Обратный звонок', 'btn_class' => 'footer__callback', 'link' => false])--}}
-                <a href="{{ config('app.old_url') }}/job/" class="footer__vacancies">Вакансии</a>
+                <a href="/job/" class="footer__vacancies">Вакансии</a>
             </div>
         </div>
         <div style="display: flex; justify-content: center">
