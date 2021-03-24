@@ -396,6 +396,136 @@ class PagesSeeder extends Seeder
                     'created_at' => $date,
                     'updated_at' => $date,
                 ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Вакансии',
+                    'title' => 'Вакансии',
+                    'slug' => 'job',
+                    'content' => "
+                        <div class=\"job\">
+                            @customblock('job-index')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Вакансии (Курьер)',
+                    'title' => 'Курьер',
+                    'slug' => 'job/kurer',
+                    'content' => "
+                        <div class=\"job\">
+                            @customblock('job-courier')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Вакансии (специалист по сопровождению (моторные виды))',
+                    'title' => 'Специалист по сопровождению бизнеса (моторные виды)',
+                    'slug' => 'job/spetsialist-po-soprovozhdeniyu-biznesa-motornye-vidy',
+                    'content' => "
+                        <div class=\"job\">
+                            @customblock('job-special-motor')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Вакансии (специалист по сопровождению (имущество))',
+                    'title' => 'Специалист по сопровождению бизнеса (имущество)',
+                    'slug' => 'job/spetsialist-po-soprovozhdeniyu-biznesa-imushchestvo',
+                    'content' => "
+                        <div class=\"job\">
+                            @customblock('job-special-property')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Вакансии (специалист по страхованию (Рязань))',
+                    'title' => 'Специалист по страхованию / менеджер-консультант (г.Рязань)',
+                    'slug' => 'job/vacancy_strah_manager_ryazani',
+                    'content' => "
+                        <div class=\"job\">
+                            @customblock('job-manager-ryazan')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Вакансии (специалист по страхованию (Нижний новгород))',
+                    'title' => 'Специалист по страхованию / менеджер-консультант (г. Нижний Новгород)',
+                    'slug' => 'job/vacancy_strah_manager_nnovgorod',
+                    'content' => "
+                        <div class=\"job\">
+                            @customblock('job-manager-nn')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Вакансии (оператор call-центра)',
+                    'title' => 'Оператор call-центра',
+                    'slug' => 'job/operator-call-centra',
+                    'content' => "
+                        <div class=\"job\">
+                            @customblock('job-operator')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Вакансии (менеджер по работе с клиентами)',
+                    'title' => 'Менеджер по работе с клиентами',
+                    'slug' => 'job/menedzher_po_rabote_s_klientami',
+                    'content' => "
+                        <div class=\"job\">
+                            @customblock('job-manager-clients')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Сотрудничество',
+                    'title' => 'Сотрудничество',
+                    'slug' => 'cooperation',
+                    'content' => "
+                        <div class=\"cooperation\">
+                            @customblock('cooperation-index')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Реквизиты',
+                    'title' => 'Наши реквизиты',
+                    'slug' => 'rekvizity',
+                    'content' => "
+                        <div class=\"requisites\">
+                            @customblock('requisites-index')
+                        </div>
+                    ",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
             ];
 
             if(DB::table('pages')->where('slug', 'about')->where('template', 'about')->first()) {

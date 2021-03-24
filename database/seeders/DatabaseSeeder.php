@@ -18,16 +18,23 @@ class DatabaseSeeder extends Seeder
         $this->call(TeamBlocksSeeder::class);
         $this->call(FaqBlocksSeeder::class);
         $this->call(AboutBlocksSeeder::class);
+
+        /*ND*/
+
+        $this->call(AdvantagesBlocksSeeder::class);
         $this->call(GroupBlocksSeeder::class);
         $this->call(ContactBlocksSeeder::class);
         $this->call(RefinancingBlocksSeeder::class);
+        $this->call(CooperationBlocksSeeder::class);
+        $this->call(RequisitesBlocksSeeder::class);
+
         $this->call(InsuranceFizBlocksSeeder::class);
         $this->call(InsuranceKaskoBlocksSeeder::class);
         $this->call(InsuranceOsagoBlocksSeeder::class);
         $this->call(InsuranceVzrBlocksSeeder::class);
         $this->call(InsuranceVzrCalcBlocksSeeder::class);
         $this->call(InsuranceDmsBlocksSeeder::class);
-        $this->call(AdvantagesBlocksSeeder::class);
+
         $this->call(CorpInsuranceBlocksSeeder::class);
         $this->call(CorpInsuranceDeveloperBlocksSeeder::class);
         $this->call(CorpInsuranceBussinesBlocksSeeder::class);
@@ -35,12 +42,22 @@ class DatabaseSeeder extends Seeder
         $this->call(CorpInsuranceYurBlocksSeeder::class);
         $this->call(CorpInsuranceCargoBlocksSeeder::class);
         $this->call(CorpInsuranceBuildingBlocksSeeder::class);
+
         $this->call(InstructionBlocksSeeder::class);
         $this->call(InstructionAutoBlocksSeeder::class);
         $this->call(InstructionVzrBlocksSeeder::class);
         $this->call(InstructionImuBlocksSeeder::class);
         $this->call(InstructionDmsBlocksSeeder::class);
         $this->call(InstructionNsBlocksSeeder::class);
+
+        $this->call(JobBlocksSeeder::class);
+        $this->call(JobCourierBlocksSeeder::class);
+        $this->call(JobSpecialMotorBlocksSeeder::class);
+        $this->call(JobSpecialPropertyBlocksSeeder::class);
+        $this->call(JobManagerRyazanBlocksSeeder::class);
+        $this->call(JobManagerNnBlocksSeeder::class);
+        $this->call(JobOperatorBlocksSeeder::class);
+        $this->call(JobManagerClientsBlocksSeeder::class);
 
         $this->call(PagesSeeder::class);
 
