@@ -17,7 +17,7 @@
                 <p class="additional__subtitle">Зелёная карта</p>
             </div>
         </a>
-        <a class="additional__item" href="{{ config('app.old_url') }}/korporativnoe_strahovanie/strahovanie_smr/">
+        <a class="additional__item" href="/korporativnoe_strahovanie/strahovanie_smr">
             <div class="additional__content">
                 <p class="additional__subtitle">Строительно-монтажные работы</p>
             </div>
