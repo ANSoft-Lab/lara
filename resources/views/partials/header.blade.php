@@ -88,7 +88,7 @@
         <div class="header__discount">
             @include('blockcrud.modals.feedback', ['modal_title' => 'Хочешь сэкономить до 50%? Спроси, как!', 'link' => true])
         </div>
-        <a href="{{ config('app.old_url') }}/chto-delat-pri-nastuplenii-strakhovogo-sluchaya" class="header__insurance">
+        <a href="/chto-delat-pri-nastuplenii-strakhovogo-sluchaya" class="header__insurance">
             Страховой случай
             <div class="offer-links__arrow"></div>
         </a>
