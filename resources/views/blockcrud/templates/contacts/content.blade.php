@@ -32,7 +32,7 @@
         <div class="contacts__wrapper glide__slides">
             <div class="contacts__map contacts__map--cp js-map glide__slide">
                 <div class="contacts__map-ym">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0b75fc5d80c44e1955ed9540feb13208dee817641b958fc862006325c2cc8644&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false;baloon=true;"></script>
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb756ae2cf017a15af3e6f4cce84c04b3c3ed1531f5388794f08d27ecdab2d7f&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false;baloon=true;"></script>
                 </div>
                 <div class="contacts__map-info">
                     <h3>Москва, центральный офис</h3>

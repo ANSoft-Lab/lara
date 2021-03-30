@@ -31,7 +31,7 @@
     <div class="js-map-slider contacts__slider glide__track" data-glide-el="track">
         <div class="contacts__wrapper glide__slides">
             <div class="contacts__map js-map glide__slide">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0b75fc5d80c44e1955ed9540feb13208dee817641b958fc862006325c2cc8644&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false;baloon=true;"></script>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb756ae2cf017a15af3e6f4cce84c04b3c3ed1531f5388794f08d27ecdab2d7f&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false;baloon=true;"></script>
             </div>
             <div class="contacts__map js-map glide__slide">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A239c24f62b0f7f593773890c9cfc1af5d5556169f03455213e1b5d9c20596953&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false"></script>
