@@ -43,7 +43,7 @@
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac9d10d3fe4225e5b31f6afd5a09a46aec8c68d8af738b81aa0516bee60923a9e&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false"></script>
             </div>
             <div class="contacts__map js-map glide__slide">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A18f8a45551d3e32e77abaed520c711a832d388a7ca8e76e1e836b17c82bbfa27&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false"></script>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af235ac5cc076ba37cd5f565d4a7b14a266c4062aa3afb4a440b069b0a32c7319&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
             <div class="contacts__map js-map glide__slide">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acbf05086f2ae4b63a1fe729e2e4736cb73822b0ad270212db5b481c2a29cb9e2&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false"></script>

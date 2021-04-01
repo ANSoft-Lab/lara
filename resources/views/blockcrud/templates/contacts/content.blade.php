@@ -76,11 +76,11 @@
             </div>
             <div class="contacts__map contacts__map--cp js-map glide__slide">
                 <div class="contacts__map-ym">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A18f8a45551d3e32e77abaed520c711a832d388a7ca8e76e1e836b17c82bbfa27&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false"></script>
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af235ac5cc076ba37cd5f565d4a7b14a266c4062aa3afb4a440b069b0a32c7319&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
                 <div class="contacts__map-info">
                     <h3>Воронеж</h3>
-                    <p><b>Адрес:</b> г. Воронеж, ул. Текстильщиков 5, стр.1, 5 этаж. Офис 301</p>
+                    <p><b>Адрес:</b> г. Воронеж, ул. Платонова, д. 25</p>
                     <p><b>График работы:</b> Пн-Пт: 9:00-18:00</p>
                 </div>
             </div>
