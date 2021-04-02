@@ -1,0 +1,7 @@
+@include('blockcrud.templates.affiliate.first')
+@include('blockcrud.templates.affiliate.how-to-earn')
+@include('blockcrud.templates.affiliate.you-get')
+@include('blockcrud.templates.affiliate.advantages')
+@include('blockcrud.templates.affiliate.mortage')
+@include('blockcrud.templates.affiliate.partner-banks')
+@include('blockcrud.templates.affiliate.approval')
