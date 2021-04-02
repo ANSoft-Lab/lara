@@ -1,3 +1,5 @@
+@if(request()->path() !== 'affiliate')
+
 <div class="modal__overlay js-overlay m-hidden" id="choose-city">
     <div class="modal">
         <div class="modal__close js-modal-close"></div>
@@ -41,3 +43,5 @@
         </form>
     </div>
 </div>
+
+@endif

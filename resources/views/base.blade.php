@@ -22,5 +22,9 @@
    @if(request()->path() === 'kis')
     <script src="{{mix('/js/app.js')}}"></script>
    @endif
+   @if(request()->path() === 'affiliate')
+    <script src="{{mix('/js/affiliate.js')}}"></script>
+    <script src="{{mix('/js/affiliate-vendor.js')}}"></script>
+   @endif
 </body>
 </html>
