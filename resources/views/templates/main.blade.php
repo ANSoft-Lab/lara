@@ -354,7 +354,7 @@
                         <div class="contacts__block js-contacts-block">
                             <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
                             <p class="contacts__item">
-                                <span class="contacts__subtitle">Адрес: Воронеж, ул. Текстильщиков 5, стр.1</span>
+                                <span class="contacts__subtitle">Адрес: Воронеж, ул. Платонова, дом 25</span>
                             </p>
                             <p class="contacts__item">
                                 <span class="contacts__subtitle">Телефон: +7 (473) 206-72-97</span>
