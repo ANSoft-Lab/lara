@@ -33,6 +33,21 @@
 @import "bem/collective";
 @import "bem/auto-insurance";
 
+// affiliate
+
+@import "bem/affiliate/breadcrumbs";
+@import "bem/affiliate/affiliate";
+@import "bem/affiliate/how-to-earn";
+@import "bem/affiliate/you-get";
+@import "bem/affiliate/advantages";
+@import "bem/affiliate/mortgage";
+@import "bem/affiliate/partner-banks";
+@import "bem/affiliate/approval";
+@import "bem/affiliate/refinance";
+@import "bem/affiliate/steps";
+@import "bem/affiliate/team";
+@import "bem/affiliate/chat";
+
 // Наши техцентры
 
 @import "bem/group";
@@ -42,6 +57,9 @@
 @import "bem/text";
 
 @import "bem/map";
+
+@import "swiper-bundle";
+@import "simplebar";
 
 body {
     font-family: 'Formular', Arial, sans-serif;

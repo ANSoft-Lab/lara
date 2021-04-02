@@ -1,0 +1,123 @@
+.advantages{
+	padding-top: 20px;
+	padding-bottom: 21px;
+	&__title{
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		letter-spacing: 0.5px;
+		color: #272727;
+	}
+	&__items{
+		margin-top: 19px;
+	}
+	&__item{
+		border-radius: 10px;
+		background: #FFFFFF;
+		border: 1px solid #DCE2E3;
+		margin-bottom: 8px;
+		min-height: 150px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 16px 13px 20px 12px;
+		transition: .2s;
+		&:hover{
+			border-color: transparent;
+			box-shadow: -2px 2px 14px rgba(124, 123, 123, 0.25);
+			.advantages__item_icon{
+				background: #F2CB4D;
+				* {
+					fill: #fff;
+				}
+			}
+		}
+		&_icon{
+			width: 60px;
+			height: 60px;
+			background: #DCE2E3;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: .2s;
+			* {
+				transition: .2s;
+			}
+		}
+		&_text{
+			font-size: 14px;
+			line-height: 20px;
+			text-align: center;
+			letter-spacing: 0.8px;
+			color: #272727;
+			margin-top: 14px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.advantages{
+		padding-top: 30px;
+		&__title{
+			font-size: 20px;
+			line-height: 24px;
+		}
+		&__items{
+			margin-top: 30px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&__item{
+			width: calc(50% - 10px);
+			margin-right: 20px;
+			min-height: 238px;
+			margin-bottom: 20px;
+			padding: 30px;
+			padding-right: 61px;
+			&:nth-child(2n){
+				margin-right: 0;
+			}
+			&_icon{
+				width: 80px;
+				height: 80px;
+			}
+			&_text{
+				font-size: 16px;
+				line-height: 26px;
+				margin-top: 19px;
+			}
+		}
+	}
+}
+@media screen and (min-width: 1440px) {
+	.advantages{
+		padding-top: 30px;
+		&__title{
+			font-size: 26px;
+			line-height: 32px;
+			text-align: left;
+		}
+		&__items{
+			margin-top: 40px;
+		}
+		&__item{
+			width: calc((100% / 4) - 30px);
+			margin-right: 30px;
+			padding: 29px;
+			min-height: 0;
+			&:nth-child(2n){
+				margin-right: 30px;
+			}
+			&:nth-child(4n){
+				margin-right: 0;
+			}
+			&_text{
+				letter-spacing: .5px;
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+	}
+}

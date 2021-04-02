@@ -1,0 +1,115 @@
+.you-get{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	&__title{
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+		letter-spacing: 0.5px;
+		color: #272727;
+	}
+	&__items{
+		margin-top: 20px;
+	}
+	&__item{
+		background: #F0F0F0;
+		border-radius: 15px;
+		margin-bottom: 10px;
+		min-height: 64px;
+		background-image: url("data:image/svg+xml,%3Csvg width='13' height='16' viewBox='0 0 13 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M12.5 7.13397C13.1667 7.51888 13.1667 8.48112 12.5 8.86602L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13397Z' fill='%2398A2A4'/%3E %3C/svg%3E ");
+		background-repeat: no-repeat;
+		background-size: 13px 16px;
+		background-position: left 15px center;
+		padding: 12px;
+		padding-left: 46px;
+		display: flex;
+		align-items: center;
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 0.8px;
+		color: #272727;
+	}
+	&__btn{
+		display: inline-block;
+		cursor: pointer;
+		border: none;
+		background: #F2CB4D;
+		border-radius: 50px;
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+		letter-spacing: 0.005em;
+		color: #272727;
+		padding: 14px 40px;
+		font-weight: 500;
+		width: 100%;
+		margin-top: 10px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.you-get{
+		padding-bottom: 30px;
+		&__title{
+			font-size: 20px;
+			line-height: 24px;
+		}
+		&__items{
+			margin-top: 32px;
+			display: flex;
+			flex-direction: column;
+		}
+		&__item{
+			font-size: 14px;
+			line-height: 20px;
+			text-transform: uppercase;
+			text-align: center;
+			justify-content: center;
+			padding: 22px;
+			padding-left: 46px;
+			padding-right: 46px;
+			order: 5;
+			&:nth-child(1){
+				order: 2;
+			}
+			&:nth-child(2){
+				order: 1;
+			}
+		}
+		&__btn{
+			margin-top: 20px;
+			width: 488px;
+			font-size: 16px;
+			line-height: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			padding: 22px;
+			letter-spacing: .5px;
+		}
+	}
+}
+@media screen and (min-width: 1440px) {
+	.you-get{
+		padding-top: 24px;
+		padding-bottom: 40px;
+		&__title{
+			font-size: 26px;
+			line-height: 32px;
+			text-align: left;
+		}
+		&__items{
+			margin-top: 40px;
+		}
+		&__item{
+			border-radius: 50px;
+			margin-bottom: 20px;
+			background-position: left 47px center;
+			padding-left: 118px;
+			letter-spacing: 1.9px;
+		}
+		&__btn{
+			padding: 26px;
+		}
+	}
+}

@@ -4,10 +4,12 @@
             <img src="/icon/finist_logo.svg" alt="finist">
         </a>
         <div class="header-mob">
+@if(request()->path() !== 'affiliate')
             <div class="header-burger js-burger">
                 <span class="header-burger__item"></span>
                 <span class="header-burger__item"></span>
             </div>
+@endif
             <nav class="header__nav header-menu__wrap js-mobile-menu">
                 <ul class="header-menu">
                     @foreach (App\Models\MenuItem::getTree() as $item)
