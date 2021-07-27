@@ -19,8 +19,8 @@
             <li data-city="kazan" class="contacts__tab glide__bullet" data-glide-dir="=5">
                 казань
             </li>
-            <li data-city="samara" class="contacts__tab glide__bullet" data-glide-dir="=6">
-                самара
+            <li data-city="ekaterinburg" class="contacts__tab glide__bullet" data-glide-dir="=6">
+                екатеринбург
             </li>
             <li data-city="krasnodar" class="contacts__tab glide__bullet" data-glide-dir="=7">
                 краснодар
@@ -49,21 +49,10 @@
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acbf05086f2ae4b63a1fe729e2e4736cb73822b0ad270212db5b481c2a29cb9e2&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false"></script>
             </div>
             <div class="contacts__map js-map glide__slide">
-
-                <div class="contacts__block js-contacts-block">
-                    <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
-                    <div class="contacts__item">
-                        <span class="contacts__subtitle">Телефон: +7 (463) 790-582</span>
-                    </div>
-                </div>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aea70219d5cf8d235214914403d8c104648dad59641e060976ede115b27d7e49f&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
             <div class="contacts__map js-map glide__slide">
-                <div class="contacts__block js-contacts-block">
-                    <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
-                    <div class="contacts__item">
-                        <span class="contacts__subtitle">Телефон: +7 (612) 982-446</span>
-                    </div>
-                </div>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abd7b3ba3b127275e361bf3c43a550eeba8aee78fdb4604550533d22e850d6f54&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
         </div>
     </div>

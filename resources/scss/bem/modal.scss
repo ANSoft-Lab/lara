@@ -56,7 +56,7 @@
     }
 
     &__btn {
-        margin: 63px auto 0;
+        margin: 30px auto 0;
         padding: 20px 30px;
         text-align: center !important;
         width: auto;
@@ -113,6 +113,10 @@
         border: none;
         border-bottom: 1px solid #272727;
         width: 100%;
+        &--textarea{
+            border: 1px solid #272727;
+            padding: 5px;
+        }
     }
 
     &__checkbox {
@@ -142,6 +146,11 @@
            left: 4px;
            top: 5px;
         }
+    }
+    &__message{
+        max-width: 400px;
+        text-align: center;
+        line-height: 24px;
     }
 }
 

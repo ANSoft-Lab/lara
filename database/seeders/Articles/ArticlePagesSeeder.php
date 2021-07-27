@@ -82,6 +82,15 @@ class ArticlePagesSeeder extends Seeder
                     'created_at' => $date,
                     'updated_at' => $date,
                 ],
+                [
+                    'template' => 'simple',
+                    'name' => 'Страхование в поездке',
+                    'title' => 'Страхование в поездке',
+                    'slug' => 'articles/strahovanie_v_poezdke',
+                    'content' => "@customblock('insurance-travel')",
+                    'created_at' => $date,
+                    'updated_at' => $date,
+                ],
             ];
 
             if(DB::table('pages')->where('slug', 'about')->where('template', 'about')->first()) {

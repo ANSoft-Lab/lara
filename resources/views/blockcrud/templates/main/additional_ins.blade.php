@@ -19,10 +19,10 @@
         </a>
         <a class="additional__item" href="/korporativnoe_strahovanie/strahovanie_smr">
             <div class="additional__content">
-                <p class="additional__subtitle">Строительно-монтажные работы</p>
+                <p class="additional__subtitle">Строительно-монтажные<br>работы</p>
             </div>
         </a>
-        <a class="additional__item" href="https://ipoteka-strahovka.ru">
+        <a class="additional__item" href="/kis">
             <div class="additional__content">
                 <p class="additional__subtitle">Страхование потребительских кредитов</p>
             </div>

@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="{{mix('/css/style.css')}}">
     <link rel="icon" type="image/png" href="/icon/favicon.png"/>
 </head>
-<body>
+<body class="{{request()->path()}}">
 <div id="app">
     @include('partials.header')
     <main>
@@ -18,10 +18,10 @@
     @include('partials.footer')
     @include('modals.choose_city')
 </div>
-    <script src="{{mix('/js/main.js')}}"></script>
    @if(request()->path() === 'kis')
     <script src="{{mix('/js/app.js')}}"></script>
    @endif
+    <script src="{{mix('/js/main.js')}}"></script>
    @if(request()->path() === 'affiliate')
     <script src="{{mix('/js/affiliate.js')}}"></script>
     <script src="{{mix('/js/affiliate-vendor.js')}}"></script>

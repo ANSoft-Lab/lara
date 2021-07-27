@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Финансы и страхование FINIST</title>
+    <link rel="icon" type="image/png" href="/icon/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="/widgets/bootstrap.min.css">
+    <script src="/widgets/bootstrap.bundle.min.js"></script>
+    <style type="text/css">
+    .calculator {
+        background: #fff;
+        padding: 20px;
+        min-width: 200px;
+        max-width: 600px;
+        display: block;
+        margin: auto;
+    }
+    .widget-form-button {
+        margin-top: 10px;
+    }
+    .form-group {
+        min-height: 70px;
+    }
+    .hidden {
+        display: none;
+    }
+    .input-error {
+        border-color: red;
+    }
+    .label-error {
+        color: red;
+    }
+    </style>
+
+    <script>
+       function checkStep1() {
+           if(document.querySelector("input[name=creditAmount]").value !== "") {
+               document.querySelector("input[name=creditAmount]").classList.remove("input-error");
+               document.getElementById("step1").classList.add("hidden");
+               document.getElementById("step2").classList.remove("hidden");
+           } else {
+               document.querySelector("input[name=creditAmount]").classList.add("input-error");
+           }
+       }
+
+       function checkStep2() {
+           var hasError = false;
+           if(document.querySelector("input[name=phone]").value !== "") {
+               document.querySelector("input[name=phone]").classList.remove("input-error");
+           } else {
+               document.querySelector("input[name=phone]").classList.add("input-error");
+               hasError = true;
+           }
+
+           if(document.querySelector("input[name=fullName]").value !== "") {
+               document.querySelector("input[name=fullName]").classList.remove("input-error");
+           } else {
+               document.querySelector("input[name=fullName]").classList.add("input-error");
+               hasError = true;
+           }
+
+           if(document.querySelector("input[name=agreementCheckbox]").checked) {
+               document.querySelector("label#agreementCheckboxLabel").classList.remove("label-error");
+           } else {
+               document.querySelector("label#agreementCheckboxLabel").classList.add("label-error");
+               hasError = true;
+           }
+
+           if(hasError) {
+               return false;
+           }
+
+           document.getElementById('calculator-form').submit();
+       }
+
+    </script>
+</head>
+<body>
+    <div class="calculator">
+       <h3 class="text-center">Заявка на&nbsp;ипотеку</h3>
+       <p class="text-center">Одобрение ипотеки от&nbsp;10&nbsp;банков&nbsp;в&nbsp;2&nbsp;клика.</p>
+       <form method="POST" action="" id="calculator-form">
+           <input type="hidden" name="referer" value="<?php echo preg_replace("/[^a-z0-9\-\_\.а-яА-Я]/i", "", $_GET['referer'] ?? '');?>"/>
+           <div id="step1">
+               <div class="row justify-content-between">
+                   <div class="col-sm-6 col-xs-12 form-group">
+                       <label class="form-label w-100">
+                           <span>Сумма кредита, руб.</span>
+                           <input type="text" class="form-control form-input" name="creditAmount">
+                       </label>
+                   </div>
+                   <div class="col-sm-6 col-xs-12 form-group">
+                       <label class="form-label w-100">
+                           <span>Первый взнос</span>
+                           <input type="text" class="form-control form-input" name="downPayment" value="20%">
+                       </label>
+                   </div>
+                   <div class="col-sm-6 col-xs-12 form-group">
+                       <label class="form-label w-100">
+                           <span>Срок кредита, лет</span>
+                           <input type="text" class="form-control form-input" name="creditTerm" value="20">
+                       </label>
+                   </div>
+                   <div class="col-sm-6 col-xs-12 form-group">
+                       <label class="form-label w-100">
+                           <span>Дата выдачи</span>
+                           <select class="form-select" name="issueDate">
+                               <option>Ещё не решили</option>
+                               <option>Как можно скорее</option>
+                               <option>В ближайший месяц</option>
+                               <option>В ближайшие 2-3 месяца</option>
+                               <option>Более поздний срок</option>
+                           </select>
+                       </label>
+                   </div>
+               </div>
+               <div class="row justify-content-center widget-form-button">
+                   <div class="col-xs-12 col-sm-6 form-group">
+                       <button type="button" class="btn btn-warning w-100" onclick="checkStep1();">Одобрить ипотеку</button>
+                   </div>
+               </div>
+           </div>
+           <div id="step2" class="hidden">
+               <div class="row justify-content-between">
+                   <div class="col-sm-6 col-xs-12 form-group">
+                       <label class="form-label w-100">
+                           <span>Ваше имя</span>
+                           <input type="text" class="form-control form-input" name="fullName">
+                       </label>
+                   </div>
+                   <div class="col-sm-6 col-xs-12 form-group">
+                       <label class="form-label w-100">
+                           <span>Телефон</span>
+                           <input type="text" class="form-control form-input" name="phone">
+                       </label>
+                   </div>
+                   <div class="col-sm-12 col-xs-12 form-group">
+                       <label class="form-label w-100" id="agreementCheckboxLabel">
+                           <input type="checkbox" name="agreementCheckbox">
+                           <span>Даю согласие на&nbsp;обработку персональных данных</span>
+                       </label>
+                       <textarea disabled style="width:100%;height:45px;font-size:10px;">
+Согласие на обработку персональных данных
+Настоящим согласием во исполнение требований Федерального закона «О персональных данных» № 152-ФЗ от 27.07.2006 г. Клиент выражает согласие, в том числе на запрос и передачу Брокером персональных данных Клиента третьим лицам (ООО «Профгарант» ИНН 6230087617, КПП 623001001, ОГРН 1156230000057; ООО «Флагман» ИНН: 7706469904, КПП: 770601001, ОГРН: 1197746282623; ООО «ОСС» ИНН: 7706469020, КПП: 770601001, ОГРН: 1197746184327; ООО «Финист» ИНН: 5262364283, КПП: 526201001, ОГРН: 1195275030213; ООО «Феникс» ИНН: 7842174321, КПП: 784201001, ОГРН: 1197847173864;) на основании заключенных Брокером договоров с этими лицами в следующем объеме: предоставление персональных данных для формирования предложений по страховым и кредитным продуктам с использованием средств связи на телефонный номер Клиента, на обработку  персональных  данных  Клиента  в  целях  заключения  при  посредничестве Брокера  договоров страхования или кредитного договора, для предоставления информации в страховую компанию или банк и иных целей в соответствии с действующим законодательством, в том числе при непосредственном контакте или получение указанной информации с помощью средств связи на телефонный номер,  и в иных случаях, не запрещенных законодательством Российской Федерации.
+Под обработкой персональных данных подразумевается сбор и систематизация, накопление, хранение, уточнение (обновление, изменение), проверка, использование, в том числе передачу в целях оформления страхового полиса/договора страхования) обезличивание, блокирование, уничтожение и любые другие действия (операции) с персональными данными не противоречащие действующему законодательству. Под персональными данными подразумевается любая информация, имеющая к Клиенту отношение как к субъекту персональных данных, в том числе фамилия, имя, отчество, дата и место рождения, адрес проживания, паспортные данные, семейный статус, информация о состоянии здоровья, наличии имущества, образовании, доходах, опыте работы и любая другая информация.
+Настоящее согласие не устанавливает предельных сроков обработки данных, если иное не определено законодательством Российской Федерации, и может быть отозвано путем направления в адрес Брокера письменного заявления в свободной форме. Получение указанного заявления Брокером означает, что Брокер обязан прекратить обработку персональных данных Клиента в течение следующих шести месяцев, но не ранее истечения трех лет с даты окончания срока действия соответствующего Договора.
+                       </textarea>
+                   </div>
+               </div>
+               <div class="row justify-content-center widget-form-button">
+                   <div class="col-xs-12 col-sm-6 form-group">
+                       <button type="button" class="btn btn-warning w-100" onclick="checkStep2();">Начать работу по&nbsp;заявке</button>
+                   </div>
+               </div>
+           </div>
+       </form>
+    </div>
+</body>
+</html>

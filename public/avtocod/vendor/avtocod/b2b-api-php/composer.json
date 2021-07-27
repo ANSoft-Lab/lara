@@ -1,0 +1,64 @@
+{
+    "name": "avtocod/b2b-api-php",
+    "description": "PHP package for a working with B2B API service",
+    "keywords": [
+        "avtocod",
+        "b2b",
+        "client"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Avtocod",
+            "homepage": "https://github.com/avtocod"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^6.0 || ~7.0",
+        "ocramius/package-versions": "^1.2"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.3",
+        "phpstan/phpstan": "~0.12",
+        "phpunit/phpunit": "^8.5.4",
+        "vlucas/phpdotenv": "^3.4 || ^4.0 || ^5.0",
+        "avto-dev/guzzle-url-mock": "^1.5",
+        "fakerphp/faker": "^1.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "Avtocod\\B2BApi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Avtocod\\B2BApi\\Tests\\": "tests/"
+        }
+    },
+    "suggest": {
+        "avtocod/specs": "Avtocod project public specifications."
+    },
+    "scripts": {
+        "phpunit": "@php ./vendor/bin/phpunit --no-coverage --colors=always --testsuite=Unit",
+        "phpunit-feature": "@php ./vendor/bin/phpunit --no-coverage --colors=always --testsuite=Feature",
+        "phpunit-cover": "@php ./vendor/bin/phpunit --coverage-html='./coverage/html' --testsuite=Unit",
+        "phpstan": "@php ./vendor/bin/phpstan analyze -c ./phpstan.neon.dist --no-progress --ansi",
+        "test": [
+            "@phpstan",
+            "@phpunit"
+        ],
+        "test-cover": [
+            "@phpstan",
+            "@phpunit-cover"
+        ]
+    },
+    "support": {
+        "issues": "https://github.com/avtocod/b2b-api-php/issues",
+        "source": "https://github.com/avtocod/b2b-api-php"
+    }
+}

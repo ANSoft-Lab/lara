@@ -67,11 +67,11 @@
                         <p class="footer__city js-open-modal" data-modal="choose-city">Казань</p>
                     </li>
                     <li class="footer__phone-item js-city-show city_samara hidden">
-                        <a href="tel:+7463790582" class="footer__tel">+7 (463) 790-582</a>
+                        <a href="tel:+78463790582" class="footer__tel">+7 (8463) 790-582</a>
                         <p class="footer__city js-open-modal" data-modal="choose-city">Самара</p>
                     </li>
                     <li class="footer__phone-item js-city-show city_krasnodar hidden">
-                        <a href="tel:+7612982446" class="footer__tel">+7 (612) 982-446</a>
+                        <a href="tel:+78612982446" class="footer__tel">+7 (8612) 982-446</a>
                         <p class="footer__city js-open-modal" data-modal="choose-city">Краснодар</p>
                     </li>
                     <li class="footer__phone-item">

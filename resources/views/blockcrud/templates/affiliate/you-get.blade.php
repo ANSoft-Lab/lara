@@ -1,5 +1,5 @@
 <section class="you-get">
-    <h2 class="you-get__title">Программа позволяет&nbsp;получить</h2>
+    <h2 class="you-get__title">Возможности с&nbsp;партнерской программой</h2>
     <ul class="you-get__items">
         <li class="you-get__item">
             Скидки на страховые услуги клиентам партнёров
@@ -13,7 +13,7 @@
             и&nbsp;кредитования
         </li>
         <li class="you-get__item">
-            Увеличение клиентской лояльности за счёт <br class="from_tablet to_desk">
+            Увеличение клиентской лояльности за счёт <br class="from_tablet to_desk">
             выгодной программы страхования
         </li>
         <li class="you-get__item">
@@ -29,8 +29,8 @@
         </li>
     </ul>
 
-    <div style="max-width:500px;margin:auto;">
+    {{--<div style="max-width:500px;margin:auto;">
         @include('blockcrud.modals.feedback', ['modal_title' => 'Отправить заявку на участие в программе', 'link' => false, 'btn_class' => 'modal__btn'])
-    </div>
+    </div>--}}
 
 </section>

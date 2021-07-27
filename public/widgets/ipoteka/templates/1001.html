@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Финансы и страхование FINIST</title>
+    <link rel="icon" type="image/png" href="/icon/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="/widgets/bootstrap.min.css">
+    <script src="/widgets/bootstrap.bundle.min.js"></script>
+    <style type="text/css">
+    .calculator {
+        background: #fff;
+        box-shadow: 0 0 20px hsl(0deg 0% 68% / 25%);
+        border-radius: 10px;
+        padding: 20px;
+        min-width: 200px;
+        max-width: 600px;
+        display: block;
+        margin: auto;
+    }
+    .widget-form-button {
+        margin-top: 10px;
+    }
+    .form-group {
+        min-height: 70px;
+    }
+    .hidden {
+        display: none;
+    }
+    .input-error {
+        border-color: red;
+    }
+    .label-error {
+        color: red;
+    }
+    </style>
+
+    <script>
+       function checkStep1() {
+           if(document.querySelector("input[name=creditAmount]").value !== "") {
+               document.querySelector("input[name=creditAmount]").classList.remove("input-error");
+               document.getElementById("step1").classList.add("hidden");
+               document.getElementById("step2").classList.remove("hidden");
+           } else {
+               document.querySelector("input[name=creditAmount]").classList.add("input-error");
+           }
+       }
+
+       function checkStep2() {
+           var hasError = false;
+           if(document.querySelector("input[name=phone]").value !== "") {
+               document.querySelector("input[name=phone]").classList.remove("input-error");
+           } else {
+               document.querySelector("input[name=phone]").classList.add("input-error");
+               hasError = true;
+           }
+
+           if(document.querySelector("input[name=fullName]").value !== "") {
+               document.querySelector("input[name=fullName]").classList.remove("input-error");
+           } else {
+               document.querySelector("input[name=fullName]").classList.add("input-error");
+               hasError = true;
+           }
+
+           if(document.querySelector("input[name=agreementCheckbox]").checked) {
+               document.querySelector("label#agreementCheckboxLabel").classList.remove("label-error");
+           } else {
+               document.querySelector("label#agreementCheckboxLabel").classList.add("label-error");
+               hasError = true;
+           }
+
+           if(hasError) {
+               return false;
+           }
+
+           document.getElementById('calculator-form').submit();
+       }
+
+    </script>
+</head>
+<body>
+    <div class="calculator">
+       <h3 class="text-center">Заявка на&nbsp;ипотеку</h3>
+       <p class="text-center">Одобрение ипотеки от&nbsp;10&nbsp;банков&nbsp;в&nbsp;2&nbsp;клика.</p>
+       <form method="POST" action="" id="calculator-form">
+           <input type="hidden" name="referer" value="<?php echo preg_replace("/[^a-z0-9\-\_\.а-яА-Я]/i", "", $_GET['referer'] ?? '');?>"/>
+           <div id="step1">
+               <div class="row justify-content-between">
+                   <div class="col-sm-6 col-xs-12 form-group">
+                       <label class="form-label w-100">
+                           <span>Сумма кредита, руб.</span>
+                           <input type="text" class="form-control form-input" name="creditAmount">
+                       </label>
+                   </div>
+                   <div class="col-sm-6 col-xs-12 form-group">
+                       <label class="form-label w-100">
+                           <span>Первый взнос</span>
+                           <input type="text" class="form-control form-input" name="downPayment" value="20%">
+                       </label>
+                   </div>
+                   <div class="col-sm-6 col-xs-12 form-group">
+                       <label class="form-label w-100">
+                           <span>Срок кредита, лет</span>
+                           <input type="text" class="form-control form-input" name="creditTerm" value="20">
+                       </label>
+                   </div>
+                   <div class="col-sm-6 col-xs-12 form-group">
+                       <label class="form-label w-100">
+                           <span>Дата выдачи</span>
+                           <select class="form-select" name="issueDate">
+                               <option>Ещё не решили</option>
+                               <option>Как можно скорее</option>
+                               <option>В ближайший месяц</option>
+                               <option>В ближайшие 2-3 месяца</option>
+                               <option>Более поздний срок</option>
+                           </select>
+                       </label>
+                   </div>
+               </div>
+               <div class="row justify-content-center widget-form-button">
+                   <div class="col-xs-12 col-sm-6 form-group">
+                       <button type="button" class="btn btn-warning w-100" onclick="checkStep1();">Одобрить ипотеку</button>
+                   </div>
+               </div>
+           </div>
+           <div id="step2" class="hidden">
+               <div class="row justify-content-between">
+                   <div class="col-sm-6 col-xs-12 form-group">
+                       <label class="form-label w-100">
+                           <span>Ваше имя</span>
+                           <input type="text" class="form-control form-input" name="fullName">
+                       </label>
+                   </div>
+                   <div class="col-sm-6 col-xs-12 form-group">
+                       <label class="form-label w-100">
+                           <span>Телефон</span>
+                           <input type="text" class="form-control form-input" name="phone">
+                       </label>
+                   </div>
+                   <div class="col-sm-12 col-xs-12 form-group">
+                       <label class="form-label w-100" id="agreementCheckboxLabel">
+                           <input type="checkbox" name="agreementCheckbox">
+                           <span>Даю согласие на&nbsp;обработку персональных данных</span>
+                       </label>
+                   </div>
+               </div>
+               <div class="row justify-content-center widget-form-button">
+                   <div class="col-xs-12 col-sm-6 form-group">
+                       <button type="button" class="btn btn-warning w-100" onclick="checkStep2();">Начать работу по&nbsp;заявке</button>
+                   </div>
+               </div>
+           </div>
+       </form>
+    </div>
+</body>
+</html>

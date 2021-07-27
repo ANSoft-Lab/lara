@@ -1,0 +1,5 @@
+{
+    "require": {
+        "avtocod/b2b-api-php": "^4.0"
+    }
+}

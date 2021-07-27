@@ -1,5 +1,5 @@
 <section class="how-to-earn">
-    <h2 class="how-to-earn__title">Как с нами зарабатывать?</h2>
+    <h2 class="how-to-earn__title">Как это работает?</h2>
     <div class="how-to-earn__items">
         <div class="how-to-earn__item">
             <div class="how-to-earn__left">

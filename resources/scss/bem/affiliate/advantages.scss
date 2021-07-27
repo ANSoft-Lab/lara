@@ -26,23 +26,18 @@
 		&:hover{
 			border-color: transparent;
 			box-shadow: -2px 2px 14px rgba(124, 123, 123, 0.25);
-			.advantages__item_icon{
-				background: #F2CB4D;
-				* {
-					fill: #fff;
-				}
-			}
 		}
 		&_icon{
 			width: 60px;
 			height: 60px;
-			background: #DCE2E3;
+			background: #F2CB4D;
 			border-radius: 50%;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			transition: .2s;
 			* {
+				fill: #fff;
 				transition: .2s;
 			}
 		}

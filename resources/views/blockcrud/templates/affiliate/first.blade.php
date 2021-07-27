@@ -7,11 +7,11 @@
         Мы платим риэлторам до 25% от стоимости страховки и до 0.7% от суммы ипотечного кредита.
     </p>
 
-    <p  class="affiliate-banner__desc">
-        <b>Просто напишите нам или&nbsp;оставьте&nbsp;заявку:</b>
+    <p  class="affiliate-banner__desc affiliate-banner__desc--left">
+        <b>Хочешь сэкономить свое время на&nbsp;проведении ипотечной сделки? напиши нам:</b>
     </p>
-    <p>
-        <a class="telegram__link" target="_blank" onclick="try{ ym(74649303,'reachGoal','TELEGRAM'); } catch(e) { console.log(e); }" href="tg://resolve?domain=InfoFinist"><img src="/img/icon_telegram.png" style="height:64px;" alt=""></a>
+    <p class="affiliate-banner__social">
+        <a class="telegram__link" target="_blank" onclick="try{ ym(74649303,'reachGoal','TELEGRAM'); } catch(e) { console.log(e); }" href="tg://resolve?domain=lnv111"><img src="/img/icon_telegram.png" style="height:64px;" alt=""></a>
         <a class="whatsapp__link" target="_blank" onclick="try{ ym(74649303,'reachGoal','WHATSAPP'); } catch(e) { console.log(e); }" href="https://wa.me/79156257342?text=Здравствуйте! У меня вопрос по партнёрской программе."><img src="/img/icon_whatsapp.png" style="height:64px;padding-left:16px;" alt=""></a>
     </p>
 

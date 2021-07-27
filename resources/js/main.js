@@ -4,6 +4,7 @@ window.$ = window.jQuery = require('jquery');
 
 import Cookies from 'js-cookie';
 import Glide from '@glidejs/glide';
+import Swiper from 'swiper/bundle';
 
 class Finist {
     constructor() {
@@ -257,4 +258,26 @@ $(document).ready(function(){
         window.location.href = $('input[name=ins]').filter(':checked').val();
        }
    });
+
+   var swiper = new Swiper(".partners__list", {
+        loop: true,
+        speed: 3000,
+        slidesPerView: 2,
+        waitForTransition: false,
+        autoplay: {
+            enabled: true,
+            delay: 1,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 3
+          },
+          992: {
+            slidesPerView: 4
+          },
+          1200: {
+            slidesPerView: 6
+          },
+        },
+  });
 });

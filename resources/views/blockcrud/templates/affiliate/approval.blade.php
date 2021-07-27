@@ -11,14 +11,14 @@
                         </div>
                         <hr>
                         <div class="approval__item_percent">
-                            от 8,39%
+                            от 8,8%
                         </div>
                         <div class="approval__item_percent_desc">
                             годовых при сумме <br>
-                            кредита от 5 млн. рублей
+                            кредита от 7 млн. рублей
                         </div>
                         <div class="approval__item_percent">
-                            от 5%
+                            от 6,49%
                         </div>
                         <div class="approval__item_percent_desc">
                             льготная ипотека<br>
@@ -34,11 +34,11 @@
                         </div>
                         <hr>
                         <div class="approval__item_percent">
-                            от 8,39%
+                            от 8,3%
                         </div>
                         <div class="approval__item_percent_desc">
                             годовых при сумме <br>
-                            кредита от 4,5 млн. рублей
+                            кредита от 5 млн. рублей
                         </div>
                         <div class="approval__item_percent">
                             от 5,9%
@@ -57,18 +57,17 @@
                         </div>
                         <hr>
                         <div class="approval__item_percent">
-                            от 8,3%
+                            от 8,09%
                         </div>
                         <div class="approval__item_percent_desc">
                             годовых при сумме <br>
-                            кредита от 3 млн. рублей
+                            кредита от 7 млн. рублей
                         </div>
                         <div class="approval__item_percent">
-                            от 6,9%
+                            от 5,69%
                         </div>
                         <div class="approval__item_percent_desc">
                             льготная ипотека
-
                         </div>
                     </div>
                 </div>
@@ -80,7 +79,7 @@
                         </div>
                         <hr>
                         <div class="approval__item_percent">
-                            от 9,99%
+                            от 8,79%
                         </div>
                         <div class="approval__item_percent_desc">
                             годовых
@@ -90,7 +89,7 @@
                         </div>
                         <div class="approval__item_percent_desc">
                             льготная ипотека<br>
-                            первоначальный взнос от&nbsp;10%
+                            первоначальный взнос от&nbsp;20%
                         </div>
                     </div>
                 </div>
@@ -102,13 +101,14 @@
                         </div>
                         <hr>
                         <div class="approval__item_percent">
-                            от 9%
+                            от 8,29%
                         </div>
                         <div class="approval__item_percent_desc">
-                            годовых
+                            годовых при сумме <br>
+                            кредита от 3 млн. рублей
                         </div>
                         <div class="approval__item_percent">
-                            от 6,5%
+                            от 5,75%
                         </div>
                         <div class="approval__item_percent_desc">
                             льготная ипотека
@@ -123,14 +123,14 @@
                         </div>
                         <hr>
                         <div class="approval__item_percent">
-                            от 8,2%
+                            от 7,8%
                         </div>
                         <div class="approval__item_percent_desc">
                             годовых при сумме <br>
                             кредита от 5 млн. рублей
                         </div>
                         <div class="approval__item_percent">
-                            от 6%
+                            от 6,5%
                         </div>
                         <div class="approval__item_percent_desc">
                             льготная ипотека
@@ -145,10 +145,11 @@
                         </div>
                         <hr>
                         <div class="approval__item_percent">
-                            от 9,69%
+                            от 7,9%
                         </div>
                         <div class="approval__item_percent_desc">
-                            годовых
+                            годовых при сумме <br>
+                            кредита от 9 млн. рублей
                         </div>
                         <div class="approval__item_percent">
                             от 6,45%
@@ -180,7 +181,7 @@
                         </div>
                         <hr>
                         <div class="refinance__item_percent">
-                            от 8,39%
+                            от 8,9%
                         </div>
                     </div>
                 </div>
@@ -192,7 +193,7 @@
                         </div>
                         <hr>
                         <div class="refinance__item_percent">
-                            от 7,9%
+                            от 8,3%
                         </div>
                     </div>
                 </div>
@@ -204,7 +205,7 @@
                         </div>
                         <hr>
                         <div class="refinance__item_percent">
-                            от 8,49%
+                            от 7,89%
                         </div>
                     </div>
                 </div>
@@ -216,7 +217,7 @@
                         </div>
                         <hr>
                         <div class="refinance__item_percent">
-                            от 9,99%
+                            от 8,79%
                         </div>
                     </div>
                 </div>
@@ -228,7 +229,7 @@
                         </div>
                         <hr>
                         <div class="refinance__item_percent">
-                            от 9,69%
+                            от 8,29%
                         </div>
                     </div>
                 </div>
@@ -240,7 +241,19 @@
                         </div>
                         <hr>
                         <div class="refinance__item_percent">
-                            от 7,8%
+                            от 8,3%
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="refinance__item">
+                        <img src="/img/affiliate/icon/approval-logo/logo-7.svg" class="refinance__item_logo" alt="">
+                        <div class="refinance__item_name">
+                            Совкомбанк
+                        </div>
+                        <hr>
+                        <div class="refinance__item_percent">
+                            от 9,64%
                         </div>
                     </div>
                 </div>
@@ -304,6 +317,6 @@
         </div>
     </div>
     <div style="max-width:450px;margin:auto;">
-        @include('blockcrud.modals.feedback', ['modal_title' => 'Отправить заявку', 'link' => false, 'btn_class' => 'modal__btn'])
+        @include('blockcrud.modals.feedback', ['modal_title' => 'Отправить заявку на участие в программе', 'link' => false, 'btn_class' => 'modal__btn'])
     </div>
 </section>

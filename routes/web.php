@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('feedback_send', 'FeedbackController@store')->name('feedback_send');
 
+Route::any('/widgets/api/v1/{method?}', 'WidgetsAPIController@route');
+
 //Auth::routes();
 
 Route::group([
@@ -34,3 +36,4 @@ Route::get('{page}/{subs?}', ['uses' => 'PageController@index'])
 Route::get('/', function () {
     return view('templates.main');
 });
+

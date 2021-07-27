@@ -20,7 +20,7 @@
                 казань
             </li>
             <li data-city="samara" class="contacts__tab glide__bullet" data-glide-dir="=6">
-                самара
+                екатеринбург
             </li>
             <li data-city="krasnodar" class="contacts__tab glide__bullet" data-glide-dir="=7">
                 краснодар
@@ -90,18 +90,21 @@
                 </div>
             </div>
             <div class="contacts__map contacts__map--cp js-map glide__slide">
-                <div class="contacts__block js-contacts-block">
-                    <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
-                    <div class="contacts__item">
-                        <span class="contacts__subtitle">Телефон: +7 (463) 790-582</span>
-                    </div>
+                <div class="contacts__map-ym">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aea70219d5cf8d235214914403d8c104648dad59641e060976ede115b27d7e49f&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="contacts__map-info">
+                    <h3>Екатеринбург</h3>
+                    <p><b>Адрес:</b> г. Екатеринбург, ул. 8 Марта, 13, офис 307</p>
+                    <p><b>Телефон:</b> +7 (343) 379-20-92</p>
+                    <p><b>График работы:</b> Пн-Пт: 09:00-19:00</p>
                 </div>
             </div>
             <div class="contacts__map contacts__map--cp js-map glide__slide">
                 <div class="contacts__block js-contacts-block">
                     <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
                     <div class="contacts__item">
-                        <span class="contacts__subtitle">Телефон: +7 (612) 982-446</span>
+                        <span class="contacts__subtitle">Телефон: +7 (8612) 982-446</span>
                     </div>
                 </div>
             </div>

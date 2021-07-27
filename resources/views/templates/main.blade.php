@@ -385,7 +385,7 @@
                         <div class="contacts__block js-contacts-block">
                             <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
                             <p class="contacts__item">
-                                <span class="contacts__subtitle">Телефон: +7 (463) 790-582</span>
+                                <span class="contacts__subtitle">Телефон: +7 (8463) 790-582</span>
                             </p>
                         </div>
                     </div>
@@ -393,7 +393,7 @@
                         <div class="contacts__block js-contacts-block">
                             <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
                             <p class="contacts__item">
-                                <span class="contacts__subtitle">Телефон: +7 (612) 982-446</span>
+                                <span class="contacts__subtitle">Телефон: +7 (8612) 982-446</span>
                             </p>
                         </div>
                     </div>
