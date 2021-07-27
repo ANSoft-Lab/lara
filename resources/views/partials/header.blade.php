@@ -69,12 +69,6 @@
                             <p class="header-contacts__city js-open-modal" data-modal="choose-city">Краснодар</p>
                         </li>
                     </ul>
-                    <div class="header-callback">
-                        <a href="/kontakty/" class="header-contacts__callback">
-                            @include('blockcrud.modals.feedback', ['modal_title' => 'Обратный звонок', 'link' => true, 'btn_class' => 'modal__btn modal__btn__small'])
-                        </a>
-                        <a href="/job/" class="header-contacts__vacancies">Вакансии</a>
-                    </div>
                 </div>
             </nav>
         </div>
@@ -96,5 +90,14 @@
             Страховой случай
             <div class="offer-links__arrow"></div>
         </a>
+        <div class="header__callback-block">
+            <div>
+                <a href="/kontakty/" class="header-contacts__callback">
+                    @include('blockcrud.modals.feedback', ['modal_title' => 'Обратный звонок', 'link' => true, 'btn_class' => 'modal__btn modal__btn__small'])
+                </a>
+                <a href="/job/" class="header-contacts__vacancies">Вакансии</a>
+            </div>
+        </div>
+
     </div>
 </header>

@@ -258,6 +258,10 @@
     .header {
         display: flex;
 
+        &__callback-block {
+            padding: 0 20px;
+        }
+
         &__top {
             padding: 28px 20px 0 0;
         }
@@ -413,7 +417,7 @@
             &__city-option {
                 position: absolute;
                 left: 47px;
-                top: 63px;
+                top: 43px;
                 z-index: 10;
             }
         }
@@ -444,6 +448,12 @@
                 background-repeat: no-repeat;
                 background-position: center;
             }
+        }
+
+        &__callback-block {
+            display: flex;
+            position: relative;
+            padding: 16px 15px 13px 25px;
         }
 
         &__insurance {
@@ -493,7 +503,7 @@
 
         &-contacts {
             &__vacancies {
-                justify-content: flex-end;
+                /* justify-content: flex-end; */
             }
         }
     }
@@ -523,7 +533,7 @@
         z-index: 6;
 
         &__vacancies {
-            margin-top: 48px;
+            /* margin-top: 48px; */
         }
     }
 
