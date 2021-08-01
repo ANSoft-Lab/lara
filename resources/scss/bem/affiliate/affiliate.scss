@@ -2,6 +2,9 @@
 	*:focus{
 		outline: none;
 	}
+	.header-location {
+		display: none;
+	}
 	&-banner{
 		display: flex;
 		flex-direction: column;
