@@ -25,6 +25,7 @@ class FeedbackStore extends FormRequest
     public function rules()
     {
         return [
+            'agree' => 'required',
             'name' => 'required|min:2',
             'phone' => [
                 Rule::requiredIf(function () { // Если в поле required указано поле phone
@@ -38,6 +39,7 @@ class FeedbackStore extends FormRequest
     public function messages()
     {
         return [
+            'agree.required' => 'Вы должны согласиться на обработку персональных данных',
             'name.required' => 'Введите имя',
             'name.min' => 'Имя должно содержать 2 или более символов',
             'phone.required' => 'Введите телефон',
