@@ -21,10 +21,13 @@ mix.js('resources/js/main.js', 'public/js')
         'resources/js/affiliate/simplebar.min.js',
         'resources/js/affiliate/simple_js.js'
      ], 'public/js/affiliate-vendor.js')
- 
-    .sass('resources/scss/style.scss', 'public/css')
-        .options({
-            postCss: [
-                require('postcss-css-variables')()
-            ]
-        }).version();
+
+    .js([
+        'public/libs/jquery/dist/jquery.min.js',
+        'public/libs/vue/vue.js',
+        'public/libs/slick/slick.min.js',
+        'public/libs/fancybox/jquery.fancybox.pack.js',
+        'public/libs/mask/mask.js',
+        'public/js/Insurance-mortgage/custom/common.js'
+        ], 'public/js/Insurance-mortgage/scripts.min.js')
+    .sass('public/sass/main.sass', 'public/css/Insurance-mortgage/main.min.css');
