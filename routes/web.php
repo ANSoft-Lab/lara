@@ -19,6 +19,11 @@ Route::any('/widgets/api/v1/{method?}', 'WidgetsAPIController@route');
 
 //Auth::routes();
 
+Route::get('/ipoteka-strahovka', 'CalculatorController@main')->name('ipoteka-strahovkaMain');
+Route::post('/mortgage_calculate', 'CalculatorController@mortgageCalculate');
+Route::post('/send_request', 'CalculatorController@sendRequest');
+Route::post('/callback_request', 'CalculatorController@callbackRequest');
+
 Route::group([
     'prefix' => config('backpack.base.route_prefix', 'admin'),
     'middleware' => array_merge(
