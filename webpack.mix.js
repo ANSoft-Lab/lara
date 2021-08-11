@@ -28,6 +28,6 @@ mix.js('resources/js/main.js', 'public/js')
         'public/libs/slick/slick.min.js',
         'public/libs/fancybox/jquery.fancybox.pack.js',
         'public/libs/mask/mask.js',
-        'public/js/Insurance-mortgage/custom/common.js'
+        'resources/js/Insurance-mortgage/custom/common.js'
         ], 'public/js/Insurance-mortgage/scripts.min.js')
     .sass('public/sass/main.sass', 'public/css/Insurance-mortgage/main.min.css');
