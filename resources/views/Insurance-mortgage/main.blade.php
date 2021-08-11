@@ -11,7 +11,7 @@
 	<div id="app">
 			<div class="slogan">
 				<div class="container">
-					<h4>Мы сотрудничаем только с аккредитованными компаниями</h4>
+					<h4 class="additional__title">Мы сотрудничаем только с аккредитованными компаниями</h4>
 					<div class="mt-4 d-flex justify-content-center">
 						<img src="img/Insurance-mortgage/logo1.png" alt="Партнер">
 						<img src="img/Insurance-mortgage/logo3.png" alt="Партнер">
@@ -65,8 +65,8 @@
 								<div class="home__title">
 									<h1>Страхование ипотеки</h1>
 									<p>Комплексная помощь по оформлению<br> полиса ипотечного страхования</p>
-									<a href="#popupp" class="fancybox goal__callback_form_open">Хочу страховку</a>
-									<p style="margin-top:100px;">Партнёрские условия для&nbsp;риэлторов и&nbsp;агентств недвижимости по&nbsp;телефону <span style="white-space:nowrap;">+7 (910) 644-16-27</span></p>
+									<a href="#popupp" class="js-open-modal modal__btn modal__btn__small fancybox">Хочу страховку</a>
+									<p class="additional__subtitle white" style="margin-top:100px;">Партнёрские условия для&nbsp;риэлторов и&nbsp;агентств недвижимости по&nbsp;телефону <span style="white-space:nowrap;">+7 (910) 644-16-27</span></p>
 								</div>
 							</div>
 							<div class="col-lg-auto w-xs-100">
@@ -148,11 +148,11 @@
 											<div class="clearfix"></div>
 												
 											<p class="risk calc-total">
-												<button class="btn calc_submit" type="button">Рассчитать</button>
+												<button class="js-open-modal modal__btn modal__btn__small" type="button">Рассчитать</button>
 											</p>
 											<div class="row make-order hidden">
-												<div class="col-sm-6 col-auto"><a href="#leadModal" class="btn fancybox js__calcLead goal__lead_form_open">Оставить заявку</a></div>
-												<div class="col-sm-6 col-auto"><a href="#popupp" class="btn btn-outline fancybox js__calcLead goal__callback_form_open">Заказать звонок</a></div>
+												<div class="col-sm-6 col-auto"><a href="#leadModal" class="js-open-modal modal__btn modal__btn__small fancybox">Оставить заявку</a></div>
+												<div class="col-sm-6 col-auto"><a href="#popupp" class="js-open-modal modal__btn modal__btn__small fancybox">Заказать звонок</a></div>
 											</div>
 											<div class="clearfix"></div>
 										</form>
@@ -166,11 +166,11 @@
 
 			<div class="service block">
 				<div class="container">
-					<h2>Страхование ипотеки</h2>
+					<h2 class="additional__title">Страхование ипотеки</h2>
 
-					<p>Если Вы решили воспользоваться ипотечным кредитом для приобретения недвижимости, то одним из обязательных условий получения кредита в банке является заключение договора страхования.</p>
-					<p>Мы готовы помочь Вам подобрать оптимальные страховые программы комплексного ипотечного страхования от ведущих страховых компаний, учитывающие стандартные требования большинства банков-кредиторов.</p>
-					<p><b>Внимание!</b> Если вы уже застрахованы по ипотеке, но ищете надежную страховую компанию с более низкими тарифами на очередной год страхования - сравните тарифы действующего полиса с тарифами других страховых компаний, наш сервис вам в помощь!</p>
+					<p class="additional__subtitle">Если Вы решили воспользоваться ипотечным кредитом для приобретения недвижимости, то одним из обязательных условий получения кредита в банке является заключение договора страхования.</p>
+					<p class="additional__subtitle">Мы готовы помочь Вам подобрать оптимальные страховые программы комплексного ипотечного страхования от ведущих страховых компаний, учитывающие стандартные требования большинства банков-кредиторов.</p>
+					<p class="additional__subtitle"><b>Внимание!</b> Если вы уже застрахованы по ипотеке, но ищете надежную страховую компанию с более низкими тарифами на очередной год страхования - сравните тарифы действующего полиса с тарифами других страховых компаний, наш сервис вам в помощь!</p>
 
 					<blockquote>Страховой полис ипотечного страхования - гарантия выполнения 
 					обязательств заемщика по возврату полученного кредита!</blockquote>
@@ -207,8 +207,8 @@
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-lg-10">
-							<h2>Где застраховать ипотеку</h2>
-							<p>Более 8 лет мы консультируем клиентов о ценах и порядке оформления договоров ипотечного страхования, представляем их интересы в выбранной страховой компании. Мы экономим не только ваши деньги, но и время!</p>
+							<h2 class="additional__title">Где застраховать ипотеку</h2>
+							<p class="additional__subtitle">Более 8 лет мы консультируем клиентов о ценах и порядке оформления договоров ипотечного страхования, представляем их интересы в выбранной страховой компании. Мы экономим не только ваши деньги, но и время!</p>
 							<hr>
 						</div>
 					</div>
@@ -240,7 +240,7 @@
 						</div>
 					</div>
 
-					<h3 class="text-center mb-4">Шесть причин обратиться к нам:</h3>
+					<h3 class="text-center mb-4 additional__title">Шесть причин обратиться к нам:</h3>
 
 					<div class="contrast">
 						<div class="row">
@@ -255,7 +255,7 @@
 									<li>Получаете персонального специалиста, который будет помогать Вам по всем вопросам страхования;</li>
 								</ul>
 								<div class="text-center">
-									<a href="#leadModal" class="fancybox goal__lead_form_open">Оставить заявку</a>
+									<a href="#leadModal" class="js-open-modal modal__btn modal__btn__small fancybox">Оставить заявку</a>
 								</div>
 							</div>
 							<div class="col-12 col-md-6 contrast__right">
@@ -268,15 +268,15 @@
 									<li>Самостоятельное решение вопросов со страховой компанией при наступлении страхового случая;</li>
 								</ul>
 								<div class="text-center">
-									<a href="#popupp" class="fancybox goal__callback_form_open">Бесплатная консультация</a>
+									<a href="#popupp" class="js-open-modal modal__btn modal__btn__small fancybox">Бесплатная консультация</a>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="mt-5 row	justify-content-center">
+					<div class="mt-5 row justify-content-center">
 						<div class="col-lg-10">
-							<h3>Мы гарантируем лучшую цену на полис ипотечного страхования!</h3>
+							<h3 class="additional__title">Мы гарантируем лучшую цену на полис ипотечного страхования!</h3>
 							<p>Мы подбираем самый надежный и выгодный вариант страхования, а не продаем услуги конкретной страховой компании, ведь главная наша цель, чтобы вы были довольны и оставались нашим клиентом на долгие годы!</p>
 						</div>
 					</div>
@@ -288,7 +288,7 @@
 
 			<div class="how block">
 				<div class="container">
-					<h2>Стоимость страхования при ипотеке</h2>
+					<h2 class="additional__title">Стоимость страхования при ипотеке</h2>
 					<div class="row justify-content-center">
 						<div class="col-lg-8">
 							<p>Размер страхового взноса по полису ипотечного страхования зависит от страховой суммы и страхового тарифа, рассчитываемого на основании сведений, содержащихся в заявлении и документах.</p>
@@ -313,7 +313,7 @@
 
 			<div class="what block">
 				<div class="container">
-					<h2>Cтоимость полиса ипотечного страхования зависит от:</h2>
+					<h2 class="additional__title">Cтоимость полиса ипотечного страхования зависит от:</h2>
 					<div class="row">
 						<div class="col-md-4">
 							<div class="what__item">
@@ -342,7 +342,7 @@
 
 			<div class="how-contract block">
 				<div class="container">
-					<h2>Как застраховать ипотеку?</h2>
+					<h2 class="additional__title">Как застраховать ипотеку?</h2>
 					<div class="row">
 						<div class="col-md-4">
 							<div class="circle">
@@ -376,7 +376,7 @@
 
 			<div class="what block">
 				<div class="container">
-					<h2>Оплатите страховку по ипотеке</h2>
+					<h2 class="additional__title">Оплатите страховку по ипотеке</h2>
 					<div class="row">
 						<div class="col-md-4">
 							<div class="what__item">
@@ -414,7 +414,7 @@
 
 			<div id="land3" class="faq block">
 				<div class="container">
-					<h2>Ответы на частые вопросы</h2>
+					<h2 class="additional__title">Ответы на частые вопросы</h2>
 					<ul class="faq__list">
 						<li class="q">Где можно узнать перечень аккредитованных страховых компаний?</li>
 						<li class="a">Перечень страховых компаний, которые соответствуют требованиям банка-кредитора, можно узнать на сайте банка или уточнить по телефону в самом отделении банка.</li>
@@ -440,7 +440,7 @@
 			<div id="land4"></div>
 
 			<div class="contacty block">
-				<h2>Наши контакты</h2>
+				<h2 class="additional__title">Наши контакты</h2>
 				<div class="select-container">
 					<div class="container">
 						<div class="row">

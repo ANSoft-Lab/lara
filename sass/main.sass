@@ -1,0 +1,727 @@
+@import "vars"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #333
+
+body
+	font-size: 15px
+	min-width: 320px
+	position: relative
+	line-height: 1.5
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.white
+	color: #fff
+	
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+a:hover
+	text-decoration: none
+
+.head
+	padding-top: 35px
+	&__top
+		background: $accent
+		position: fixed
+		width: 100%
+		top: 0
+		z-index: 999
+		ul
+			padding: 0
+			margin: 0
+			list-style: none
+			li
+				display: block
+				padding: 0
+				&:last-of-type
+					a:before, a:after
+						display: none
+			a
+				color: #333
+				display: block
+				text-align: center
+				line-height: 35px
+				position: relative
+				transition: all .3s
+				text-transform: uppercase
+				font-size: 14px
+				font-weight: 500
+				&:before
+					content: ''
+					position: absolute
+					right: -2px
+					height: 22px
+					top: 50%
+					margin-top: -11px
+					width: 1px
+					background: #666
+				&:after
+					content: ''
+					position: absolute
+					right: -1px
+					height: 22px
+					top: 50%
+					margin-top: -11px
+					width: 1px
+					background: #666
+				&:hover
+					background: #229c56
+					transition: all .3s
+					&:before
+						display: none
+					&:after
+						display: none	
+	&__bot
+		padding: 30px 0
+		&_logo
+			display: inline-block
+			color: #000
+			position: relative
+			padding-left: 80px
+			font-size: 14px
+			color: #b7b7b7
+			line-height: 20px
+			&:hover
+				color: #b7b7b7
+			img
+				position: absolute
+				left: 0
+				top: 50%
+				transform: translate(0, -50%)
+				width: 66px
+			span
+				display: block
+				font-weight: bold						
+				font-size: 22px
+				color: #000
+		&_city
+			span
+				display: block
+			a
+				display: block
+				color: #000
+				font-weight: bold
+		&_call
+			position: relative
+			color: #0281af
+			margin-left: 40px
+			border-bottom: 1px dashed
+			span.icon
+				display: inline-block
+				background: $accent
+				position: absolute
+				width: 30px
+				height: 30px
+				top: 50%
+				margin-top: -15px
+				left: -40px
+				text-align: center
+				line-height: 30px
+				color: #fff
+				border-radius: 100%
+			&:hover
+				color: #000
+
+.slogan
+	background: #f6f9fa
+	padding: 30px 0px
+	h4
+		text-align: center
+		font-size: 22px
+		text-transform: uppercase
+	img
+		max-height: 30px
+		margin: 0 20px	
+
+.home
+	background: url(../img/Insurance-mortgage/bg2.jpg) no-repeat
+	background-size: cover
+	background-position: 50%
+	background-attachment: fixed
+	&__bg
+		padding: 50px 0px
+		background: rgba(0, 0, 0, 0.5)
+	&__title
+		color: #fff
+		text-shadow: 2px 2px 1px #000
+		margin-top: 50px
+		h1
+			font-size: 50px
+			margin: 0
+			margin-bottom: 30px
+		p
+			font-size: 22px	
+		a
+			display: inline-block
+			background: $accent
+			text-shadow: none
+			color: #fff
+			padding: 10px 30px
+			margin-top: 30px
+			font-weight: bold
+			border-radius: 6px
+			&:hover
+				color: #fff
+				opacity: 0.9
+
+.block h2
+	text-align: center
+	text-transform: uppercase
+	margin-bottom: 30px
+	font-size: 2em
+
+.service
+	background: #f6f9fa		
+	padding: 50px 0
+	padding-bottom: 30px
+	margin-bottom: 50px
+
+blockquote
+	background: #e2e3e5
+	padding: 30px	
+	margin-top: 20px
+	margin-bottom: 20px
+	font-style: italic
+
+.what
+	padding-bottom: 20px
+	h2
+		margin-bottom: 50px
+	.what__item
+		text-align: center
+		font-weight: bold
+		margin-bottom: 30px
+		img
+			height: 80px
+			margin-bottom: 20px
+		span
+			display: block
+			font-weight: normal	
+			font-size: 13px
+			color: #868e96
+
+.why
+	background: #f6f9fa
+	padding: 50px 0	
+	h3
+		font-size: 1.75rem
+		font-weight: 500
+		line-height: 1.2	
+	.card
+		display: inline-block
+		text-align: center
+		margin: 2px 1px
+		padding: 20px
+		box-shadow: 0px 1px 4px #aac1c7
+		background-color: #f9fbfb
+		border-radius: 6px
+		img
+			max-height: 25px
+
+.partners
+	margin-top: 30px
+	h3
+		text-align: center			
+	p
+		text-align: center	
+		color: #8c8c8c
+		font-size: 18px
+
+.partner-carousel
+	margin-bottom: 50px
+	margin-top: 50px
+	.slick-slide
+		padding: 0 10px
+		a
+			display: block
+			&:hover
+				cursor: zoom-in
+			&:focus, &:active
+				outline: none			
+		&:focus, &:active
+			outline: none		
+		img
+			width: 100%	
+		.title-doc
+			color: #363636
+			font-size: 12px
+			display: block
+			text-align: center
+			margin-top: 15px
+			vertical-align: baseline
+			line-height: 14px	
+	.slick-next:before, .slick-prev:before
+		color: #000			
+
+.logo-container 
+	.card 
+		padding: 10px
+		margin: 2px 0
+		min-width: 25%
+		img
+			max-height: 18px		
+
+.contrast
+	border: 1px solid #e6eef2
+	background: #fff	
+	padding: 0 15px	
+	h4
+		padding: 15px
+		text-align: center
+		color: #fff
+		background: $accent
+		font-size: 1.4rem
+		font-weight: normal
+		border-bottom: 1px solid #e6eef2
+	&__right, &__left
+		padding: 0	
+		padding-bottom: 30px
+		ul
+			padding: 0
+			padding-left: 30px
+			margin: 0
+			margin-top: 25px
+			margin-bottom: 30px
+			list-style: none
+			counter-reset: list
+			li
+				margin-bottom: 15px
+				position: relative
+				padding-left: 35px
+				&:before
+					counter-increment: list
+					content: counter(list) ""
+					display: inline-block
+					vertical-align: top
+					border-radius: 100%
+					font-size: 16px
+					line-height: 25px
+					height: 22px
+					width: 22px
+					text-align: center
+					color: #fff
+					background: #f8d7da
+					margin-right: 10px
+					position: absolute
+					left: 0
+					top: 50%
+					margin-top: -11px
+		a
+			display: inline-block
+			background: $accent
+			color: #fff
+			padding: 10px 30px
+			border-radius: 6px		
+			border: 1px solid $accent			
+			&:hover
+				opacity: 0.9
+	&__left ul li:before
+		background: $accent
+	&__right 
+		h4
+			background: #fff
+			color: #000
+		a
+			background: #fff
+			color: #000
+			border: 1px solid $accent	
+			transition: all .3s
+			&:hover
+				background: $accent
+				color: #fff
+				transition: all .3s
+				opacity: 1
+
+.how
+	margin-top: 50px				
+	.equation
+		text-align: center
+		margin: 20px 0
+		span
+			display: inline-block
+			padding: 20px
+			border: 2px solid $accent
+
+hr
+		margin: 50px 0
+		border-color: #e4edf1
+		border-style: solid
+
+blockquote.red
+	background: #f8d7da			
+
+.how-contract
+	background: #f6f9fa
+	padding: 50px 0
+	text-align: center
+	margin-bottom: 50px
+	a
+		display: inline-block
+		color: #000
+		border-bottom: 1px dashed
+		font-weight: bold
+		&:hover
+			color: $accent
+	.circle
+		box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3)
+		display: inline-block
+		width: 120px
+		height: 120px
+		border-radius: 100%
+		text-align: center
+		line-height: 120px
+		border: 4px solid $accent
+		background: #fff
+		font-size: 50px
+		margin-bottom: 20px
+		z-index: 2
+		position: relative
+	.circle.middle
+		position: relative
+		z-index: 1
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			height: 4px
+			left: 100%
+			width: 265px
+			background: $accent	
+		&:after
+			content: ''
+			position: absolute
+			top: 50%
+			height: 4px
+			right: 100%
+			width: 265px
+			background: $accent	
+
+.faq
+	background: #f6f9fa
+	padding: 50px 0
+	margin-top: 30px			
+	&__list
+		margin: 0
+		padding: 0
+		list-style: none
+		.a
+			display: none
+			background: #fff
+			padding: 15px
+			margin-bottom: 10px	
+		.q
+			padding: 15px
+			background: #fff
+			margin-bottom: 10px	
+			cursor: pointer
+			font-weight: bold
+
+.contacty
+	margin-top: 50px			
+	.select-container
+		background: $accent
+		color: #fff
+		.city-item
+			padding: 15px 0
+			text-align: center
+			span
+				cursor: pointer
+			span.active
+				text-decoration: underline	
+	.map
+		display: none
+		position: relative
+	.map.active
+		display: block		
+	.mapp
+		height: 400px				
+	.place
+		position: absolute
+		right: 50px
+		top: 50%
+		transform: translate(0,-50%)
+		background: #fff
+		width: 335px	
+		address
+			margin: 0
+		h5
+			font-size: 20px
+			padding: 15px 0
+			border-bottom: 1px solid #ddd
+			margin-bottom: 0
+		.address-line
+			position: relative
+			border-bottom: 1px solid #ddd
+			padding: 15px 0
+			padding-left: 65px
+			padding-right: 15px
+			a
+				color: #000
+			.icon
+				position: absolute
+				left: 0	
+				width: 50px
+				height: 100%
+				text-align: center
+				top: 50%
+				transform: translate(0,-50%)
+				font-size: 20px
+				border-right: 1px solid #ddd
+				i 
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%,-50%)
+
+.questions
+	text-align: center
+	font-size: 40px
+	padding: 50px 0px
+	a
+		color: #0281af
+		border-bottom: 1px dashed
+		&:hover
+			border: 0
+
+#footer
+	background: #212121
+	padding: 40px 0
+	color: #fff
+	a
+		color: #aaa
+		&:hover
+			color: #fff
+	ul
+		list-style: none
+	.head__bot_logo 
+		margin-bottom: 30px
+		span
+			color: #fff
+	.pay-block
+		border-left: 1px solid rgba(255, 255, 255, 0.3)
+		border-right: 1px solid rgba(255, 255, 255, 0.3)
+		position: relative
+		padding: 0px 10px
+	.pay-link
+		border: 	1px solid rgba(255, 255, 255, 0.3)
+		padding: 15px 30px
+		border-radius: 4px
+		color: #fff
+
+#calculator
+	width: 100%
+	.calc
+		position: relative
+		box-shadow: 0 5px 18px rgba(0, 0, 0, 0.29)
+		max-width: 400px
+		background: #ffffff
+		border: 1px solid #cccccc
+		margin: 0 auto
+		-webkit-border-radius: 6px
+		-moz-border-radius: 6px
+		border-radius: 6px
+		padding: 26px 33px
+		width: 400px
+		h2
+			font-size: 1.25rem
+			margin-bottom: 0
+			text-align: center
+			text-transform: uppercase
+		label
+			margin-bottom: 0px
+			margin-top: 15px
+		.text-muted
+			text-indent: 0
+			text-align: center
+			font-size: 0.7rem
+			margin-bottom: 0
+		.age-select
+			float: left
+			width: 50%
+		.gender-radio
+			float: right
+			width: 40%
+		.cost-title
+			margin: 10px auto
+			padding-top: 10px
+			text-align: center
+			text-transform: uppercase
+			font-size: 1rem
+			border-top: 1px solid #efefef
+		.calc__block
+			display: flex
+			justify-content: space-between
+			.re-result, .per-result, .titul-result
+					text-indent: 0px
+					padding: 10px 5px
+					box-shadow: 0px 1px 4px #ababab
+					background-color: #fff
+					border-radius: 6px
+					text-align: center
+					min-width: 28%
+					font-size: 0.8rem
+			.risk
+					border: 1px solid transparent
+					&:hover
+						cursor: pointer
+					.price
+						color: #a38c00
+					&.active
+						border-color: #ffcc00
+		.calc-total
+			width: 100%
+			background: #fbfbfb
+			margin-top: 10px
+			padding-top: 40px
+			padding-bottom: 40px
+			font-size: 26px
+			text-align: center
+			&:before
+				content: ''
+				display: block
+				width: 100%
+				height: 50px
+				background: url(../img/Insurance-mortgage/total_bg.png) no-repeat top
+				background-size: 100%
+			&:after
+				content: ''
+				display: block
+				width: 100%
+				height: 70px
+				background: url(../img/Insurance-mortgage/total_bg.png) no-repeat bottom
+				background-size: 100%
+			.price
+				color: #a38c00
+	.btn
+		font-size: 12px		
+		border: 1px solid $accent	
+
+.radioContainer
+	input[type="radio"]
+		display: none
+	label
+		margin-top: 0 !important
+		position: relative
+		float: left
+	.female::after
+		content: '\f182'
+		font-size: 28px
+		font-family: 'FontAwesome'
+		transition: color .2s
+		padding: 4px 23px
+		border: 1px solid rgba(0, 0, 0, 0.15)
+		border-radius: 6px
+		border-bottom-left-radius: 0px
+		border-top-left-radius: 0px
+	.male::after
+		content: '\f183'
+		font-size: 28px
+		font-family: 'FontAwesome'
+		transition: color .2s
+		padding: 4px 23px
+		border: 1px solid rgba(0, 0, 0, 0.15)
+		border-radius: 6px
+		border-bottom-right-radius: 0px
+		border-top-right-radius: 0px
+	span.radio:hover
+		cursor: pointer
+
+input[type="radio"]:checked + label span.radio::after
+	color: #a38c00
+	border: 1px solid #a38c00
+	padding: 4px 23px			
+
+.clearfix
+	clear: both	
+
+.btn
+	display: inline-block
+	background: $accent
+	text-shadow: none
+	color: #fff
+	padding: 10px 20px
+	font-weight: bold
+	border-radius: 6px
+	&:hover
+		color: #fff
+		opacity: 0.9
+
+.btn-outline
+	background: #fff
+	color: $accent		
+	transition: all .3s
+	&:hover
+		transition: all .3s
+		background: $accent
+
+.fancybox-content
+	max-width: 400px
+	color: #000
+	background: #fff
+	padding: 30px
+	display: none
+	h5
+		text-align: center
+		font-size: 20px
+
+.fancybox-skin
+	padding: 0 !important
+
+.fancybox-content
+	select
+		margin-bottom: 10px	!important
+	small
+		text-align: center
+		width: 100%
+		display: block
+		margin-bottom: 30px
+		font-size: 15px
+	input
+		margin-bottom: 10px
+	button
+		display: block
+		width: 100%
+		height: 40px
+		background: $accent
+		color: #fff
+		border: 0
+		border-radius: 5px
+		margin: 20px 0
+		&:hover
+			opacity: 0.9
+			cursor: pointer
+
+p.privacyPolicy
+	text-align: center
+	font-size: 9px
+
+.mmenu
+	display: none
+	
+.hidden
+	display: none
