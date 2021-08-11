@@ -24,7 +24,6 @@
 {{--                    <label for="message" class="modal__label">Ваш вопрос</label>--}}
                     <textarea id="message" name="message" class="modal__input modal__input--textarea" rows="5" placeholder="Комментарий (не обязательно)" style="border: 1px solid #272727;"></textarea>
                 </div>
-                <div><label><input type='checkbox' name='agree'> согласен на обработку персональных данных</label></div><br/>
                 <div class="modal__message">Мы&nbsp;рады, что вы&nbsp;проявили интерес к&nbsp;Партнерской программе. В&nbsp;ближайшее время мы&nbsp;свяжемся с&nbsp;вами!</div>
                 <div class="errors-area"></div>
                 <button type="button" class="modal__btn js_send mt-3">Отправить</button>

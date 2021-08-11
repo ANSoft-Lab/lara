@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Финансы и страхование FINIST</title>
-    <link rel="stylesheet" type="text/css" href="{{mix('/css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="icon" type="image/png" href="/icon/favicon.png"/>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    @yield('css-includes')
 </head>
 <body class="{{request()->path()}}">
 <div id="app">
@@ -26,5 +27,6 @@
     <script src="{{mix('/js/affiliate.js')}}"></script>
     <script src="{{mix('/js/affiliate-vendor.js')}}"></script>
    @endif
+   @yield('js-includes')
 </body>
 </html>
