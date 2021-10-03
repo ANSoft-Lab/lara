@@ -1,0 +1,319 @@
+.payment {
+  padding-top: 63px;
+  padding-bottom: 70px;
+
+  &__title {
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.02em;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+  }
+
+  &__item {
+    max-width: 300px;
+    width: 100%;
+    position: relative;
+    padding-bottom: 50px;
+
+    &:hover {
+      .payment__link {
+        display: flex;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-family: Formular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.01em;
+    display: flex;
+    align-items: center;
+    height: 66px;
+    margin-bottom: 22px;
+
+    &::before {
+      content: "";
+      display: block;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &_box-1 {
+      &::before {
+        min-width: 45px;
+        height: 31px;
+        background-image: url(../icons/payment-box-1.svg);
+        margin-right: 28px;
+      }
+    }
+
+    &_box-2 {
+      &::before {
+        min-width: 37px;
+        height: 37px;
+        background-image: url(../icons/payment-box-2.svg);
+        margin-right: 28px;
+      }
+    }
+
+    &_box-3 {
+      &::before {
+        min-width: 37px;
+        height: 37px;
+        background-image: url(../icons/payment-box-3.svg);
+        margin-right: 28px;
+      }
+    }
+
+    &_box-4 {
+      &::before {
+        min-width: 49px;
+        height: 22px;
+        background-image: url(../icons/payment-box-4.svg);
+        margin-right: 28px;
+      }
+    }
+  }
+
+  &__sublist {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    min-height: 205px;
+  }
+
+  &__subitem {
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    display: flex;
+
+    &::before {
+      content: "";
+      display: block;
+      min-width: 11px;
+      height: 1px;
+      background-color: #221e1f;
+      transform: translateY(11px);
+      margin-right: 14px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__price {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  &__link {
+    display: none;
+    position: absolute;
+    bottom: -65px;
+    max-width: 221px;
+    width: 100%;
+    border-radius: 90px;
+    height: 66px;
+    background: #f2cb4d;
+    justify-content: center;
+    align-items: center;
+    font-family: Formular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #221e1f;
+    text-decoration: none;
+
+    &::after {
+      content: "";
+      display: block;
+      min-width: 21px;
+      height: 15px;
+      background-image: url(../icons/payment-link.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 1469px) {
+  .payment {
+    padding-top: 50px;
+
+    &__item {
+      max-width: 270px;
+    }
+
+    &__subtitle {
+      &_box-4 {
+        &::before {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .payment {
+    padding-top: 40px;
+
+    &__title {
+      font-size: 33px;
+      line-height: 33px;
+      margin-bottom: 35px;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 300px);
+      justify-content: center;
+      column-gap: 30px;
+      row-gap: 50px;
+    }
+
+    &__price {
+      margin-bottom: 48px;
+    }
+
+    &__link {
+      position: static;
+      display: flex;
+      max-width: 221px;
+      height: 60px;
+      background-color: #f6f7f8;
+      border-radius: 129px;
+      font-family: Formular;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .payment {
+    padding-top: 23px;
+    padding-bottom: 25px;
+
+    &__title {
+      font-family: Formular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 31px;
+      text-align: center;
+      max-width: 290px;
+      width: 100%;
+
+      br {
+        display: none;
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
+
+    &__subtitle {
+      height: auto;
+      font-size: 18px;
+      line-height: 22px;
+
+      &_box-1 {
+        margin-bottom: 22px;
+
+        &::before {
+          min-width: 35px;
+          height: 24px;
+          margin-right: 20px;
+        }
+      }
+
+      &_box-2 {
+        margin-bottom: 12px;
+        &::before {
+          min-width: 34px;
+          height: 34px;
+          margin-right: 21px;
+        }
+      }
+
+      &_box-3 {
+        margin-bottom: 12px;
+
+        &::before {
+          min-width: 34px;
+          height: 34px;
+          margin-right: 21px;
+        }
+      }
+
+      &_box-4 {
+        margin-bottom: 34px;
+
+        &::before {
+          min-width: 41px;
+          height: 18px;
+          margin-right: 14px;
+        }
+      }
+    }
+
+    &__sublist {
+      min-height: auto;
+    }
+
+    &__subitem {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    &__price {
+      position: static;
+      margin-top: 30px;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 35px;
+      margin-bottom: 37px;
+    }
+  }
+}

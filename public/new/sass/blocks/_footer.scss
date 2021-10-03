@@ -1,0 +1,453 @@
+.footer {
+  margin-top: 42px;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 62px;
+  }
+
+  &__logo {
+    text-decoration: none;
+    max-width: 141px;
+    height: 46px;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 50px;
+
+    img {
+      width: 141px;
+      height: 46px;
+      object-fit: contain;
+    }
+  }
+
+  &__vacancies {
+    text-decoration: none;
+    display: block;
+    font-family: Formular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #221e1f;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: block;
+      min-width: 43px;
+      height: 43px;
+      background-image: url(../icons/footer-vacancies.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-right: 20px;
+    }
+
+    span {
+      border-bottom: 4px solid #f2cb4d;
+      padding-bottom: 3px;
+    }
+
+    &:hover {
+      span {
+        border-bottom: 4px solid #221e1f;
+      }
+    }
+
+    &:focus {
+      span {
+        border-bottom: 4px solid #221e1f;
+      }
+    }
+  }
+
+  &__middle {
+    max-width: 460px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+
+  &__middle-title {
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    color: rgba(39, 39, 39, 0.5);
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 27px;
+  }
+
+  &__middle-box {
+    max-width: 230px;
+    width: 100%;
+  }
+
+  &__middle-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__middle-item {
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #272727;
+    }
+
+    &:hover {
+      a {
+        color: rgba(39, 39, 39, 0.7);
+      }
+    }
+
+    &:active {
+      a {
+        color: rgba(39, 39, 39, 0.7);
+      }
+    }
+  }
+
+  &__right {
+    max-width: 450px;
+    width: 100%;
+    padding-top: 35px;
+  }
+
+  &__social {
+    max-width: 170px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__social-link {
+    display: block;
+    text-decoration: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.2s;
+
+    &_facebook {
+      min-width: 21px;
+      height: 21px;
+      background-image: url(../icons/footer-facebook.svg);
+
+      &:hover {
+        background-image: url(../icons/footer-facebook-hover.svg);
+      }
+    }
+
+    &_vkontakte {
+      min-width: 28px;
+      height: 17px;
+      background-image: url(../icons/footer-vkontakte.svg);
+
+      &:hover {
+        background-image: url(../icons/footer-vkontakte-hover.svg);
+      }
+    }
+
+    &_instagram {
+      min-width: 21px;
+      height: 21px;
+      background-image: url(../icons/footer-instagram.svg);
+
+      &:hover {
+        background-image: url(../icons/footer-instagram-hover.svg);
+      }
+    }
+
+    &_whatsapp {
+      min-width: 23px;
+      height: 23px;
+      background-image: url(../icons/footer-whatsapp.svg);
+
+      &:hover {
+        background-image: url(../icons/footer-whatsapp-hover.svg);
+      }
+    }
+  }
+
+  &__contacts {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 47px;
+  }
+
+  &__contacts-item {
+    max-width: 240px;
+  }
+
+  &__contacts-link {
+    text-decoration: none;
+    display: block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.005em;
+    color: #272727;
+    margin-bottom: 11px;
+
+    &:hover {
+      color: rgba(39, 39, 39, 0.5);
+    }
+  }
+
+  &__contacts-text {
+    padding: 0;
+    margin: 0;
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    color: rgba(39, 39, 39, 0.5);
+  }
+
+  &__right-btn {
+    max-width: 227px;
+    width: 100%;
+    height: 56px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 121px;
+    font-family: Formular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+
+    &:hover {
+      background-color: #f0f1f3;
+    }
+
+    &:focus {
+      color: #ffffff;
+      background-color: #221e1f;
+    }
+  }
+
+  &__bottom-link {
+    display: none;
+  }
+
+  &__bottom {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__bottom-text {
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    color: rgba(39, 39, 39, 0.7);
+
+    &:last-child {
+      max-width: 498px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1469px) {
+  .footer {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .footer {
+    padding-top: 51px;
+    padding-bottom: 51px;
+
+    &__top {
+      flex-wrap: wrap;
+    }
+
+    &__right {
+      max-width: 450px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    margin-top: 35px;
+    padding-top: 41px;
+    padding-bottom: 50px;
+    position: relative;
+
+    &__top {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__logo {
+      padding-bottom: 330px;
+    }
+
+    &__right {
+      position: absolute;
+      top: 114px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      max-width: 290px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 0;
+    }
+
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      order: 1;
+      margin-bottom: 29px;
+    }
+
+    &__contacts-item {
+      &:not(:last-child) {
+        margin-bottom: 18px;
+      }
+    }
+
+    &__contacts-link {
+      text-align: center;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 5px;
+    }
+
+    &__contacts-text {
+      text-align: center;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 22px;
+    }
+
+    &__right-btn {
+      order: 2;
+      margin-bottom: 36px;
+    }
+
+    &__social {
+      order: 3;
+      margin-bottom: 0;
+    }
+
+    &__vacancies {
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: 500;
+
+      span {
+        border-bottom: 2px solid #f2cb4d;
+      }
+
+      &::before {
+        width: 25px;
+        height: 25px;
+        margin-right: 11px;
+      }
+    }
+
+    &__middle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__middle-box {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__middle-title {
+      display: none;
+    }
+
+    &__middle-item {
+      font-size: 15px;
+      line-height: 22px;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__bottom {
+      display: block;
+    }
+
+    &__bottom-link {
+      display: block;
+      text-decoration: none;
+      width: 46px;
+      height: 46px;
+      background-color: #f2cb4d;
+      border-radius: 99px;
+      background-image: url(../icons/bottom-link.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      margin-bottom: 33px;
+    }
+
+    &__bottom-text {
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+
+      &:not(:last-child) {
+        margin-bottom: 23px;
+      }
+    }
+  }
+}

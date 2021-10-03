@@ -41,11 +41,9 @@
             {!! $about_company_4 ?? 'Если вы&nbsp;не&nbsp;знаете, какую страховую компанию выбрать
         и&nbsp;не&nbsp;можете определиться
         с&nbsp;выбором, просто позвоните
-        нам по&nbsp;телефону' !!}
+        нам' !!}
 
-        </span>
-        <a href="tel:84956262555" class="about__info_strong">8(495) 62-62-555</a>
-        или напишите по&nbsp;адресу <a href="mailto:zayvka@finist.ru" class="about__info_strong">zayvka@finist.ru</a>.
+        </span>.
         <span class="about__info about__info_inline{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}"
         @if (isset($edit_mode))
             contenteditable="true" id="about_company_5"

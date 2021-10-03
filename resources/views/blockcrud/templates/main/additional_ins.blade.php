@@ -1,5 +1,5 @@
 <section class="additional">
-    <h2 class="additional__title">Дополнительные виды страхования</h2>
+    <h2 class="additional__title">Дополнительные услуги</h2>
     <div class="additional__list">
         <a href="/strahovanie/vzr/calc" class="additional__item">
             <div class="additional__content">

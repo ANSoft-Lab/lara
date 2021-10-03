@@ -1,4 +1,5 @@
 <section class="offer-links">
+    <h2 class="offer-links__title">Дополнительные услуги</h2>
     <a href="/kis" class="offer-links__item">
         <div class="offer-links__wrap">
             <img src="/img/offers/1.jpg" alt="" class="offer-links__img">

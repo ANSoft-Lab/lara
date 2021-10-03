@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Formular;
+  font-style: normal;
+  font-weight: normal;
+  background-color: #fff;
+  color: #221e1f;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.container {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1469px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 310px;
+    padding: 0 10px;
+  }
+}
+
+@import "blocks/header";
+@import "blocks/breadcrumbs";
+@import "blocks/banner";
+@import "blocks/payment";
+@import "blocks/advantages";
+@import "blocks/cooperation";
+@import "blocks/personal";
+@import "blocks/questions";
+@import "blocks/footer";
+@import "blocks/service";
+@import "blocks/modal";
