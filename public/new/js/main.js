@@ -31,12 +31,13 @@ function hideTabs() {
 }
 
 function showTab(i, link) {
-    serviceItem[i].style.display = 'block';
+    serviceItem[i].style.display = 'flex';
+    serviceItem[i].style.flexDirection = 'column';
     link.classList.add('service__link_active');
-    if (i === 2) {
-        $('.service__item_box-3 .service__slider').slick('setPosition');
+    if (i === 1) {
+        $('.service__item_box-1 .service__slider').slick('setPosition');
     } else if (i === 3) {
-        $('.service__item_box-4 .service__slider').slick('setPosition');
+        $('.service__item_box-3 .service__slider').slick('setPosition');
     }
 }
 
@@ -88,13 +89,13 @@ $('.service__item_box-1 .service__slider').slick({
             slidesToScroll: 1,
         }
     },
-        {
-            breakpoint: 767,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-            }
+    {
+        breakpoint: 767,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
         }
+    }
     ]
 });
 
@@ -112,13 +113,13 @@ $('.service__item_box-3 .service__slider').slick({
             slidesToScroll: 1,
         }
     },
-        {
-            breakpoint: 767,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-            }
+    {
+        breakpoint: 767,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
         }
+    }
     ]
 });
 
@@ -136,13 +137,13 @@ $('.service__item_box-4 .service__slider').slick({
             slidesToScroll: 1,
         }
     },
-        {
-            breakpoint: 767,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-            }
+    {
+        breakpoint: 767,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
         }
+    }
     ]
 });
 
@@ -206,6 +207,7 @@ exampleLink.forEach(item => {
         hideTabs();
         showTab(item.dataset.id, servicesLink[item.dataset.id]);
         document.querySelector('.service__top-select').textContent = item.dataset.name;
+        $('.service__item_box-' + item.dataset.id + ' .service__slider').slick('setPosition');
         calc.scrollIntoView();
     });
 });
@@ -225,43 +227,38 @@ document.querySelector('.footer__bottom-link').addEventListener('click', (event)
 
 const subMenuLink = document.querySelectorAll('.menu__item');
 subMenuLink.forEach(link => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', (event) => {
+      if (event.target.classList.contains('menu__item') || event.target.classList.contains('menu__link'))
         link.classList.toggle('menu__item_active');
     })
+})
+
+const paymentsItems = document.querySelectorAll('.payment__item');
+
+document.addEventListener('scroll', () => {
+    if (window.pageYOffset >= 1500) {
+        paymentsItems[0].classList.remove('payment__item_active'); paymentsItems[1].classList.add('payment__item_active')
+    }
+    if (window.pageYOffset >= 1900) {
+        paymentsItems[1].classList.remove('payment__item_active'); paymentsItems[2].classList.add('payment__item_active')
+    }
+    if (window.pageYOffset >= 2300) {
+        paymentsItems[2].classList.remove('payment__item_active'); paymentsItems[3].classList.add('payment__item_active')
+    }
+
+    if (window.pageYOffset <= 1500) {
+        paymentsItems[1].classList.remove('payment__item_active'); paymentsItems[0].classList.add('payment__item_active')
+    }
+    if (window.pageYOffset <= 1900 && window.pageYOffset > 1500) {
+        paymentsItems[2].classList.remove('payment__item_active'); paymentsItems[1].classList.add('payment__item_active')
+    }
+    if (window.pageYOffset <= 2300 && window.pageYOffset > 1900) {
+        paymentsItems[3].classList.remove('payment__item_active'); paymentsItems[2].classList.add('payment__item_active')
+    }
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-
-    const ajaxSend = async (formData, form) => {
-        const fetchResp = await fetch(form.getAttribute('action'), {
-            method: 'POST',
-            headers: {
-                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
-            },
-            body: formData
-        });
-        if (!fetchResp.ok) {
-            throw new Error(`Статус ошибки ${fetchResp.status}`);
-        }
-        return await fetchResp.text();
-    };
-
-    const form = document.querySelector('form');
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        const formData = new FormData(this);
-
-        ajaxSend(formData, form)
-            .then((response) => {
-                form.reset();
-                document.querySelector('.modal_callback').style.display = 'none';
-                document.querySelector('.modal_success').style.display = 'flex';
-            })
-            .catch((err) => console.error(err))
-    });
-
-});
-
-document.querySelector('.modal__window_box-2 .modal__btn-close').addEventListener('click', () => {
-    document.querySelector('.modal_success').style.display = 'none';
+document.querySelector('.menu__subitem-link_item-1').addEventListener('click', (event) => {
+  event.preventDefault();
+  document.querySelector('.menu__subitem-link_item-1 + .menu__box').classList.toggle('menu__box_active');
+  document.querySelector('.menu__subitem-link_item-1').classList.toggle('menu__subitem-link_item-1_active');
 });

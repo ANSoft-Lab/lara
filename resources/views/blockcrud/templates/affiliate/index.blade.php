@@ -3,24 +3,21 @@
         <div class="container">
             <div class="header__wrap">
                 <div class="header__left">
-                    <a class="header__logo" href="/">
-                        <img src="/new/images/logo.png" alt="logo"/>
+                    <a class="header__logo" href="#">
+                        <img src="/new/images/logo.png" alt="logo" />
                     </a>
 
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="https://finist.ru/chto-delat-pri-nastuplenii-strakhovogo-sluchaya">
-                                Страховой <br/>
-                                случай</a
-                            >
+                            <a href="https://finist.ru/chto-delat-pri-nastuplenii-strakhovogo-sluchaya"> Страховой случай</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="header__right">
                     <a class="header__phone" href="tel:74956600098">+7 495 660-00-98</a>
-                    <button class="header__backcall callback">Обратный звонок</button>
-                    <a class="header__personalarea" href="https://crm.finist.com/new_partner/"></a>
+                    <button class="header__backcall callback">Обратный звонок<span></span></button>
+                    <a class="header__personalarea" href="https://crm.finist.com/new_partner/">Личный кабинет<span></span></a>
                     <button class="header__sandwich">
                         <span></span>
                         <span></span>
@@ -35,23 +32,51 @@
         <div class="container">
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a class="menu__link menu__link_drop-down" href="#">Все виды страхования</a>
+                    <a class="menu__link" href="#">Главная</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link_drop-down" href="#">Наши услуги</a>
                     <div class="menu__wrap">
                         <ul class="menu__sublist">
-                            <li class="menu__subitem"><a href="#">Комплексное и ипотечное страхование</a></li>
-                            <li class="menu__subitem"><a href="#">Рефинансирование и Кредитование</a></li>
-                            <li class="menu__subitem"><a href="#">Автострахование</a></li>
-                            <li class="menu__subitem"><a href="#">Страхование имущества</a></li>
+                            <li class="menu__subitem">
+                                <a class="menu__subitem-link menu__subitem-link_item-1" href="#">Страхование</a>
+
+                                <div class="menu__box">
+                                    <a class="menu__box-link" href="#">Комплексное ипотечное страхование</a>
+                                    <a class="menu__box-link" href="#">Автострахование</a>
+                                    <a class="menu__box-link" href="#">Страхование имущества</a>
+                                </div>
+                            </li>
+                            <li class="menu__subitem">
+                                <a class="menu__subitem-link menu__subitem-link_item-2" href="#">Рефинансирование и кредитование</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a class="menu__subitem-link menu__subitem-link_item-3" href="#">Оценка недвижимости</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a class="menu__subitem-link menu__subitem-link_item-4" href="#">СТО</a>
+                            </li>
                         </ul>
                     </div>
                 </li>
-                <li class="menu__item"><a class="menu__link menu__link_drop-down" href="#">Частным клиентам</a></li>
-                <li class="menu__item"><a class="menu__link menu__link_drop-down" href="#">Корпоративным клиентам</a>
+                <li class="menu__item">
+                    <a class="menu__link menu__link_drop-down" href="#">О компании</a>
+                    <div class="menu__wrap">
+                        <ul class="menu__sublist">
+                            <li class="menu__subitem">
+                                <a class="menu__subitem-link menu__subitem-link_item-5" href="#">О нас</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a class="menu__subitem-link menu__subitem-link_item-6" href="#">Сотрудники</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-                <li class="menu__item"><a class="menu__link" href="#">Партнерам</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Офисы</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">Вакансии</a></li>
+                <li class="menu__item"><a class="menu__link  menu__link_active" href="#">Партнерам</a></li>
             </ul>
 
+            <a class="menu__text" href="#">Страховой случай</a>
             <a class="menu__phone" href="tel:84956600098">+7 495 660-00-98</a>
             <div class="menu__descr">Москва</div>
         </div>
@@ -61,7 +86,7 @@
 <div class="breadcrumbs">
     <div class="container">
         <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item"><a href="/">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="#">Главная</a></li>
             <li class="breadcrumbs__item breadcrumbs__item_active"><a>Партнёрская программа</a></li>
         </ul>
     </div>
@@ -71,7 +96,7 @@
     <div class="container">
         <div class="banner__box">
             <div class="banner__info">
-                <div class="banner__title">Зарабатывайте до 50 000 ₽ дополнительно на каждой сделке в партнерстве</div>
+                <div class="banner__title">Зарабатывайте до 50 000 р на каждой партнёрской сделке</div>
                 <div class="banner__text">
                     <p><span>Привел — заработал</span>Бесплатно сопровождаем любую сделку до результата</p>
                     <p><span>Юридическая поддержка</span>Бесплатные консультации экспертов</p>
@@ -79,7 +104,7 @@
 
                 <div class="banner__info-bottom">
                     <button class="banner__btn callback">Стать партнером</button>
-                    <a class="banner__link" href="#">Зарегистрироваться в личном кабинете</a>
+                    <a class="banner__link" href="https://crm.finist.com/new_partner/registration/">Зарегистрироваться в личном кабинете</a>
                 </div>
             </div>
         </div>
@@ -97,29 +122,27 @@
 <section class="payment">
     <div class="container">
         <div class="payment__title">
-            Сколько вы заработаете <br/>
+            Сколько вы заработаете <br />
             с партнерских услуг?
         </div>
         <div class="payment__list">
             <div class="payment__item">
-                <div class="payment__subtitle payment__subtitle_box-1">Кредитование</div>
-                <ul class="payment__sublist">
-                    <li class="payment__subitem">Индивидуальный подбор предложений минимум по 5-6 банкам для клиента
-                    </li>
-                    <li class="payment__subitem">В среднем клиент экономит на кредите до Х%</li>
-                </ul>
-                <div class="payment__price">до 0,7%</div>
-                <a class="payment__link" href="#" data-name="Кредитование" data-id="0">Пример сделки</a>
-            </div>
-            <div class="payment__item">
                 <div class="payment__subtitle payment__subtitle_box-2">Ипотечное страхование</div>
                 <ul class="payment__sublist">
-                    <li class="payment__subitem">Индивидуальный подбор предложений минимум по 7 страховым для клиента
-                    </li>
+                    <li class="payment__subitem">Индивидуальный подбор предложений минимум по 7 страховым для клиента</li>
                     <li class="payment__subitem">Даем дополнительные скидки до 30%</li>
                 </ul>
                 <div class="payment__price">до 25%</div>
-                <a class="payment__link" href="#" data-name="Ипотечное страхование" data-id="3">Пример сделки</a>
+                <a class="payment__link" href="#" data-name="Ипотечное страхование" data-id="0">Пример сделки</a>
+            </div>
+            <div class="payment__item payment__item_active">
+                <div class="payment__subtitle payment__subtitle_box-1">Кредитование</div>
+                <ul class="payment__sublist">
+                    <li class="payment__subitem">Индивидуальный подбор предложений минимум по 5-6 банкам для клиента</li>
+                    <li class="payment__subitem">В среднем клиент экономит 40 ч на подборе и одобрении кредита</li>
+                </ul>
+                <div class="payment__price">до 0,7%</div>
+                <a class="payment__link" href="#" data-name="Кредитование" data-id="1">Пример сделки</a>
             </div>
             <div class="payment__item">
                 <div class="payment__subtitle payment__subtitle_box-3">Оценка недвижимости</div>
@@ -127,17 +150,16 @@
                     <li class="payment__subitem">За 5 лет сделали оценку 7631 проекта</li>
                 </ul>
                 <div class="payment__price">до 40%</div>
-                <a class="payment__link" href="#" data-name="Оценка недвижимости" data-id="1">Пример сделки</a>
+                <a class="payment__link" href="#" data-name="Оценка недвижимости" data-id="2">Пример сделки</a>
             </div>
             <div class="payment__item">
                 <div class="payment__subtitle payment__subtitle_box-4">Автострахование</div>
                 <ul class="payment__sublist">
                     <li class="payment__subitem">В среднем цена отличается от конкурентов на 10-15%</li>
-                    <li class="payment__subitem">Индивидуальный подбор предложений минимум по 7 страховым для клиента
-                    </li>
+                    <li class="payment__subitem">Индивидуальный подбор предложений минимум по 7 страховым для клиента</li>
                 </ul>
                 <div class="payment__price">до 14%</div>
-                <a class="payment__link" href="#" data-name="Автострахование" data-id="2">Пример сделки</a>
+                <a class="payment__link" href="#" data-name="Автострахование" data-id="3">Пример сделки</a>
             </div>
         </div>
     </div>
@@ -164,17 +186,59 @@
 
             <div class="service__right">
                 <div class="service__top" id="calc">
-                    <div class="service__top-select">Кредитованию</div>
+                    <div class="service__top-select">Ипотечному страхованию</div>
                     <div class="service__top-wrap">
-                        <a class="service__link service__link_active" href="#">Кредитованию</a>
+                        <a class="service__link service__link_active" href="#">Ипотечному страхованию</a>
+                        <a class="service__link" href="#">Кредитованию</a>
                         <a class="service__link" href="#">Оценке недвижимости</a>
                         <a class="service__link" href="#">Автострахованию</a>
-                        <a class="service__link" href="#">Ипотечному страхованию</a>
                     </div>
                 </div>
 
                 <div class="service__list">
-                    <div class="service__item service__item_box-1">
+
+                    <div class="service__item service__item_box-4">
+                        <div class="service__inner" data-sum="25">
+                            <div class="service__caption">Вы заработаете до 25%:</div>
+
+                            <div class="service__sum">
+                                <div class="service__descr">Сумма сделки</div>
+                                <div class="service__box">
+                                    <button class="service__btn service__btn_plus"><span></span><span></span></button>
+                                    <div class="service__input">
+                                        <div contenteditable="true">200 000</div>
+                                    </div>
+                                    <button class="service__btn service__btn_minus"><span></span></button>
+                                </div>
+                            </div>
+
+                            <div class="service__commission">
+                                <div class="service__descr">Комиссия</div>
+                                <div class="service__price">~ <span>50 000</span> ₽</div>
+                            </div>
+                        </div>
+
+                        <div class="service__bottom">
+                            <div class="service__bottom-box">
+                                <div class="service__bottom-title">Страховые партнеры</div>
+                                <div class="service__bottom-list">
+                                    <button class="service__slider-btn service__slider-btn_prev"></button>
+                                    <button class="service__slider-btn service__slider-btn_next"></button>
+                                    <div class="service__slider">
+                                        <div class="service__bottom-item"><img src="/new/images/slider-item8.png" alt="image" /></div>
+                                        <div class="service__bottom-item"><img src="/new/images/slider-item9.png" alt="image" /></div>
+                                        <div class="service__bottom-item"><img src="/new/images/slider-item6.png" alt="image" /></div>
+                                        <div class="service__bottom-item"><img src="/new/images/slider-item7.png" alt="image" /></div>
+                                        <div class="service__bottom-item"><img src="/new/images/slider-item10.png" alt="image" /></div>
+                                        <div class="service__bottom-item"><img src="/new/images/slider-item13.png" alt="image" /></div>
+                                        <div class="service__bottom-item"><img src="/new/images/slider-item14.png" alt="image" /></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service__item service__item_box-1" style="display: none;">
                         <div class="service__inner" data-sum="0.7">
                             <div class="service__caption">Вы заработаете до 0,7%:</div>
                             <div class="service__sum">
@@ -201,16 +265,11 @@
                                     <button class="service__slider-btn service__slider-btn_prev"></button>
                                     <button class="service__slider-btn service__slider-btn_next"></button>
                                     <div class="service__slider">
-                                        <div class="service__bottom-item"><img src="/new/images/slider-item1.png"
-                                                                               alt="image"/></div>
-                                        <div class="service__bottom-item"><img src="/new/images/slider-item2.png"
-                                                                               alt="image"/></div>
-                                        <div class="service__bottom-item"><img src="/new/images/slider-item3.png"
-                                                                               alt="image"/></div>
-                                        <div class="service__bottom-item"><img src="/new/images/slider-item4.png"
-                                                                               alt="image"/></div>
-                                        <div class="service__bottom-item"><img src="/new/images/slider-item5.png"
-                                                                               alt="image"/></div>
+                                        <div class="service__bottom-item"><img src="/new/images/slider-item1.png" alt="image" /></div>
+                                        <div class="service__bottom-item"><img src="/new/images/slider-item2.png" alt="image" /></div>
+                                        <div class="service__bottom-item"><img src="/new/images/slider-item3.png" alt="image" /></div>
+                                        <div class="service__bottom-item"><img src="/new/images/slider-item4.png" alt="image" /></div>
+                                        <div class="service__bottom-item"><img src="/new/images/slider-item5.png" alt="image" /></div>
                                     </div>
                                 </div>
                             </div>
@@ -243,8 +302,7 @@
                             <div class="service__caption">Вы заработаете до <span>10</span>%:</div>
 
                             <div class="service__radio">
-                                <a class="service__radio-link service__radio-link_left service__radio-link_active"
-                                   href="#">
+                                <a class="service__radio-link service__radio-link_left service__radio-link_active" href="#">
                                     КАСКО
                                 </a>
                                 <a class="service__radio-link service__radio-link_right" href="#">ОСАГО</a>
@@ -273,68 +331,13 @@
                                     <button class="service__slider-btn service__slider-btn_prev"></button>
                                     <button class="service__slider-btn service__slider-btn_next"></button>
                                     <div class="service__slider">
-                                        <div class="service__bottom-item"><img src="/new/images/slider-item6.png"
-                                                                               alt="image"/></div>
-                                        <div class="service__bottom-item"><img src="/new/images/slider-item7.png"
-                                                                               alt="image"/></div>
-                                        <div class="service__bottom-item"><img src="/new/images/slider-item8.png"
-                                                                               alt="image"/></div>
-                                        <div class="service__bottom-item"><img src="/new/images/slider-item9.png"
-                                                                               alt="image"/></div>
-                                        <div class="service__bottom-item"><img src="/new/images/slider-item10.png"
-                                                                               alt="image"/></div>
-                                        <div class="service__bottom-item"><img src="/new/images/slider-item11.png"
-                                                                               alt="image"/></div>
-                                        <div class="service__bottom-item"><img src="/new/images/slider-item12.png"
-                                                                               alt="image"/></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="service__item service__item_box-4" style="display: none">
-                        <div class="service__inner" data-sum="25">
-                            <div class="service__caption">Вы заработаете до 25%:</div>
-
-                            <div class="service__sum">
-                                <div class="service__descr">Сумма сделки</div>
-                                <div class="service__box">
-                                    <button class="service__btn service__btn_plus"><span></span><span></span></button>
-                                    <div class="service__input">
-                                        <div contenteditable="true">200 000</div>
-                                    </div>
-                                    <button class="service__btn service__btn_minus"><span></span></button>
-                                </div>
-                            </div>
-
-                            <div class="service__commission">
-                                <div class="service__descr">Комиссия</div>
-                                <div class="service__price">~ <span>50 000</span> ₽</div>
-                            </div>
-                        </div>
-
-                        <div class="service__bottom">
-                            <div class="service__bottom-box">
-                                <div class="service__bottom-title">Страховые партнеры</div>
-                                <div class="service__bottom-list">
-                                    <button class="service__slider-btn service__slider-btn_prev"></button>
-                                    <button class="service__slider-btn service__slider-btn_next"></button>
-                                    <div class="service__slider">
-                                        <div class="service__bottom-item"><img src="/new/images/slider-item8.png"
-                                                                               alt="image"/></div>
-                                        <div class="service__bottom-item"><img src="/new/images/slider-item9.png"
-                                                                               alt="image"/></div>
-                                        <div class="service__bottom-item"><img src="/new/images/slider-item6.png"
-                                                                               alt="image"/></div>
-                                        <div class="service__bottom-item"><img src="/new/images/slider-item7.png"
-                                                                               alt="image"/></div>
-                                        <div class="service__bottom-item"><img src="/new/images/slider-item10.png"
-                                                                               alt="image"/></div>
-                                        <div class="service__bottom-item"><img src="/new/images/slider-item13.png"
-                                                                               alt="image"/></div>
-                                        <div class="service__bottom-item"><img src="/new/images/slider-item14.png"
-                                                                               alt="image"/></div>
+                                        <div class="service__bottom-item"><img src="/new/images/slider-item6.png" alt="image" /></div>
+                                        <div class="service__bottom-item"><img src="/new/images/slider-item7.png" alt="image" /></div>
+                                        <div class="service__bottom-item"><img src="/new/images/slider-item8.png" alt="image" /></div>
+                                        <div class="service__bottom-item"><img src="/new/images/slider-item9.png" alt="image" /></div>
+                                        <div class="service__bottom-item"><img src="/new/images/slider-item10.png" alt="image" /></div>
+                                        <div class="service__bottom-item"><img src="/new/images/slider-item11.png" alt="image" /></div>
+                                        <div class="service__bottom-item"><img src="/new/images/slider-item12.png" alt="image" /></div>
                                     </div>
                                 </div>
                             </div>
@@ -353,63 +356,56 @@
         <div class="advantages__wrap advantages__wrap_box-1">
             <div class="advantages__info">
                 <div class="advantages__subtitle"><span>Экономьте время</span></div>
-                <div class="advantages__caption">После того, как вы привели клиента, вам больше ничего не нужно делать
-                </div>
+                <div class="advantages__caption">После того, как вы привели клиента, вам больше ничего не нужно делать</div>
                 <div class="advantages__bottom">
                     <div class="advantages__text advantages__text_item-1">
                         <p>
-                            <span>Передаете нам клиента</span>За ним закрепляется страховой агент, <br/>
+                            <span>Передаете нам клиента</span>За ним закрепляется страховой агент или кредитный менеджер, <br />
                             а за вами куратор
                         </p>
                     </div>
 
                     <div class="advantages__text advantages__text_item-2">
-                        <p><span>Полностью сопровождаем сделку</span>от первой консультации и до финансового результата
-                        </p>
+                        <p><span>Полностью сопровождаем сделку</span>от первой консультации и до финансового результата</p>
                     </div>
 
                     <div class="advantages__text advantages__text_item-3">
                         <p>
-                            <span>Получаете прибль</span>Вам просто остается забрать <br/>
+                            <span>Получаете прибль</span>Вам просто остается забрать <br />
                             партнерское вознаграждение за приведенного клиента
                         </p>
                     </div>
                 </div>
             </div>
             <div class="advantages__image">
-                <img src="/new/images/advantages-img-1.png" alt="image"/>
+                <img src="/new/images/advantages-img-1.png" alt="image" />
             </div>
         </div>
 
         <div class="advantages__wrap advantages__wrap_box-2">
             <div class="advantages__image">
-                <img src="/new/images/advantages-img-2.png" alt="image"/>
+                <img src="/new/images/advantages-img-2.png" alt="image" />
             </div>
 
             <div class="advantages__info">
                 <div class="advantages__subtitle"><span>Персональный менеджер</span></div>
                 <div class="advantages__caption">Клиент получает постоянную поддержку, а вы - его лояльность</div>
                 <div class="advantages__descr">
-                    За клиентом закрепляется специалист, который <br/>
+                    За клиентом закрепляется специалист, который <br />
                     консультирует по страховым и юридическим вопросам
                 </div>
                 <div class="advantages__bottom">
                     <div class="advantages__text advantages__text_item-4">
                         <p>
-                  <span
-                  >Мы выступаем как ипотечный <br/>
-                    и страховой центр</span
-                  >множества банков и страховых, таких как ИНГОССТРАХ и ДОМРФ
+                <span>Мы выступаем как ипотечный <br />
+                  и страховой центр</span>множества банков и страховых, таких как ИНГОССТРАХ и ДОМРФ
                         </p>
                     </div>
                     <div class="advantages__text advantages__text_item-5">
                         <p>
-                  <span
-                  >Для клиента — <br/>
-                    это удобно и выгодно</span
-                  >
-                            Мы можем считать стоимость по многим вариантам сразу и выбрать ту страховую, которая
-                            нравится клиенту.
+                <span>Для клиента — <br />
+                  это удобно и выгодно</span>
+                            Мы можем считать стоимость по многим вариантам сразу и выбрать ту страховую, которая нравится клиенту.
                         </p>
                     </div>
                 </div>
@@ -421,38 +417,34 @@
                 <div class="advantages__subtitle"><span>Безвозмездность услуг</span></div>
                 <div class="advantages__caption">Наши услуги бесплатны для наших партнеров и их клиентов</div>
                 <div class="advantages__descr">
-                    Нам платят банки и страховые компании <br/>
+                    Нам платят банки и страховые компании <br />
                     за поток клиентов, который мы им приводим
                 </div>
                 <div class="advantages__bottom">
                     <div class="advantages__text advantages__text_item-6">
                         <p>
-                  <span
-                  >Ваш клиент получает <br/>
-                    качественный сервис</span
-                  >
+                <span>Ваш клиент получает <br />
+                  качественный сервис</span>
                         </p>
                         <ul class="advantages__list">
-                            <li class="advantages__item">Страховой агент на связи 24/7</li>
+                            <li class="advantages__item">Страховой агент или кредитный менеджер на связи 24/7</li>
                             <li class="advantages__item">Более 10 000 клиентов прошло через наш сервис</li>
                             <li class="advantages__item">Более 18 лет на рынке</li>
                         </ul>
                     </div>
                     <div class="advantages__text advantages__text_item-7">
                         <p>
-                  <span
-                  >Возрастает ваша <br/>
-                    конкурентоспособность</span
-                  >
+                <span>Возрастает ваша <br />
+                  конкурентоспособность</span>
                         </p>
                         <ul class="advantages__list">
                             <li class="advantages__item">Не тратьте время на проведение сделки</li>
                             <li class="advantages__item">
-                                Благодаря куратору вы всегда <br/>
+                                Благодаря куратору вы всегда <br />
                                 юридически подкованы
                             </li>
                             <li class="advantages__item">
-                                Вам не нужно вести учет сделок <br/>
+                                Вам не нужно вести учет сделок <br />
                                 благодаря личному кабинету
                             </li>
                         </ul>
@@ -460,7 +452,7 @@
                 </div>
             </div>
             <div class="advantages__image">
-                <img src="/new/images/advantages-img-3.png" alt="image"/>
+                <img src="/new/images/advantages-img-3.png" alt="image" />
             </div>
         </div>
     </div>
@@ -472,29 +464,29 @@
         <div class="cooperation__list">
             <div class="cooperation__item cooperation__item_box-1">
                 <div class="cooperation__image">
-                    <img src="/new/icons/cooperation-item1.svg" alt="icon"/>
+                    <img src="/new/icons/cooperation-item1.svg" alt="icon" />
                 </div>
 
                 <div class="cooperation__subtitle">
-                    Работа <br/>
+                    Работа <br />
                     с клиентом
                 </div>
                 <div class="cooperation__text">У вас есть клиент на страхование, выдачу кредита и рефинансирование</div>
             </div>
             <div class="cooperation__item cooperation__item_box-2">
                 <div class="cooperation__image">
-                    <img src="/new/icons/cooperation-item2.svg" alt="icon"/>
+                    <img src="/new/icons/cooperation-item2.svg" alt="icon" />
                 </div>
 
                 <div class="cooperation__subtitle">
-                    Отправка <br/>
+                    Отправка <br />
                     данных
                 </div>
                 <div class="cooperation__text">Вы отправляете данные куратору на расчет</div>
             </div>
             <div class="cooperation__item cooperation__item_box-3">
                 <div class="cooperation__image">
-                    <img src="/new/icons/cooperation-item3.svg" alt="icon"/>
+                    <img src="/new/icons/cooperation-item3.svg" alt="icon" />
                 </div>
 
                 <div class="cooperation__subtitle">Подготовка договора</div>
@@ -502,23 +494,22 @@
             </div>
             <div class="cooperation__item cooperation__item_box-4">
                 <div class="cooperation__image">
-                    <img src="/new/icons/cooperation-item4.svg" alt="icon"/>
+                    <img src="/new/icons/cooperation-item4.svg" alt="icon" />
                 </div>
 
                 <div class="cooperation__subtitle">
-                    Заключение <br/>
+                    Заключение <br />
                     сделки
                 </div>
                 <div class="cooperation__text">Клиент оплачивает и подписывает договор</div>
             </div>
             <div class="cooperation__item cooperation__item_box-5">
                 <div class="cooperation__image">
-                    <img src="/new/icons/cooperation-item5.svg" alt="icon"/>
+                    <img src="/new/icons/cooperation-item5.svg" alt="icon" />
                 </div>
 
                 <div class="cooperation__subtitle">Получение вознаграждения</div>
-                <div class="cooperation__text">Вы получаете комиссионное вознаграждение по всем сделкам ваших клиентов
-                </div>
+                <div class="cooperation__text">Вы получаете комиссионное вознаграждение по всем сделкам ваших клиентов</div>
             </div>
         </div>
 
@@ -551,7 +542,7 @@
                     </div>
                 </div>
 
-                <button class="personal__btn">Зарегистрироваться</button>
+                <a href="https://crm.finist.com/new_partner/registration/" class="personal__btn">Зарегистрироваться</a>
             </div>
         </div>
     </div>
@@ -570,8 +561,7 @@
                     </summary>
                     <p class="questions__text">
                         Экономия времени и сил при ведении клиента, предоставление актуальной информации по рынку
-                        страхования/одобрения/оценки, комиссионное вознаграждение, консультирование и правовая
-                        поддержка.
+                        страхования/одобрения/оценки, комиссионное вознаграждение, консультирование и правовая поддержка.
                     </p>
                 </details>
                 <details class="questions__item">
@@ -582,8 +572,7 @@
                     </summary>
                     <p class="questions__text">
                         Экономия денежных средств – наши услуги по одобрению, страхованию бесплатны. Мы предоставляем
-                        консультацию по 12 банкам и 7 страховым компаниям, предварительная консультация осуществляется
-                        без
+                        консультацию по 12 банкам и 7 страховым компаниям, предварительная консультация осуществляется без
                         документов.
                     </p>
                 </details>
@@ -594,24 +583,22 @@
                         </div>
                     </summary>
                     <p class="questions__text">
-                        Для каждой страховой компании у банков свои тарифы по страхованию, также имеется градация по
-                        рейтингу
+                        Для каждой страховой компании у банков свои тарифы по страхованию, также имеется градация по рейтингу
                         страховых компаний зависящая от процента количества страховых случаях и выплат по ним.
                     </p>
                 </details>
                 <details class="questions__item">
                     <summary>
                         <div class="questions__subtitle">
-                  <span>
-                    Некоторые банки могут навязывать услуги страхования, указывая, что страховаться нужно в строго
-                    определенной страховой компании. Законно ли это?
-                  </span>
+                <span>
+                  Некоторые банки могут навязывать услуги страхования, указывая, что страховаться нужно в строго
+                  определенной страховой компании. Законно ли это?
+                </span>
                         </div>
                     </summary>
                     <p class="questions__text">
                         Если банк отказывается принимать полис от другой (аккредитованной банком) страховой компании,
-                        используйте два аргумента: Постановление Правительства РФ №386 и Федеральный закон №135-ФЗ «О
-                        защите
+                        используйте два аргумента: Постановление Правительства РФ №386 и Федеральный закон №135-ФЗ «О защите
                         конкуренции». В них сказано, что у вас есть право выбора страховой компании.
                     </p>
                 </details>
@@ -619,8 +606,7 @@
                     <summary>
                         <div class="questions__subtitle"><span>Есть льготные программы по одобрению?</span></div>
                     </summary>
-                    <p class="questions__text">Практически у каждого из наших банков-партнеров есть льготные
-                        программы.</p>
+                    <p class="questions__text">Практически у каждого из наших банков-партнеров есть льготные программы.</p>
                 </details>
                 <details class="questions__item">
                     <summary>
@@ -646,8 +632,7 @@
                         </div>
                     </summary>
                     <p class="questions__text">
-                        Осуществляем проведение оценки по фото, без выезда специалиста. Данная услуга осуществляется по
-                        всем
+                        Осуществляем проведение оценки по фото, без выезда специалиста. Данная услуга осуществляется по всем
                         городам России.
                     </p>
                 </details>
@@ -656,8 +641,7 @@
                         <div class="questions__subtitle"><span>В какие сроки готовится оценочный альбом?</span></div>
                     </summary>
                     <p class="questions__text">
-                        Если компания аккредитована банком то срок подготовки оценочного альбома 1(одни) сутки. Если
-                        оценочная
+                        Если компания аккредитована банком то срок подготовки оценочного альбома 1(одни) сутки. Если оценочная
                         компания в банке не аккредитована, то по аналогам подготовка альбома займет от 3 до 14 дней.
                     </p>
                 </details>
@@ -666,8 +650,7 @@
                         <div class="questions__subtitle"><span>Что дает партнеру Личный кабинет?</span></div>
                     </summary>
                     <p class="questions__text">
-                        Личный кабинет помогает отслеживать каждого переданного клиента и стадии сделки по этим
-                        клиентам. Через
+                        Личный кабинет помогает отслеживать каждого переданного клиента и стадии сделки по этим клиентам. Через
                         личный кабинет также можно подавать заявки и отслеживать размер начисленного комиссионного
                         вознаграждения по успешным сделкам.
                     </p>
@@ -681,39 +664,39 @@
     <div class="container">
         <div class="footer__top">
             <div class="footer__left">
-                <a href="/" class="footer__logo">
-                    <img src="/new/images/logo.png" alt="logo"/>
+                <a href="#" class="footer__logo">
+                    <img src="/new/images/logo.png" alt="logo" />
                 </a>
 
-                <a class="footer__vacancies" href="/job/"><span>Вакансии</span></a>
+                <a class="footer__vacancies" href="#"><span>Вакансии</span></a>
             </div>
 
             <div class="footer__middle">
                 <div class="footer__middle-box">
                     <div class="footer__middle-title">Дополнительно</div>
                     <ul class="footer__middle-list">
-                        <li class="footer__middle-item"><a href="/rekvizity">Реквизиты</a></li>
-                        <li class="footer__middle-item"><a href="/faq">Вопросы и ответы</a></li>
+                        <li class="footer__middle-item"><a href="#">Реквизиты</a></li>
+                        <li class="footer__middle-item"><a href="#">Вопросы и ответы</a></li>
                         <li class="footer__middle-item"><a href="#">Отзывы</a></li>
-                        <li class="footer__middle-item"><a href="/chto-delat-pri-nastuplenii-strakhovogo-sluchaya">Страховой случай</a></li>
+                        <li class="footer__middle-item"><a href="#">Страховой случай</a></li>
                     </ul>
                 </div>
                 <div class="footer__middle-box">
                     <div class="footer__middle-title">О нас</div>
                     <ul class="footer__middle-list">
-                        <li class="footer__middle-item"><a href="/group">Группа компаний Финист</a></li>
-                        <li class="footer__middle-item"><a href="/cooperation">Сотрудничество</a></li>
+                        <li class="footer__middle-item"><a href="#">Группа компаний Финист</a></li>
+                        <li class="footer__middle-item"><a href="#">Сотрудничество</a></li>
                         <li class="footer__middle-item"><a href="#">Руководство компании</a></li>
                         <li class="footer__middle-item"><a href="#">Партнеры</a></li>
-                        <li class="footer__middle-item"><a href="/team">Коллектив</a></li>
+                        <li class="footer__middle-item"><a href="#">Коллектив</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer__right">
                 <div class="footer__social">
-                    <a class="footer__social-link footer__social-link_facebook" href="https://www.facebook.com/finist.ru"></a>
-                    <a class="footer__social-link footer__social-link_vkontakte" href="https://vk.com/gkfinist"></a>
+                    <a class="footer__social-link footer__social-link_facebook" href="#"></a>
+                    <a class="footer__social-link footer__social-link_vkontakte" href="#"></a>
                     <a class="footer__social-link footer__social-link_instagram" href="#"></a>
                     <a class="footer__social-link footer__social-link_whatsapp" href="https://wa.me/+79156257342"></a>
                 </div>
@@ -738,7 +721,7 @@
             <a class="footer__bottom-link" href="#"></a>
             <div class="footer__bottom-text">(С) 2003 — 2020 «Финист»</div>
             <div class="footer__bottom-text">
-                Сайт защищен reCAPTCHA с применением Политике конфиденциальности и Условий использования от Google.
+                Сайт защищен reCAPTCHA с применением Политики конфиденциальности и Условий использования от Google.
             </div>
         </div>
     </div>
@@ -772,11 +755,11 @@
     </div>
 </div>
 
-<div class="modal modal_success" style="display: none">
+<div class="modal" style="display: none">
     <div class="modal__window modal__window_box-2">
         <div class="modal__wrap">
             <div class="modal__image">
-                <img src="/new/images/modal-box-2.png" alt="image"/>
+                <img src="/new/images/modal-box-2.png" alt="image" />
             </div>
             <div class="modal__title">Заявка отправлена</div>
             <div class="modal__text">
@@ -788,10 +771,8 @@
     </div>
 </div>
 
-<link rel="stylesheet" type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="/new/js/main.js"></script>
 
