@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Formular;
   font-style: normal;
@@ -1855,7 +1859,7 @@ button {
 }
 
 .advantages__wrap_box-2 .advantages__info {
-  max-width: 650px;
+  max-width: 800px;
 }
 
 .advantages__wrap_box-2 .advantages__caption {
@@ -2015,7 +2019,7 @@ button {
 }
 
 .advantages__text_item-4 {
-  max-width: 284px;
+  max-width: 330px;
 }
 
 .advantages__text_item-4 p span {
@@ -2023,7 +2027,7 @@ button {
 }
 
 .advantages__text_item-5 {
-  max-width: 259px;
+  max-width: 330px;
 }
 
 .advantages__text_item-5 p span {
@@ -2100,15 +2104,11 @@ button {
   .advantages__subtitle {
     margin-bottom: 20px;
   }
-  .advantages__caption {
-    max-width: 550px;
-  }
   .advantages__bottom {
     max-width: 750px;
     width: 100%;
   }
   .advantages__text {
-    max-width: 200px;
     width: 100%;
   }
   .advantages__text p span {
@@ -2681,7 +2681,6 @@ button {
     margin-bottom: 0;
   }
   .personal__btn {
-    display: block;
     max-width: 271px;
     height: 60px;
     font-size: 16px;
