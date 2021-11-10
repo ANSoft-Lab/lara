@@ -76,6 +76,9 @@ class DatabaseSeeder extends Seeder
 
         $this->call(MenuSeeder::class);
 
+        $this->call(Vacancies\VacancyCategoriesSeeder::class);
+        // TO DO: закомментировать, чтобы на боевом сайте не дублировались вакансии
+        $this->call(Vacancies\VacanciesSeeder::class);
 
         //Fixes
         $this->call(FixPhotosPathSeeder::class);

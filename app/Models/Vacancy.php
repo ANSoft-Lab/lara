@@ -3,25 +3,24 @@
 namespace App\Models;
 
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class City extends Model
+class Vacancy extends Model
 {
-    use CrudTrait;
+    use HasFactory, CrudTrait;
 
-    /*
+/*
     |--------------------------------------------------------------------------
     | GLOBAL VARIABLES
     |--------------------------------------------------------------------------
     */
-    public $blockcrud_title = 'Города';
-    public $blockcrud_ignore = true;
+    public $blockcrud_title = 'Вакансии';
+    public $blockcrud_template = 'blocks.vacancies';
 
-    protected $table = 'cities';
-    // protected $primaryKey = 'id';
-    // public $timestamps = false;
+    protected $table = 'vacancies';
     protected $guarded = ['id'];
-    // protected $fillable = [];
+    protected $fillable = [];
     // protected $hidden = [];
     // protected $dates = [];
 
@@ -36,9 +35,14 @@ class City extends Model
     | RELATIONS
     |--------------------------------------------------------------------------
     */
-    public function vacancies()
+    public function city()
     {
-        return $this->hasMany('App\Models\Vacancy', 'city_id')->orderBy('name');
+        return $this->belongsTo('App\Models\City');
+    }
+
+    public function category()
+    {
+        return $this->belongsTo('App\Models\VacancyCategory');
     }
 
     /*
@@ -52,6 +56,9 @@ class City extends Model
     | ACCESSORS
     |--------------------------------------------------------------------------
     */
+    public function getUrlAttribute() {
+        return url('job/' . $this->slug);
+    }
 
     /*
     |--------------------------------------------------------------------------

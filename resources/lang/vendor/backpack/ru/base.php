@@ -78,6 +78,8 @@ return [
         'employees' => 'Сотрудники',
         'feedback' => 'Заявки',
         'faq' => 'Вопросы/Ответы',
+        'vacancy_categories' => 'Направления',
+        'vacancies' => 'Вакансии',
     ],
 
     'menu_model' => [
@@ -114,20 +116,39 @@ return [
     ],
 
     'feedback' => [
+        'created_at' => 'Дата',
+        'message' => 'Сообщение',
         'name' => 'Имя',
         'phone' => 'Телефон',
-        'message' => 'Сообщение',
-        'created_at' => 'Дата',
-        'type' => 'Тип',
         'status' => 'Статус',
+        'type' => 'Тип',
     ],
 
     'faq' => [
-        'question' => 'Вопрос',
         'answer' => 'Ответ',
-        'show_order' => 'Порядок',
-        'publish' => 'Опубликован',
-        'show_block' => 'Показывать в блоках (при включённом фильтре)',
         'blocks' => 'Блоки',
+        'publish' => 'Опубликован',
+        'question' => 'Вопрос',
+        'show_block' => 'Показывать в блоках (при включённом фильтре)',
+        'show_order' => 'Порядок отображения',
+    ],
+
+    'vacancy_categories' => [
+        'description' => 'Описание',
+        'name' => 'Название',
+        'show_order' => 'Порядок отображения',
+        'slug' => 'ЧПУ (URL)',
+    ],
+
+    'vacancies' => [
+        'additional' => 'Дополнительно',
+        'category' => 'Направление',
+        'city' => 'Город',
+        'conditions' => 'Условия',
+        'duties' => 'Обязанности',
+        'name' => 'Название',
+        'requirements' => 'Требования',
+        'show_order' => 'Порядок отображения',
+        'slug' => 'ЧПУ (URL)',
     ],
 ];
