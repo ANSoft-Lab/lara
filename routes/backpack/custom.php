@@ -18,6 +18,8 @@ Route::group([
     Route::crud('document', 'DocumentCrudController');
     Route::crud('city', 'CityCrudController');
     Route::crud('department', 'DepartmentCrudController');
+    Route::crud('vacancy_categories', 'VacancyCategoryCrudController');
+    Route::crud('vacancies', 'VacancyCrudController');
     Route::crud('employee', 'EmployeeCrudController');
     Route::crud('feedback', 'FeedbackCrudController');
     Route::crud('faq', 'FaqCrudController');

@@ -28,6 +28,12 @@
     <a class="nav-link" href="{{ backpack_url('employee') }}"><i class="nav-icon la la-user-tie"></i> {{ trans('backpack::base.menu.employees') }}</a>
 </li>
 <li class="nav-item">
+    <a class="nav-link" href="{{ backpack_url('vacancy_categories') }}"><i class="nav-icon la la-address-book"></i> {{ trans('backpack::base.menu.vacancy_categories') }}</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="{{ backpack_url('vacancies') }}"><i class="nav-icon la la-user"></i> {{ trans('backpack::base.menu.vacancies') }}</a>
+</li>
+<li class="nav-item">
     <a class="nav-link" href="{{ backpack_url('feedback') }}"><i class="nav-icon la la-phone"></i> {{ trans('backpack::base.menu.feedback') }}</a>
 </li>
 <li class='nav-item'>

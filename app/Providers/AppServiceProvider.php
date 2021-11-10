@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Models\City;
+use App\Models\VacancyCategory;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +25,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        view()->composer('blocks.vacancies', function($view) {
+            $view->with([
+                'cities' => City::withCount('vacancies')->orderBy('show_order')->get(),
+                'vacancy_categories' => VacancyCategory::withCount('vacancies')->orderBy('show_order')->get(),
+            ]);
+        });
     }
 }

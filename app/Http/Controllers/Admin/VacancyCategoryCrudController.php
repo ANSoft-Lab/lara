@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\CityRequest;
-use App\Models\City;
+use App\Http\Requests\VacancyCategoryUpdateRequest;
+use App\Models\VacancyCategory;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
 use Backpack\CRUD\app\Http\Controllers\Operations\DeleteOperation;
@@ -12,13 +12,12 @@ use Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
 use Backpack\CRUD\app\Http\Controllers\Operations\UpdateOperation;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
-
 /**
- * Class CityCrudController
+ * Class VacancyCategoryCrudController
  * @package App\Http\Controllers\Admin
  * @property-read \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $crud
  */
-class CityCrudController extends CrudController
+class VacancyCategoryCrudController extends CrudController
 {
     use ListOperation;
     use CreateOperation;
@@ -33,11 +32,9 @@ class CityCrudController extends CrudController
      */
     public function setup()
     {
-        CRUD::setModel(City::class);
-        CRUD::setRoute(config('backpack.base.route_prefix') . '/city');
-        CRUD::setEntityNameStrings('город', 'города');
-
-        CRUD::enableReorder('name', 3);
+        CRUD::setModel(VacancyCategory::class);
+        CRUD::setRoute(config('backpack.base.route_prefix') . '/vacancy_categories');
+        CRUD::setEntityNameStrings('направление', 'направления');
     }
 
     /**
@@ -50,12 +47,12 @@ class CityCrudController extends CrudController
     {
         CRUD::addColumn([
             'name' => 'name',
-            'label' => trans('backpack::base.cities.name'),
+            'label' => trans('backpack::base.vacancy_categories.name'),
         ]);
 
         CRUD::addColumn([
-            'name' => 'show_order',
-            'label' => trans('backpack::base.cities.show_order'),
+            'name' => 'slug',
+            'label' => trans('backpack::base.vacancy_categories.slug'),
         ]);
     }
 
@@ -67,18 +64,22 @@ class CityCrudController extends CrudController
      */
     protected function setupCreateOperation()
     {
-        CRUD::setValidation(CityRequest::class);
+        CRUD::setValidation(VacancyCategoryUpdateRequest::class);
 
         CRUD::addField([
             'name' => 'name',
-            'label' => trans('backpack::base.cities.name'),
+            'label' => trans('backpack::base.vacancy_categories.name'),
             'allows_null' => false,
         ]);
-
         CRUD::addField([
-            'name' => 'show_order',
-            'label' => trans('backpack::base.cities.show_order'),
-            'type' => 'number',
+            'name' => 'slug',
+            'label' => trans('backpack::base.vacancy_categories.slug'),
+            'allows_null' => false,
+        ]);
+        CRUD::addField([
+            'name' => 'description',
+            'label' => trans('backpack::base.vacancy_categories.description'),
+            'type' => 'wysiwyg',
         ]);
     }
 

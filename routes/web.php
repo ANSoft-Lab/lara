@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::post('feedback_send', 'FeedbackController@store')->name('feedback_send');
 
 Route::any('/widgets/api/v1/{method?}', 'WidgetsAPIController@route');
+Route::get('job/{vacancy_slug}', 'PageController@showVacancy')->name('vacancy');
 
 //Auth::routes();
 
