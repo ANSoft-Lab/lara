@@ -32,7 +32,7 @@
         <div class="container">
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a class="menu__link" href="#">Главная</a>
+                    <a class="menu__link" href="/">Главная</a>
                 </li>
                 <li class="menu__item">
                     <a class="menu__link menu__link_drop-down" href="#">Наши услуги</a>
@@ -42,19 +42,19 @@
                                 <a class="menu__subitem-link menu__subitem-link_item-1" href="#">Страхование</a>
 
                                 <div class="menu__box">
-                                    <a class="menu__box-link" href="#">Комплексное ипотечное страхование</a>
-                                    <a class="menu__box-link" href="#">Автострахование</a>
-                                    <a class="menu__box-link" href="#">Страхование имущества</a>
+                                    <a class="menu__box-link" href="/kis">Комплексное ипотечное страхование</a>
+                                    <a class="menu__box-link" href="/autoinsurance">Автострахование</a>
+                                    <a class="menu__box-link" href="/strahovanie/strahovanie_imuchestva">Страхование имущества</a>
                                 </div>
                             </li>
                             <li class="menu__subitem">
-                                <a class="menu__subitem-link menu__subitem-link_item-2" href="#">Рефинансирование и кредитование</a>
+                                <a class="menu__subitem-link menu__subitem-link_item-2" href="/refinansirovanie">Рефинансирование и кредитование</a>
                             </li>
                             <li class="menu__subitem">
                                 <a class="menu__subitem-link menu__subitem-link_item-3" href="#">Оценка недвижимости</a>
                             </li>
                             <li class="menu__subitem">
-                                <a class="menu__subitem-link menu__subitem-link_item-4" href="#">СТО</a>
+                                <a class="menu__subitem-link menu__subitem-link_item-4" href="/group">СТО</a>
                             </li>
                         </ul>
                     </div>
@@ -64,19 +64,19 @@
                     <div class="menu__wrap">
                         <ul class="menu__sublist">
                             <li class="menu__subitem">
-                                <a class="menu__subitem-link menu__subitem-link_item-5" href="#">О нас</a>
+                                <a class="menu__subitem-link menu__subitem-link_item-5" href="/about">О нас</a>
                             </li>
                             <li class="menu__subitem">
-                                <a class="menu__subitem-link menu__subitem-link_item-6" href="#">Сотрудники</a>
+                                <a class="menu__subitem-link menu__subitem-link_item-6" href="/team">Сотрудники</a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li class="menu__item"><a class="menu__link" href="#">Вакансии</a></li>
-                <li class="menu__item"><a class="menu__link  menu__link_active" href="#">Партнерам</a></li>
+                <li class="menu__item"><a class="menu__link" href="/job/">Вакансии</a></li>
+                <li class="menu__item"><a class="menu__link  menu__link_active" href="/affiliate">Партнерам</a></li>
             </ul>
 
-            <a class="menu__text" href="#">Страховой случай</a>
+            <a class="menu__text" href="/chto-delat-pri-nastuplenii-strakhovogo-sluchaya">Страховой случай</a>
             <a class="menu__phone" href="tel:84956600098">+7 495 660-00-98</a>
             <div class="menu__descr">Москва</div>
         </div>
@@ -86,7 +86,7 @@
 <div class="breadcrumbs">
     <div class="container">
         <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+            <li class="breadcrumbs__item"><a href="/">Главная</a></li>
             <li class="breadcrumbs__item breadcrumbs__item_active"><a>Партнёрская программа</a></li>
         </ul>
     </div>
@@ -165,7 +165,7 @@
     </div>
 </section>
 
-<section class="service">
+<section class="service" id="calc">
     <div class="container">
         <div class="service__wrap">
             <div class="service__left">
@@ -185,7 +185,7 @@
             </div>
 
             <div class="service__right">
-                <div class="service__top" id="calc">
+                <div class="service__top">
                     <div class="service__top-select">Ипотечному страхованию</div>
                     <div class="service__top-wrap">
                         <a class="service__link service__link_active" href="#">Ипотечному страхованию</a>
@@ -668,27 +668,27 @@
                     <img src="/new/images/logo.png" alt="logo" />
                 </a>
 
-                <a class="footer__vacancies" href="#"><span>Вакансии</span></a>
+                <a class="footer__vacancies" href="/job/"><span>Вакансии</span></a>
             </div>
 
             <div class="footer__middle">
                 <div class="footer__middle-box">
                     <div class="footer__middle-title">Дополнительно</div>
                     <ul class="footer__middle-list">
-                        <li class="footer__middle-item"><a href="#">Реквизиты</a></li>
-                        <li class="footer__middle-item"><a href="#">Вопросы и ответы</a></li>
+                        <li class="footer__middle-item"><a href="/rekvizity">Реквизиты</a></li>
+                        <li class="footer__middle-item"><a href="/faq">Вопросы и ответы</a></li>
                         <li class="footer__middle-item"><a href="#">Отзывы</a></li>
-                        <li class="footer__middle-item"><a href="#">Страховой случай</a></li>
+                        <li class="footer__middle-item"><a href="/chto-delat-pri-nastuplenii-strakhovogo-sluchaya">Страховой случай</a></li>
                     </ul>
                 </div>
                 <div class="footer__middle-box">
                     <div class="footer__middle-title">О нас</div>
                     <ul class="footer__middle-list">
-                        <li class="footer__middle-item"><a href="#">Группа компаний Финист</a></li>
-                        <li class="footer__middle-item"><a href="#">Сотрудничество</a></li>
-                        <li class="footer__middle-item"><a href="#">Руководство компании</a></li>
-                        <li class="footer__middle-item"><a href="#">Партнеры</a></li>
-                        <li class="footer__middle-item"><a href="#">Коллектив</a></li>
+                        <li class="footer__middle-item"><a href="/group">Группа компаний Финист</a></li>
+                        <li class="footer__middle-item"><a href="/cooperation">Сотрудничество</a></li>
+                        <li class="footer__middle-item"><a href="/team">Руководство компании</a></li>
+                        <li class="footer__middle-item"><a href="/affiliate">Партнеры</a></li>
+                        <li class="footer__middle-item"><a href="/team">Коллектив</a></li>
                     </ul>
                 </div>
             </div>
