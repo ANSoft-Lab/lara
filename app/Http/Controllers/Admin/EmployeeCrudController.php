@@ -87,6 +87,11 @@ class EmployeeCrudController extends CrudController
             'model' => 'App\Models\Department',
             'placeholder' => 'Выбрать отдел',
         ]);
+        CRUD::addField([
+            'name' => 'vacancy_category',
+            'label' => trans('backpack::base.vacancies.category'),
+            'type' => 'relationship',
+        ]);
 
         CRUD::addField([
             'name' => 'photo',

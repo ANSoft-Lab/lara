@@ -56,6 +56,13 @@ class Employee extends Model
                     ->wherePivot('entity_class', 'App\Models\Employee');
     }
 
+    
+    public function vacancy_category()
+    {
+        return $this->belongsTo('App\Models\VacancyCategory', 'vacancy_category_id');
+    }
+
+
     /*
     |--------------------------------------------------------------------------
     | SCOPES

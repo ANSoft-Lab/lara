@@ -42,7 +42,7 @@ class Vacancy extends Model
 
     public function category()
     {
-        return $this->belongsTo('App\Models\VacancyCategory');
+        return $this->belongsTo('App\Models\VacancyCategory', 'category_id');
     }
 
     /*
