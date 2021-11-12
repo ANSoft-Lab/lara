@@ -129,7 +129,7 @@
             <div class="payment__item">
                 <div class="payment__subtitle payment__subtitle_box-2">Ипотечное страхование</div>
                 <ul class="payment__sublist">
-                    <li class="payment__subitem">Индивидуальный подбор предложений минимум по 7 страховым для клиента</li>
+                    <li class="payment__subitem">Индивидуальный подбор предложений для клиента по самым надёжным страховым компаниям</li>
                     <li class="payment__subitem">Даем дополнительные скидки до 30%</li>
                 </ul>
                 <div class="payment__price">до 25%</div>
