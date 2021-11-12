@@ -15,6 +15,7 @@ class CreateFeedbackTable extends Migration
             $table->string('email')->nullable();
             $table->text('message')->nullable();
             $table->string('type')->default('cooperation');
+            $table->string('file')->nullable();
             $table->tinyInteger('status')->default(0);
             $table->timestamps();
         });

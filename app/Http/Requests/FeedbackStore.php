@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Rules\FileExtensionRule;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 
@@ -24,8 +25,17 @@ class FeedbackStore extends FormRequest
      */
     public function rules()
     {
+        $file_types = [
+            '.doc',
+            '.docx',
+            '.pdf',
+            '.rtf',
+        ];
+        $file_extension_error_text = "Поддерживаются только форматы файлов ". implode(', ', $file_types);
+        
         return [
-            'agree' => 'required',
+            'type' => 'sometimes|in:cooperation,vacancy',
+            'agree' => 'required_if:type,cooperation',
             'name' => 'required|min:2',
             'phone' => [
                 Rule::requiredIf(function () { // Если в поле required указано поле phone
@@ -33,17 +43,25 @@ class FeedbackStore extends FormRequest
                 }),
                 'min:2',
             ],
+            'file' => [
+                'sometimes',
+                'nullable',
+                'file',
+                new FileExtensionRule($file_types, $file_extension_error_text),
+            ],
         ];
     }
 
     public function messages()
     {
         return [
+            'type.in' => 'Произошла ошибка. Попробуйте позднее',
             'agree.required' => 'Вы должны согласиться на обработку персональных данных',
             'name.required' => 'Введите имя',
             'name.min' => 'Имя должно содержать 2 или более символов',
             'phone.required' => 'Введите телефон',
             'phone.min' => 'Телефон должен содержать 2 или более символов',
+            'file.file' => 'Ошибка при загрузке файла',
         ];
     }
 }
