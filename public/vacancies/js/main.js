@@ -110,6 +110,37 @@ document.querySelector('.sale__filter-link').addEventListener('click', (event) =
 });
 
 jQuery(function($){
+
+  function switchFilter() {
+    $('.js-filter-item').show();
+
+    var filterCategories = [];
+    $('.js-active_filter').each(function() {
+      const category = $(this).attr('data-type');
+      const item = this.id;
+
+      filterCategories.push(category);
+
+      $('.js-filter-item').each(function() {
+        if($(this).attr('data-' + category) && $(this).attr('data-' + category) !== item) {
+          $(this).hide();
+        }
+      });
+    });
+
+    $('.js-filter-item.js-filter-hide').each(function() {
+      const category = $(this).attr('data-type');
+      
+      if($(this).attr('data-' + category) && jQuery.inArray(category, filterCategories) === -1) {
+        $(this).hide();
+      }
+    });
+  }
+
+  if($('.js-active_filter').length) {
+    switchFilter();
+  }
+
   $("input[name='phone']").mask("+7 (999) 999-99-99", {autoclear: false});
    
   const forms = document.querySelectorAll('.response__btn');
@@ -143,6 +174,21 @@ jQuery(function($){
     item.addEventListener('click', () => {
       item.parentNode.querySelector('label').classList.remove('validate');
     });
+  });
+
+  $(document).on('click', '.sale__filter-item', function() {
+    const category = $(this).attr('data-type');
+
+    $('.js-active_filter[data-type=' + category + ']').not(this).removeClass('js-active_filter');
+    $(this).toggleClass('js-active_filter');
+
+    switchFilter();
+  });
+
+  $(document).on('click', '.sale__filter-link', function() {
+    $('.js-active_filter').removeClass('js-active_filter');
+
+    switchFilter();
   });
   
 });

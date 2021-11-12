@@ -180,459 +180,70 @@
 
 <section class="sale" id="list">
 	<div class="container">
-	<div class="sale__filter">
-		<div class="sale__filter-top">
-		<div class="sale__filter-title">46 вакансий</div>
-		<a class="sale__filter-link" href="#">Очистить фильтры</a>
+		<div class="sale__filter">
+			<div class="sale__filter-top">
+				<div class="sale__filter-title">{{ $items->count() }} вакансий</div>
+				<a class="sale__filter-link" href="#">Очистить фильтры</a>
+			</div>
+
+			<div class="sale__filter-inner">
+				<input class="sale__filter-input" type="text" placeholder="Поиск по ключевым словам" />
+				<!-- sale__filter-input_error -->
+			</div>
+
+			<div class="sale__filter-box">
+				<div class="sale__filter-subtitle">
+					<!-- sale__filter-subtitle_active -->
+					<div class="sale__filter-caption sale__filter-caption_item-1">Города</div>
+					<ul class="sale__filter-list">
+						@forelse($cities->where('vacancies_count', '>', 0) as $city)
+
+							<li class="sale__filter-item{{ $loop->first ? ' js-active_filter' : '' }}" data-type="city" id="city_{{ $city->id }}">{{ $city->name }}<span>{{ $city->vacancies_count }}</span></li>
+						@empty
+
+						@endforelse
+					</ul>
+				</div>
+			</div>
+
+			<div class="sale__filter-box">
+				<div class="sale__filter-subtitle">
+					<div class="sale__filter-caption sale__filter-caption_item-2">Направления</div>
+					<ul class="sale__filter-list">
+						@forelse($vacancy_categories->where('vacancies_count', '>', 0) as $vacancy_category)
+							<li class="sale__filter-item{{ $loop->first ? ' js-active_filter' : '' }}" data-type="category" id="category_{{ $vacancy_category->id }}">{{ $vacancy_category->name }}<span>{{ $vacancy_category->vacancies_count }}</span></li>
+						@empty
+
+						@endforelse
+					</ul>
+				</div>
+			</div>
 		</div>
 
-		<div class="sale__filter-inner">
-		<input class="sale__filter-input" type="text" placeholder="Поиск по ключевым словам" />
-		<!-- sale__filter-input_error -->
-		</div>
-
-		<div class="sale__filter-box">
-		<div class="sale__filter-subtitle">
-			<!-- sale__filter-subtitle_active -->
-			<div class="sale__filter-caption sale__filter-caption_item-1">{{ $cities->where('vacancies_count', '>', 0)->first()->name ?? '-' }}</div>
-			<ul class="sale__filter-list">
+    	<div class="sale__inner">
+			<div class="sale__title ">
 				@forelse($cities->where('vacancies_count', '>', 0) as $city)
-					<li class="sale__filter-item" id="city_{{ $city->id }}">{{ $city->name }}<span>{{ $city->vacancies_count }}</span></li>
+					<div class="js-filter-item js-filter-hide sale__title__part" data-type="city" data-city="city_{{ $city->id }}">{{ $city->name }}<span>{{ $city->vacancies_count }}</span></div>
 				@empty
 
 				@endforelse
-			</ul>
-		</div>
-		</div>
-
-		<div class="sale__filter-box">
-		<div class="sale__filter-subtitle">
-			<div class="sale__filter-caption sale__filter-caption_item-2">{{ $vacancy_categories->where('vacancies_count', '>', 0)->first()->name ?? '-' }}</div>
-			<ul class="sale__filter-list">
 				@forelse($vacancy_categories->where('vacancies_count', '>', 0) as $vacancy_category)
-					<li class="sale__filter-item" id="category_{{ $vacancy_category->id }}">{{ $vacancy_category->name }}<span>{{ $vacancy_category->vacancies_count }}</span></li>
+					<div class="js-filter-item js-filter-hide sale__title__part" data-type="category" data-category="category_{{ $vacancy_category->id }}">{{ $vacancy_category->name }}<span>{{ $vacancy_category->vacancies_count }}</span></div>
 				@empty
 
 				@endforelse
-			</ul>
-		</div>
-		</div>
-	</div>
-
-    <div class="sale__inner">
-        <div class="sale__title">Продажи<span>5</span></div>
+			</div>
 			@forelse ($items as $item)
 				@include('blocks.vacancy', ['vacancy' => $item])
 			@empty
 
 			@endforelse
-		  {{--
-          <div class="sale__item">
-            <div class="sale__box">
-              <div class="sale__top">
-                <div class="sale__wrap">
-                  <div class="sale__subtitle"><span>Оператор call-центра (без продаж)</span></div>
-                  <div class="sale__price">от 30 000 ₽</div>
-                </div>
-                <button class="sale__btn">Свернуть<span></span></button>
-              </div>
-            </div>
-            
-            <div class="sale__bottom">
-              <div class="sale__bottom-left">
-                <div class="sale__bottom-box sale__bottom-box_item-2">
-                  <div class="sale__caption">Обязанности</div>
-                  <ul class="sale__sublist">
-                    <li class="sale__subitem">обзванивать теплую базу клиентов</li>
-                    <li class="sale__subitem">привлекать партнеров к сотрудничеству</li>
-                    <li class="sale__subitem">передавать заявки менеджерам</li>
-                  </ul>
-                  <p>
-                    У нас есть готовый скрипт, которым ты можешь пользоваться, но мы не требуем полного следования ему
-                  </p>
-                </div>
-
-                <div class="sale__bottom-box">
-                  <div class="sale__caption">FINIST — это возможности:</div>
-                  <ul class="sale__sublist">
-                    <li class="sale__subitem">Есть возможность работать удаленно</li>
-                    <li class="sale__subitem">Карьерный рост после 5-6 месяцев работы</li>
-                    <li class="sale__subitem">Возможность совмещения учебу с работой</li>
-                    <li class="sale__subitem">Обучение за счет компании</li>
-                    <li class="sale__subitem">Скидки и акции для сотрудников</li>
-                    <li class="sale__subitem">Оформляем с первого дня</li>
-                  </ul>
-                </div>
-
-                <div class="sale__bottom-box">
-                  <div class="sale__caption">Особенности</div>
-                  <ul class="sale__sublist">
-                    <li class="sale__subitem">нет продаж</li>
-                    <li class="sale__subitem">много общения с клиентами</li>
-                    <li class="sale__subitem">можно удаленно</li>
-                  </ul>
-                </div>
-
-                <div class="sale__bottom-box">
-                  <div class="sale__caption">Что мы предлагаем</div>
-                  <ul class="sale__sublist">
-                    <li class="sale__subitem">Уютный open space в центре города</li>
-                    <li class="sale__subitem">Плавающее начало рабочего дня c 8 до 11 утра</li>
-                    <li class="sale__subitem">Наставничество в период стажировки и испытательного строка</li>
-                    <li class="sale__subitem">Полностью прозрачная мотивация, возможность зарабатывать</li>
-                    <li class="sale__subitem">Горизонтальный и вертикальный карьерный рост</li>
-                    <li class="sale__subitem">Корпоративное обучение и дополнительные курсы</li>
-                    <li class="sale__subitem">
-                      А еще мы организовываем корпоративы, играем в футбол и поддерживаем инициативу команды в выборе
-                      отдыха :)
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="sale__bottom-inner">
-                <a href="#form" class="sale__bottom-btn">Откликнуться</a>
-              </div>
-              
-              <section class="response" id="form">
-				<div class="container">
-					<div class="response__wrap">
-					<div class="response__descr">Оператор call-центра (без продаж)</div>
-					<div class="response__title">
-						Заполните форму, <br />
-						чтобы откликнуться
-					</div>
-					<form class="response__form" action="#">
-						<input class="response__input" name="name" type="text" placeholder="ФИО" maxlength="30" />
-						<input class="response__input" name="phone" type="text" placeholder="+7 (___) ___-__-__" />
-						<div class="response__file">
-						<input type="text" class="response__castom response__castom_link" placeholder="Ссылка на резюме">
-						<div class="response__castom">
-						<!-- response__castom_active-cancel -->
-						<!-- response__castom_active -->
-						<input type="file" id="summary" />
-						<label for="summary"><div class="response__image"></div></label>
-						</div>
-						</div>
-						<textarea
-						class="response__textarea"
-						name="#"
-						id="#"
-						cols="30"
-						rows="10"
-						maxlength="300"
-						placeholder="Комментарий"
-						></textarea>
-					
-
-					<div class="response__bottom">
-						<button class="response__btn">Отправить</button>
-						<div class="response__checkbox">
-						<input type="checkbox" id="processing" />
-						<label for="processing">Согласен на обработку персональных данных</label>
-						</div>
-					</div>
-					</form>
-					</div>
-
-					<div class="response__bottom-wrap" style="display: none">
-					<div class="response__bottom-image">
-						<img src="/vacancies/icons/response-bottom.svg" alt="icons" />
-					</div>
-
-					<div class="response__bottom-title">Отклик отправлен!</div>
-					<div class="response__bottom-text">
-						Мы рады, что вы проявили интерес к вакансии. В ближайшее время мы свяжемся с вами!
-					</div>
-
-					<button class="response__bottom-btn">Закрыть</button>
-					</div>
-				</div>
-			  </section>
-            </div>
-          </div>
-
-          <div class="sale__item">
-            <div class="sale__box">
-              <div class="sale__top">
-                <div class="sale__wrap">
-                  <div class="sale__subtitle"><span>Менеджер отдела рефинансирования ипотечных кредитов</span></div>
-                  <div class="sale__price">от 30 000 ₽</div>
-                </div>
-                <button class="sale__btn">Свернуть<span></span></button>
-              </div>
-            </div>
-            
-            <div class="sale__bottom">
-              <div class="sale__bottom-left">
-                <div class="sale__bottom-box sale__bottom-box_item-2">
-                  <div class="sale__caption">Обязанности</div>
-                  <ul class="sale__sublist">
-                    <li class="sale__subitem">обзванивать теплую базу клиентов</li>
-                    <li class="sale__subitem">привлекать партнеров к сотрудничеству</li>
-                    <li class="sale__subitem">передавать заявки менеджерам</li>
-                  </ul>
-                  <p>
-                    У нас есть готовый скрипт, которым ты можешь пользоваться, но мы не требуем полного следования ему
-                  </p>
-                </div>
-
-                <div class="sale__bottom-box">
-                  <div class="sale__caption">FINIST — это возможности:</div>
-                  <ul class="sale__sublist">
-                    <li class="sale__subitem">Есть возможность работать удаленно</li>
-                    <li class="sale__subitem">Карьерный рост после 5-6 месяцев работы</li>
-                    <li class="sale__subitem">Возможность совмещения учебу с работой</li>
-                    <li class="sale__subitem">Обучение за счет компании</li>
-                    <li class="sale__subitem">Скидки и акции для сотрудников</li>
-                    <li class="sale__subitem">Оформляем с первого дня</li>
-                  </ul>
-                </div>
-
-                <div class="sale__bottom-box">
-                  <div class="sale__caption">Особенности</div>
-                  <ul class="sale__sublist">
-                    <li class="sale__subitem">нет продаж</li>
-                    <li class="sale__subitem">много общения с клиентами</li>
-                    <li class="sale__subitem">можно удаленно</li>
-                  </ul>
-                </div>
-
-                <div class="sale__bottom-box">
-                  <div class="sale__caption">Что мы предлагаем</div>
-                  <ul class="sale__sublist">
-                    <li class="sale__subitem">Уютный open space в центре города</li>
-                    <li class="sale__subitem">Плавающее начало рабочего дня c 8 до 11 утра</li>
-                    <li class="sale__subitem">Наставничество в период стажировки и испытательного строка</li>
-                    <li class="sale__subitem">Полностью прозрачная мотивация, возможность зарабатывать</li>
-                    <li class="sale__subitem">Горизонтальный и вертикальный карьерный рост</li>
-                    <li class="sale__subitem">Корпоративное обучение и дополнительные курсы</li>
-                    <li class="sale__subitem">
-                      А еще мы организовываем корпоративы, играем в футбол и поддерживаем инициативу команды в выборе
-                      отдыха :)
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="sale__bottom-inner">
-                <a href="#form2" class="sale__bottom-btn">Откликнуться</a>
-              </div>
-              <section class="response" id="form2">
-				<div class="container">
-					<div class="response__wrap">
-					<div class="response__descr">Менеджер отдела рефинансирования ипотечных кредитов</div>
-					<div class="response__title">
-						Заполните форму, <br />
-						чтобы откликнуться
-					</div>
-					<form class="response__form" action="#">
-						<input class="response__input" name="name" type="text" placeholder="ФИО" maxlength="30" />
-						<input class="response__input" name="phone" type="text" placeholder="+7 (___) ___-__-__" />
-						<div class="response__file">
-						<input type="text" class="response__castom response__castom_link" placeholder="Ссылка на резюме">
-						<div class="response__castom">
-						<!-- response__castom_active-cancel -->
-						<!-- response__castom_active -->
-						<input type="file" id="summary" />
-						<label for="summary"><div class="response__image"></div></label>
-						</div>
-						</div>
-						<textarea
-						class="response__textarea"
-						name="#"
-						id="#"
-						cols="30"
-						rows="10"
-						maxlength="300"
-						placeholder="Комментарий"
-						></textarea>
-
-					<div class="response__bottom">
-						<button class="response__btn">Отправить</button>
-						<div class="response__checkbox">
-						<input type="checkbox" id="processing-2" />
-						<label for="processing-2">Согласен на обработку персональных данных</label>
-						</div>
-					</div>
-								</form>
-					</div>
-
-					<div class="response__bottom-wrap" style="display: none">
-					<div class="response__bottom-image">
-						<img src="/vacancies/icons/response-bottom.svg" alt="icons" />
-					</div>
-
-					<div class="response__bottom-title">Отклик отправлен!</div>
-					<div class="response__bottom-text">
-						Мы рады, что вы проявили интерес к вакансии. В ближайшее время мы свяжемся с вами!
-					</div>
-
-					<button class="response__bottom-btn">Закрыть</button>
-					</div>
-				</div>
-			  </section>
-            </div>
-          </div>
-          <div class="sale__item">
-            <div class="sale__box">
-              <div class="sale__top">
-                <div class="sale__wrap">
-                  <div class="sale__subtitle"><span>Оператор call-центра (без продаж)</span></div>
-                  <div class="sale__price">от 30 000 ₽</div>
-                </div>
-                <a href="#form" class="sale__btn">Свернуть<span></span></a>
-              </div>
-            </div>
-
-            <div class="sale__bottom">
-              <div class="sale__bottom-left">
-                <div class="sale__bottom-box sale__bottom-box_item-2">
-                  <div class="sale__caption">Обязанности</div>
-                  <ul class="sale__sublist">
-                    <li class="sale__subitem">обзванивать теплую базу клиентов</li>
-                    <li class="sale__subitem">привлекать партнеров к сотрудничеству</li>
-                    <li class="sale__subitem">передавать заявки менеджерам</li>
-                  </ul>
-                  <p>
-                    У нас есть готовый скрипт, которым ты можешь пользоваться, но мы не требуем полного следования ему
-                  </p>
-                </div>
-
-                <div class="sale__bottom-box">
-                  <div class="sale__caption">FINIST — это возможности:</div>
-                  <ul class="sale__sublist">
-                    <li class="sale__subitem">Есть возможность работать удаленно</li>
-                    <li class="sale__subitem">Карьерный рост после 5-6 месяцев работы</li>
-                    <li class="sale__subitem">Возможность совмещения учебу с работой</li>
-                    <li class="sale__subitem">Обучение за счет компании</li>
-                    <li class="sale__subitem">Скидки и акции для сотрудников</li>
-                    <li class="sale__subitem">Оформляем с первого дня</li>
-                  </ul>
-                </div>
-
-                <div class="sale__bottom-box">
-                  <div class="sale__caption">Особенности</div>
-                  <ul class="sale__sublist">
-                    <li class="sale__subitem">нет продаж</li>
-                    <li class="sale__subitem">много общения с клиентами</li>
-                    <li class="sale__subitem">можно удаленно</li>
-                  </ul>
-                </div>
-
-                <div class="sale__bottom-box">
-                  <div class="sale__caption">Что мы предлагаем</div>
-                  <ul class="sale__sublist">
-                    <li class="sale__subitem">Уютный open space в центре города</li>
-                    <li class="sale__subitem">Плавающее начало рабочего дня c 8 до 11 утра</li>
-                    <li class="sale__subitem">Наставничество в период стажировки и испытательного строка</li>
-                    <li class="sale__subitem">Полностью прозрачная мотивация, возможность зарабатывать</li>
-                    <li class="sale__subitem">Горизонтальный и вертикальный карьерный рост</li>
-                    <li class="sale__subitem">Корпоративное обучение и дополнительные курсы</li>
-                    <li class="sale__subitem">
-                      А еще мы организовываем корпоративы, играем в футбол и поддерживаем инициативу команды в выборе
-                      отдыха :)
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="sale__bottom-inner">
-                <a href="#form3" class="sale__bottom-btn">Откликнуться</a>
-              </div>
-              <section class="response" id="form3">
-				<div class="container">
-					<div class="response__wrap">
-					<div class="response__descr">Оператор call-центра (без продаж)</div>
-					<div class="response__title">
-						Заполните форму, <br />
-						чтобы откликнуться
-					</div>
-					<form class="response__form" action="#">
-						<input class="response__input" name="name" type="text" placeholder="ФИО" maxlength="30" />
-						<input class="response__input" name="phone" type="text" placeholder="+7 (___) ___-__-__" />
-						<div class="response__file">
-						<input type="text" class="response__castom response__castom_link" placeholder="Ссылка на резюме">
-						<div class="response__castom">
-						<!-- response__castom_active-cancel -->
-						<!-- response__castom_active -->
-						<input type="file" id="summary" />
-						<label for="summary"><div class="response__image"></div></label>
-						</div>
-						</div>
-						<textarea
-						class="response__textarea"
-						name="#"
-						id="#"
-						cols="30"
-						rows="10"
-						maxlength="300"
-						placeholder="Комментарий"
-						></textarea>
-
-
-					<div class="response__bottom">
-						<button class="response__btn">Отправить</button>
-						<div class="response__checkbox">
-						<input type="checkbox" id="processing-3" />
-						<label for="processing-3">Согласен на обработку персональных данных</label>
-						</div>
-					</div>
-								</form>
-					</div>
-
-					<div class="response__bottom-wrap" style="display: none">
-					<div class="response__bottom-image">
-						<img src="/vacancies/icons/response-bottom.svg" alt="icons" />
-					</div>
-
-					<div class="response__bottom-title">Отклик отправлен!</div>
-					<div class="response__bottom-text">
-						Мы рады, что вы проявили интерес к вакансии. В ближайшее время мы свяжемся с вами!
-					</div>
-
-					<button class="response__bottom-btn">Закрыть</button>
-					</div>
-				</div>
-			  </section>
-            </div>
-          </div>
-		  --}}
         </div>
     </div>
 </section>
 
 <div class="sale__mobile-bg"></div>
 
-		{{--
-<section class="content-text-page">
-
-	<h1>Вакансии</h1>
-	<section class="left">
-		<h2>Города</h2>
-		@forelse($cities->where('vacancies_count', '>', 0) as $city)
-			<p class="bold" id="city_{{ $city->id }}">{{ $city->name }} ({{ $city->vacancies_count }})</p>
-		@empty
-
-		@endforelse
-		<h2>Направления</h2>
-		@forelse($vacancy_categories->where('vacancies_count', '>', 0) as $vacancy_category)
-			<p class="bold" id="category_{{ $vacancy_category->id }}">{{ $vacancy_category->name }} ({{ $vacancy_category->vacancies_count }})</p>
-		@empty
-
-		@endforelse
-	</section>
-	<section class="right">
-	     <ul>
-		 @forelse ($items as $item)
-		 	<li><a href="{{ $item->url }}">{{ $item->name }}</a></li>
-		 @empty
-
-		 @endforelse
-	     </ul>		
-	</section>
-</section>
---}}
 
 @section('extra_js')
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>

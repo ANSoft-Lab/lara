@@ -1,4 +1,4 @@
-<div class="sale__item" data-city="{{ $vacancy->city_id }}" data-category="{{ $vacancy->category_id }}">
+<div class="sale__item js-filter-item" data-city="city_{{ $vacancy->city_id }}" data-category="category_{{ $vacancy->category_id }}">
     <div class="sale__box">
         <div class="sale__top">
         <div class="sale__wrap">

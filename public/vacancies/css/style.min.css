@@ -1454,6 +1454,9 @@ button {
   color: #221e1f;
   margin-bottom: 15px;
 }
+.sale__title__part {
+  display: inline;
+}
 .sale__sublist, .sale__bottom-box ul {
   padding: 0;
   margin: 0;
