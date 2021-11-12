@@ -82,6 +82,10 @@ class VacancyCrudController extends CrudController
             'allows_null' => false,
         ]);
         CRUD::addField([
+            'name' => 'salary',
+            'label' => trans('backpack::base.vacancies.salary'),
+        ]);
+        CRUD::addField([
             'name' => 'duties',
             'label' => trans('backpack::base.vacancies.duties'),
             'type' => 'wysiwyg',

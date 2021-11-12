@@ -39,6 +39,6 @@ class PageController extends Controller
             abort(404);
         }
 
-        return view('blocks.vacancy', compact('vacancy'));
+        return view('blocks.vacancy-old', compact('vacancy'));
     }
 }

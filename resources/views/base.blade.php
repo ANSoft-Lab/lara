@@ -8,6 +8,7 @@
     <title>Финансы и страхование FINIST</title>
     <link rel="stylesheet" type="text/css" href="{{mix('/css/style.css')}}">
     <link rel="icon" type="image/png" href="/icon/favicon.png"/>
+    @yield('extra_styles')
 </head>
 <body class="{{request()->path()}}">
 <div id="app">
@@ -26,5 +27,6 @@
     <script src="{{mix('/js/affiliate.js')}}"></script>
     <script src="{{mix('/js/affiliate-vendor.js')}}"></script>
    @endif
+   @yield('extra_js')
 </body>
 </html>
