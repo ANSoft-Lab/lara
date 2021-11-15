@@ -10,6 +10,7 @@ class AddFeedbackFile extends Migration
     {
         Schema::table('feedback', function (Blueprint $table) {
             $table->string('file')->nullable()->after('type');
+            $table->bigInteger('entity_id')->nullable()->after('file');
         });
     }
 
@@ -17,6 +18,7 @@ class AddFeedbackFile extends Migration
     {
         Schema::table('feedback', function (Blueprint $table) {
             $table->dropColumn('file');
+            $table->dropColumn('entity_id');
         });
     }
 }

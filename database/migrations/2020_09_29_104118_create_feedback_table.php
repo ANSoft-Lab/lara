@@ -16,7 +16,12 @@ class CreateFeedbackTable extends Migration
             $table->text('message')->nullable();
             $table->string('type')->default('cooperation');
             $table->string('file')->nullable();
+            $table->bigInteger('entity_id')->nullable();
             $table->tinyInteger('status')->default(0);
+            $table->json('bitrix24_res')->nullable();
+            $table->json('bitrix24_status')->nullable();
+            $table->string('bitrix24_status_code')->nullable();
+            $table->integer('bitrix24_lead_id')->default(0);
             $table->timestamps();
         });
     }
