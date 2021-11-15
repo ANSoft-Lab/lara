@@ -1863,6 +1863,9 @@ button {
   position: absolute;
   z-index: -1;
 }
+.response__castom .vacancy__file__input[data-empty="false"]+label {
+  background-color: black;
+}
 .response__castom label {
   font-weight: 400;
   font-size: 15px;
@@ -2071,6 +2074,14 @@ button {
 .response__bottom-btn:hover {
   background-color: #ffca1f;
 }
+
+.errors-area {
+  margin-bottom: 20px;
+}
+.errors-area .error-text {
+  margin-bottom: 10px;
+}
+
 @media (max-width: 1199px) {
   __bottom {
     -ms-flex-wrap: wrap;
@@ -2226,7 +2237,7 @@ button {
     padding-bottom: 21px;
   }
 }
-.modal-gallery {
+.vacancy-modal-gallery {
   position: fixed;
   max-width: 100%;
   width: 100%;
@@ -2248,17 +2259,17 @@ button {
   padding-bottom: 50px;
   cursor: url(../icons/cursor-modal.png), auto;
 }
-.modal-gallery__window img {
+.vacancy-modal-gallery__window img {
   width: 1000px;
   height: auto;
   -o-object-fit: contain;
   object-fit: contain;
 }
 @media (max-width: 767px) {
-  .modal-gallery {
+  .vacancy-modal-gallery {
     display: block;
   }
-  .modal-gallery__window img {
+  .vacancy-modal-gallery__window img {
     width: 290px;
   }
 }
@@ -2267,15 +2278,15 @@ button {
   margin-bottom: 44px;
 }
 
-.modal-gallery {
+.vacancy-modal-gallery {
   display: none;
 }
 
-.modal-gallery_active {
+.vacancy-modal-gallery_active {
   display: flex;
 }
 
-.modal {
+.vacancy-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -2292,7 +2303,7 @@ button {
   justify-content: flex-end;
 }
 
-.modal__window {
+.vacancy-modal__window {
   position: relative;
   background-color: #fff;
   -webkit-box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
@@ -2307,7 +2318,7 @@ button {
   align-items: center;
 }
 
-.modal__window_box-2 .modal__wrap {
+.vacancy-modal__window_box-2 .vacancy-modal__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2323,11 +2334,11 @@ button {
   align-items: center;
 }
 
-.modal__window_box-2 .modal__title {
+.vacancy-modal__window_box-2 .vacancy-modal__title {
   margin-bottom: 15px;
 }
 
-.modal__window_box-2 .modal__btn-close {
+.vacancy-modal__window_box-2 .vacancy-modal__btn-close {
   position: static;
   max-width: 166px;
   width: 100%;
@@ -2343,7 +2354,7 @@ button {
   letter-spacing: 0.005em;
 }
 
-.modal__text {
+.vacancy-modal__text {
   font-family: Formular;
   font-style: normal;
   font-weight: 400;
@@ -2353,12 +2364,12 @@ button {
   margin-bottom: 41px;
 }
 
-.modal__wrap {
+.vacancy-modal__wrap {
   max-width: 451px;
   width: 100%;
 }
 
-.modal__image {
+.vacancy-modal__image {
   max-width: 144px;
   width: 100%;
   height: 144px;
@@ -2366,7 +2377,7 @@ button {
   margin-bottom: 3px;
 }
 
-.modal__image img {
+.vacancy-modal__image img {
   width: 144px;
   height: 144px;
   border-radius: 100%;
@@ -2374,7 +2385,7 @@ button {
   object-fit: contain;
 }
 
-.modal__btn-close {
+.vacancy-modal__btn-close {
   position: absolute;
   top: 24px;
   right: 21px;
@@ -2390,17 +2401,17 @@ button {
   padding: 0;
 }
 
-.modal__btn-close:hover {
+.vacancy-modal__btn-close:hover {
   background-color: #ffca1f;
 }
 
-.modal__btn-close:focus {
+.vacancy-modal__btn-close:focus {
   background-color: #221e1f;
   color: #fff;
   background-image: url(../icons/modal-close-focus.svg);
 }
 
-.modal__title {
+.vacancy-modal__title {
   font-family: Formular;
   font-style: normal;
   font-weight: 400;
@@ -2410,12 +2421,12 @@ button {
   margin-bottom: 54px;
 }
 
-.modal__form {
+.vacancy-modal__form {
   max-width: 410px;
   width: 100%;
 }
 
-.modal__input {
+.vacancy-modal__input {
   display: block;
   max-width: 100%;
   width: 100%;
@@ -2433,7 +2444,7 @@ button {
   color: #221e1f;
 }
 
-.modal__input::-webkit-input-placeholder {
+.vacancy-modal__input::-webkit-input-placeholder {
   font-family: Formular;
   font-style: normal;
   font-weight: 400;
@@ -2443,15 +2454,15 @@ button {
   color: #221e1f;
 }
 
-.modal__input:hover {
+.vacancy-modal__input:hover {
   border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
 
-.modal__input:focus {
+.vacancy-modal__input:focus {
   border-bottom: 2px solid #000;
 }
 
-.modal__textarea {
+.vacancy-modal__textarea {
   max-width: 100%;
   width: 100%;
   height: 130px;
@@ -2470,7 +2481,7 @@ button {
   color: rgba(34, 30, 31, 0.7);
 }
 
-.modal__textarea::-webkit-input-placeholder {
+.vacancy-modal__textarea::-webkit-input-placeholder {
   font-family: Formular;
   font-style: normal;
   font-weight: 400;
@@ -2480,19 +2491,19 @@ button {
   color: rgba(34, 30, 31, 0.7);
 }
 
-.modal__textarea:hover {
+.vacancy-modal__textarea:hover {
   border: 2px solid rgba(0, 0, 0, 0.5);
 }
 
-.modal__textarea:focus {
+.vacancy-modal__textarea:focus {
   border: 2px solid #000;
 }
 
-.modal__checkbox {
+.vacancy-modal__checkbox {
   margin-bottom: 70px;
 }
 
-.modal__checkbox label {
+.vacancy-modal__checkbox label {
   font-family: Formular;
   font-style: normal;
   font-weight: 400;
@@ -2501,13 +2512,13 @@ button {
   color: #2e2b2b;
 }
 
-.modal__checkbox input {
+.vacancy-modal__checkbox input {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
-.modal__checkbox input + label {
+.vacancy-modal__checkbox input + label {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2521,7 +2532,7 @@ button {
   cursor: pointer;
 }
 
-.modal__checkbox input + label::before {
+.vacancy-modal__checkbox input + label::before {
   content: '';
   display: block;
   min-width: 24px;
@@ -2531,7 +2542,7 @@ button {
   margin-right: 16px;
 }
 
-.modal__checkbox input:checked + label::before {
+.vacancy-modal__checkbox input:checked + label::before {
   background-image: url(../icons/modal-checked.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -2539,7 +2550,7 @@ button {
   background-color: #f2cb4d;
 }
 
-.modal__checkbox input + label:hover::before {
+.vacancy-modal__checkbox input + label:hover::before {
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
@@ -2547,7 +2558,7 @@ button {
   background-image: url(../icons/modal-checked-hover.svg);
 }
 
-.modal__checkbox input:checked + label:hover::before {
+.vacancy-modal__checkbox input:checked + label:hover::before {
   background-image: url(../icons/modal-checked.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -2555,7 +2566,7 @@ button {
   background-color: #f2cb4d;
 }
 
-.modal__btn {
+.vacancy-modal__btn {
   max-width: 180px;
   width: 100%;
   padding: 0;
@@ -2570,16 +2581,16 @@ button {
   letter-spacing: 0.005em;
 }
 
-.modal__btn:hover {
+.vacancy-modal__btn:hover {
   background-color: #ffca1f;
 }
 
-.modal__btn:focus {
+.vacancy-modal__btn:focus {
   color: #fff;
   background-color: #221e1f;
 }
 
-.modal__btn-mobile {
+.vacancy-modal__btn-mobile {
   display: none;
   padding: 0;
   background-color: #f2cb4d;
@@ -2597,63 +2608,63 @@ button {
 }
 
 @media (max-width: 1469px) {
-  .modal__title {
+  .vacancy-modal__title {
     font-size: 32px;
     line-height: 39px;
     margin-bottom: 25px;
   }
-  .modal__input {
+  .vacancy-modal__input {
     margin-bottom: 25px;
   }
-  .modal__checkbox {
+  .vacancy-modal__checkbox {
     margin-bottom: 30px;
   }
 }
 
 @media (max-width: 767px) {
-  .modal__window {
+  .vacancy-modal__window {
     padding: 0;
     padding-left: 10px;
     padding-right: 10px;
     max-width: 100%;
     width: 100%;
   }
-  .modal__window_box-2 .modal__btn-close {
+  .vacancy-modal__window_box-2 .vacancy-modal__btn-close {
     max-width: 145px;
     width: 100%;
     height: 60px;
     font-size: 16px;
     line-height: 20px;
   }
-  .modal__wrap {
+  .vacancy-modal__wrap {
     margin: 0 auto;
     max-width: 290px;
     width: 100%;
   }
-  .modal__btn-close {
+  .vacancy-modal__btn-close {
     background-color: transparent;
     top: -2px;
     right: 8px;
   }
-  .modal__title {
+  .vacancy-modal__title {
     font-weight: 500;
     font-size: 20px;
     line-height: 27px;
     margin-bottom: 25px;
     max-width: 230px;
   }
-  .modal__input {
+  .vacancy-modal__input {
     font-size: 15px;
     line-height: 18px;
     letter-spacing: -0.02em;
     padding-bottom: 17px;
   }
-  .modal__input::-webkit-input-placeholder {
+  .vacancy-modal__input::-webkit-input-placeholder {
     font-size: 15px;
     line-height: 18px;
     letter-spacing: -0.02em;
   }
-  .modal__textarea {
+  .vacancy-modal__textarea {
     height: 96px;
     font-size: 15px;
     line-height: 18px;
@@ -2661,41 +2672,41 @@ button {
     padding: 20px 15px 15px 20px;
     margin-bottom: 21px;
   }
-  .modal__textarea::-webkit-input-placeholder {
+  .vacancy-modal__textarea::-webkit-input-placeholder {
     font-size: 15px;
     line-height: 18px;
     letter-spacing: -0.02em;
   }
-  .modal__checkbox {
+  .vacancy-modal__checkbox {
     margin-bottom: 41px;
   }
-  .modal__checkbox label {
+  .vacancy-modal__checkbox label {
     font-size: 15px;
     line-height: 22px;
     color: #2e2b2b;
   }
-  .modal__checkbox input + label {
+  .vacancy-modal__checkbox input + label {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
   }
-  .modal__btn {
+  .vacancy-modal__btn {
     max-width: 290px;
     height: 60px;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
   }
-  .modal__image {
+  .vacancy-modal__image {
     max-width: 90px;
     height: 90px;
     margin-bottom: 8px;
   }
-  .modal__image img {
+  .vacancy-modal__image img {
     width: 90px;
     height: 90px;
   }
-  .modal__text {
+  .vacancy-modal__text {
     font-size: 14px;
     line-height: 22px;
   }

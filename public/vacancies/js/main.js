@@ -1,7 +1,7 @@
 const headerCall = document.querySelectorAll('.callback');
-const modalCallback = document.querySelector('.modal_callback');
-const modalCallbackClose = document.querySelector('.modal_callback .modal__btn-close');
-const modalGallery = document.querySelector('.modal-gallery');
+const modalCallback = document.querySelector('.vacancy-modal_callback');
+const modalCallbackClose = document.querySelector('.vacancy-modal_callback .vacancy-modal__btn-close');
+const modalGallery = document.querySelector('.vacancy-modal-gallery');
 
 headerCall.forEach(item => {
     item.addEventListener('click', () => {
@@ -19,8 +19,8 @@ const galleryImages = document.querySelectorAll('.vc-slider__item img');
 
 galleryImages.forEach(image => {
   image.addEventListener('click', () => {
-    document.querySelector('.modal-gallery img').src = image.src;
-    document.querySelector('.modal-gallery').classList.toggle('modal-gallery_active');
+    document.querySelector('.vacancy-modal-gallery img').src = image.src;
+    document.querySelector('.vacancy-modal-gallery').classList.toggle('modal-gallery_active');
   });
 });
 
@@ -190,7 +190,31 @@ jQuery(function($){
 
     switchFilter();
   });
+
+  $(document).on('click', '.js_send', function() {
+    if($(this).closest('form').find('.validate')) {
+      //return false;
+    }
+
+    waitResults($(this).closest('.response'));
+  });
+
+  function waitResults(formWrap) {
+    var refreshAjaxStatus = setInterval(function() {
+      if(window.ajaxFormSending === false) {
+        clearInterval(refreshAjaxStatus);
+
+        if(window.ajaxFormSended === true) {
+          $(formWrap).find('.response__bottom-wrap').show();
+          $(formWrap).find('form').hide();
+        }
+      }
+    }, 1000);
+  }
   
+  $(document).on('click', '.js_close_box', function() {
+    $(this).closest('.sale__item').removeClass('sale__item_active');
+  });
 });
 
 const nameInputs = document.querySelectorAll('input[name="name"]');

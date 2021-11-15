@@ -18,6 +18,13 @@ class Vacancy extends Model
     public $blockcrud_title = 'Вакансии';
     public $blockcrud_template = 'blocks.vacancies';
 
+    public static $allowed_file_types = [
+        '.doc',
+        '.docx',
+        '.pdf',
+        '.rtf',
+    ];
+
     protected $table = 'vacancies';
     protected $guarded = ['id'];
     protected $fillable = [];
@@ -29,6 +36,10 @@ class Vacancy extends Model
     | FUNCTIONS
     |--------------------------------------------------------------------------
     */
+    public static function getAcceptString() :string
+    {
+        return implode(',', self::$allowed_file_types);
+    }
 
     /*
     |--------------------------------------------------------------------------

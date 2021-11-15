@@ -18,13 +18,14 @@ class FeedbackController extends Controller
      */
     public function store(Feedback $feedback, FeedbackStore $request): JsonResponse
     {
+        logger(print_r($request->all(), true));
         $lead = $feedback->create($request->validated());
         if($response = Bitrix24::sendLead($request))
         {
             $lead->bitrix24_res = json_encode($response);
             $lead->bitrix24_lead_id = @$response->ID;
-            $lead->save();
         }
+        $lead->save();
 
         return response()->json([
             'status' => 200,

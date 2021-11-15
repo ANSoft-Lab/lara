@@ -40,10 +40,10 @@
         </div>
 
         <div class="sale__bottom-inner">
-        <a href="#form" class="sale__bottom-btn">Откликнуться</a>
+        <a href="#vacancy_form_{{ $vacancy->id }}" class="sale__bottom-btn">Откликнуться</a>
         </div>
         
-        <section class="response" id="form">
+        <section class="response" id="form-{{ $vacancy->id }}">
         <div class="container">
             <div class="response__wrap">
             <div class="response__descr">{{ $vacancy->name }}</div>
@@ -51,39 +51,39 @@
                 Заполните форму, <br />
                 чтобы откликнуться
             </div>
-            <form class="response__form" action="#">
+            <form id="vacancy_form_{{ $vacancy->id }}" enctype="multipart/form-data" action="{{ route('feedback_send', [], false) }}" class="response__form" method="post">
                 <input class="response__input" name="name" type="text" placeholder="ФИО" maxlength="30" />
                 <input class="response__input" name="phone" type="text" placeholder="+7 (___) ___-__-__" />
+                <input type="hidden" name="entity_id" value="{{ $vacancy->id }}" />
+                <input type="hidden" name="type" value="vacancy" />
                 <div class="response__file">
-                <input type="text" class="response__castom response__castom_link" placeholder="Ссылка на резюме">
+                    <input type="text" class="response__castom response__castom_link" name="file_url" placeholder="Файл резюме или ссылка на него">
                 <div class="response__castom">
                 <!-- response__castom_active-cancel -->
                 <!-- response__castom_active -->
-                <input type="file" id="summary" />
-                <label for="summary"><div class="response__image"></div></label>
+                <input type="file" class="vacancy__file__input" placeholder="Файл резюме" accept="{{ App\Models\Vacancy::getAcceptString() }}" name="file" id="file" />
+                <label for="file"><div class="response__image"></div></label>
                 </div>
                 </div>
                 <textarea
-                class="response__textarea"
-                name="#"
-                id="#"
-                cols="30"
-                rows="10"
-                maxlength="300"
-                placeholder="Комментарий"
-                ></textarea>
+                    class="response__textarea"
+                    name="message"
+                    id="#message"
+                    cols="30"
+                    rows="10"
+                    maxlength="300"
+                    placeholder="Комментарий"
+                    ></textarea>
             
-
+            <div class="errors-area"></div>
             <div class="response__bottom">
-                <button class="response__btn">Отправить</button>
+                <button class="response__btn js_send">Отправить</button>
                 <div class="response__checkbox">
-                <input type="checkbox" id="processing" />
-                <label for="processing">Согласен на обработку персональных данных</label>
+                    <input type="checkbox" id="agree-checkbox-{{ $vacancy->id }}" name="agree" />
+                    <label for="agree-checkbox-{{ $vacancy->id }}">Согласен на обработку персональных данных</label>
                 </div>
             </div>
             </form>
-            </div>
-
             <div class="response__bottom-wrap" style="display: none">
             <div class="response__bottom-image">
                 <img src="/vacancies/icons/response-bottom.svg" alt="icons" />
@@ -94,8 +94,10 @@
                 Мы рады, что вы проявили интерес к вакансии. В ближайшее время мы свяжемся с вами!
             </div>
 
-            <button class="response__bottom-btn">Закрыть</button>
+            <button class="response__bottom-btn js_close_box">Закрыть</button>
             </div>
+            </div>
+
         </div>
         </section>
     </div>

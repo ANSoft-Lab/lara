@@ -124,11 +124,13 @@ class Finist {
                 url: url,
                 data: formData,
                 beforeSend: function() {
-                    //console.log('before');
+                    window.ajaxFormSending = true;
                 },
                 success: function (result) {
+                    window.ajaxFormSending = false;
                     var errorsArea = form.find('.errors-area');
                     errorsArea.html(result);
+                    window.ajaxFormSended = false;
 
                     if(result.errors) {
                         $.each(result.errors, function (key, value) {
@@ -138,9 +140,11 @@ class Finist {
                         });
                     } else if(result.message) {
                         $(form.closest('.form-area')).html(result.message);
+                        window.ajaxFormSended = true;
                     }
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
+                    window.ajaxFormSending = false;
                     if( jqXHR.status === 422 ) {
                         var errorsObj = $.parseJSON(jqXHR.responseText),
                             errorsArea = form.find('.errors-area');
@@ -155,6 +159,8 @@ class Finist {
                         console.log(textStatus);
                         console.log(errorThrown);
                     }
+
+                    window.ajaxFormSended = false;
                 }
             });
         }
