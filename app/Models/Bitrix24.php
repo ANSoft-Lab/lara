@@ -50,10 +50,15 @@ class Bitrix24 extends Model {
         $postData['LOGIN'] = self::$config['CRM_LOGIN'];
         $postData['PASSWORD'] = self::$config['CRM_PASSWORD'];
 
+        if(config('app.debug')) {
+            return false;
+        }
+
         try {
             $fp = fsockopen("ssl://" . self::$config['CRM_HOST'], self::$config['CRM_PORT'], $errno, $errstr, 30);
         } catch (\Exception $ex) {
             logger($ex->getMessage());
+            return false;
         }
 
         if (isset($fp)) {
@@ -88,6 +93,8 @@ class Bitrix24 extends Model {
         } else {
             logger("Connection Failed!");
         }
+
+        return false;
     }
 
     public static function getLead($lead_id) {
