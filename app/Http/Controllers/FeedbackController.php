@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 use App\Http\Requests\FeedbackStore;
 use App\Models\Feedback;
 use App\Models\Bitrix24;
+use App\Notifications\VacancyFeedbackNotification;
 use Illuminate\Http\JsonResponse;
-//use Illuminate\Http\Request;
+use Notification;
 
 class FeedbackController extends Controller
 {
@@ -27,7 +28,7 @@ class FeedbackController extends Controller
         }
 
         if($request->hasFile('uploaded_file')) {
-            $filefolder = 'uploaded/vacancies/' . $lead->entity_id;
+            $filefolder = 'uploaded/vacancies/' . $lead->feedbackable_id;
             $filename = date('YmsHis') . '.' . $request->uploaded_file->extension();
             $request->uploaded_file->storeAs('public/' . $filefolder, $filename);
             $lead->file = $filefolder . '/' . $filename;
@@ -35,6 +36,17 @@ class FeedbackController extends Controller
             $lead->file = $request->file_url;
         }
         $lead->save();
+
+        $emails = config('mail.feedback_emails');
+
+        if($emails && $lead->feedbackable_type == 'App\Models\Vacancy') {
+            $emails_array = explode(',', $emails);
+
+            foreach($emails_array as $email) {
+                Notification::route('mail', $email)
+                    ->notify(new VacancyFeedbackNotification($lead));
+            }
+        }
 
         return response()->json([
             'status' => 200,

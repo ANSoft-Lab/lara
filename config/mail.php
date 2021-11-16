@@ -107,4 +107,6 @@ return [
         ],
     ],
 
+    'feedback_emails' => env('FEEDBACK_EMAILS', null),
+
 ];

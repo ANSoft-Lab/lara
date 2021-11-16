@@ -56,6 +56,11 @@ class Vacancy extends Model
         return $this->belongsTo('App\Models\VacancyCategory', 'category_id');
     }
 
+    public function feedbacks()
+    {
+        return $this->morphMany('App\Models\Feedback', 'feedbackable');
+    }
+
     /*
     |--------------------------------------------------------------------------
     | SCOPES

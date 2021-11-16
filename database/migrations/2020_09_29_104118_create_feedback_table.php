@@ -14,7 +14,7 @@ class CreateFeedbackTable extends Migration
             $table->string('phone')->nullable();
             $table->string('email')->nullable();
             $table->text('message')->nullable();
-            $table->string('type')->default('cooperation');
+            $table->string('feedbackable_type')->default('cooperation');
             $table->string('file')->nullable();
             $table->bigInteger('entity_id')->nullable();
             $table->tinyInteger('status')->default(0);

@@ -37,6 +37,10 @@ class Feedback extends Model
     | RELATIONS
     |--------------------------------------------------------------------------
     */
+    public function feedbackable()
+    {
+        return $this->morphTo('feedbackable', null, 'feedbackable_id');
+    }
 
     /*
     |--------------------------------------------------------------------------
@@ -50,7 +54,7 @@ class Feedback extends Model
     |--------------------------------------------------------------------------
     */
     public function getTypePrettyAttribute() {
-        if($this->type == 'vacancy') {
+        if($this->feedbackable_type == 'App\Models\Vacancy') {
             return 'Отклик на вакансию';
         }
 

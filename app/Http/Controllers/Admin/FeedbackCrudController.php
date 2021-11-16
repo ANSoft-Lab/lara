@@ -97,7 +97,7 @@ class FeedbackCrudController extends CrudController
             'name' => 'type_pretty',
             'label' => trans('backpack::base.feedback.type'),
         ]);
-        if($feedback->type == 'vacancy') {
+        if($feedback->type == 'App\Models\Vacancy') {
             CRUD::addColumn([
                 'name' => 'file_url',
                 'label' => trans('backpack::base.feedback.file_url'),

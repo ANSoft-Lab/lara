@@ -33,7 +33,7 @@ class FeedbackStore extends FormRequest
         
         return [
             'type' => 'sometimes|in:cooperation,vacancy',
-            'entity_id' => 'sometimes|required_if:type,vacancy|exists:vacancies,id',
+            'feedbackable_id' => 'sometimes|required_if:type,vacancy|exists:vacancies,id',
             'agree' => 'required',
             'name' => 'required|min:2',
             'phone' => [
@@ -56,8 +56,8 @@ class FeedbackStore extends FormRequest
     {
         return [
             'type.in' => 'Произошла ошибка. Попробуйте позднее',
-            'entity_id.required_if' => 'Произошла ошибка. Попробуйте позднее',
-            'entity_id.exists' => 'Произошла ошибка. Попробуйте позднее',
+            'feedbackable_id.required_if' => 'Произошла ошибка. Попробуйте позднее',
+            'feedbackable_id.exists' => 'Произошла ошибка. Попробуйте позднее',
             'agree.required' => 'Вы должны согласиться на обработку персональных данных',
             'name.required' => 'Введите имя',
             'name.min' => 'Имя должно содержать 2 или более символов',

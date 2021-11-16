@@ -54,8 +54,8 @@
             <form id="vacancy_form_{{ $vacancy->id }}" enctype="multipart/form-data" action="{{ route('feedback_send', [], false) }}" class="response__form" method="post">
                 <input class="response__input" name="name" type="text" placeholder="ФИО" maxlength="30" />
                 <input class="response__input" name="phone" type="text" placeholder="+7 (___) ___-__-__" />
-                <input type="hidden" name="entity_id" value="{{ $vacancy->id }}" />
-                <input type="hidden" name="type" value="vacancy" />
+                <input type="hidden" name="feedbackable_id" value="{{ $vacancy->id }}" />
+                <input type="hidden" name="feedbackable_type" value="App\Models\Vacancy" />
                 <div class="response__file">
                     <input type="text" class="response__castom response__castom_link" name="file_url" placeholder="Файл резюме или ссылка на него">
                 <div class="response__castom">
