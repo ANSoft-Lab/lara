@@ -35,7 +35,7 @@ class FileExtensionRule implements Rule
 
         $extension = $value->getClientOriginalExtension();
 
-        return $extension != '' && in_array($extension, $this->parameters);
+        return $extension != '' && in_array('.' . $extension, $this->parameters);
     }
 
     /**

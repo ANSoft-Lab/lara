@@ -59,6 +59,10 @@ class FeedbackCrudController extends CrudController
             'label' => trans('backpack::base.feedback.message'),
         ]);
         CRUD::addColumn([
+            'name' => 'type_pretty',
+            'label' => trans('backpack::base.feedback.type'),
+        ]);
+        CRUD::addColumn([
             'name' => 'created_at',
             'label' => trans('backpack::base.feedback.created_at'),
         ]);
@@ -68,6 +72,7 @@ class FeedbackCrudController extends CrudController
     {
         CRUD::set('show.setFromDb', false);
 
+        $feedback = $this->crud->getCurrentEntry();
         CRUD::addColumn([
             'name' => 'name',
             'label' => trans('backpack::base.feedback.name'),
@@ -89,9 +94,19 @@ class FeedbackCrudController extends CrudController
             'label' => trans('backpack::base.feedback.status'),
         ]);
         CRUD::addColumn([
-            'name' => 'type',
+            'name' => 'type_pretty',
             'label' => trans('backpack::base.feedback.type'),
         ]);
+        if($feedback->type == 'vacancy') {
+            CRUD::addColumn([
+                'name' => 'file_url',
+                'label' => trans('backpack::base.feedback.file_url'),
+                'type' => 'closure',
+                'function' => function($entry) {
+                    return '<a target="_blank" href="' . $entry->file_url . '">' . $entry->file_url . '</a>';
+                },
+            ]);
+        }
 
         //Temp hide columns
         CRUD::removeColumn('type');

@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
+use Storage;
 
 class Feedback extends Model
 {
@@ -48,6 +49,21 @@ class Feedback extends Model
     | ACCESSORS
     |--------------------------------------------------------------------------
     */
+    public function getTypePrettyAttribute() {
+        if($this->type == 'vacancy') {
+            return 'Отклик на вакансию';
+        }
+
+        return 'Заявка';
+    }
+
+    public function getFileUrlAttribute() {
+        if(strpos('http', $this->file) !== false) {
+            return $this->file;
+        }
+
+        return Storage::url($this->file);
+    }
 
     /*
     |--------------------------------------------------------------------------

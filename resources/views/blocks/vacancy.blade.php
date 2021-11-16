@@ -61,14 +61,13 @@
                 <div class="response__castom">
                 <!-- response__castom_active-cancel -->
                 <!-- response__castom_active -->
-                <input type="file" class="vacancy__file__input" placeholder="Файл резюме" accept="{{ App\Models\Vacancy::getAcceptString() }}" name="file" id="file" />
-                <label for="file"><div class="response__image"></div></label>
+                <input type="file" class="vacancy__file__input" onChange="console.log(this.value)" placeholder="Файл резюме" accept="{{ App\Models\Vacancy::getAcceptString() }}" name="uploaded_file" id="vacancy_file_{{ $vacancy->id }}" />
+                <label for="vacancy_file_{{ $vacancy->id }}"><div class="response__image"></div></label>
                 </div>
                 </div>
                 <textarea
                     class="response__textarea"
                     name="message"
-                    id="#message"
                     cols="30"
                     rows="10"
                     maxlength="300"

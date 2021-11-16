@@ -111,18 +111,35 @@ class Finist {
     }
 
     sendRequest(form) {
-        var formData = form.serialize(),
-            url = form.attr('action');
+        var serializedForm = form.serializeArray();
+        var formData = new FormData();
+
+        $(serializedForm).each(function(index, obj) {
+            formData.append(obj.name, obj.value);
+        });
+
+        var fileFields = $(form).find('input[type=file]');
+
+        if(fileFields) {
+            fileFields.each(function() {
+                const fileField = $(this);
+                formData.append(fileField.attr('name'), fileField[0].files[0]);
+            });
+        }
+
+        var url = form.attr('action');
 
         if(url) {
             $.ajax({
                 headers: {
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
-                    'Content-Type': 'application/x-www-form-urlencoded',
                 },
                 type: 'POST',
                 url: url,
                 data: formData,
+                cache: false,
+                contentType: false,
+                processData: false,
                 beforeSend: function() {
                     window.ajaxFormSending = true;
                 },

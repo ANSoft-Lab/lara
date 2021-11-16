@@ -43,7 +43,7 @@ class FeedbackStore extends FormRequest
                 'min:2',
             ],
             'file_url' => 'sometimes|nullable|min:2|url',
-            'file' => [
+            'uploaded_file' => [
                 'sometimes',
                 'nullable',
                 'file',
@@ -65,7 +65,7 @@ class FeedbackStore extends FormRequest
             'phone.min' => 'Телефон должен содержать 2 или более символов',
             'file_url.min' => 'Ссылка на резюме должна содержать 2 или более символов',
             'file_url.url' => 'Ссылка на резюме некорректна',
-            'file.file' => 'Ошибка при загрузке файла',
+            'uploaded_file.file' => 'Ошибка при загрузке файла',
         ];
     }
 
