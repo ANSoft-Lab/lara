@@ -19,7 +19,6 @@ class FeedbackController extends Controller
      */
     public function store(Feedback $feedback, FeedbackStore $request): JsonResponse //
     {
-        logger(print_r($request->all(), true));
         $lead = $feedback->create($request->all());
         if($response = Bitrix24::sendLead($request))
         {
@@ -28,10 +27,9 @@ class FeedbackController extends Controller
         }
 
         if($request->hasFile('uploaded_file')) {
-            logger('has file');
-            $filefolder = 'upload/vacancies/' . $lead->entity_id;
+            $filefolder = 'uploaded/vacancies/' . $lead->entity_id;
             $filename = date('YmsHis') . '.' . $request->uploaded_file->extension();
-            $request->uploaded_file->storeAs($filefolder, $filename);
+            $request->uploaded_file->storeAs('public/' . $filefolder, $filename);
             $lead->file = $filefolder . '/' . $filename;
         } elseif($request->has('file_url')) {
             $lead->file = $request->file_url;

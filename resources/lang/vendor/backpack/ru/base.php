@@ -117,6 +117,7 @@ return [
 
     'feedback' => [
         'created_at' => 'Дата',
+        'file_url' => 'Ссылка на файл',
         'message' => 'Сообщение',
         'name' => 'Имя',
         'phone' => 'Телефон',
@@ -146,7 +147,6 @@ return [
         'city' => 'Город',
         'conditions' => 'Условия',
         'duties' => 'Обязанности',
-        'file_url' => 'Ссылка на файл',
         'name' => 'Название',
         'requirements' => 'Требования',
         'salary' => 'Зарплата',
