@@ -10,6 +10,7 @@ class RenameFeedbackableType extends Migration
     {
         Schema::table('feedback', function (Blueprint $table) {
             $table->renameColumn('type', 'feedbackable_type');
+            $table->renameColumn('entity_id', 'feedbackable_id');
         });
     }
 
@@ -17,6 +18,7 @@ class RenameFeedbackableType extends Migration
     {
         Schema::table('feedback', function (Blueprint $table) {
             $table->renameColumn('feedbackable_type', 'type');
+            $table->renameColumn('feedbackable_id', 'entity_id');
         });
     }
 }
