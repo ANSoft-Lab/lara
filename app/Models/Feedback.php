@@ -65,7 +65,7 @@ class Feedback extends Model
             return $this->file;
         }
 
-        return asset($this->file);
+        return asset('storage/' . $this->file);
     }
 
     /*
