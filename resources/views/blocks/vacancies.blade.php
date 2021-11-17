@@ -187,7 +187,7 @@
 			</div>
 
 			<div class="sale__filter-inner">
-				<input class="sale__filter-input" type="text" placeholder="Поиск по ключевым словам" />
+				<input class="sale__filter-input js-search-word-filter" type="text" data-box="sale__item" placeholder="Поиск по ключевым словам" />
 				<!-- sale__filter-input_error -->
 			</div>
 

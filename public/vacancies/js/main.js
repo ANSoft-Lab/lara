@@ -113,6 +113,7 @@ jQuery(function($){
 
   function switchFilter() {
     $('.js-filter-item').show();
+    $('.search-hide').removeClass('search-hide');
 
     var filterCategories = [];
     $('.js-active_filter').each(function() {
@@ -135,6 +136,11 @@ jQuery(function($){
         $(this).hide();
       }
     });
+
+    if($('.js-search-word-filter').val()) {
+      searchFilter($('.js-search-word-filter'));
+    }
+    
   }
 
   if($('.js-active_filter').length) {
@@ -177,22 +183,26 @@ jQuery(function($){
   });
 
   $(document).on('click', '.sale__filter-item', function() {
+    
     const category = $(this).attr('data-type');
 
     $('.js-active_filter[data-type=' + category + ']').not(this).removeClass('js-active_filter');
     $(this).toggleClass('js-active_filter');
 
     switchFilter();
+
   });
 
   $(document).on('click', '.sale__filter-link', function() {
     $('.js-active_filter').removeClass('js-active_filter');
+    $('.js-search-word-filter').val('');
 
     switchFilter();
   });
 
   $(document).on('click', '.js_send', function() {
     if($(this).closest('form').find('.validate')) {
+      // JS-валидация?
       //return false;
     }
 
@@ -215,6 +225,29 @@ jQuery(function($){
   $(document).on('click', '.js_close_box', function() {
     $(this).closest('.sale__item').removeClass('sale__item_active');
   });
+
+  $(document).on('input', '.js-search-word-filter', function() {
+    $('.js-active_filter[data-type=category]').removeClass('js-active_filter');
+    switchFilter();
+
+    searchFilter($(this));
+  });
+
+  function searchFilter(el) {
+    $('.search-hide').removeClass('search-hide');
+
+    const targetBox = el.attr('data-box');
+    const searchWord = el.val();
+
+    const matchingBoxes = $('.' + targetBox).filter(function() {
+      return $(this).text().toLowerCase().indexOf(searchWord.toLowerCase()) >= 0;
+    });
+    const notMatchingBoxes = $('.' + targetBox).filter(function() {
+      return $(this).text().toLowerCase().indexOf(searchWord.toLowerCase()) < 0;
+    });
+
+    notMatchingBoxes.addClass('search-hide');
+  }
 });
 
 const nameInputs = document.querySelectorAll('input[name="name"]');

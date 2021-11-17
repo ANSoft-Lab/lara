@@ -1141,6 +1141,9 @@ button {
   color: #221e1f;
   border: 1px solid #f5f6f7;
 }
+.search-hide {
+  display: none !important;
+}
 .sale__filter-input::-webkit-input-placeholder {
   font-family: Roboto;
   font-style: normal;
