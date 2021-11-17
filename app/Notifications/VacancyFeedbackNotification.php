@@ -44,6 +44,7 @@ class VacancyFeedbackNotification extends Notification
     public function toMail($notifiable)
     {
         $message = (new MailMessage)
+                    ->subject('Finist: отклик на вакансию')
                     ->from('info@finist.ru', config('app.name'))
                     ->greeting('Приветствуем.')
                     ->line('На сайте ' . config('app.url') . ' был оставлен отклик на вакансию "' . $this->feedback->feedbackable->name . '"')

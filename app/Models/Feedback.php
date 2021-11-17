@@ -4,7 +4,6 @@ namespace App\Models;
 
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
-use Storage;
 
 class Feedback extends Model
 {
@@ -66,7 +65,7 @@ class Feedback extends Model
             return $this->file;
         }
 
-        return Storage::url($this->file);
+        return asset($this->file);
     }
 
     /*
