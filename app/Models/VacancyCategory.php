@@ -40,6 +40,11 @@ class VacancyCategory extends Model
         return $this->hasMany('App\Models\Vacancy', 'category_id')->orderBy('name');
     }
 
+    public function employees()
+    {
+        return $this->hasMany('App\Models\Employee', 'vacancy_category_id')->orderBy('name');
+    }
+
     /*
     |--------------------------------------------------------------------------
     | SCOPES

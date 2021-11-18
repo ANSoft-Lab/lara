@@ -41,6 +41,11 @@ class City extends Model
         return $this->hasMany('App\Models\Vacancy', 'city_id')->orderBy('name');
     }
 
+    public function employees()
+    {
+        return $this->hasMany('App\Models\Employee', 'city_id')->orderBy('name');
+    }
+
     /*
     |--------------------------------------------------------------------------
     | SCOPES

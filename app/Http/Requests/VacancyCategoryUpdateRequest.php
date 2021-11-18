@@ -24,8 +24,6 @@ class VacancyCategoryUpdateRequest extends FormRequest
      */
     public function rules()
     {
-        logger('print_r(request()->all(), true)');
-        logger(print_r(request()->all(), true));
         return [
             'name' => 'required|min:3|max:255',
             'slug' => 'required|min:3|max:255|unique:vacancy_categories,slug,' . (request()->id ?? null),

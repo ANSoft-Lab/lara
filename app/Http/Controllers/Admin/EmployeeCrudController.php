@@ -92,6 +92,13 @@ class EmployeeCrudController extends CrudController
             'label' => trans('backpack::base.vacancies.category'),
             'type' => 'relationship',
         ]);
+        CRUD::addField([
+            'name' => 'city_id',
+            'label' => trans('backpack::base.departments.city'),
+            'type' => 'relationship',
+            // 'model' => 'App\Models\City',
+            // 'placeholder' => 'Выбрать город',
+        ]);
 
         CRUD::addField([
             'name' => 'photo',

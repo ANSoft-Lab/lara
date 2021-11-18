@@ -14,6 +14,7 @@ class CreateEmployeesTable extends Migration
             $table->string('photo')->nullable();
             $table->bigInteger('department_id')->nullable();
             $table->bigInteger('vacancy_category_id')->nullable();
+            $table->bigInteger('city_id')->nullable();
             $table->integer('show_order')->default(0);
             $table->bigInteger('deleted_by')->nullable();
             $table->softDeletes();

@@ -71,13 +71,13 @@ class DepartmentCrudController extends CrudController
             'label' => trans('backpack::base.departments.name'),
             'allows_null' => false,
         ]);
-        CRUD::addField([
-            'name' => 'city_id',
-            'label' => trans('backpack::base.departments.city'),
-            'type' => 'relationship',
-            'model' => 'App\Models\City',
-            'placeholder' => 'Выбрать город',
-        ]);
+        // CRUD::addField([
+        //     'name' => 'city_id',
+        //     'label' => trans('backpack::base.departments.city'),
+        //     'type' => 'relationship',
+        //     'model' => 'App\Models\City',
+        //     'placeholder' => 'Выбрать город',
+        // ]);
     }
 
     /**

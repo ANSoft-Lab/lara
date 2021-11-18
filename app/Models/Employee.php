@@ -62,6 +62,11 @@ class Employee extends Model
         return $this->belongsTo('App\Models\VacancyCategory', 'vacancy_category_id');
     }
 
+    public function city()
+    {
+        return $this->belongsTo('App\Models\City', 'city_id');
+    }
+
 
     /*
     |--------------------------------------------------------------------------

@@ -31,5 +31,12 @@ class AppServiceProvider extends ServiceProvider
                 'vacancy_categories' => VacancyCategory::withCount('vacancies')->orderBy('show_order')->get(),
             ]);
         });
+
+        view()->composer('blocks.team', function($view) {
+            $view->with([
+                'cities' => City::withCount('employees')->orderBy('show_order')->get(),
+                'vacancy_categories' => VacancyCategory::withCount('employees')->orderBy('show_order')->get(),
+            ]);
+        });
     }
 }

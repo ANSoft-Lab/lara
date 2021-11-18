@@ -1,6 +1,6 @@
 @section('extra_styles')
-	<link rel="stylesheet" href="/vacancies/css/fonts.css" />
-    <link rel="stylesheet" href="/vacancies/css/style.min.css" />
+	<link rel="stylesheet" href="/vacancies_assets/css/fonts.css" />
+    <link rel="stylesheet" href="/vacancies_assets/css/style.min.css" />
 @endsection
 
 <section class="vacancies-banner">
@@ -18,7 +18,7 @@
 
 		<div class="work__list">
 			<div class="work__item work__item_box-1">
-			<div class="work__image"><img src="/vacancies/icons/work-item1.svg" alt="icons" /></div>
+			<div class="work__image"><img src="/vacancies_assets/icons/work-item1.svg" alt="icons" /></div>
 			<div class="work__inner">
 				<div class="work__caption">Карьерный рост</div>
 				<div class="work__text">Индивидуальная и прозрачная система мотивации</div>
@@ -26,7 +26,7 @@
 			</div>
 
 			<div class="work__item work__item_box-2">
-			<div class="work__image"><img src="/vacancies/icons/work-item2.svg" alt="icons" /></div>
+			<div class="work__image"><img src="/vacancies_assets/icons/work-item2.svg" alt="icons" /></div>
 			<div class="work__inner">
 				<div class="work__caption">Работай с комфортом</div>
 				<div class="work__text">Гибкий график, совмещение с учебой и отсутствие формализма</div>
@@ -34,7 +34,7 @@
 			</div>
 
 			<div class="work__item work__item_box-3">
-			<div class="work__image"><img src="/vacancies/icons/work-item3.svg" alt="icons" /></div>
+			<div class="work__image"><img src="/vacancies_assets/icons/work-item3.svg" alt="icons" /></div>
 			<div class="work__inner">
 				<div class="work__caption">Развивайся</div>
 				<div class="work__text">Наставничество и обучение в любом направлении</div>
@@ -151,18 +151,18 @@
 	<div class="vc-slider__slider">
 	<div class="vc-slider__list">
 		<div class="vc-slider__item">
-		<img src="/vacancies/images/vc-slider-item-2.png" alt="images" />
+		<img src="/vacancies_assets/images/vc-slider-item-2.png" alt="images" />
 		</div>
 
 		<div class="vc-slider__item">
-		<img src="/vacancies/images/vc-slider-item-3.png" alt="images" />
+		<img src="/vacancies_assets/images/vc-slider-item-3.png" alt="images" />
 		</div>
 		<div class="vc-slider__item">
-		<img src="/vacancies/images/vc-slider-item-2.png" alt="images" />
+		<img src="/vacancies_assets/images/vc-slider-item-2.png" alt="images" />
 		</div>
 
 		<div class="vc-slider__item">
-		<img src="/vacancies/images/vc-slider-item-3.png" alt="images" />
+		<img src="/vacancies_assets/images/vc-slider-item-3.png" alt="images" />
 		</div>
 	</div>
 	</div>
@@ -249,6 +249,6 @@
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="/vacancies/js/jquery.inputmask.js"></script>
-	<script src="/vacancies/js/main.js"></script>
+	<script src="/vacancies_assets/js/jquery.inputmask.js"></script>
+	<script src="/vacancies_assets/js/main.js"></script>
 @endsection
