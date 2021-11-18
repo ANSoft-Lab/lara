@@ -1052,8 +1052,6 @@ button {
 .sale__filter {
   max-width: 450px;
   width: 100%;
-  position: absolute;
-  top: 0;
 }
 .sale__filter-top {
   display: -webkit-box;
