@@ -2795,3 +2795,7 @@ button {
 .validate::before {
   border: 2px solid red;
 }
+
+.invalidate {
+  border: 2px solid red;
+}

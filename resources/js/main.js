@@ -5,6 +5,7 @@ window.$ = window.jQuery = require('jquery');
 import Cookies from 'js-cookie';
 import Glide from '@glidejs/glide';
 import Swiper from 'swiper/bundle';
+import Inputmask from "inputmask";
 
 class Finist {
     constructor() {
@@ -115,7 +116,12 @@ class Finist {
         var formData = new FormData();
 
         $(serializedForm).each(function(index, obj) {
-            formData.append(obj.name, obj.value);
+            let objValue = obj.value;
+            if(obj.name === 'phone') {
+                objValue = objValue.replace(/_/g, '');
+            }
+            
+            formData.append(obj.name, objValue);
         });
 
         var fileFields = $(form).find('input[type=file]');
@@ -123,7 +129,9 @@ class Finist {
         if(fileFields) {
             fileFields.each(function() {
                 const fileField = $(this);
-                formData.append(fileField.attr('name'), fileField[0].files[0]);
+                if(fileField[0].files.length) {
+                    formData.append(fileField.attr('name'), fileField[0].files[0]);
+                }
             });
         }
 
@@ -281,6 +289,9 @@ $(document).ready(function(){
         window.location.href = $('input[name=ins]').filter(':checked').val();
        }
    });
+
+   var im = new Inputmask("+7 (999) 999-99-99", {autoclear: false});
+    im.mask($("input[name=phone]"));
 
    var swiper = new Swiper(".partners__list", {
         loop: true,

@@ -85,7 +85,7 @@
             </form>
             <div class="response__bottom-wrap" style="display: none">
             <div class="response__bottom-image">
-                <img src="/vacancies/icons/response-bottom.svg" alt="icons" />
+                <img src="/vacancies_assets/icons/response-bottom.svg" alt="icons" />
             </div>
 
             <div class="response__bottom-title">Отклик отправлен!</div>

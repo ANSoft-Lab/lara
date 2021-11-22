@@ -146,35 +146,32 @@ jQuery(function($){
   if($('.js-active_filter').length) {
     switchFilter();
   }
-
-  $("input[name='phone']").mask("+7 (999) 999-99-99", {autoclear: false});
    
-  const forms = document.querySelectorAll('.response__btn');
-  
-  forms.forEach((item, i) => {
-    item.addEventListener('click', () => {
-    if ($("input[name='phone']")[i].value.replace(/[_-]/g, '').length < 16) {
-      $("input[name='phone']")[i].style.borderColor = 'red';
-      $("input[name='phone']")[i].style.borderWidth = '2px';
-    } else {
-      $("input[name='phone']")[i].style.borderColor = '#000';
-      $("input[name='phone']")[i].style.borderWidth = '1px';
-    }
-    
-    if ($(".response__checkbox input").eq(i).checked) {
-      $(".response__checkbox label").eq(i).removeClass('validate');
-    } else {
-      $(".response__checkbox label").eq(i).addClass('validate');
-    }
-  
+  const forms = $('.response__btn').closest('form');
+  forms.each(function() {
+    validateForm($(this));
   });
   
-  $("input[name='phone']").on('click', function() {
-      $("input[name='phone']")[i].style.borderColor = '#000';
-      $("input[name='phone']")[i].style.borderWidth = '1px';
-  });
-  });
+  function validateForm(form) {
+    var validated = true;
 
+    const phoneField = $("input[name=phone]", form);
+    if (phoneField.length && (phoneField.val() == '' || phoneField.val().replace(/[_-]/g, '').length < 16)) {
+      phoneField.addClass('invalidate');
+      validated = false;
+    } else if(phoneField.length) {
+      phoneField.removeClass('invalidate');
+    }
+
+    if ($(".response__checkbox input", form).prop('checked') === true) {
+      $(".response__checkbox label", form).removeClass('validate');
+    } else if($(".response__checkbox input", this).length) {
+      $(".response__checkbox label", form).addClass('validate');
+      validated = false;
+    }
+
+    return validated;
+  }
   
   document.querySelectorAll('.response__checkbox input').forEach((item, i) => {
     item.addEventListener('click', () => {
@@ -201,9 +198,10 @@ jQuery(function($){
   });
 
   $(document).on('click', '.js_send', function() {
-    if($(this).closest('form').find('.validate')) {
-      // JS-валидация?
-      //return false;
+    let validated = validateForm($(this).closest('form'));
+
+    if(!validated) {
+      return false;
     }
 
     waitResults($(this).closest('.response'));

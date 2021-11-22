@@ -40,7 +40,7 @@ class FeedbackStore extends FormRequest
                 Rule::requiredIf(function () { // Если в поле required указано поле phone
                     return request('required') && in_array('phone', request('required'));
                 }),
-                'min:2',
+                'min:15',
             ],
             'file_url' => 'sometimes|nullable|min:2|url',
             'uploaded_file' => [
@@ -62,7 +62,7 @@ class FeedbackStore extends FormRequest
             'name.required' => 'Введите имя',
             'name.min' => 'Имя должно содержать 2 или более символов',
             'phone.required' => 'Введите телефон',
-            'phone.min' => 'Телефон должен содержать 2 или более символов',
+            'phone.min' => 'Телефон должен содержать корректное количество символов',
             'file_url.min' => 'Ссылка на резюме должна содержать 2 или более символов',
             'file_url.url' => 'Ссылка на резюме некорректна',
             'uploaded_file.file' => 'Ошибка при загрузке файла',
