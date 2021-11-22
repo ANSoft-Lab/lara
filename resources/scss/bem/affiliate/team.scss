@@ -99,6 +99,10 @@
 		display: none;
 	}
 }
+body.team {
+	padding-top: 0;
+	margin: 0;
+}
 @media screen and (min-width: 768px) {
 	.team{
 		padding-top: 60px;

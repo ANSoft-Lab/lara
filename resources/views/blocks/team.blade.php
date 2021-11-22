@@ -35,10 +35,10 @@
 
 			<div class="sale__filter-box">
 				<div class="sale__filter-subtitle">
-					<div class="sale__filter-caption sale__filter-caption_item-2">Направления</div>
+					<div class="sale__filter-caption sale__filter-caption_item-2">Отделы</div>
 					<ul class="sale__filter-list">
-						@forelse($vacancy_categories->where('employees_count', '>', 0) as $vacancy_category)
-							<li class="sale__filter-item{{ $loop->first ? ' js-active_filter' : '' }}" data-type="category" id="category_{{ $vacancy_category->id }}">{{ $vacancy_category->name }}<span>{{ $vacancy_category->employees_count }}</span></li>
+						@forelse($departments->where('employees_count', '>', 0) as $department)
+							<li class="sale__filter-item{{ $loop->first ? ' js-active_filter' : '' }}" data-type="category" id="category_{{ $department->id }}">{{ $department->name }}<span>{{ $department->employees_count }}</span></li>
 						@empty
 
 						@endforelse
@@ -49,8 +49,8 @@
 
 		<div class="sale__inner team__team">
 			<div class="team__subtitle">Отдел</div>
-			@forelse($vacancy_categories->where('employees_count', '>', 0) as $vacancy_category)
-				<div class="js-filter-item js-filter-hide team__title" data-type="category" data-category="category_{{ $vacancy_category->id }}">{{ $vacancy_category->name }}</div>
+			@forelse($departments->where('employees_count', '>', 0) as $department)
+				<div class="js-filter-item js-filter-hide team__title" data-type="category" data-category="category_{{ $department->id }}">{{ $department->name }}</div>
 			@empty
 
 			@endforelse

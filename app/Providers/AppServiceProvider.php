@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\City;
+use App\Models\Department;
 use App\Models\VacancyCategory;
 use Illuminate\Support\ServiceProvider;
 
@@ -35,7 +36,7 @@ class AppServiceProvider extends ServiceProvider
         view()->composer('blocks.team', function($view) {
             $view->with([
                 'cities' => City::withCount('employees')->orderBy('show_order')->get(),
-                'vacancy_categories' => VacancyCategory::withCount('employees')->orderBy('show_order')->get(),
+                'departments' => Department::withCount('employees')->orderBy('show_order')->get(),
             ]);
         });
     }
