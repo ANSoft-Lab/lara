@@ -2240,7 +2240,7 @@ button {
 }
 .sale__filter {
   max-width: 450px;
-  width: 100%;
+  width: 30%;
 }
 .sale__filter-top {
   display: -webkit-box;
@@ -4059,7 +4059,7 @@ button {
 }
 .team__team {
   max-width: 860px;
-  width: 100%;
+  width: 70%;
 }
 .team__subtitle {
   font-weight: 500;
