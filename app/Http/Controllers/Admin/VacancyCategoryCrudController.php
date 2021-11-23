@@ -81,6 +81,11 @@ class VacancyCategoryCrudController extends CrudController
             'label' => trans('backpack::base.vacancy_categories.description'),
             'type' => 'wysiwyg',
         ]);
+        CRUD::addField([
+            'name' => 'show_order',
+            'label' => trans('backpack::base.vacancy_categories.show_order'),
+            'type' => 'number',
+        ]);
     }
 
     /**
