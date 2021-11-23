@@ -112,37 +112,17 @@
 	<div class="container">
 	<div class="views__title">Виды вакансий</div>
 	<div class="views__list">
-		<div class="views__item">
-		<div class="views__box views__box_item-1">
-			<div class="views__subtitle">Продажи</div>
-			<div class="views__text">
-			Консультируй по условиям сотрудничества и заключай договора. Теплые звонки и автоматизация. Берем без
-			опыта
+		@forelse($vacancy_categories->where('vacancies_count', '>', 0) as $vacancy_category)
+			<div class="views__item">
+				<div class="views__box">
+					<div class="views__subtitle">{{ $vacancy_category->name }}</div>
+					<div class="views__text">{!! $vacancy_category->description !!}</div>
+					<a class="views__link js-filter-click" data-click="#category_{{ $vacancy_category->id }}" href="#list">Посмотреть вакансии <span></span></a>
+				</div>
 			</div>
-			<a class="views__link" href="#list">Посмотреть вакансии <span></span></a>
-		</div>
-		</div>
+		@empty
 
-		<div class="views__item">
-		<div class="views__box views__box_item-2">
-			<div class="views__subtitle">Сопровождение</div>
-			<div class="views__text">
-			Расширяй клиентскую базу и оформляй сделки. Командировки в города России и работа с крупными партнерами
-			</div>
-			<a class="views__link" href="#list">Посмотреть вакансии <span></span></a>
-		</div>
-		</div>
-
-		<div class="views__item">
-		<div class="views__box views__box_item-3">
-			<div class="views__subtitle">Подработка</div>
-			<div class="views__text">
-			Операторы Call-центра без продаж, аналитики, курьеры. Начинай с совмещения и развивайся внутри компании.
-			Без опыта
-			</div>
-			<a class="views__link" href="#list">Посмотреть вакансии <span></span></a>
-		</div>
-		</div>
+		@endforelse
 	</div>
 	</div>
 </section>

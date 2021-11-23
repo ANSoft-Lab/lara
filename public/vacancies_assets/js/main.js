@@ -197,6 +197,14 @@ jQuery(function($){
     switchFilter();
   });
 
+  $(document).on('click', '.js-filter-click', function() {
+    $('.js-active_filter').removeClass('js-active_filter');
+    $('.js-search-word-filter').val('');
+    $($(this).attr('data-click')).click();
+
+    switchFilter();
+  });
+
   $(document).on('click', '.js_send', function() {
     let validated = validateForm($(this).closest('form'));
 
