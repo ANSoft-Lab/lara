@@ -1,0 +1,421 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  backdrop-filter: blur(7px);
+  display: flex;
+  justify-content: flex-end;
+
+  &__window {
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    padding: 0 115px 0 115px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    &_box-2 {
+      .modal__wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modal__title {
+        margin-bottom: 15px;
+      }
+
+      .modal__btn-close {
+        position: static;
+        max-width: 166px;
+        width: 100%;
+        height: 70px;
+        background-color: #f2cb4d;
+        background-image: none;
+        border-radius: 309px;
+        font-family: Formular;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.005em;
+      }
+    }
+  }
+
+  &__text {
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 41px;
+  }
+
+  &__wrap {
+    max-width: 451px;
+    width: 100%;
+  }
+
+  &__image {
+    max-width: 144px;
+    width: 100%;
+    height: 144px;
+    border-radius: 100%;
+    margin-bottom: 3px;
+
+    img {
+      width: 144px;
+      height: 144px;
+      border-radius: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 24px;
+    right: 21px;
+    max-width: 74px;
+    width: 100%;
+    border-radius: 100%;
+    height: 74px;
+    background-image: url(../icons/modal-close.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #f6f7f8;
+    padding: 0;
+
+    &:hover {
+      background-color: #ffca1f;
+    }
+
+    &:focus {
+      background-color: #221e1f;
+      color: #ffffff;
+      background-image: url(../icons/modal-close-focus.svg);
+    }
+  }
+
+  &__title {
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.02em;
+    margin-bottom: 54px;
+  }
+
+  &__form {
+    max-width: 410px;
+    width: 100%;
+  }
+
+  &__input {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 21px;
+    margin-bottom: 45px;
+    outline: none;
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: #221e1f;
+
+    &::-webkit-input-placeholder {
+      font-family: Formular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.02em;
+      color: #221e1f;
+    }
+
+    &:hover {
+      border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    }
+
+    &:focus {
+      border-bottom: 2px solid rgba(0, 0, 0, 1);
+    }
+  }
+
+  &__textarea {
+    max-width: 100%;
+    width: 100%;
+    height: 130px;
+    resize: none;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    outline: none;
+    padding: 20px 23px;
+    margin-bottom: 31px;
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: rgba(34, 30, 31, 0.7);
+
+    &::-webkit-input-placeholder {
+      font-family: Formular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.02em;
+      color: rgba(34, 30, 31, 0.7);
+    }
+
+    &:hover {
+      border: 2px solid rgba(0, 0, 0, 0.5);
+    }
+
+    &:focus {
+      border: 2px solid rgba(0, 0, 0, 1);
+    }
+  }
+
+  &__checkbox {
+    margin-bottom: 70px;
+
+    label {
+      font-family: Formular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      color: #2e2b2b;
+    }
+
+    input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    input + label {
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+      cursor: pointer;
+    }
+
+    input + label::before {
+      content: "";
+      display: block;
+      min-width: 24px;
+      height: 24px;
+      background-color: #f0f1f3;
+      border-radius: 3px;
+      margin-right: 16px;
+    }
+
+    input:checked + label::before {
+      background-image: url(../icons/modal-checked.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-color: #f2cb4d;
+    }
+
+    input + label:hover::before {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-color: #f0f1f3;
+      background-image: url(../icons/modal-checked-hover.svg);
+    }
+
+    input:checked + label:hover::before {
+      background-image: url(../icons/modal-checked.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-color: #f2cb4d;
+    }
+  }
+
+  &__btn {
+    max-width: 180px;
+    width: 100%;
+    padding: 0;
+    height: 70px;
+    background-color: #f2cb4d;
+    border-radius: 309px;
+    font-family: Formular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+
+    &:hover {
+      background-color: #ffca1f;
+    }
+
+    &:focus {
+      color: #ffffff;
+      background-color: #221e1f;
+    }
+  }
+
+  &__btn-mobile {
+    display: none;
+    padding: 0;
+    background-color: #f2cb4d;
+    border-radius: 309px;
+    max-width: 290px;
+    width: 100%;
+    height: 60px;
+    font-family: Formular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #221e1f;
+  }
+}
+
+@media (max-width: 1469px) {
+  .modal {
+    &__title {
+      font-size: 32px;
+      line-height: 39px;
+      margin-bottom: 25px;
+    }
+
+    &__input {
+      margin-bottom: 25px;
+    }
+
+    &__checkbox {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .modal {
+    &__window {
+      padding: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+      max-width: 100%;
+      width: 100%;
+
+      &_box-2 {
+        .modal__btn-close {
+          max-width: 145px;
+          width: 100%;
+          height: 60px;
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    &__wrap {
+      margin: 0 auto;
+      max-width: 290px;
+      width: 100%;
+    }
+
+    &__btn-close {
+      background-color: transparent;
+      top: -2px;
+      right: 8px;
+    }
+
+    &__title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 27px;
+      margin-bottom: 25px;
+      max-width: 230px;
+    }
+
+    &__input {
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: -0.02em;
+      padding-bottom: 17px;
+
+      &::-webkit-input-placeholder {
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: -0.02em;
+      }
+    }
+
+    &__textarea {
+      height: 96px;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: -0.02em;
+      padding: 20px 15px 15px 20px;
+      margin-bottom: 21px;
+
+      &::-webkit-input-placeholder {
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: -0.02em;
+      }
+    }
+
+    &__checkbox {
+      margin-bottom: 41px;
+
+      label {
+        font-size: 15px;
+        line-height: 22px;
+        color: #2e2b2b;
+      }
+
+      input + label {
+        align-items: flex-start;
+      }
+    }
+
+    &__btn {
+      max-width: 290px;
+      height: 60px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &__image {
+      max-width: 90px;
+      height: 90px;
+      margin-bottom: 8px;
+
+      img {
+        width: 90px;
+        height: 90px;
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}

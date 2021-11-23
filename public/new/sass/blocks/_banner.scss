@@ -1,0 +1,471 @@
+.banner {
+  padding-top: 22px;
+  padding-bottom: 63px;
+
+  &__box {
+    background-image: url(../images/banner-bg.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 53px 0px 58px 64px;
+    background-color: #f0f2f3;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  &__info {
+    max-width: 530px;
+  }
+
+  &__title {
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.02em;
+    margin-bottom: 28px;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 105px;
+
+    p {
+      min-width: 212px;
+      max-width: 232px;
+      font-family: Formular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 25px;
+      letter-spacing: 0.005em;
+      color: rgba(94, 25, 42, 0.7);
+
+      span {
+        display: block;
+        color: #221e1f;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &__info-bottom {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    padding: 0;
+    max-width: 227px;
+    width: 100%;
+    height: 70px;
+    background: #f2cb4d;
+    border-radius: 309px;
+    font-family: Formular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #221e1f;
+    transition: 0.2s;
+    margin-right: 54px;
+
+    &:hover {
+      background-color: #ffca1f;
+    }
+
+    &:focus {
+      background-color: #221e1f;
+      color: #ffffff;
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    max-width: 221px;
+    font-family: Formular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    color: #221e1f;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-image: url(../icons/personalarea.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+      margin-right: 20px;
+    }
+
+    &:hover {
+      color: rgba(34, 30, 31, 0.75);
+
+      &::before {
+        opacity: 0.75;
+      }
+    }
+
+    &:focus {
+      color: #000000;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__image {
+    max-width: 675px;
+    width: 100%;
+    min-height: 543px;
+
+    img {
+      object-fit: contain;
+      width: 675px;
+      height: 543px;
+    }
+  }
+
+  &__bottom {
+    background: #f6f7f8;
+    border-radius: 5px;
+    padding-left: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.005em;
+    color: #221e1f;
+  }
+
+  &__right {
+    max-width: 440px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__social {
+    max-width: 220px;
+    width: 100%;
+    padding-top: 36px;
+    padding-bottom: 39px;
+    text-decoration: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.07);
+    font-family: Formular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s;
+    height: 109px;
+
+    &::before {
+      content: "";
+      display: block;
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &:hover {
+      color: #ffffff;
+    }
+
+    &:focus {
+      color: #ffffff;
+    }
+
+    &_telegram {
+      &::before {
+        min-width: 29px;
+        height: 29px;
+        background-image: url(../icons/telegram.svg);
+        margin-right: 11px;
+      }
+
+      &:hover {
+        background-color: #0088cc;
+
+        &::before {
+          background-image: url(../icons/telegram-white.svg);
+        }
+      }
+
+      &:focus {
+        background-color: #221e1f;
+
+        &::before {
+          background-image: url(../icons/telegram-white.svg);
+        }
+      }
+    }
+
+    &_whatsapp {
+      padding-top: 28px;
+      padding-bottom: 28px;
+      border-radius: 0px 5px 5px 0px;
+
+      &::before {
+        min-width: 28px;
+        height: 28px;
+        background-image: url(../icons/whatsapp.svg);
+        margin-right: 12px;
+      }
+
+      &:hover {
+        background-color: #62b651;
+
+        &::before {
+          background-image: url(../icons/whatsapp-white.svg);
+        }
+      }
+
+      &:focus {
+        background-color: #221e1f;
+
+        &::before {
+          background-image: url(../icons/whatsapp-white.svg);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1469px) {
+  .banner {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    &__box {
+      padding: 50px 0 50px 50px;
+    }
+
+    &__text {
+      margin-bottom: 65px;
+    }
+
+    &__left {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner {
+    padding-top: 0;
+    padding-bottom: 40px;
+
+    &__box {
+      background-image: url(../images/banner-bg-mobile.png);
+      background-position: right bottom;
+      background-size: 75%;
+      padding: 30px 0 30px 30px;
+    }
+
+    &__title {
+      font-size: 33px;
+      line-height: 40px;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      flex-direction: column;
+      margin-bottom: 45px;
+    }
+
+    &__info-bottom {
+      flex-direction: column;
+      align-items: baseline;
+    }
+
+    &__btn {
+      margin-right: 0;
+      max-width: 289px;
+      height: 60px;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 15px;
+    }
+
+    &__left {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .banner {
+    padding-bottom: 23px;
+    &__title {
+      font-size: 28px;
+      line-height: 34px;
+      max-width: 251px;
+      font-weight: 500;
+    }
+
+    &__box {
+      padding: 0;
+      border-radius: 0;
+      padding-top: 32px;
+      padding-bottom: 240px;
+      background-size: auto;
+      margin-bottom: 20px;
+      margin-left: calc(-50vw + 50%);
+      width: 100vw;
+      background-position: center bottom;
+    }
+
+    &__info {
+      max-width: 290px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &__text {
+      margin-bottom: 35px;
+
+      span {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 5px;
+      }
+
+      p {
+        padding: 0;
+        margin: 0;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 22px;
+
+        &:not(:last-child) {
+          margin-bottom: 14px;
+        }
+
+        &:last-child {
+          max-width: 280px;
+        }
+      }
+    }
+
+    &__info-bottom {
+      max-width: 290px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &__btn {
+      margin-bottom: 29px;
+    }
+
+    &__link {
+      padding-bottom: 30px;
+      margin: 0 auto;
+      font-weight: 500;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    &__bottom {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 25px 0 37px 0;
+      border-radius: 5px;
+    }
+
+    &__left {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      max-width: 213px;
+      margin: 0 auto;
+      margin-bottom: 23px;
+    }
+
+    &__right {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__social {
+      padding: 0;
+      max-width: 165px;
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 309px;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: 0.005em;
+      color: #ffffff;
+
+      &_telegram {
+        background: #6290fb;
+        margin-bottom: 10px;
+
+        &::before {
+          min-width: 20px;
+          height: 20px;
+          background-image: url(../icons/banner-telegram-mobile.svg);
+        }
+
+        &:hover {
+          &::before {
+            min-width: 20px;
+            height: 20px;
+            background-image: url(../icons/banner-telegram-mobile.svg);
+          }
+        }
+      }
+
+      &_whatsapp {
+        background-color: #62b651;
+
+        &::before {
+          min-width: 21px;
+          height: 21px;
+          background-image: url(../icons/banner-whatsapp-mobile.svg);
+        }
+
+        &:hover {
+          &::before {
+            min-width: 21px;
+            height: 21px;
+            background-image: url(../icons/banner-whatsapp-mobile.svg);
+          }
+        }
+      }
+    }
+  }
+}

@@ -35,13 +35,6 @@
             но и надёжно охраняют конфиденциальную
             информацию клиентов.' !!}
         </div>
-        <a href="{{ url('/misc/FINIST_WM_08.pdf') }}" target="_blank" class="about__info operation__link{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}"
-        @if (isset($edit_mode))
-            contenteditable="true" id="about_operation_4"
-        @endif
-        >
-            {!! $about_operation_4 ?? 'Презентация о Страховом представительстве "Финист"' !!}
-        </a>
     </div>
     <div>
         <div class="operation__logo">
