@@ -54,6 +54,10 @@ class VacancyCategoryCrudController extends CrudController
             'name' => 'slug',
             'label' => trans('backpack::base.vacancy_categories.slug'),
         ]);
+        CRUD::addColumn([
+            'name' => 'show_order',
+            'label' => trans('backpack::base.vacancy_categories.show_order'),
+        ]);
     }
 
     /**
