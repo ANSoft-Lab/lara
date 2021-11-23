@@ -11,7 +11,7 @@
     @else
         <link rel="stylesheet" type="text/css" href='/new/css/fonts.css'>
         <link rel="stylesheet" type="text/css" href='/new/css/normalize.css'>
-        <link rel="stylesheet" type="text/css" href='/new/css/style.min.css'>
+        <link rel="stylesheet" type="text/css" href='/new/css/style.min.css?ver=2.0'>
     @endif
     <link rel="icon" type="image/png" href="/icon/favicon.png"/>
     @yield('extra_styles')
