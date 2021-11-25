@@ -14,7 +14,7 @@
 			</div>
 
 			<div class="sale__filter-inner">
-				<input class="sale__filter-input js-search-word-filter" type="text" data-box="team__item" placeholder="Поиск по ключевым словам" />
+				<input class="sale__filter-input js-search-word-filter" type="text" data-box="team__item" placeholder="Найти сотрудника" />
 				<!-- sale__filter-input_error -->
 			</div>
 
@@ -60,14 +60,13 @@
 		</div>
 
 		<div class="sale__inner team__team">
-			<div class="team__subtitle">Отдел</div>
 			@forelse($departments->where('employees_count', '>', 0) as $department)
-				<div class="js-filter-item js-filter-hide team__title" data-type="category" data-category="category_{{ $department->id }}">{{ $department->name }}</div>
+				<div class="team__subtitle js-filter-item js-filter-hide team__title" data-type="category" data-category="category_{{ $department->id }}">{{ $department->name }}</div>
 			@empty
 
 			@endforelse
 			<div class="team__list">
-				@forelse ($items as $item)
+				@forelse ($items->sortBy('show_order') as $item)
 					@include('blocks.employee', ['employee' => $item])
 				@empty
 

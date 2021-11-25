@@ -59,6 +59,11 @@ class EmployeeCrudController extends CrudController
             'name' => 'department',
             'label' => trans('backpack::base.employees.department'),
         ]);
+
+        CRUD::addColumn([
+            'name' => 'show_order',
+            'label' => trans('backpack::base.employees.show_order'),
+        ]);
     }
 
     /**
@@ -108,6 +113,12 @@ class EmployeeCrudController extends CrudController
             'crop' => false,
             // 'aspect_ratio' => 1,
             //'upload' => true,
+        ]);
+
+        CRUD::addField([
+            'name' => 'show_order',
+            'label' => trans('backpack::base.employees.show_order'),
+            'type' => 'number',
         ]);
 
         CRUD::addField([

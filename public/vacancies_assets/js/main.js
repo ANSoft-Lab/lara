@@ -70,7 +70,7 @@ const filterInput = document.querySelector('.sale__filter-input');
 filterInput.addEventListener('input', () => {
   vacancies.forEach(item => {
     item.style.display = 'block';
-    if(item.querySelector('.sale__subtitle').textContent.toLowerCase().indexOf(filterInput.value.toLowerCase()) === -1 && item.querySelector('.sale__bottom').textContent.toLowerCase().indexOf(filterInput.value.toLowerCase()) === -1) {
+    if(item.querySelector('.sale__subtitle') && item.querySelector('.sale__subtitle').textContent.toLowerCase().indexOf(filterInput.value.toLowerCase()) === -1 && item.querySelector('.sale__bottom').textContent.toLowerCase().indexOf(filterInput.value.toLowerCase()) === -1) {
       item.style.display = 'none';
     }
   });
