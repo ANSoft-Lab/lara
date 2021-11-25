@@ -21,6 +21,12 @@
 			<div class="sale__filter-box">
 				<div class="sale__filter-subtitle">
 					<!-- sale__filter-subtitle_active -->
+					@forelse($cities->where('employees_count', '>', 0) as $city)
+						<div class="sale__filter-caption sale__filter-caption_item-1 js-filter-item js-filter-hide filter__active__placeholder" data-type="city" data-city="city_{{ $city->id }}">
+							{{ $city->name }}
+						</div>
+					@empty
+					@endforelse
 					<div class="sale__filter-caption sale__filter-caption_item-1">Города</div>
 					<ul class="sale__filter-list">
 						@forelse($cities->where('employees_count', '>', 0) as $city)
@@ -35,6 +41,12 @@
 
 			<div class="sale__filter-box">
 				<div class="sale__filter-subtitle">
+					@forelse($departments->where('employees_count', '>', 0) as $category)
+						<div class="sale__filter-caption sale__filter-caption_item-1 js-filter-item js-filter-hide filter__active__placeholder" data-type="category" data-category="category_{{ $category->id }}">
+							{{ $category->name }}
+						</div>
+					@empty
+					@endforelse
 					<div class="sale__filter-caption sale__filter-caption_item-2">Отделы</div>
 					<ul class="sale__filter-list">
 						@forelse($departments->where('employees_count', '>', 0) as $department)

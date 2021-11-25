@@ -1992,6 +1992,15 @@ button {
 .sale__filter-item:hover {
   color: rgba(34, 30, 31, 0.5);
 }
+.sale__filter-subtitle {
+  position: relative;
+}
+.filter__active__placeholder {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  background-color: #fff;
+}
 .sale__inner {
   max-width: 880px;
   width: 100%;
