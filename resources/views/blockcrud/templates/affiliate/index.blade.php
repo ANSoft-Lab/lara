@@ -48,7 +48,7 @@
                                 </div>
                             </li>
                             <li class="menu__subitem">
-                                <a class="menu__subitem-link menu__subitem-link_item-2" href="/refinansirovanie">Рефинансирование и кредитование</a>
+                                <a class="menu__subitem-link menu__subitem-link_item-2" href="https://refin.finist.ru/">Рефинансирование и кредитование</a>
                             </li>
                             <li class="menu__subitem">
                                 <a class="menu__subitem-link menu__subitem-link_item-3" href="#">Оценка недвижимости</a>
