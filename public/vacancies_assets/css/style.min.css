@@ -1738,23 +1738,19 @@ button {
 }
 @media (max-width: 767px) {
   .sale .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    display: block;
+    max-width: 100%;
+    width: 100%;
   }
   .sale__filter {
     position: static;
     margin-bottom: 35px;
+    max-width: 100%;
+    width: 100%;
   }
   .sale__inner {
     max-width: 100%;
+    width: 100%;
   }
   .sale__bottom {
     background-color: #f5f6f7;
@@ -1762,8 +1758,10 @@ button {
     width: 100vw;
   }
   .sale__bottom-left {
-    max-width: 290px;
+    max-width: 100%;
     width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
     margin: 0 auto;
   }
   .sale__bottom-inner {

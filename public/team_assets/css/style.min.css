@@ -2459,22 +2459,18 @@ button {
 }
 @media (max-width: 767px) {
   .sale .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    display: block;
+    max-width: 100%;
+    width: 100%;
   }
   .sale__filter {
     margin-bottom: 35px;
+    max-width: 100%;
+    width: 100%;
   }
   .sale__inner {
-    max-width: 100%;
+    max-width: 100% !important;
+    width: 100% !important;
   }
   .sale__bottom {
     background-color: #f5f6f7;
