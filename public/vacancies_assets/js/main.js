@@ -37,18 +37,6 @@ vacancies.forEach(item => {
     if (event.target.closest('.sale__box')) {
       item.classList.toggle('sale__item_active');
     }
-    if( window.innerWidth < 767 ) {
-      const content = item.querySelector('.sale__bottom-left');
-      document.addEventListener('scroll', () => {
-        if (content.getBoundingClientRect().bottom > 0 && content.getBoundingClientRect().top < content.clientHeight - 800) {
-          item.querySelector('.sale__bottom-inner').style.position = 'fixed';
-          item.querySelector('.sale__bottom-inner').style.left = '0';
-        } else {
-          item.querySelector('.sale__bottom-inner').style.position = 'static';
-          item.querySelector('.sale__bottom-inner').style.left = '';
-        }
-      });
-    }
   });
 });
 
