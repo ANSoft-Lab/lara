@@ -75,7 +75,7 @@
                         <p class="footer__city js-open-modal" data-modal="choose-city">Краснодар</p>
                     </li>
                     <li class="footer__phone-item">
-                        <a href="tel:+74956602165" class="footer__tel">+7 495 660-21-65</a>
+                        <a href="tel:+74956602186" class="footer__tel">+7 495 660-21-86</a>
                         <p class="footer__city">
                             для банков (по вопросам ипотечного&nbsp;кредитования)
                         </p>

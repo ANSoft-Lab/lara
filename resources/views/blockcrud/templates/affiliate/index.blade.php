@@ -703,7 +703,7 @@
 
                 <div class="footer__contacts">
                     <div class="footer__contacts-item">
-                        <a class="footer__contacts-link" href="tel:84956602165">+7 495 660-21-65</a>
+                        <a class="footer__contacts-link" href="tel:84956602186">+7 495 660-21-86</a>
                         <p class="footer__contacts-text">Для банков (по вопросам ипотечного кредитования)</p>
                     </div>
 
