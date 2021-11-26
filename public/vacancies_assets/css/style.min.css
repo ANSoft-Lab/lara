@@ -1590,13 +1590,13 @@ button {
   }
   .sale__filter-input {
     height: 60px;
-    font-size: 14px;
+    font-size: 11px;
     line-height: 16px;
     padding-left: 18px;
     padding-right: 45px;
   }
   .sale__filter-input::-webkit-input-placeholder {
-    font-size: 14px;
+    font-size: 11px;
     line-height: 16px;
   }
   .sale__filter-caption {
@@ -1756,6 +1756,12 @@ button {
     margin-bottom: 35px;
     max-width: 100%;
     width: 100%;
+  }
+  .sale__filter-input {
+    font-size: 14px;
+  }
+  .sale__filter-input::-webkit-input-placeholder {
+    font-size: 14px;
   }
   .sale__inner {
     max-width: 100%;
