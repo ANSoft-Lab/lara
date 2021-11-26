@@ -23,8 +23,8 @@
                 <li>Окажем содействие в урегулировании вопросов со страховой компанией при наступлении страхового случая;</li>
                 <li>Прикрепим персонального специалиста, который будет помогать Вам по всем вопросам страхования.</li>
             </ul>
-            <div class="footer__btn-wrap">
-                @include('blockcrud.modals.feedback', ['modal_title' => 'Оставить заявку на бесплатную консультацию', 'link' => false, 'btn_class' => 'modal__btn modal__btn__small'])
+            <div class="footer__btn-wrap plus_minus__button">
+                @include('blockcrud.modals.feedback', ['modal_title' => 'Оставить заявку на бесплатную консультацию', 'link' => false, 'btn_class' => 'modal__btn modal__btn__small plus_minus__btn'])
             </div>
         </div>
     </div>

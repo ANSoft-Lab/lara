@@ -32,22 +32,22 @@
         <div class="contacts__wrapper glide__slides">
             <div class="contacts__map contacts__map--cp js-map glide__slide">
                 <div class="contacts__map-ym">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb756ae2cf017a15af3e6f4cce84c04b3c3ed1531f5388794f08d27ecdab2d7f&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false;baloon=true;"></script>
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb756ae2cf017a15af3e6f4cce84c04b3c3ed1531f5388794f08d27ecdab2d7f&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
                 <div class="contacts__map-info">
                     <h3>Москва, центральный офис</h3>
                     <p><b>Адрес:</b> 3-й Монетчиковский переулок, 11с1</p>
-                    <p><b>Телефон:</b> +7 (495) 62-62-555, +7 (495) 626-26-26 (отдел страхования доб. 714)</p>
+                    <p><b>Телефон:</b> +7 (495) 626-26-26 (отдел страхования доб. 714)</p>
                     <p><b>График работы:</b> Пн-Пт: 9:00-19:00</p>
                 </div>
             </div>
             <div class="contacts__map contacts__map--cp js-map glide__slide">
                 <div class="contacts__map-ym">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A239c24f62b0f7f593773890c9cfc1af5d5556169f03455213e1b5d9c20596953&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false"></script>
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A074046df22488f831937d6857e82f848e016b15bfd50f61f29474cd1e81034f6&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
                 <div class="contacts__map-info">
                     <h3>Санкт-Петербург</h3>
-                    <p><b>Адрес:</b> Боровая улица дом 32 , БЦ "Стелс", 7 этаж. 728 кабинет</p>
+                    <p><b>Адрес:</b> Боровая улица дом 32 , БЦ "Стелс", 7 этаж. 725 кабинет</p>
                     <p><b>Телефон:</b> +7 812 449-43-25</p>
                     <p><b>График работы:</b> Пн-Пт: 10:00-18:30</p>
                 </div>
@@ -97,15 +97,17 @@
                     <h3>Екатеринбург</h3>
                     <p><b>Адрес:</b> г. Екатеринбург, ул. 8 Марта, 13, офис 307</p>
                     <p><b>Телефон:</b> +7 (343) 379-20-92</p>
-                    <p><b>График работы:</b> Пн-Пт: 09:00-19:00</p>
+                    <p><b>График работы:</b> Пн-Пт: 10:00-19:00</p>
                 </div>
             </div>
             <div class="contacts__map contacts__map--cp js-map glide__slide">
-                <div class="contacts__block js-contacts-block">
-                    <img src="/icon/cross.svg" alt="" class="contacts__close js-contacts-close">
-                    <div class="contacts__item">
-                        <span class="contacts__subtitle">Телефон: +7 (8612) 982-446</span>
-                    </div>
+                 <div class="contacts__map-ym">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abd7b3ba3b127275e361bf3c43a550eeba8aee78fdb4604550533d22e850d6f54&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="contacts__map-info">
+                    <h3>Краснодар</h3>
+                    <p><b>Адрес:</b> г. Краснодар, ул. 40-летия Победы, 20/1, офис офис 506</p>
+                    <p><b>Телефон:</b> +7 (8612) 982-446</p>
                 </div>
             </div>
         </div>

@@ -31,10 +31,10 @@
     <div class="js-map-slider contacts__slider glide__track" data-glide-el="track">
         <div class="contacts__wrapper glide__slides">
             <div class="contacts__map js-map glide__slide">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb756ae2cf017a15af3e6f4cce84c04b3c3ed1531f5388794f08d27ecdab2d7f&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false;baloon=true;"></script>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aeb756ae2cf017a15af3e6f4cce84c04b3c3ed1531f5388794f08d27ecdab2d7f&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
             <div class="contacts__map js-map glide__slide">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A239c24f62b0f7f593773890c9cfc1af5d5556169f03455213e1b5d9c20596953&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false"></script>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A074046df22488f831937d6857e82f848e016b15bfd50f61f29474cd1e81034f6&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
             <div class="contacts__map js-map glide__slide">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A78bfdc45b898e27e3d293878990b3bc6e88e86c6c7c85605f758869a5f7253d4&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false"></script>
