@@ -46,9 +46,6 @@ filterItem.forEach(filter => {
   filter.addEventListener('click', (event) => {
     if (event.target.classList.contains('sale__filter-caption')) {
       filter.classList.toggle('sale__filter-subtitle_active');
-      if( window.innerWidth > 767 ) {
-        document.querySelector('.sale').style.height = document.querySelector('.sale__filter').offsetHeight + 260 + 'px';
-      }
     }
   });
 });
