@@ -36,7 +36,6 @@
                 <div class="header__callback">
                     <ul class="header-contacts">
                         <li class="header-contacts__phone js-city-show city_moscow">
-                            <a href="tel:+74956262555" class="header-contacts__tel">+7 495 62-62-555</a><br>
                             <a href="tel:+74956600098" class="header-contacts__tel">+7 495 660-00-98</a>
                             <p class="header-contacts__city js-open-modal" data-modal="choose-city">Москва</p>
                         </li>
@@ -60,9 +59,9 @@
                             <a href="tel:+78435671911" class="header-contacts__tel">+7 (843) 567-19-11</a>
                             <p class="header-contacts__city js-open-modal" data-modal="choose-city">Казань</p>
                         </li>
-                        <li class="header-contacts__phone js-city-show city_samara hidden">
-                            <a href="tel:+78463790582" class="header-contacts__tel">+7 (8463) 790-582</a>
-                            <p class="header-contacts__city js-open-modal" data-modal="choose-city">Самара</p>
+                        <li class="header-contacts__phone js-city-show city_ekaterinburg hidden">
+                            <a href="tel:+73433792092" class="header-contacts__tel">+7 (343) 379-20-92</a>
+                            <p class="header-contacts__city js-open-modal" data-modal="choose-city">Екатеринбург</p>
                         </li>
                         <li class="header-contacts__phone js-city-show city_krasnodar hidden">
                             <a href="tel:+78612982446" class="header-contacts__tel">+7 (8612) 982-446</a>
@@ -80,7 +79,7 @@
         <a class="header__location js-open-modal js-city-show city_ryazan hidden" data-modal="choose-city">Рязань</a>
         <a class="header__location js-open-modal js-city-show city_voronezh hidden" data-modal="choose-city">Воронеж</a>
         <a class="header__location js-open-modal js-city-show city_kazan hidden" data-modal="choose-city">Казань</a>
-        <a class="header__location js-open-modal js-city-show city_samara hidden" data-modal="choose-city">Самара</a>
+        <a class="header__location js-open-modal js-city-show city_ekaterinburg hidden" data-modal="choose-city">Екатеринбург</a>
         <a class="header__location js-open-modal js-city-show city_krasnodar hidden" data-modal="choose-city">Краснодар</a>
         <a class="header__location__city-option js-open-modal" data-modal="choose-city">Выбрать город</a>
         <div class="header__discount">

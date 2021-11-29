@@ -1,6 +1,6 @@
 .partners {
-    margin-top: 64px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     height: auto;
 
     .swiper-wrapper {
@@ -39,7 +39,7 @@
 }
 @media screen and (min-width: 768px) {
     .partners {
-        margin: 80px 20px 70px;
+        margin: 30px 20px 20px;
         &--affiliate {
             margin: 30px auto;
         }
@@ -55,7 +55,7 @@
 @media screen and (min-width: 1440px) {
     .partners {
         width: 1326px;
-        margin: 80px auto 125px;
+        margin: 0 auto;
         position: relative;
         height: 100px;
 

@@ -48,7 +48,7 @@
         background: #F2CB4D;
         position: absolute;
         left: 0;
-        top: 0;
+        top: -5px;
         width: 30px;
         height: 30px;
         border-radius: 50%;
@@ -89,7 +89,7 @@
 
         &__line {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
 
             .blue-info {
                 width: 30%;
@@ -109,6 +109,16 @@
 
         &__panel {
 
+        }
+
+        &__button {
+            text-align: center;
+        }
+
+        &__btn {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
         }
     }
 }
