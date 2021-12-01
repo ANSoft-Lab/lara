@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-//use App\Http\Requests\VacancyUpdateRequest;
+use App\Http\Requests\VacancyUpdateRequest;
 use App\Models\Vacancy;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
@@ -49,11 +49,6 @@ class VacancyCrudController extends CrudController
             'name' => 'name',
             'label' => trans('backpack::base.vacancies.name'),
         ]);
-
-        CRUD::addColumn([
-            'name' => 'slug',
-            'label' => trans('backpack::base.vacancies.slug'),
-        ]);
         CRUD::addColumn([
             'name' => 'show_order',
             'label' => trans('backpack::base.vacancies.show_order'),
@@ -66,21 +61,24 @@ class VacancyCrudController extends CrudController
      * @see https://backpackforlaravel.com/docs/crud-operation-create
      * @return void
      */
-    protected function setupCreateOperation()
+    protected function setupCreateOperation($update = false)
     {
-        // TO DO: валидация вакансии
-        //CRUD::setValidation(VacancyUpdateRequest::class);
+        CRUD::setValidation(VacancyUpdateRequest::class);
 
         CRUD::addField([
             'name' => 'name',
             'label' => trans('backpack::base.vacancies.name'),
             'allows_null' => false,
         ]);
-        CRUD::addField([
-            'name' => 'slug',
-            'label' => trans('backpack::base.vacancies.slug'),
-            'allows_null' => false,
-        ]);
+        if(! $update) {
+            CRUD::addField([
+                'name' => 'slug',
+                'label' => trans('backpack::base.vacancies.slug'),
+                'type' => 'hidden',
+                'value' => 'vacancy_' . date('YmdHis'),
+                'allows_null' => false,
+            ]);
+        }
         CRUD::addField([
             'name' => 'salary',
             'label' => trans('backpack::base.vacancies.salary'),
@@ -115,11 +113,23 @@ class VacancyCrudController extends CrudController
             'label' => trans('backpack::base.vacancies.category'),
             'type' => 'relationship',
         ]);
-        CRUD::addField([
-            'name' => 'show_order',
-            'label' => trans('backpack::base.vacancies.show_order'),
-            'type' => 'number',
-        ]);
+
+        if(! $update) {
+            CRUD::addField([
+                'name' => 'show_order',
+                'label' => trans('backpack::base.vacancies.show_order'),
+                'type' => 'number',
+                'value' => 99,
+                'allows_null' => false,
+            ]);
+        } else {
+            CRUD::addField([
+                'name' => 'show_order',
+                'label' => trans('backpack::base.vacancies.show_order'),
+                'type' => 'number',
+                'allows_null' => false,
+            ]);
+        }
     }
 
     /**
@@ -130,6 +140,6 @@ class VacancyCrudController extends CrudController
      */
     protected function setupUpdateOperation()
     {
-        $this->setupCreateOperation();
+        $this->setupCreateOperation(true);
     }
 }
