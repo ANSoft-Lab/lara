@@ -4,7 +4,8 @@
         :class="{
             'customInput--error': error,
             'customInput--focused': inputIsFocused,
-            'customInput--filled': value.length
+            'customInput--filled': value.length,
+            'customInput--inactive': !active
         }"
         v-click-outside="() => { inputIsFocused = false }"
     >
@@ -20,6 +21,7 @@
             <input
                 :value="value"
                 :type="inputType"
+                :readonly="!active"
                 class="customInput_field"
                 @input="handleInput"
                 @focus="inputIsFocused = true"
@@ -59,6 +61,10 @@
             inputOptions: {
                 type: Object,
                 default: () => ({})
+            },
+            active: {
+                type: Boolean,
+                default: true
             }
         },
         data: () => ({
@@ -78,8 +84,10 @@
                 this.$emit('input', e.target.value)
             },
             handleBlur () {
-                this.inputIsFocused = false
-                if (this.validation) this.$emit('input', '' + this.validation(this.value))
+                if (this.active) {
+                    this.inputIsFocused = false
+                    if (this.validation) this.$emit('input', '' + this.validation(this.value))
+                }
             }
         }
     }
@@ -96,6 +104,28 @@
             }
             .customInput_icon {
                 opacity: 1;
+            }
+        }
+        &--inactive {
+            .customInput {
+                &_body {
+                    border-bottom: 1px solid #D3D2D2 !important;
+                }
+                &_value {
+                    opacity: 1 !important;
+                    transform: translateY(-50%) !important;
+                    &_title {
+                        color: #D3D2D2 !important;
+                    }
+                }
+                &_icon {
+                    opacity: 1 !important;
+                    svg {
+                        path {
+                            fill: #D3D2D2 !important;
+                        }
+                    }
+                }
             }
         }
         &--error {
