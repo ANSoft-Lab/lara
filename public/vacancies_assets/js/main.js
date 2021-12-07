@@ -1,20 +1,5 @@
 const headerCall = document.querySelectorAll('.callback');
-const modalCallback = document.querySelector('.vacancy-modal_callback');
-const modalCallbackClose = document.querySelector('.vacancy-modal_callback .vacancy-modal__btn-close');
 const modalGallery = document.querySelector('.vacancy-modal-gallery');
-
-headerCall.forEach(item => {
-    item.addEventListener('click', () => {
-        modalCallback.style.display = 'flex';
-    });
-});
-
-if(modalCallbackClose) {
-  modalCallbackClose.addEventListener('click', () => {
-      modalCallback.style.display = 'none';
-  });
-}
-
 const galleryImages = document.querySelectorAll('.vc-slider__item img');
 
 galleryImages.forEach(image => {

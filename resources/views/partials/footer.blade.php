@@ -1,27 +1,23 @@
-<footer class="gray-bg">
-    <div class="footer">
-                <a href="/" class="footer__logo">
-                    <img src="/icon/logo.svg" alt="finist">
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__left">
+                <a href="#" class="footer__logo">
+                    <img src="/new/images/logo.png" alt="logo" />
                 </a>
-        <div class="footer__sections">
-            <div class="footer__top">
-                <div class="footer__logo">&nbsp;</div>
+
+                <a class="footer__vacancies" href="/job/"><span>Вакансии</span></a>
+            </div>
+
+            <div class="footer__middle">
                 @foreach (App\Models\MenuItem::getTree('bottom') as $item)
-                    <div class="footer__list-wrap">
-                        @if($item->name === 'Дополнительно')
-                            <p class="footer__subtitle" hidden>
-                                {{ $item->name }}
-                            </p>
-                        @else
-                            <p class="footer__subtitle">
-                                <a href="{{ $item->url() }}">{{ $item->name }}</a>
-                            </p>
-                        @endif
+                    <div class="footer__middle-box">
+                        <div class="footer__middle-title">{{ $item->name }}</div>
                         @if ($item->children->count() > 0)
-                            <ul class="footer__list">
+                            <ul class="footer__middle-list">
                                 @foreach ($item->children as $child)
-                                    <li class="footer__list-item">
-                                        <a href="{{ $child->url() }}" class="footer__link">
+                                    <li class="footer__middle-item">
+                                        <a href="{{ $child->url() }}">
                                             {{ $child->name }}
                                         </a>
                                     </li>
@@ -31,87 +27,111 @@
                     </div>
                 @endforeach
             </div>
-            <div class="footer__mid">
-                <ul class="footer__phone-list">
-                    <li class="footer__phone-item js-city-show city_moscow">
-                        <a href="tel:+74956600098" class="footer__tel">+7 495 660-00-98</a>
-                        <p class="footer__city js-open-modal" data-modal="choose-city">
-                            Москва
-                        </p>
-                    </li>
-                    <li class="footer__phone-item js-city-show city_spb hidden">
-                        <a href="tel:+78124494325" class="footer__tel">+7 812 449-43-25</a>
-                        <p class="footer__city js-open-modal" data-modal="choose-city">
-                            Санкт-Петербург
-                        </p>
-                    </li>
-                    <li class="footer__phone-item js-city-show city_nn hidden">
-                        <a href="tel:+78312809697" class="footer__tel">+7 831 280-96-97</a>
-                        <p class="footer__city js-open-modal" data-modal="choose-city">
-                            Нижний Новгород
-                        </p>
-                    </li>
-                    <li class="footer__phone-item js-city-show city_ryazan hidden">
-                        <a href="tel:+74912392016" class="footer__tel">+7 (4912) 392-016</a>
-                        <p class="footer__city js-open-modal" data-modal="choose-city">
-                            Рязань
-                        </p>
-                    </li>
-                    <li class="footer__phone-item js-city-show city_voronezh hidden">
-                        <a href="tel:+74732067297" class="footer__tel">+7 (473) 206-72-97</a>
-                        <p class="footer__city js-open-modal" data-modal="choose-city">Воронеж</p>
-                    </li>
-                    <li class="footer__phone-item js-city-show city_kazan hidden">
-                        <a href="tel:+78435671911" class="footer__tel">+7 (843) 567-19-11</a>
-                        <p class="footer__city js-open-modal" data-modal="choose-city">Казань</p>
-                    </li>
-                    <li class="footer__phone-item js-city-show city_samara hidden">
-                        <a href="tel:+78463790582" class="footer__tel">+7 (8463) 790-582</a>
-                        <p class="footer__city js-open-modal" data-modal="choose-city">Самара</p>
-                    </li>
-                    <li class="footer__phone-item js-city-show city_krasnodar hidden">
-                        <a href="tel:+78612982446" class="footer__tel">+7 (8612) 982-446</a>
-                        <p class="footer__city js-open-modal" data-modal="choose-city">Краснодар</p>
-                    </li>
-                    <li class="footer__phone-item">
-                        <a href="tel:+74956602186" class="footer__tel">+7 495 660-21-86</a>
-                        <p class="footer__city">
-                            для банков (по вопросам ипотечного&nbsp;кредитования)
-                        </p>
-                    </li>
-                </ul>
-                <a href="/job/" class="footer__vacancies">Вакансии</a>
-            </div>
-        </div>
-        <div style="display: flex; justify-content: center">
-            <div style="width: 350px">
-                @include('blockcrud.modals.feedback', ['modal_title' => 'Заказать обратный звонок', 'link' => false, 'btn_class' => 'modal__btn'])
+
+            <div class="footer__right">
+                <div class="footer__social">
+                    <a class="footer__social-link footer__social-link_facebook" href="https://www.facebook.com/finist.ru"></a>
+                    <a class="footer__social-link footer__social-link_vkontakte" href="https://vk.com/gkfinist"></a>
+                    <a class="footer__social-link footer__social-link_instagram" href="https://instagram.com/gk__finist?utm_medium=copy_link"></a>
+                    <a class="footer__social-link footer__social-link_whatsapp" href="https://wa.me/+79156257342"></a>
+                </div>
+
+                <div class="footer__contacts">
+                    <div class="footer__contacts-item">
+                        <a class="footer__contacts-link" href="tel:84956602186">+7 495 660-21-86</a>
+                        <p class="footer__contacts-text">Для банков (по вопросам ипотечного кредитования)</p>
+                    </div>
+
+                    <div class="footer__contacts-item js-city-show city_moscow">
+                        <a class="footer__contacts-link" class="footer__tel" href="tel:84956600098">+7 495 660-00-98</a>
+                        <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Москва</p>
+                    </div>
+                    <div class="footer__contacts-item js-city-show city_spb hidden">
+                        <a class="footer__contacts-link" class="footer__tel" href="tel:+78124494325">+7 812 449-43-25</a>
+                        <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Санкт-Петербург</p>
+                    </div>
+                    <div class="footer__contacts-item js-city-show city_nn hidden">
+                        <a class="footer__contacts-link" class="footer__tel" href="tel:+78312809697">+7 831 280-96-97</a>
+                        <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Нижний Новгород</p>
+                    </div>
+                    <div class="footer__contacts-item js-city-show city_ryazan hidden">
+                        <a class="footer__contacts-link" class="footer__tel" href="tel:+74912392016">+7 (4912) 392-016</a>
+                        <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Рязань</p>
+                    </div>
+                    <div class="footer__contacts-item js-city-show city_voronezh hidden">
+                        <a class="footer__contacts-link" class="footer__tel" href="tel:+74732067297">+7 (473) 206-72-97</a>
+                        <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Воронеж</p>
+                    </div>
+                    <div class="footer__contacts-item js-city-show city_kazan hidden">
+                        <a class="footer__contacts-link" class="footer__tel" href="tel:+78435671911">+7 (843) 567-19-11</a>
+                        <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Казань</p>
+                    </div>
+                    <div class="footer__contacts-item js-city-show city_samara hidden">
+                        <a class="footer__contacts-link" class="footer__tel" href="tel:+78463790582">+7 (8463) 790-582</a>
+                        <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Самара</p>
+                    </div>
+                    <div class="footer__contacts-item js-city-show city_krasnodar hidden">
+                        <a class="footer__contacts-link" class="footer__tel" href="tel:+78612982446">+7 (8612) 982-446</a>
+                        <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Краснодар</p>
+                    </div>
+                </div>
+
+                @include('blockcrud.modals.feedback', ['modal_title' => 'Обратный звонок', 'link' => false, 'btn_class' => 'footer__right-btn callback modal__btn'])
             </div>
         </div>
         <div class="footer__bottom">
-            <div class="footer__btn-wrap">
+            <a class="footer__bottom-link" href="#"></a>
+            <div class="footer__bottom-text">(С) 2003 — 2020 «Финист»</div>
+            <div class="footer__bottom-text">
+                Сайт защищен reCAPTCHA с применением Политики конфиденциальности и Условий использования от Google.
             </div>
-            <ul class="footer__socials">
-                <li class="footer__social-icon">
-                    <a href="https://www.facebook.com/finist.ru" class="footer__social-link">
-                        <img src="/icon/socials/fb.svg" alt="facebook">
-                    </a>
-                </li>
-                <li class="footer__social-icon">
-                    <a href="https://vk.com/gkfinist" class="footer__social-link">
-                        <img src="/icon/socials/vk.svg" alt="vkontakte">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer__copyright">
-            <p class="footer__disclaimer">
-                Сайт защищён reCAPTCHA с применением Политики конфиденциальности и Условий использования от Google.
-            </p>
-            <p class="footer__dates">
-                © 2003 – {{now()->year}} «Финист»
-            </p>
             <button class="footer__scroll-top js-scroll-top"></button>
         </div>
     </div>
 </footer>
+
+{{--
+<div class="modal modal_callback" style="display: none">
+    <div class="modal__window">
+        <div class="modal__wrap">
+            <button class="modal__btn-close"></button>
+            <div class="modal__title">Проконсультроваться с нашим специалистом</div>
+            <form class="modal__form" action="{{ route('feedback_send', [], false) }}" method="POST">
+                @csrf
+                <input class="modal__input" name="name" type="text" placeholder="Имя" required>
+                <input class="modal__input" name="phone" type="text" placeholder="+7 (___) ___-__-__" required>
+                <input type="hidden" name="required[]" value="phone">
+                <textarea
+                        class="modal__textarea"
+                        name="message"
+                        placeholder="Комментарий (не обязательно)"
+                        id="message"
+                ></textarea>
+                <div class="modal__checkbox">
+                    <input id="return" type="checkbox" name='agree' required/>
+                    <label for="return"> Согласен на обработку персональных данных </label>
+                </div>
+
+                <button class="modal__btn">Отправить</button>
+                <button class="modal__btn-mobile callback">Стать партнером</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal" style="display: none">
+    <div class="modal__window modal__window_box-2">
+        <div class="modal__wrap">
+            <div class="modal__image">
+                <img src="/new/images/modal-box-2.png" alt="image" />
+            </div>
+            <div class="modal__title">Заявка отправлена</div>
+            <div class="modal__text">
+                Мы рады, что вы проявили интерес к партнерской программе. В ближайшее время мы свяжемся с вами!
+            </div>
+
+            <button class="modal__btn-close">Закрыть</button>
+        </div>
+    </div>
+</div>
+--}}
