@@ -80,8 +80,6 @@
                         </p>
                     </li>
                 </ul>
-                {{--<a href="{{ config('app.old_url') }}/kontakty" class="footer__callback">Обратный звонок</a>--}}
-{{--                @include('blockcrud.modals.feedback', ['modal_title' => 'Обратный звонок', 'btn_class' => 'footer__callback', 'link' => false])--}}
                 <a href="/job/" class="footer__vacancies">Вакансии</a>
             </div>
         </div>

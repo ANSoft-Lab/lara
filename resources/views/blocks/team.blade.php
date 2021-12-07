@@ -22,7 +22,7 @@
 				<div class="sale__filter-subtitle">
 					<!-- sale__filter-subtitle_active -->
 					@forelse($cities->where('employees_count', '>', 0) as $city)
-						<div class="sale__filter-caption sale__filter-caption_item-1 js-filter-item js-filter-hide filter__active__placeholder" data-type="city" data-city="city_{{ $city->id }}">
+						<div class="sale__filter-caption sale__filter-caption_item-1 js-filter-item js-filter-hide filter__active__placeholder" data-city-name="" data-type="city" data-city="city_{{ $city->id }}">
 							{{ $city->name }}
 						</div>
 					@empty
@@ -31,7 +31,7 @@
 					<ul class="sale__filter-list">
 						@forelse($cities->where('employees_count', '>', 0) as $city)
 
-							<li class="sale__filter-item{{ $loop->first ? ' js-active_filter' : '' }}" data-type="city" id="city_{{ $city->id }}">{{ $city->name }}<span>{{ $city->employees_count }}</span></li>
+							<li class="sale__filter-item" data-city-name="{{ $city->name }}" data-type="city" id="city_{{ $city->id }}">{{ $city->name }}<span>{{ $city->employees_count }}</span></li>
 						@empty
 
 						@endforelse
@@ -50,7 +50,7 @@
 					<div class="sale__filter-caption sale__filter-caption_item-2">Отделы</div>
 					<ul class="sale__filter-list">
 						@forelse($departments->where('employees_count', '>', 0) as $department)
-							<li class="sale__filter-item{{ $loop->first ? ' js-active_filter' : '' }}" data-type="category" id="category_{{ $department->id }}">{{ $department->name }}<span>{{ $department->employees_count }}</span></li>
+							<li class="sale__filter-item" data-type="category" id="category_{{ $department->id }}">{{ $department->name }}<span>{{ $department->employees_count }}</span></li>
 						@empty
 
 						@endforelse
