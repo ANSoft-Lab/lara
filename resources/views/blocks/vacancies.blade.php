@@ -217,7 +217,7 @@
     	<div class="sale__inner">
 			<div class="sale__title ">
 				@forelse($vacancy_categories->where('vacancies_count', '>', 0) as $vacancy_category)
-					<div class="js-filter-item js-filter-hide sale__title__part" data-type="category" data-category="category_{{ $vacancy_category->id }}">{{ $vacancy_category->name }}<span>{{ $vacancy_category->vacancies_count }}</span></div>
+					<div class="js-filter-item js-filter-hide sale__title__part" data-type="category" data-category="category_{{ $vacancy_category->id }}">{{ $vacancy_category->name }}</div>
 				@empty
 
 				@endforelse
