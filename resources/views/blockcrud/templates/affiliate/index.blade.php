@@ -695,10 +695,11 @@
 
             <div class="footer__right">
                 <div class="footer__social">
-                    <a class="footer__social-link footer__social-link_facebook" href="https://www.facebook.com/finist.ru"></a>
+                    <a class="footer__social-link footer__social-link_facebook" href="https://www.facebook.com/gkfinist"></a>
                     <a class="footer__social-link footer__social-link_vkontakte" href="https://vk.com/gkfinist"></a>
                     <a class="footer__social-link footer__social-link_instagram" href="https://instagram.com/gk__finist?utm_medium=copy_link"></a>
                     <a class="footer__social-link footer__social-link_whatsapp" href="https://wa.me/+79156257342"></a>
+                    <a class="footer__social-link footer__social-link_telegram" href="https://t.me/spfinist"></a>
                 </div>
 
                 <div class="footer__contacts">
