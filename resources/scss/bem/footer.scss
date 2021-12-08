@@ -179,6 +179,16 @@
     background-image: url(../icons/footer-facebook-hover.svg);
 }
 
+.footer__social-link_telegram {
+    min-width: 21px;
+    height: 21px;
+    background-image: url(../icons/tg-logo.png);
+}
+
+.footer__social-link_telegram:hover {
+    background-image: url(../icons/tg-logo.png);
+}
+
 .footer__social-link_vkontakte {
     min-width: 28px;
     height: 17px;
