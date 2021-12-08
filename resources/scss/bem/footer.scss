@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    src: local(""), url("../fonts/Roboto-Light.eot") format("embedded-opentype"),
+        url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff"),
+        url("../fonts/Roboto-Light.ttf") format("truetype");
+}
+
 .footer {
     margin-top: 42px;
     padding-top: 100px;
@@ -5,6 +14,43 @@
     background-color: #fff;
     -webkit-box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1);
     box-shadow: 0 4px 100px rgba(0, 0, 0, 0.1);
+
+    .container {
+        max-width: 1326px;
+        margin: 0 auto;
+    }
+
+    &__scroll-top {
+        position: relative;
+        width: 47px;
+        height: 47px;
+        border: none;
+        border-radius: 50%;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        background: #F2CB4D;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+
+        &:focus {
+            outline: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            left: 14px;
+            top: 16px;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 11px solid #272727;
+        }
+    }
 }
 
 .footer__top {
@@ -320,6 +366,11 @@
 @media (max-width: 1469px) {
     .footer {
         padding-bottom: 60px;
+        
+        .container {
+            max-width: 1200px;
+            padding: 0 15px;
+        }
     }
 }
 
@@ -494,5 +545,27 @@
     }
     .footer__bottom-text:not(:last-child) {
         margin-bottom: 23px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        &__scroll-top {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .footer {
+        &__scroll-top {
+            position: fixed;
+            right: 45px;
+            top: auto;
+            bottom: 65px;
+        }
     }
 }
