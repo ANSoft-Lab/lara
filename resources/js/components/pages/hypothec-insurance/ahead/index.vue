@@ -9,14 +9,22 @@
             </ul>
         </section>
         <ahead-calculator />
+        <hypothec-advantages />
+        <hypothec-f-a-q />
     </div>
 </template>
 
 <script>
 import AheadCalculator from "./calculator";
+import HypothecAdvantages from "./advantages/index";
+import HypothecFAQ from "./faq/index";
 export default {
     name: "hypothecInsuranceAhead",
-    components: { AheadCalculator }
+    components: {
+        HypothecFAQ,
+        HypothecAdvantages,
+        AheadCalculator
+    }
 }
 </script>
 
@@ -24,7 +32,7 @@ export default {
     .ahead {
         padding: 125px 0 0;
         background: #C4C4C4 url('~@/img/hypothec/ahead.jpg') no-repeat top center;
-        h2 {
+        ::v-deep h2 {
             display: block;
             font-size: 55px;
             line-height: 98.8%;
