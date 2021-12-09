@@ -82,6 +82,10 @@ document.querySelector('.sale__filter-link').addEventListener('click', (event) =
 jQuery(function($){
 
   $(document).ready(function() {
+    $('.sticker').stick_in_parent({
+      'offset_top' : 20,
+    });
+
     function switchFilter() {
       $('.js-filter-item').show();
       $('.search-hide').removeClass('search-hide');

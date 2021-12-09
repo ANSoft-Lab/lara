@@ -9,7 +9,11 @@
         </div>
     </div>
     
-    <div class="sale__bottom">
+    <div class="sale__bottom sticker-parent">
+        <div class="sale__bottom-inner sticker">
+            <a href="#vacancy_form_{{ $vacancy->id }}" class="sale__bottom-btn">Откликнуться</a>
+        </div>
+        
         <div class="sale__bottom-left">
         @if(! empty($vacancy->duties))
             <div class="sale__bottom-box sale__bottom-box_item-2">
@@ -39,10 +43,6 @@
         @endif
         </div>
 
-        <div class="sale__bottom-inner">
-        <a href="#vacancy_form_{{ $vacancy->id }}" class="sale__bottom-btn">Откликнуться</a>
-        </div>
-        
         <section class="response" id="form-{{ $vacancy->id }}">
         <div class="container">
             <div class="response__wrap">
