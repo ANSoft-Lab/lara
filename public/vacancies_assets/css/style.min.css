@@ -1441,9 +1441,6 @@ button {
 .sale__bottom-box {
   margin-bottom: 38px;
 }
-.sale__bottom-box:first-child {
-  padding-right: 250px;
-}
 .sale__bottom-box_item-2 p {
   margin-top: 15px;
 }
@@ -1786,6 +1783,7 @@ button {
   background-color: #f5f6f7;
   padding-top: 70px;
   padding-bottom: 100px;
+  width: 100%;
 }
 .response__wrap {
   max-width: 435px;
@@ -2091,6 +2089,11 @@ button {
   __bottom {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) {
+  .sale__bottom-box:first-child {
+    padding-right: 250px;
   }
 }
 @media (max-width: 767px) {
