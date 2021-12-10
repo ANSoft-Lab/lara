@@ -215,6 +215,22 @@ class Finist {
         this.showCity();
         this.closeModal();
 
+        // Меняем город в фильтре вакансий и коллектива
+        if($('.js-filter-item').length) {
+            const cityName = form.find('[name=city]:checked').next('label').text();
+
+            if(cityName && $('.sale__filter-item[data-type=city]')) {
+                $('.sale__filter-item[data-type=city]').each(function() {
+
+                    if($(this).attr('data-city-name') && $(this).attr('data-city-name').toLowerCase() == cityName.toLowerCase()) {
+                        $(this).click();
+                        return false;
+                    }
+                });
+            }
+            
+        }
+
         return false;
     }
 
