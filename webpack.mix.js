@@ -11,6 +11,14 @@ const mix = require('laravel-mix');
  |
  */
 
+mix.webpackConfig({
+    resolve: {
+        alias: {
+            '@':  path.resolve(__dirname, 'resources/')
+        }
+    }
+});
+
 mix.js('resources/js/main.js', 'public/js')
      .js('resources/js/app.js', 'public/js')
 
@@ -21,7 +29,7 @@ mix.js('resources/js/main.js', 'public/js')
         'resources/js/affiliate/simplebar.min.js',
         'resources/js/affiliate/simple_js.js'
      ], 'public/js/affiliate-vendor.js')
- 
+
     .sass('resources/scss/style.scss', 'public/css')
         .options({
             postCss: [

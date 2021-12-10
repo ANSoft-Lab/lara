@@ -1,4 +1,5 @@
-
+import Vue from 'vue'
+import vClickOutside from 'v-click-outside'
 require('./bootstrap');
 window.$ = window.jQuery = require('jquery');
 
@@ -6,6 +7,7 @@ import Cookies from 'js-cookie';
 import Glide from '@glidejs/glide';
 import Swiper from 'swiper/bundle';
 import Inputmask from "inputmask";
+import HypothecInsurance from "./views/hypothec-insurance";
 
 class Finist {
     constructor() {
@@ -89,7 +91,7 @@ class Finist {
 
         for (let i = 0; i < th.dropdownList.length; ++i) {
             let item = th.dropdownList[i];
-        
+
             item.addEventListener('click', function (evt) {
                 item.classList.toggle('m-visible');
                 item.closest('.js-list-item').classList.toggle('m-visible');
@@ -120,7 +122,7 @@ class Finist {
             if(obj.name === 'phone') {
                 objValue = objValue.replace(/_/g, '');
             }
-            
+
             formData.append(obj.name, objValue);
         });
 
@@ -300,7 +302,7 @@ $(document).ready(function(){
 
     });
 
-   $('#ins_btn').click(function() {                                        
+   $('#ins_btn').click(function() {
        if($('input[name=ins]').filter(':checked').val() != undefined) {
         window.location.href = $('input[name=ins]').filter(':checked').val();
        }
@@ -331,3 +333,11 @@ $(document).ready(function(){
         },
   });
 });
+
+Vue.use(vClickOutside)
+
+if (document.getElementById('hypothec-insurance')) {
+    const hypothecInsureanceInstance = new Vue({
+        render: h => h(HypothecInsurance)
+    }).$mount('#hypothec-insurance')
+}
