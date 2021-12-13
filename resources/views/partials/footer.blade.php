@@ -44,36 +44,40 @@
                     </div>
 
                     <div class="footer__contacts-item js-city-show city_moscow">
-                        <a class="footer__contacts-link" class="footer__tel" href="tel:84956600098">+7 495 660-00-98</a>
+                        <a class="footer__contacts-link footer__tel" href="tel:84956600098">+7 495 660-00-98</a>
                         <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Москва</p>
                     </div>
                     <div class="footer__contacts-item js-city-show city_spb hidden">
-                        <a class="footer__contacts-link" class="footer__tel" href="tel:+78124494325">+7 812 449-43-25</a>
+                        <a class="footer__contacts-link footer__tel" href="tel:+78124494325">+7 812 449-43-25</a>
                         <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Санкт-Петербург</p>
                     </div>
                     <div class="footer__contacts-item js-city-show city_nn hidden">
-                        <a class="footer__contacts-link" class="footer__tel" href="tel:+78312809697">+7 831 280-96-97</a>
+                        <a class="footer__contacts-link footer__tel" href="tel:+78312809697">+7 831 280-96-97</a>
                         <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Нижний Новгород</p>
                     </div>
                     <div class="footer__contacts-item js-city-show city_ryazan hidden">
-                        <a class="footer__contacts-link" class="footer__tel" href="tel:+74912392016">+7 (4912) 392-016</a>
+                        <a class="footer__contacts-link footer__tel" href="tel:+74912392016">+7 (4912) 392-016</a>
                         <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Рязань</p>
                     </div>
                     <div class="footer__contacts-item js-city-show city_voronezh hidden">
-                        <a class="footer__contacts-link" class="footer__tel" href="tel:+74732067297">+7 (473) 206-72-97</a>
+                        <a class="footer__contacts-link footer__tel" href="tel:+74732067297">+7 (473) 206-72-97</a>
                         <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Воронеж</p>
                     </div>
                     <div class="footer__contacts-item js-city-show city_kazan hidden">
-                        <a class="footer__contacts-link" class="footer__tel" href="tel:+78435671911">+7 (843) 567-19-11</a>
+                        <a class="footer__contacts-link footer__tel" href="tel:+78435671911">+7 (843) 567-19-11</a>
                         <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Казань</p>
                     </div>
                     <div class="footer__contacts-item js-city-show city_samara hidden">
-                        <a class="footer__contacts-link" class="footer__tel" href="tel:+78463790582">+7 (8463) 790-582</a>
+                        <a class="footer__contacts-link footer__tel" href="tel:+78463790582">+7 (8463) 790-582</a>
                         <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Самара</p>
                     </div>
                     <div class="footer__contacts-item js-city-show city_krasnodar hidden">
-                        <a class="footer__contacts-link" class="footer__tel" href="tel:+78612982446">+7 (8612) 982-446</a>
+                        <a class="footer__contacts-link footer__tel" href="tel:+78612982446">+7 (8612) 982-446</a>
                         <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Краснодар</p>
+                    </div>
+                    <div class="footer__contacts-item js-city-show city_lipetsk hidden">
+                        <a class="footer__contacts-link footer__tel" href="tel:+74742200745">+7 (4742) 200-745</a>
+                        <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Липецк</p>
                     </div>
                 </div>
 

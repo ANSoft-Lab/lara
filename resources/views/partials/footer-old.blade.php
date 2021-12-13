@@ -73,6 +73,10 @@
                         <a href="tel:+78612982446" class="footer__tel">+7 (8612) 982-446</a>
                         <p class="footer__city js-open-modal" data-modal="choose-city">Краснодар</p>
                     </li>
+                    <li class="footer__phone-item js-city-show city_lipetsk hidden">
+                        <a href="tel:+74742200745" class="footer__tel">+7 (4742) 200-745</a>
+                        <p class="footer__city js-open-modal" data-modal="choose-city">Липецк</p>
+                    </li>
                     <li class="footer__phone-item">
                         <a href="tel:+74956602186" class="footer__tel">+7 495 660-21-86</a>
                         <p class="footer__city">

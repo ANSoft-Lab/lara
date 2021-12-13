@@ -71,6 +71,10 @@
                             <a href="tel:+78463790582" class="header-contacts__tel">+7 (8463) 790-582</a>
                             <p class="header-contacts__city js-open-modal" data-modal="choose-city">Самара</p>
                         </li>
+                        <li class="header-contacts__phone js-city-show city_lipetsk hidden">
+                            <a href="tel:+74742200745" class="header-contacts__tel">+7 (4742) 200-745</a>
+                            <p class="header-contacts__city js-open-modal" data-modal="choose-city">Липецк</p>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -86,6 +90,7 @@
         <a class="header__location js-open-modal js-city-show city_ekaterinburg hidden" data-modal="choose-city">Екатеринбург</a>
         <a class="header__location js-open-modal js-city-show city_krasnodar hidden" data-modal="choose-city">Краснодар</a>
         <a class="header__location js-open-modal js-city-show city_samara hidden" data-modal="choose-city">Самара</a>
+        <a class="header__location js-open-modal js-city-show city_lipetsk hidden" data-modal="choose-city">Липецк</a>
         <a class="header__location__city-option js-open-modal" data-modal="choose-city">Выбрать город</a>
         <div class="header__discount">
             @include('blockcrud.modals.feedback', ['modal_title' => 'Хочешь сэкономить до 50%? Спроси, как!', 'link' => true])

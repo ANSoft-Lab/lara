@@ -43,6 +43,10 @@
                 <input id="city-krasnodar" type="radio" name="city" value="krasnodar" class="modal__checkbox">
                 <label for="city-krasnodar" class="modal__label js-city">Краснодар</label>
             </div>
+            <div class="modal__group">
+                <input id="city-lipetsk" type="radio" name="city" value="lipetsk" class="modal__checkbox">
+                <label for="city-lipetsk" class="modal__label js-city">Липецк</label>
+            </div>
             <button type="button" class="modal__btn js_set_city">Выбрать</button>
         </form>
     </div>

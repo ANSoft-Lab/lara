@@ -25,6 +25,9 @@
             <li data-city="krasnodar" class="contacts__tab glide__bullet" data-glide-dir="=7">
                 краснодар
             </li>
+            <li data-city="lipetsk" class="contacts__tab glide__bullet" data-glide-dir="=8">
+                липецк
+            </li>
         </ul>
     </div>
     <div id="map-help" class="help">Кликните по метке для подробной информации.</div>
@@ -53,6 +56,9 @@
             </div>
             <div class="contacts__map js-map glide__slide">
                 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abd7b3ba3b127275e361bf3c43a550eeba8aee78fdb4604550533d22e850d6f54&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <div class="contacts__map js-map glide__slide">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9be70c79d84c4fc17023ac259b10d44754ea70a1c8b290d10990890642c363ec&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
         </div>
     </div>
