@@ -1,6 +1,6 @@
 @section('extra_styles')
 	<link rel="stylesheet" href="/vacancies_assets/css/fonts.css" />
-    <link rel="stylesheet" href="/vacancies_assets/css/style.min.css" />
+    <link rel="stylesheet" href="/vacancies_assets/css/style.min.css?ver=2.1" />
 @endsection
 
 <section class="vacancies-banner">
