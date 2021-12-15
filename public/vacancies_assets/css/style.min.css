@@ -336,7 +336,6 @@ button {
     line-height: 34px;
     text-align: left;
     margin-left: 0;
-    max-width: 220px;
     margin-bottom: 26px;
   }
   .work__list {
@@ -358,6 +357,7 @@ button {
     -ms-flex-align: start;
     align-items: start;
     max-width: 100%;
+    width: 100%;
   }
   .work__item:not(:last-child) {
     margin-bottom: 15px;
