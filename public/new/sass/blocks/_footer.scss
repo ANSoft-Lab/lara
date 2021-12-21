@@ -193,6 +193,16 @@
         background-image: url(../icons/footer-whatsapp-hover.svg);
       }
     }
+    
+    &_telegram {
+      min-width: 23px;
+      height: 23px;
+      background-image: url(../icons/tg-logo.png);
+
+      &:hover {
+        background-image: url(../icons/tg-logo.png);
+      }
+    }
   }
 
   &__contacts {

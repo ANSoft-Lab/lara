@@ -3131,6 +3131,16 @@ button {
   background-image: url(../icons/footer-whatsapp-hover.svg);
 }
 
+.footer__social-link_telegram {
+  min-width: 23px;
+  height: 23px;
+  background-image: url(../icons/tg-logo.png);
+}
+
+.footer__social-link_telegram:hover {
+  background-image: url(../icons/tg-logo.png);
+}
+
 .footer__contacts {
   max-width: 100%;
   width: 100%;
