@@ -58,7 +58,7 @@
                         {{ $item->name }}
                     </a>
                     @if ($item->children->count() > 0)
-                        <div class="menu__wrap m-hidden js_show_menu_{{ $item->id }}">
+                        <div class="menu__wrap mobile-hidden js_show_menu_{{ $item->id }}">
                             <ul class="menu__sublist">
                                 @foreach ($item->children as $child)
                                     <li class="menu__subitem">
