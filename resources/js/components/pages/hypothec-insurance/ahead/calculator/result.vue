@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <div class="col-6 calculator_result_firstBlock">
+        <div class="col-6 col-sm-12 calculator_result_firstBlock">
             <h2 class="calculator_form_title">Ваши данные</h2>
             <div class="calculator_result_chips">
                 <div class="calculator_result_chip">
@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-6 calculator_result_lastBlock">
+        <div class="col-6 col-sm-12 calculator_result_lastBlock">
             <h3 class="calculator_result_title">Результаты расчета</h3>
             <span class="calculator_result_subtitle">Стоимость полиса в страховых</span>
             <div class="calculator_result_items">
@@ -81,11 +81,15 @@
 </script>
 
 <style scoped lang="scss">
+    @import "~@/sass/mixins.scss";
     .calculator_result {
         &_chips {
             margin-top: 30px;
             display: flex;
             flex-wrap: wrap;
+            @include m(767) {
+                margin-top: 0;
+            }
         }
         &_chip {
             display: flex;
@@ -109,6 +113,9 @@
         }
         &_lastBlock {
             padding-bottom: 80px;
+            @include m(767) {
+                margin-top: 40px;
+            }
         }
         &_title {
             display: block;
@@ -119,6 +126,9 @@
             line-height: 29px;
             letter-spacing: 0.005em;
             color: #000000;
+            @include m(767) {
+                text-align: left;
+            }
         }
         &_subtitle {
             display: block;
@@ -127,17 +137,29 @@
             text-align: center;
             letter-spacing: -0.02em;
             color: rgba(#221E1F, 0.5);
+            @include m(767) {
+                text-align: left;
+            }
         }
         &_items {
             margin-top: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            @include m(767) {
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
         }
         &_item {
             display: flex;
             align-items: center;
             margin-top: 20px;
+            @include m(767) {
+                flex: 1 1 100%;
+                max-width: 100%;
+                min-width: 100%;
+            }
             &_img {
                 display: block;
                 width: auto;
@@ -159,6 +181,9 @@
                 line-height: 22px;
                 letter-spacing: -0.02em;
                 color: #221E1F;
+                @include m(767) {
+                    margin-left: auto;
+                }
             }
         }
     }

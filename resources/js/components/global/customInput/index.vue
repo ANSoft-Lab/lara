@@ -94,6 +94,7 @@
 </script>
 
 <style lang="scss" scoped>
+    @import "~@/sass/mixins.scss";
     .customInput {
         position: relative;
         user-select: none;
@@ -162,6 +163,9 @@
             height: 62px;
             border-bottom: 1px solid rgba(#221E1E, 0.3);
             cursor: pointer;
+            @include m(1299) {
+                height: 56px;
+            }
         }
         &_icon {
             width: 22px;
@@ -172,6 +176,10 @@
             justify-content: center;
             opacity: 0.2;
             transition: linear 0.2s;
+            @include m(1299) {
+                width: 19px;
+                height: 19px;
+            }
             svg {
                 display: block;
                 max-width: 100%;
@@ -194,6 +202,9 @@
                 line-height: 22px;
                 letter-spacing: -0.02em;
                 color: #221E1F;
+                @include m(1299) {
+                    font-size: 16px;
+                }
             }
         }
         &_field {

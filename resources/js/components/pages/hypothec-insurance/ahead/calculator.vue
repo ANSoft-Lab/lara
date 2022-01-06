@@ -152,19 +152,59 @@ export default {
     },
     mounted () {
         const partnersCarousel = new Swiper('#partnersCarousel .swiper-container', {
-            slidesPerView: 5,
+            slidesPerView: 4,
             speed: 500,
             loop: true,
+            spaceBetween: 25,
             autoplay: {
                 delay: 3000,
+            },
+            breakpoints: {
+                1300: {
+                    slidesPerView: 4,
+                    spaceBetween: 25
+                },
+                969: {
+                    slidesPerView: 7,
+                    spaceBetween: 10
+                },
+                479: {
+                    slidesPerView: 5,
+                    spaceBetween: 7
+                },
+                0: {
+                    slidesPerView: 2,
+                    spaceBetween: 7,
+                    centeredSlides: true
+                }
             }
         })
         const banksCarousel = new Swiper('#banksCarousel .swiper-container', {
-            slidesPerView: 5,
+            slidesPerView: 4,
             speed: 500,
             loop: true,
+            spaceBetween: 25,
             autoplay: {
                 delay: 3000,
+            },
+            breakpoints: {
+                1300: {
+                    slidesPerView: 4,
+                    spaceBetween: 25
+                },
+                969: {
+                    slidesPerView: 7,
+                    spaceBetween: 10
+                },
+                479: {
+                    slidesPerView: 5,
+                    spaceBetween: 7
+                },
+                0: {
+                    slidesPerView: 2,
+                    spaceBetween: 7,
+                    centeredSlides: true
+                }
             }
         })
     }
@@ -173,11 +213,21 @@ export default {
 
 <style lang="scss">
     @import '~@/scss/grid-base.scss';
+    @import '~@/sass/mixins.scss';
     .calculator {
         margin-top: 160px;
         padding-bottom: 105px;
         position: relative;
         z-index: 2;
+        @include m(1299) {
+            padding-bottom: 70px;
+        }
+        @include m(969) {
+            margin-top: 0;
+        }
+        @include m(767) {
+            padding-bottom: 0;
+        }
         &::before {
             content: '';
             display: block;
@@ -188,6 +238,9 @@ export default {
             right: 0;
             bottom: 0;
             background-color: #E5E5E5;
+            @include m(767) {
+                background-color: #fff;
+            }
         }
         &_form {
             position: relative;
@@ -198,6 +251,18 @@ export default {
             margin-bottom: 120px;
             z-index: 2;
             display: flex;
+            @include m(1299) {
+                padding: 40px 25px;
+            }
+            @include m(969) {
+                margin: 0 0 100px;
+            }
+            @include m(767) {
+                margin: 0 0 45px;
+            }
+            @include m(479) {
+                padding: 30px 0;
+            }
             &_title {
                 display: block;
                 font-size: 55px;
@@ -208,10 +273,24 @@ export default {
             }
             &_body {
                 min-height: 578px;
+                @include m(1299) {
+                    min-height: 500px;
+                }
             }
         }
         .mt-35 {
             margin-top: 35px;
+            @include m(1299) {
+                margin-top: 25px;
+            }
+            @include m(767) {
+                margin-top: 5px;
+            }
+        }
+        .mt-mob {
+            @include m(767) {
+                margin-top: 5px;
+            }
         }
         &_submit-btn {
             outline: none;
@@ -245,9 +324,17 @@ export default {
             letter-spacing: -0.02em;
             color: #221E1F;
             margin-bottom: 15px;
+            @include m(1299) {
+                br {
+                    display: none;
+                }
+            }
         }
         &_mainCol {
             max-width: 800px;
+            @include m(1299) {
+                max-width: 100%;
+            }
         }
         &_items {
             display: flex;
@@ -261,6 +348,11 @@ export default {
             flex: 1 1 50%;
             max-width: 50%;
             margin-bottom: 38px;
+            @include m(767) {
+                flex: 1 1 100%;
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
             &_title {
                 display: block;
                 margin-bottom: 8px;
@@ -277,6 +369,10 @@ export default {
                 letter-spacing: 0.005em;
                 color: #221E1F;
                 opacity: 0.7;
+                @include m(767) {
+                    font-size: 14px;
+                    line-height: 1.43;
+                }
             }
             &_list {
                 display: block;
@@ -312,10 +408,46 @@ export default {
             border-radius: 182px 0 0 182px;
             background-color: #C4C4C4;
             overflow: hidden;
+            @include m(1299) {
+                position: relative;
+                right: auto;
+                top: auto;
+                bottom: auto;
+                left: auto;
+                transform: none;
+                width: 100%;
+                max-width: 969px;
+                padding: 25px 15px;
+                margin: 0 auto;
+                height: 280px;
+                border-radius: 140px;
+            }
+            @include m(767) {
+                margin-top: 20px;
+                height: 220px;
+            }
+            @include m(479) {
+                height: 184px;
+                background: #C4C4C4;
+                border-radius: 43px;
+                margin: 20px auto 0;
+                width: calc(100% - 30px);
+            }
         }
         &_carousel {
             &-item {
                 margin-top: 40px;
+                @include m(1299) {
+                    margin-top: 30px;
+                }
+                @include m(767) {
+                    margin-top: 15px;
+                }
+                @include m(479) {
+                    &:first-of-type {
+                        margin-top: 0;
+                    }
+                }
             }
             &_title {
                 display: block;
@@ -325,6 +457,19 @@ export default {
                 letter-spacing: -0.01em;
                 color: #221E1F;
                 opacity: 0.8;
+                @include m(969) {
+                    margin-left: 55px;
+                }
+                @include m(479) {
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                }
+            }
+            &_img {
+                display: block;
+                width: 100%;
+                height: auto;
             }
         }
     }

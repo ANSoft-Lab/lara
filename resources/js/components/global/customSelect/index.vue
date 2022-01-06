@@ -72,6 +72,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import "~@/sass/mixins.scss";
     .customSelect {
         position: relative;
         z-index: 1;
@@ -109,6 +110,9 @@ export default {
             height: 62px;
             border-bottom: 1px solid rgba(#221E1E, 0.3);
             cursor: pointer;
+            @include m(1299) {
+                height: 56px;
+            }
         }
         &_values {
             position: absolute;
@@ -147,6 +151,10 @@ export default {
             justify-content: center;
             opacity: 0.2;
             transition: linear 0.2s;
+            @include m(1299) {
+                width: 19px;
+                height: 19px;
+            }
             svg {
                 display: block;
                 max-width: 100%;
@@ -165,6 +173,9 @@ export default {
                 line-height: 22px;
                 letter-spacing: -0.02em;
                 color: #221E1F;
+                @include m(1299) {
+                    font-size: 16px;
+                }
             }
             &_icon {
                 display: block;

@@ -46,6 +46,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import "~@/sass/mixins.scss";
     .customSwitch {
         margin-top: 8px;
         display: flex;
@@ -82,6 +83,10 @@ export default {
             color: #221E1F;
             transition: linear 0.2s;
             opacity: 0.2;
+            @include m(1299) {
+                font-size: 16px;
+                margin-left: 10px;
+            }
         }
         &_buttons-group {
             display: flex;
@@ -90,6 +95,10 @@ export default {
             border-radius: 5px;
             border: 1px solid rgba(#000, 0.1);
             height: 50px;
+            @include m(1299) {
+                margin-left: 10px;
+                height: 46px;
+            }
         }
         &_button {
             outline: none;
@@ -107,6 +116,11 @@ export default {
             border: none;
             background-color: transparent;
             transition: linear 0.2s;
+            @include m(1299) {
+                padding: 0 15px;
+                font-size: 16px;
+                line-height: 1.2;
+            }
             &--selected {
                 background-color: rgba(#F2F3F4, 0.8);
             }

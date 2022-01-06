@@ -91,9 +91,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import '~@/sass/mixins.scss';
     .faq {
         background: #F2F3F4;
         padding: 110px 0 170px;
+        @include m(1299) {
+            padding: 80px 0 70px;
+        }
+        @include m(767) {
+            padding: 40px 15px 30px;
+            h2 {
+                text-align: center;
+            }
+        }
         &_wrapper {
             max-width: 870px;
             margin: 0 auto;
@@ -108,6 +118,9 @@ export default {
         }
         &_item {
             margin-top: 22px;
+            @include m(767) {
+                margin-top: 15px;
+            }
             &_title {
                 display: flex;
                 user-select: none;
@@ -117,6 +130,15 @@ export default {
                     margin-top: 0.25em;
                     transition: linear 0.3s;
                     opacity: 0.2;
+                    @include m(969) {
+                        margin-right: 20px;
+                    }
+                    @include m(767) {
+                        flex: 1 1 18px;
+                        max-width: 18px;
+                        min-width: 18px;
+                        margin-right: 14px;
+                    }
                     &--active {
                         opacity: 1;
                         transform: rotate(45deg);
@@ -130,6 +152,14 @@ export default {
                     color: #221E1F;
                     transition: linear 0.3s;
                     padding: 0 7px;
+                    @include m(969) {
+                        font-size: 18px;
+                        line-height: 1.3;
+                    }
+                    @include m(767) {
+                        font-size: 15px;
+                        line-height: 1.33;
+                    }
                     &--active {
                         background: #F2CB4D;
                     }
@@ -143,6 +173,13 @@ export default {
                 color: #221E1F;
                 padding-left: 55px;
                 margin-top: 11px;
+                @include m(969) {
+                    line-height: 1.4;
+                }
+                @include m(767) {
+                    font-size: 14px;
+                    padding-left: 35px;
+                }
             }
         }
     }

@@ -14,6 +14,8 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss">
+    .footer__scroll-top {
+        z-index: 5;
+    }
 </style>
