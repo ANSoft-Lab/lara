@@ -1,0 +1,5 @@
+@mixin m($viewport) {
+    @media only screen and (max-width: $viewport + 0px) {
+        @content;
+    }
+}

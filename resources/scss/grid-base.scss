@@ -1,3 +1,5 @@
+@import "~@/sass/mixins.scss";
+
 .container {
     padding: 0 15px;
     width: 100%;
@@ -14,6 +16,34 @@
         @extend .col;
         flex: 1 1 $i / 12 * 100%;
         max-width: $i / 12 * 100%;
+    }
+    .col-lg-#{$i} {
+        @extend .col;
+        @include m(1599) {
+            flex: 1 1 $i / 12 * 100% !important;
+            max-width: $i / 12 * 100% !important;
+        }
+    }
+    .col-md-#{$i} {
+        @extend .col;
+        @include m(969) {
+            flex: 1 1 $i / 12 * 100% !important;
+            max-width: $i / 12 * 100% !important;
+        }
+    }
+    .col-sm-#{$i} {
+        @extend .col;
+        @include m(767) {
+            flex: 1 1 $i / 12 * 100% !important;
+            max-width: $i / 12 * 100% !important;
+        }
+    }
+    .col-xs-#{$i} {
+        @extend .col;
+        @include m(479) {
+            flex: 1 1 $i / 12 * 100% !important;
+            max-width: $i / 12 * 100% !important;
+        }
     }
 }
 

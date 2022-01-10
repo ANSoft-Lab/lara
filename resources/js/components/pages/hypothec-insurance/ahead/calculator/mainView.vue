@@ -1,11 +1,11 @@
 <template>
     <div class="row">
-        <div class="col-5">
+        <div class="col-lg-4 col-md-12 col-5">
             <h2 class="calculator_form_title">Рассчитайте стоимость</h2>
         </div>
-        <div class="col-7">
+        <div class="col-lg-8 col-md-12 col-7">
             <div class="row mt-35">
-                <div class="col-6">
+                <div class="col-6 col-sm-12">
                     <custom-select
                         v-model="formData.city.value"
                         :placeholder="'Город'"
@@ -19,7 +19,7 @@
                         </template>
                     </custom-select>
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-sm-12 mt-mob">
                     <custom-input
                         v-model="formData.age.value"
                         :placeholder="'Возраст'"
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="row mt-35">
-                <div class="col-6">
+                <div class="col-6 col-sm-12">
                     <custom-input
                         v-model="formData.bank.value"
                         :placeholder="'Банк'"
@@ -50,7 +50,7 @@
                         </template>
                     </custom-input>
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-sm-12 mt-mob">
                     <custom-switch
                         :label="'Пол'"
                         v-model="formData.sex.value"
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="row mt-35">
-                <div class="col-6">
+                <div class="col-6 col-sm-12">
                     <custom-input
                         v-model="formData.debtAmount.value"
                         :placeholder="'Сумма долга'"
@@ -80,7 +80,7 @@
                         </template>
                     </custom-input>
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-sm-12 mt-mob">
                     <custom-select
                         v-model="formData.risks.value"
                         :placeholder="'Покрыть риски'"
@@ -96,7 +96,7 @@
                 </div>
             </div>
             <div class="row mt-35">
-                <div class="col-6">
+                <div class="col-6 col-sm-12">
                     <custom-switch
                         :label="'Созаемщик'"
                         v-model="formData.haveCoBorrower.value"
@@ -110,7 +110,7 @@
                         </template>
                     </custom-switch>
                 </div>
-                <div class="col-6">
+                <div class="col-6 col-sm-12 mt-mob">
                     <custom-input
                         v-model="formData.coBorrowerPercent.value"
                         :placeholder="'Процент созаемщика'"

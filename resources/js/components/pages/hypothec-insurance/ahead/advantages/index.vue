@@ -72,18 +72,37 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import "~@/sass/mixins.scss";
     .advantages {
         padding: 160px 0 120px;
         background-color: #fff;
+        @include m(1299) {
+            padding: 100px 0 80px;
+        }
+        @include m(767) {
+            padding: 70px 0 20px;
+        }
         &_items {
             display: flex;
             //border-radius: 9px;
             // overflow: hidden;
+            @include m(767) {
+                flex-direction: column;
+                margin: 0 -15px;
+            }
         }
         &_item {
             padding: 65px 65px 70px;
             flex: 1 1 50%;
             max-width: 50%;
+            @include m(1299) {
+                padding: 40px 35px 30px;
+            }
+            @include m(767) {
+                flex: 1 1 100%;
+                max-width: 100%;
+                padding: 30px 20px 20px;
+            }
             &:first-of-type {
                 box-shadow: -30px 0 40px rgba(#000, 0.08);
                 border-radius: 9px 0 0 9px;
@@ -100,6 +119,9 @@ export default {
                 line-height: 29px;
                 letter-spacing: 0.005em;
                 color: #000000;
+                @include m(1299) {
+                    font-size: 22px;
+                }
                 svg {
                     display: block;
                     max-width: 35px;
@@ -133,6 +155,9 @@ export default {
         }
         &_steps {
             padding: 125px 0;
+            @include m(1299) {
+                padding: 80px 0 0;
+            }
             h2 {
                 text-align: center;
             }
@@ -141,6 +166,13 @@ export default {
                 align-items: center;
                 justify-content: center;
                 margin: 60px -60px 0;
+                @include m(1299) {
+                    margin: 60px 0 0;
+                }
+                @include m(767) {
+                    margin: 30px 0 0;
+                    flex-direction: column;
+                }
             }
             &_item {
                 flex: 1 1 calc(33% - 90px);
@@ -149,6 +181,16 @@ export default {
                 display: flex;
                 flex-direction: column;
                 margin-bottom: auto;
+                @include m(1299) {
+                    flex: 1 1 calc(33% - 30px);
+                    max-width: calc(33% - 30px);
+                    padding: 0 15px;
+                }
+                @include m(767) {
+                    flex: 1 1 100%;
+                    max-width: 100%;
+                    margin-bottom: 43px;
+                }
                 &_num {
                     width: 144px;
                     height: 144px;
@@ -175,6 +217,10 @@ export default {
                     line-height: 29px;
                     letter-spacing: -0.01em;
                     color: #221E1F;
+                    @include m(1299) {
+                        font-size: 20px;
+                        line-height: 1.3;
+                    }
                 }
                 &_content {
                     display: block;
@@ -185,6 +231,11 @@ export default {
                     letter-spacing: 0.005em;
                     color: #221E1F;
                     opacity: 0.8;
+                }
+            }
+            &_divider {
+                @include m(767) {
+                    display: none;
                 }
             }
         }

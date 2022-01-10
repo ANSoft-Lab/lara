@@ -19,20 +19,20 @@ mix.webpackConfig({
     }
 });
 
-mix.js('resources/js/main.js', 'public/js')
-     .js('resources/js/app.js', 'public/js')
+mix.sass('resources/scss/style.scss', 'public/css')
+    .options({
+        postCss: [
+            require('postcss-css-variables')()
+        ]
+    }).version();
 
-     .js('resources/js/affiliate/affiliate.js', 'public/js')
-     .scripts([
+mix
+    .js('resources/js/main.js', 'public/js')
+    .js('resources/js/app.js', 'public/js')
+    .js('resources/js/affiliate/affiliate.js', 'public/js')
+    .scripts([
         'resources/js/affiliate/swiper-bundle.js',
         'resources/js/affiliate/autosize.min.js',
         'resources/js/affiliate/simplebar.min.js',
         'resources/js/affiliate/simple_js.js'
-     ], 'public/js/affiliate-vendor.js')
-
-    .sass('resources/scss/style.scss', 'public/css')
-        .options({
-            postCss: [
-                require('postcss-css-variables')()
-            ]
-        }).version();
+    ], 'public/js/affiliate-vendor.js');
