@@ -166,7 +166,7 @@ export default {
                 align-items: center;
                 justify-content: center;
                 margin: 60px -60px 0;
-                @include m(1299) {
+                @include m(1600) {
                     margin: 60px 0 0;
                 }
                 @include m(767) {

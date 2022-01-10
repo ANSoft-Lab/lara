@@ -186,7 +186,7 @@
 					<ul class="sale__filter-list">
 						@forelse($cities->where('vacancies_count', '>', 0) as $city)
 
-							<li class="sale__filter-item" data-type="city" data-city-name="{{ $city->name }}" id="city_{{ $city->id }}">{{ $city->name }}<span>{{ $city->vacancies_count }}</span></li>
+							<li class="sale__filter-item" data-type="city" data-city-name="{{ $city->name }}" id="city_{{ $city->id }}">{{ $city->name }}<span>{{-- $city->vacancies_count --}}</span></li>
 						@empty
 
 						@endforelse
@@ -205,7 +205,7 @@
 					<div class="sale__filter-caption sale__filter-caption_item-2">Направления</div>
 					<ul class="sale__filter-list">
 						@forelse($vacancy_categories->where('vacancies_count', '>', 0) as $vacancy_category)
-							<li class="sale__filter-item" data-type="category" id="category_{{ $vacancy_category->id }}">{{ $vacancy_category->name }}<span>{{ $vacancy_category->vacancies_count }}</span></li>
+							<li class="sale__filter-item" data-type="category" id="category_{{ $vacancy_category->id }}">{{ $vacancy_category->name }}<span>{{-- $vacancy_category->vacancies_count --}}</span></li>
 						@empty
 
 						@endforelse
