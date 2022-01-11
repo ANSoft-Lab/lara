@@ -131,18 +131,27 @@
 	<div class="vc-slider__slider">
 	<div class="vc-slider__list">
 		<div class="vc-slider__item">
-		<img src="/vacancies_assets/images/vc-slider-item-2.png" alt="images" />
+			<img src="/vacancies_assets/images/vc-slider/photo1.jpg" alt="images" />
 		</div>
 
 		<div class="vc-slider__item">
-		<img src="/vacancies_assets/images/vc-slider-item-3.png" alt="images" />
+			<img src="/vacancies_assets/images/vc-slider/photo2.jpg" alt="images" />
 		</div>
 		<div class="vc-slider__item">
-		<img src="/vacancies_assets/images/vc-slider-item-2.png" alt="images" />
+			<img src="/vacancies_assets/images/vc-slider/photo3.jpg" alt="images" />
 		</div>
 
 		<div class="vc-slider__item">
-		<img src="/vacancies_assets/images/vc-slider-item-3.png" alt="images" />
+			<img src="/vacancies_assets/images/vc-slider/photo4.jpg" alt="images" />
+		</div>
+		<div class="vc-slider__item">
+			<img src="/vacancies_assets/images/vc-slider/photo5.jpg" alt="images" />
+		</div>
+		<div class="vc-slider__item">
+			<img src="/vacancies_assets/images/vc-slider/photo6.jpg" alt="images" />
+		</div>
+		<div class="vc-slider__item">
+			<img src="/vacancies_assets/images/vc-slider/photo7.jpg" alt="images" />
 		</div>
 	</div>
 	</div>
