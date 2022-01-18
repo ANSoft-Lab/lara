@@ -56,10 +56,9 @@ class LevelledTopMenuSeeder extends Seeder
                             'children' => [
                                 [
                                     'name' => 'КИС',
-                                    'type' => 'page_link',
+                                    'type' => 'internal_link',
                                     'menu_type' => 'top',
-                                    'link' => 'kis',
-                                    'page_id' => $kis_page->id ?? null,
+                                    'link' => 'hypothec-insurance',
                                     'depth' => '3',
                                 ],
                                 [
