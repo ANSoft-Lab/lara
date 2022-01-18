@@ -19,7 +19,7 @@ class LevelledTopMenuSeeder extends Seeder
     public function run()
     {
         if(Schema::hasTable('menu_items')) {
-            DB::table('menu_items')->where('menu_type', 'top')->delete();
+            // DB::table('menu_items')->where('menu_type', 'top')->delete();
 
             $kis_page = Page::where('slug', 'kis')->first();
             $ins_page = Page::where('slug', 'strahovanie/strahovanie_imuchestva')->first();
