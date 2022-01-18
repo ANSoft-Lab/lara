@@ -61,10 +61,20 @@
                             <div class="menu__wrap mobile-hidden js_show_menu_{{ $item->id }}">
                                 <ul class="menu__sublist">
                                     @foreach ($item->children as $child)
-                                        <li class="menu__subitem">
-                                            <a href="{{ $child->url() }}" class="menu__subitem-link">
+                                        <li class="menu__subitem dropdown-area">
+                                            <a href="{{ $child->url() }}" class="menu__subitem-link{{ $child->children->count() > 0 ? ' menu__subitem-link_item-1 js-mobile-show-button' : '' }}" data-show="js_show_menu_{{ $child->id }}">
                                                 {{ $child->name }}
                                             </a>
+
+                                            @if ($child->children->count() > 0)
+                                                <div class="submenu__wrap mobile-hidden js_show_menu_{{ $child->id }}">
+                                                    @foreach ($child->children as $grandchild)
+                                                        <a href="{{ $grandchild->url() }}" class="menu__subitem-link">
+                                                            {{ $grandchild->name }}
+                                                        </a>
+                                                    @endforeach
+                                                </div>
+                                            @endif
                                         </li>
                                     @endforeach
                                 </ul>
