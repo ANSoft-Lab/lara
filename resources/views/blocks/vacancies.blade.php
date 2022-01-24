@@ -131,18 +131,27 @@
 	<div class="vc-slider__slider">
 	<div class="vc-slider__list">
 		<div class="vc-slider__item">
-		<img src="/vacancies_assets/images/vc-slider-item-2.png" alt="images" />
+			<img src="/vacancies_assets/images/vc-slider/photo1.jpg" alt="images" />
 		</div>
 
 		<div class="vc-slider__item">
-		<img src="/vacancies_assets/images/vc-slider-item-3.png" alt="images" />
+			<img src="/vacancies_assets/images/vc-slider/photo2.jpg" alt="images" />
 		</div>
 		<div class="vc-slider__item">
-		<img src="/vacancies_assets/images/vc-slider-item-2.png" alt="images" />
+			<img src="/vacancies_assets/images/vc-slider/photo3.jpg" alt="images" />
 		</div>
 
 		<div class="vc-slider__item">
-		<img src="/vacancies_assets/images/vc-slider-item-3.png" alt="images" />
+			<img src="/vacancies_assets/images/vc-slider/photo4.jpg" alt="images" />
+		</div>
+		<div class="vc-slider__item">
+			<img src="/vacancies_assets/images/vc-slider/photo5.jpg" alt="images" />
+		</div>
+		<div class="vc-slider__item">
+			<img src="/vacancies_assets/images/vc-slider/photo6.jpg" alt="images" />
+		</div>
+		<div class="vc-slider__item">
+			<img src="/vacancies_assets/images/vc-slider/photo7.jpg" alt="images" />
 		</div>
 	</div>
 	</div>
@@ -186,7 +195,7 @@
 					<ul class="sale__filter-list">
 						@forelse($cities->where('vacancies_count', '>', 0) as $city)
 
-							<li class="sale__filter-item" data-type="city" data-city-name="{{ $city->name }}" id="city_{{ $city->id }}">{{ $city->name }}<span>{{ $city->vacancies_count }}</span></li>
+							<li class="sale__filter-item" data-type="city" data-city-name="{{ $city->name }}" id="city_{{ $city->id }}">{{ $city->name }}<span>{{-- $city->vacancies_count --}}</span></li>
 						@empty
 
 						@endforelse
@@ -205,7 +214,7 @@
 					<div class="sale__filter-caption sale__filter-caption_item-2">Направления</div>
 					<ul class="sale__filter-list">
 						@forelse($vacancy_categories->where('vacancies_count', '>', 0) as $vacancy_category)
-							<li class="sale__filter-item" data-type="category" id="category_{{ $vacancy_category->id }}">{{ $vacancy_category->name }}<span>{{ $vacancy_category->vacancies_count }}</span></li>
+							<li class="sale__filter-item" data-type="category" id="category_{{ $vacancy_category->id }}">{{ $vacancy_category->name }}<span>{{-- $vacancy_category->vacancies_count --}}</span></li>
 						@empty
 
 						@endforelse

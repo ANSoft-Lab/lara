@@ -23,7 +23,10 @@ class Finist {
 
         this.burger = document.querySelector('.js-burger');
         this.mobileMenu = document.querySelector('.js-mobile-menu');
-        this.burger.addEventListener('click', this.toggleMenu.bind(this));
+
+        if(this.burger) {
+            this.burger.addEventListener('click', this.toggleMenu.bind(this));
+        }
 
         // Десктопное меню
 
@@ -256,6 +259,7 @@ class Finist {
     toggleMenu() {
         this.burger.classList.toggle('m-cross');
         this.mobileMenu.classList.toggle('m-hidden');
+        this.mobileMenu.classList.toggle('mobile-hidden');
         if($(this.burger).hasClass('m-cross')) {
             $('main').css('padding-top', $(this.mobileMenu).height() - 45);
         } else {
@@ -332,6 +336,16 @@ $(document).ready(function(){
           },
         },
   });
+
+    $('.js-mobile-show-button').click(function() {
+        if ($(window).width() < 1199) {
+            var elClass = $(this).attr('data-show');
+
+            $('.' + elClass).toggleClass('mobile-hidden');
+
+            return false;
+        }
+    });
 });
 
 Vue.use(vClickOutside)

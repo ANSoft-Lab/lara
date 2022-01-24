@@ -6,3 +6,13 @@
 .cm-5 {
     margin: 5px;
 }
+
+.hidden {
+    display: none !important;
+}
+
+.mobile-hidden {
+    @media(max-width: 1199px) {
+        display: none !important;
+    }
+}

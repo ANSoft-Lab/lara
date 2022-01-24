@@ -74,11 +74,11 @@ class DatabaseSeeder extends Seeder
 
         $this->call(EmployeesSeeder::class);
 
-        $this->call(MenuSeeder::class);
+        $this->call(MenuBottomSeeder::class);
+        $this->call(LevelledTopMenuSeeder::class);
 
         $this->call(Vacancies\VacancyCategoriesSeeder::class);
-        // TO DO: закомментировать, чтобы на боевом сайте не дублировались вакансии
-        $this->call(Vacancies\VacanciesSeeder::class);
+        //$this->call(Vacancies\VacanciesSeeder::class);
 
         //Fixes
         $this->call(FixPhotosPathSeeder::class);
