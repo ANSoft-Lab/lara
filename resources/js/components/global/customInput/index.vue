@@ -100,11 +100,11 @@
         user-select: none;
         z-index: 1;
         &:hover {
-            .customInput_value {
-                opacity: 1;
+            .customInput_value_title {
+                color: rgba(#221E1F, 1);
             }
-            .customInput_icon {
-                opacity: 1;
+            .customInput_icon svg path {
+                fill: rgba(#221E1F, 1)
             }
         }
         &--inactive {
@@ -112,15 +112,15 @@
                 &_body {
                     border-bottom: 1px solid #D3D2D2 !important;
                 }
-                &_value {
-                    opacity: 1 !important;
-                    transform: translateY(-50%) !important;
+                &_value_title {
+                    color: rgba(#221E1F, 0.2) !important;
+                    transform: translateY(0) !important;
                     &_title {
                         color: #D3D2D2 !important;
                     }
                 }
                 &_icon {
-                    opacity: 1 !important;
+                    // opacity: 1 !important;
                     svg {
                         path {
                             fill: #D3D2D2 !important;
@@ -130,8 +130,8 @@
             }
         }
         &--error {
-            .customInput_value {
-                opacity: 1;
+            .customInput_value_title {
+                color: rgba(#221E1F, 1);
             }
             .customInput_icon {
                 opacity: 1;
@@ -146,12 +146,15 @@
             }
         }
         &--focused, &--filled {
-            .customInput_value {
-                opacity: 1;
+            .customInput_value_title {
+                color: rgba(#221E1F, 1);
                 transform: translateY(-35px);
+                @include m(767) {
+                    transform: translateY(-20px);
+                }
             }
-            .customInput_icon {
-                opacity: 1;
+            .customInput_icon svg path {
+                fill: rgba(#221E1F, 0.2)
             }
         }
         &--focused {
@@ -174,8 +177,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            opacity: 0.2;
-            transition: linear 0.2s;
             @include m(1299) {
                 width: 19px;
                 height: 19px;
@@ -185,13 +186,15 @@
                 max-width: 100%;
                 max-height: 100%;
                 flex: 1;
+                path {
+                    transition: linear 0.2s;
+                    fill: rgba(#221E1F, 0.2)
+                }
             }
         }
         &_value {
             display: flex;
             align-items: center;
-            transition: linear 0.2s;
-            opacity: 0.2;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -201,7 +204,8 @@
                 font-size: 18px;
                 line-height: 22px;
                 letter-spacing: -0.02em;
-                color: #221E1F;
+                color: rgba(#221E1F, 0.2);
+                transition: linear 0.2s;
                 @include m(1299) {
                     font-size: 16px;
                 }

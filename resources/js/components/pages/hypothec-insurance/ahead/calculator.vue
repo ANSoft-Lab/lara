@@ -35,7 +35,7 @@
                         </div>
                         <div class="ahead_achievies_item">
                             <span class="ahead_achievies_item_title">Помощь в урегулировании вопросов</span>
-                            <p class="ahead_achievies_item_content">со страховой компанией при наступлении страхового случая в течение всего срока страхования.</p>
+                            <p class="ahead_achievies_item_content">Со страховой компанией при наступлении страхового случая в течение всего срока страхования.</p>
                         </div>
                     </div>
                 </div>

@@ -57,7 +57,7 @@
                             <span class="advantages_steps_item_num_text">3</span>
                         </div>
                         <h4 class="advantages_steps_item_title">Вы получаете договор страхования</h4>
-                        <p class="advantages_steps_item_content">удобным для вас способом: в офисе, курьерской доставкой или в банке перед получением кредита</p>
+                        <p class="advantages_steps_item_content">Удобным для вас способом: в офисе, курьерской доставкой или в банке перед получением кредита</p>
                     </div>
                 </div>
             </div>
