@@ -1,6 +1,6 @@
 @section('extra_styles')
 	<link rel="stylesheet" href="/vacancies_assets/css/fonts.css" />
-    <link rel="stylesheet" href="/vacancies_assets/css/style.min.css" />
+    <link rel="stylesheet" href="/vacancies_assets/css/style.min.css?ver=2.1" />
 @endsection
 
 <section class="vacancies-banner">
@@ -20,7 +20,7 @@
 			<div class="work__item work__item_box-1">
 			<div class="work__image"><img src="/vacancies_assets/icons/work-item1.svg" alt="icons" /></div>
 			<div class="work__inner">
-				<div class="work__caption">Карьерный рост</div>
+				<div class="work__caption">Выбирай сколько зарабатывать</div>
 				<div class="work__text">Индивидуальная и прозрачная система мотивации</div>
 			</div>
 			</div>
@@ -36,7 +36,7 @@
 			<div class="work__item work__item_box-3">
 			<div class="work__image"><img src="/vacancies_assets/icons/work-item3.svg" alt="icons" /></div>
 			<div class="work__inner">
-				<div class="work__caption">Развивайся</div>
+				<div class="work__caption">Расти и развивайся</div>
 				<div class="work__text">Наставничество и обучение в любом направлении</div>
 			</div>
 			</div>
@@ -186,7 +186,7 @@
 					<ul class="sale__filter-list">
 						@forelse($cities->where('vacancies_count', '>', 0) as $city)
 
-							<li class="sale__filter-item{{ $loop->first ? ' js-active_filter' : '' }}" data-type="city" id="city_{{ $city->id }}">{{ $city->name }}<span>{{ $city->vacancies_count }}</span></li>
+							<li class="sale__filter-item" data-type="city" data-city-name="{{ $city->name }}" id="city_{{ $city->id }}">{{ $city->name }}<span>{{ $city->vacancies_count }}</span></li>
 						@empty
 
 						@endforelse
@@ -205,7 +205,7 @@
 					<div class="sale__filter-caption sale__filter-caption_item-2">Направления</div>
 					<ul class="sale__filter-list">
 						@forelse($vacancy_categories->where('vacancies_count', '>', 0) as $vacancy_category)
-							<li class="sale__filter-item{{ $loop->first ? ' js-active_filter' : '' }}" data-type="category" id="category_{{ $vacancy_category->id }}">{{ $vacancy_category->name }}<span>{{ $vacancy_category->vacancies_count }}</span></li>
+							<li class="sale__filter-item" data-type="category" id="category_{{ $vacancy_category->id }}">{{ $vacancy_category->name }}<span>{{ $vacancy_category->vacancies_count }}</span></li>
 						@empty
 
 						@endforelse
@@ -217,7 +217,7 @@
     	<div class="sale__inner">
 			<div class="sale__title ">
 				@forelse($vacancy_categories->where('vacancies_count', '>', 0) as $vacancy_category)
-					<div class="js-filter-item js-filter-hide sale__title__part" data-type="category" data-category="category_{{ $vacancy_category->id }}">{{ $vacancy_category->name }}<span>{{ $vacancy_category->vacancies_count }}</span></div>
+					<div class="js-filter-item js-filter-hide sale__title__part" data-type="category" data-category="category_{{ $vacancy_category->id }}">{{ $vacancy_category->name }}</div>
 				@empty
 
 				@endforelse
@@ -237,5 +237,6 @@
 @section('extra_js')
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="/vacancies_assets/js/jquery.sticky-kit.js"></script>
 	<script src="/vacancies_assets/js/main.js"></script>
 @endsection

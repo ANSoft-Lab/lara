@@ -1,20 +1,5 @@
 const headerCall = document.querySelectorAll('.callback');
-const modalCallback = document.querySelector('.vacancy-modal_callback');
-const modalCallbackClose = document.querySelector('.vacancy-modal_callback .vacancy-modal__btn-close');
 const modalGallery = document.querySelector('.vacancy-modal-gallery');
-
-headerCall.forEach(item => {
-    item.addEventListener('click', () => {
-        modalCallback.style.display = 'flex';
-    });
-});
-
-if(modalCallbackClose) {
-  modalCallbackClose.addEventListener('click', () => {
-      modalCallback.style.display = 'none';
-  });
-}
-
 const galleryImages = document.querySelectorAll('.vc-slider__item img');
 
 galleryImages.forEach(image => {
@@ -96,149 +81,170 @@ document.querySelector('.sale__filter-link').addEventListener('click', (event) =
 
 jQuery(function($){
 
-  function switchFilter() {
-    $('.js-filter-item').show();
-    $('.search-hide').removeClass('search-hide');
+  $(document).ready(function() {
+    if($('.sticker').length) {
+      $('.sticker').stick_in_parent({
+        'offset_top' : 20,
+      });
+    }
 
-    var filterCategories = [];
-    $('.js-active_filter').each(function() {
-      const category = $(this).attr('data-type');
-      const item = this.id;
+    function switchFilter() {
+      $('.js-filter-item').show();
+      $('.search-hide').removeClass('search-hide');
 
-      filterCategories.push(category);
+      var filterCategories = [];
+      $('.js-active_filter').each(function() {
+        const category = $(this).attr('data-type');
+        const item = this.id;
 
-      $('.js-filter-item').each(function() {
-        if($(this).attr('data-' + category) && $(this).attr('data-' + category) !== item) {
+        filterCategories.push(category);
+
+        $('.js-filter-item').each(function() {
+          if($(this).attr('data-' + category) && $(this).attr('data-' + category) !== item) {
+            $(this).hide();
+          }
+        });
+      });
+
+      $('.js-filter-item.js-filter-hide').each(function() {
+        const category = $(this).attr('data-type');
+        
+        if($(this).attr('data-' + category) && jQuery.inArray(category, filterCategories) === -1) {
           $(this).hide();
         }
       });
-    });
 
-    $('.js-filter-item.js-filter-hide').each(function() {
-      const category = $(this).attr('data-type');
+      if($('.js-search-word-filter').val()) {
+        searchFilter($('.js-search-word-filter'));
+      }
       
-      if($(this).attr('data-' + category) && jQuery.inArray(category, filterCategories) === -1) {
-        $(this).hide();
+    }
+
+    if($('.js-filter-item').length) {
+      const currentCity = $('.header__location.js-city-show:not(".hidden")').text().toLowerCase();
+      switchFilter();
+
+      if(currentCity) {
+        $('.sale__filter-item[data-type=city]').each(function() {
+          if($(this).attr('data-city-name') && $(this).attr('data-city-name').toLowerCase() == currentCity) {
+            $(this).addClass('js-active_filter');
+
+            switchFilter();
+            return false;
+          }
+        });
       }
-    });
 
-    if($('.js-search-word-filter').val()) {
-      searchFilter($('.js-search-word-filter'));
     }
     
-  }
-
-  if($('.js-active_filter').length) {
-    switchFilter();
-  }
-   
-  const forms = $('.response__btn').closest('form');
-  forms.each(function() {
-    validateForm($(this));
-  });
-  
-  function validateForm(form) {
-    var validated = true;
-
-    const phoneField = $("input[name=phone]", form);
-    if (phoneField.length && (phoneField.val() == '' || phoneField.val().replace(/[_-]/g, '').length < 16)) {
-      phoneField.addClass('invalidate');
-      validated = false;
-    } else if(phoneField.length) {
-      phoneField.removeClass('invalidate');
-    }
-
-    if ($(".response__checkbox input", form).prop('checked') === true) {
-      $(".response__checkbox label", form).removeClass('validate');
-    } else if($(".response__checkbox input", this).length) {
-      $(".response__checkbox label", form).addClass('validate');
-      validated = false;
-    }
-
-    return validated;
-  }
-  
-  document.querySelectorAll('.response__checkbox input').forEach((item, i) => {
-    item.addEventListener('click', () => {
-      item.parentNode.querySelector('label').classList.remove('validate');
+    const forms = $('.response__btn').closest('form');
+    forms.each(function() {
+      validateForm($(this));
     });
-  });
-
-  $(document).on('click', '.sale__filter-item', function() {
     
-    const category = $(this).attr('data-type');
+    function validateForm(form) {
+      var validated = true;
 
-    $('.js-active_filter[data-type=' + category + ']').not(this).removeClass('js-active_filter');
-    $(this).toggleClass('js-active_filter');
+      const phoneField = $("input[name=phone]", form);
+      if (phoneField.length && (phoneField.val() == '' || phoneField.val().replace(/[_-]/g, '').length < 16)) {
+        phoneField.addClass('invalidate');
+        validated = false;
+      } else if(phoneField.length) {
+        phoneField.removeClass('invalidate');
+      }
 
-    switchFilter();
+      if ($(".response__checkbox input", form).prop('checked') === true) {
+        $(".response__checkbox label", form).removeClass('validate');
+      } else if($(".response__checkbox input", this).length) {
+        $(".response__checkbox label", form).addClass('validate');
+        validated = false;
+      }
 
-  });
-
-  $(document).on('click', '.sale__filter-link', function() {
-    $('.js-active_filter').removeClass('js-active_filter');
-    $('.js-search-word-filter').val('');
-
-    switchFilter();
-  });
-
-  $(document).on('click', '.js-filter-click', function() {
-    $('.js-active_filter').removeClass('js-active_filter');
-    $('.js-search-word-filter').val('');
-    $($(this).attr('data-click')).click();
-
-    switchFilter();
-  });
-
-  $(document).on('click', '.js_send', function() {
-    let validated = validateForm($(this).closest('form'));
-
-    if(!validated) {
-      return false;
+      return validated;
     }
+    
+    document.querySelectorAll('.response__checkbox input').forEach((item, i) => {
+      item.addEventListener('click', () => {
+        item.parentNode.querySelector('label').classList.remove('validate');
+      });
+    });
 
-    waitResults($(this).closest('.response'));
-  });
+    $(document).on('click', '.sale__filter-item', function() {
+      const category = $(this).attr('data-type');
 
-  function waitResults(formWrap) {
-    var refreshAjaxStatus = setInterval(function() {
-      if(window.ajaxFormSending === false) {
-        clearInterval(refreshAjaxStatus);
+      $('.js-active_filter[data-type=' + category + ']').not(this).removeClass('js-active_filter');
+      $(this).toggleClass('js-active_filter');
 
-        if(window.ajaxFormSended === true) {
-          $(formWrap).find('.response__bottom-wrap').show();
-          $(formWrap).find('form').hide();
+      switchFilter();
+
+    });
+
+    $(document).on('click', '.sale__filter-link', function() {
+      $('.js-active_filter').removeClass('js-active_filter');
+      $('.js-search-word-filter').val('');
+
+      switchFilter();
+    });
+
+    $(document).on('click', '.js-filter-click', function() {
+      $('.js-active_filter').removeClass('js-active_filter');
+      $('.js-search-word-filter').val('');
+      $($(this).attr('data-click')).click();
+
+      switchFilter();
+    });
+
+    $(document).on('click', '.js_send', function() {
+      let validated = validateForm($(this).closest('form'));
+
+      if(!validated) {
+        return false;
+      }
+
+      waitResults($(this).closest('.response'));
+    });
+
+    function waitResults(formWrap) {
+      var refreshAjaxStatus = setInterval(function() {
+        if(window.ajaxFormSending === false) {
+          clearInterval(refreshAjaxStatus);
+
+          if(window.ajaxFormSended === true) {
+            $(formWrap).find('.response__bottom-wrap').show();
+            $(formWrap).find('form').hide();
+          }
         }
-      }
-    }, 1000);
-  }
-  
-  $(document).on('click', '.js_close_box', function() {
-    $(this).closest('.js_filtering_box').removeClass('sale__item_active');
-  });
-
-  $(document).on('input', '.js-search-word-filter', function() {
-    $('.js-active_filter[data-type=category]').removeClass('js-active_filter');
-    switchFilter();
-
-    searchFilter($(this));
-  });
-
-  function searchFilter(el) {
-    $('.search-hide').removeClass('search-hide');
-
-    const targetBox = el.attr('data-box');
-    const searchWord = el.val();
-
-    const matchingBoxes = $('.' + targetBox).filter(function() {
-      return $(this).text().toLowerCase().indexOf(searchWord.toLowerCase()) >= 0;
-    });
-    const notMatchingBoxes = $('.' + targetBox).filter(function() {
-      return $(this).text().toLowerCase().indexOf(searchWord.toLowerCase()) < 0;
+      }, 1000);
+    }
+    
+    $(document).on('click', '.js_close_box', function() {
+      $(this).closest('.js_filtering_box').removeClass('sale__item_active');
     });
 
-    notMatchingBoxes.addClass('search-hide');
-  }
+    $(document).on('input', '.js-search-word-filter', function() {
+      $('.js-active_filter[data-type=category]').removeClass('js-active_filter');
+      switchFilter();
+
+      searchFilter($(this));
+    });
+
+    function searchFilter(el) {
+      $('.search-hide').removeClass('search-hide');
+
+      const targetBox = el.attr('data-box');
+      const searchWord = el.val();
+
+      const matchingBoxes = $('.' + targetBox).filter(function() {
+        return $(this).text().toLowerCase().indexOf(searchWord.toLowerCase()) >= 0;
+      });
+      const notMatchingBoxes = $('.' + targetBox).filter(function() {
+        return $(this).text().toLowerCase().indexOf(searchWord.toLowerCase()) < 0;
+      });
+
+      notMatchingBoxes.addClass('search-hide');
+    }
+
+  });
 });
 
 const nameInputs = document.querySelectorAll('input[name="name"]');

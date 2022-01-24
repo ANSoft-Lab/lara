@@ -19,11 +19,14 @@
             <li data-city="kazan" class="contacts__tab glide__bullet" data-glide-dir="=5">
                 казань
             </li>
-            <li data-city="samara" class="contacts__tab glide__bullet" data-glide-dir="=6">
+            <li data-city="ekaterinburg" class="contacts__tab glide__bullet" data-glide-dir="=6">
                 екатеринбург
             </li>
             <li data-city="krasnodar" class="contacts__tab glide__bullet" data-glide-dir="=7">
                 краснодар
+            </li>
+            <li data-city="lipetsk" class="contacts__tab glide__bullet" data-glide-dir="=8">
+                липецк
             </li>
         </ul>
     </div>

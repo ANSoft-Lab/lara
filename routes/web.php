@@ -20,9 +20,10 @@ Route::get('job/{vacancy_slug}', 'PageController@showVacancy')->name('vacancy');
 
 //Auth::routes();
 
-Route::get('/hypothec-insurance', function () {
-    return view('templates.hypothec-insurance');
-});
+// Temp remove from production
+// Route::get('/hypothec-insurance', function () {
+//     return view('templates.hypothec-insurance');
+// });
 
 Route::group([
     'prefix' => config('backpack.base.route_prefix', 'admin'),

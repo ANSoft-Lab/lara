@@ -189,7 +189,7 @@ button {
   margin-bottom: 60px;
 }
 .work__item {
-  width: 100%;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,15 +203,6 @@ button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-.work__item_box-1 {
-  max-width: 275px;
-}
-.work__item_box-2 {
-  max-width: 264px;
-}
-.work__item_box-3 {
-  max-width: 210px;
 }
 .work__image {
   margin-bottom: 19px;
@@ -345,7 +336,6 @@ button {
     line-height: 34px;
     text-align: left;
     margin-left: 0;
-    max-width: 220px;
     margin-bottom: 26px;
   }
   .work__list {
@@ -367,6 +357,7 @@ button {
     -ms-flex-align: start;
     align-items: start;
     max-width: 100%;
+    width: 100%;
   }
   .work__item:not(:last-child) {
     margin-bottom: 15px;
@@ -485,7 +476,7 @@ button {
   justify-content: space-between;
 }
 .finist__box {
-  max-width: 238px;
+  max-width: 195px;
   width: 100%;
   min-height: 507px;
   background-color: #fff;
@@ -710,7 +701,7 @@ button {
   background-color: #f5f6f7;
   border-radius: 10px;
   padding: 65px 0;
-  max-width: 470px;
+  max-width: 420px;
   width: 100%;
   cursor: pointer;
 }
@@ -1426,9 +1417,7 @@ button {
   position: relative;
 }
 .sale__bottom-inner {
-  position: absolute;
-  top: 34px;
-  right: 0;
+  float: right;
 }
 .sale__bottom-left {
   max-width: 880px;
@@ -1449,9 +1438,6 @@ button {
 }
 .sale__bottom-box {
   margin-bottom: 38px;
-}
-.sale__bottom-box:first-child {
-  padding-right: 250px;
 }
 .sale__bottom-box_item-2 p {
   margin-top: 15px;
@@ -1795,6 +1781,7 @@ button {
   background-color: #f5f6f7;
   padding-top: 70px;
   padding-bottom: 100px;
+  width: 100%;
 }
 .response__wrap {
   max-width: 435px;
@@ -2100,6 +2087,11 @@ button {
   __bottom {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) {
+  .sale__bottom-box:first-child {
+    padding-right: 250px;
   }
 }
 @media (max-width: 767px) {
