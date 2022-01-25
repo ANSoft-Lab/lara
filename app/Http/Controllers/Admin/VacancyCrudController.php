@@ -70,15 +70,12 @@ class VacancyCrudController extends CrudController
             'label' => trans('backpack::base.vacancies.name'),
             'allows_null' => false,
         ]);
-        if(! $update) {
-            CRUD::addField([
-                'name' => 'slug',
-                'label' => trans('backpack::base.vacancies.slug'),
-                'type' => 'hidden',
-                'value' => 'vacancy_' . date('YmdHis'),
-                'allows_null' => false,
-            ]);
-        }
+        CRUD::addField([
+            'name' => 'slug',
+            'label' => trans('backpack::base.vacancies.slug'),
+            'default' => 'vacancy_' . date('YmdHis'),
+            'allows_null' => false,
+        ]);
         CRUD::addField([
             'name' => 'salary',
             'label' => trans('backpack::base.vacancies.salary'),
