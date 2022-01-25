@@ -50,6 +50,52 @@ class VacancyCrudController extends CrudController
             'label' => trans('backpack::base.vacancies.name'),
         ]);
         CRUD::addColumn([
+            'name' => 'slug',
+            'label' => trans('backpack::base.vacancies.slug'),
+        ]);
+        CRUD::addColumn([
+            'name' => 'show_order',
+            'label' => trans('backpack::base.vacancies.show_order'),
+        ]);
+    }
+
+    protected function setupShowOperation()
+    {
+        CRUD::set('show.setFromDb', false);
+
+        CRUD::addColumn([
+            'name' => 'name',
+            'label' => trans('backpack::base.vacancies.name'),
+        ]);
+        CRUD::addColumn([
+            'name' => 'slug',
+            'label' => trans('backpack::base.vacancies.slug'),
+        ]);
+        CRUD::addColumn([
+            'name' => 'salary',
+            'label' => trans('backpack::base.vacancies.salary'),
+        ]);
+        CRUD::addColumn([
+            'name' => 'duties',
+            'label' => trans('backpack::base.vacancies.duties'),
+            'escaped' => false,
+        ]);
+        CRUD::addColumn([
+            'name' => 'requirements',
+            'label' => trans('backpack::base.vacancies.requirements'),
+            'escaped' => false,
+        ]);
+        CRUD::addColumn([
+            'name' => 'conditions',
+            'label' => trans('backpack::base.vacancies.conditions'),
+            'escaped' => false,
+        ]);
+        CRUD::addColumn([
+            'name' => 'additional',
+            'label' => trans('backpack::base.vacancies.additional'),
+            'escaped' => false,
+        ]);
+        CRUD::addColumn([
             'name' => 'show_order',
             'label' => trans('backpack::base.vacancies.show_order'),
         ]);
