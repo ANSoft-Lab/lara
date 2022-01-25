@@ -122,7 +122,7 @@ export default {
                 line-height: 1.2;
             }
             &--selected {
-                background-color: rgba(#F2F3F4, 0.8);
+                background-color: rgba(darken(#F2F3F4, 10%), 0.8);
             }
         }
     }
