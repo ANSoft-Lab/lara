@@ -312,6 +312,9 @@ export default {
             &:hover {
                 background: darken(#F2CB4D, 10%);
             }
+            @include m(419) {
+                margin: 50px auto 0;
+            }
         }
     }
     .ahead_achievies {
