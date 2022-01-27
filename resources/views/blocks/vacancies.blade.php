@@ -147,12 +147,6 @@
 		<div class="vc-slider__item">
 			<img src="/vacancies_assets/images/vc-slider/photo5.jpg" alt="images" />
 		</div>
-		<div class="vc-slider__item">
-			<img src="/vacancies_assets/images/vc-slider/photo6.jpg" alt="images" />
-		</div>
-		<div class="vc-slider__item">
-			<img src="/vacancies_assets/images/vc-slider/photo7.jpg" alt="images" />
-		</div>
 	</div>
 	</div>
 
