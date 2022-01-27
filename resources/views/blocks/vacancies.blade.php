@@ -20,7 +20,7 @@
 			<div class="work__item work__item_box-1">
 			<div class="work__image"><img src="/vacancies_assets/icons/work-item1.svg" alt="icons" /></div>
 			<div class="work__inner">
-				<div class="work__caption">Карьерный рост</div>
+				<div class="work__caption">Выбирай сколько зарабатывать</div>
 				<div class="work__text">Индивидуальная и прозрачная система мотивации</div>
 			</div>
 			</div>
@@ -36,7 +36,7 @@
 			<div class="work__item work__item_box-3">
 			<div class="work__image"><img src="/vacancies_assets/icons/work-item3.svg" alt="icons" /></div>
 			<div class="work__inner">
-				<div class="work__caption">Развивайся</div>
+				<div class="work__caption">Расти и развивайся</div>
 				<div class="work__text">Наставничество и обучение в любом направлении</div>
 			</div>
 			</div>
@@ -247,5 +247,5 @@
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="/vacancies_assets/js/jquery.sticky-kit.js"></script>
-	<script src="/vacancies_assets/js/main.js"></script>
+	<script src="/vacancies_assets/js/main.js?ver=2.0"></script>
 @endsection
