@@ -67,6 +67,10 @@
                         <a class="footer__contacts-link footer__tel" href="tel:+78435671911">+7 (843) 567-19-11</a>
                         <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Казань</p>
                     </div>
+                    <div class="footer__contacts-item js-city-show city_ekaterinburg hidden">
+                        <a class="footer__contacts-link footer__tel" href="tel:+73433792092">+7 (343) 379-20-92</a>
+                        <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Екатеринбург</p>
+                    </div>
                     <div class="footer__contacts-item js-city-show city_samara hidden">
                         <a class="footer__contacts-link footer__tel" href="tel:+78463790582">+7 (8463) 790-582</a>
                         <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Самара</p>
