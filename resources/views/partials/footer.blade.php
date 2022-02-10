@@ -2,7 +2,7 @@
     <div class="container">
         <div class="footer__top">
             <div class="footer__left">
-                <a href="#" class="footer__logo">
+                <a href="/" class="footer__logo">
                     <img src="/new/images/logo.png" alt="logo" />
                 </a>
 
