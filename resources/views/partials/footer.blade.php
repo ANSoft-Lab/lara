@@ -89,7 +89,6 @@
             </div>
         </div>
         <div class="footer__bottom">
-            <a class="footer__bottom-link" href="#"></a>
             <div class="footer__bottom-text">(С) 2003 — {{ date('Y') }} «Финист»</div>
             <div class="footer__bottom-text">
                 Сайт защищен reCAPTCHA с применением Политики конфиденциальности и Условий использования от Google.
