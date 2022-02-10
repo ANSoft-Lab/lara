@@ -213,6 +213,23 @@
   }
   .header__sandwich {
     display: none;
+    border: none;
+
+    &.m-cross {
+      span:first-child {
+        display: none;
+
+        &+span {
+          transform: rotate(45deg) translate(7px, -1px);
+          margin-left: -11px;
+        }
+      }
+
+      span:last-child {
+        transform: rotate(-45deg) translate(6px, 2px);
+        margin-left: -11px;
+      }
+  }
   }
   @media (max-width: 1469px) {
     .header__logo {
