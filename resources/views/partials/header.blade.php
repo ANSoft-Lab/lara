@@ -84,7 +84,7 @@
                 @endforeach
             </ul>
 
-            <a class="menu__text" href="#">Страховой случай</a>
+            <a class="menu__text" href="/chto-delat-pri-nastuplenii-strakhovogo-sluchaya">Страховой случай</a>
             <div class="js-city-show city_moscow">
                 <a class="menu__phone" href="tel:+74956600098">+7 495 660-00-98</a>
                 <div class="menu__descr">Москва</div>
