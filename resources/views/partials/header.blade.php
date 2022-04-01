@@ -25,6 +25,10 @@
                     <a href="https://finist.ru/chto-delat-pri-nastuplenii-strakhovogo-sluchaya"> Страховой случай</a>
                 </li>
             </ul>
+
+            @if(request()->path() === 'hypothec-insurance')
+            <a class="header__affiliate" href="/affiliate">Партнёрам</a>
+            @endif
         </div>
 
         <div class="header__right header__right_vacancies">
