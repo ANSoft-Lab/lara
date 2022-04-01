@@ -25,8 +25,6 @@
                     <a href="https://finist.ru/chto-delat-pri-nastuplenii-strakhovogo-sluchaya"> Страховой случай</a>
                 </li>
             </ul>
-
-            <a class="header__affiliate" href="/affiliate">Партнёрам</a>
         </div>
 
         <div class="header__right header__right_vacancies">
