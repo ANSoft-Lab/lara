@@ -46,6 +46,18 @@
     display: -ms-flexbox;
     display: flex;
   }
+  
+  .header__affiliate {
+    line-height: 22px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #272727;
+    text-decoration: none;
+  }
+
   .header__item {
     font-family: Formular;
     font-style: normal;

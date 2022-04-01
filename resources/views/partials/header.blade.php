@@ -5,7 +5,7 @@
         <div class="header__wrap">
         <div class="header__left">
             <a class="header__logo" href="/">
-            <img src="/icon/finist_logo.svg" alt="finist">
+                <img src="/icon/finist_logo.svg" alt="finist">
             </a>
 
             <ul class="header__list">
@@ -25,6 +25,8 @@
                     <a href="https://finist.ru/chto-delat-pri-nastuplenii-strakhovogo-sluchaya"> Страховой случай</a>
                 </li>
             </ul>
+
+            <a class="header__affiliate" href="/affiliate">Партнёрам</a>
         </div>
 
         <div class="header__right header__right_vacancies">
