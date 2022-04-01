@@ -47,34 +47,31 @@
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
+                                    <img src="@/img/hypothec/partners/insurance/ingos_logo.png" alt="Ингосстрах" class="ahead_achievies_carousel_img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
+                                    <img src="@/img/hypothec/partners/insurance/reso_logo.png" alt="РЕСО" class="ahead_achievies_carousel_img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
+                                    <img src="@/img/hypothec/partners/insurance/alfa_logo.png" alt="Альфа страхование" class="ahead_achievies_carousel_img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
+                                    <img src="@/img/hypothec/partners/insurance/vsk_logo.png" alt="ВСК" class="ahead_achievies_carousel_img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
+                                    <img src="@/img/hypothec/partners/insurance/renes_logo.png" alt="Ренессанс" class="ahead_achievies_carousel_img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
+                                    <img src="@/img/hypothec/partners/insurance/sber_logo.png" alt="Сберстрахование" class="ahead_achievies_carousel_img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
+                                    <img src="@/img/hypothec/partners/insurance/pari_logo.png" alt="Пари" class="ahead_achievies_carousel_img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
+                                    <img src="@/img/hypothec/partners/insurance/yugoria_logo.png" alt="Югория" class="ahead_achievies_carousel_img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
+                                    <img src="@/img/hypothec/partners/insurance/energogarant_logo.png" alt="Энергогарант" class="ahead_achievies_carousel_img">
                                 </div>
                             </div>
                         </div>
@@ -86,34 +83,43 @@
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
+                                    <img src="@/img/hypothec/partners/banks/sber_logo.png" alt="Сбер" class="ahead_achievies_carousel_img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
+                                    <img src="@/img/hypothec/partners/banks/vtb_logo.png" alt="ВТБ" class="ahead_achievies_carousel_img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
+                                    <img src="@/img/hypothec/partners/banks/alfabank_logo.png" alt="Альфа-Банк" class="ahead_achievies_carousel_img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
+                                    <img src="@/img/hypothec/partners/banks/rosselhoz_logo.jpg" alt="Россельхозбанк" class="ahead_achievies_carousel_img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
+                                    <img src="@/img/hypothec/partners/banks/rosbank_logo.png" alt="Росбанк" class="ahead_achievies_carousel_img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
+                                    <img src="@/img/hypothec/partners/banks/psb_logo.jpg" alt="ПСБ" class="ahead_achievies_carousel_img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
+                                    <img src="@/img/hypothec/partners/banks/otkrytie_logo.png" alt="Открытие" class="ahead_achievies_carousel_img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
+                                    <img src="@/img/hypothec/partners/banks/raif_logo.png" alt="Райффайзен БАНК" class="ahead_achievies_carousel_img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
+                                    <img src="@/img/hypothec/partners/banks/uralsib.png" alt="Уралсиб" class="ahead_achievies_carousel_img">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="@/img/hypothec/image-52.png" class="ahead_achievies_carousel_img">
+                                    <img src="@/img/hypothec/partners/banks/gazprombank_logo.png" alt="ГАЗПРОМБАНК" class="ahead_achievies_carousel_img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@/img/hypothec/partners/banks/tkb.png" alt="ТКБ" class="ahead_achievies_carousel_img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@/img/hypothec/partners/banks/mkb_logo.png" alt="МКБ" class="ahead_achievies_carousel_img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="@/img/hypothec/partners/banks/domrfbank_logo.png" alt="Дом РФ" class="ahead_achievies_carousel_img">
                                 </div>
                             </div>
                         </div>
