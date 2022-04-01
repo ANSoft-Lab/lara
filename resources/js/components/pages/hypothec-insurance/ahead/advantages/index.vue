@@ -10,10 +10,10 @@
                         Оформление полиса с нами
                     </h3>
                     <ul class="advantages_item_list">
-                        <li class="advantages_item_list-item">За 24 часа подберем предложения от надежных страховых компаний под ваш вид ипотеки</li>
-                        <li class="advantages_item_list-item">Поможем в выборе минимум из 7 предложений, учтем дополнительную скидку до 30%</li>
-                        <li class="advantages_item_list-item">Ваш личный консультант ответит на вопросы о кредитном договоре, об условиях и требованиях банка</li>
-                        <li class="advantages_item_list-item">Оформляем полный пакет необходимых документов и бесплатно доставляем договор страхования в пределах МКАД или КАД</li>
+                        <li class="advantages_item_list-item">За 24 часа подберем предложения от ВЕДУЩИХ страховых компаний под вашу ипотеку</li>
+                        <li class="advantages_item_list-item">Рассчитаем цены в 9 страховых компаниях, гарантируем лучшую цену на полис ипотечного страхования. для вас наши услуги бесплатны</li>
+                        <li class="advantages_item_list-item">Ваш персональный менеджер ответит на вопросы о кредитном договоре, об условиях и требованиях банка</li>
+                        <li class="advantages_item_list-item">Гарантируем подлинность купленного у нас полиса, оформим и доставим договор страхования бесплатно в пределах МКАД и КАД</li>
                         <li class="advantages_item_list-item">Поможем получить выплату от страховой при наступлении страхового случая</li>
                     </ul>
                 </div>
@@ -25,11 +25,11 @@
                         Оформление полиса самостоятельно
                     </h3>
                     <ul class="advantages_item_list">
-                        <li class="advantages_item_list-item">Рискуете оформить документы в ненадежной страховой по максимальной цене, без учёта особенностей кредитного договора</li>
-                        <li class="advantages_item_list-item">Теряете время на поиск и сравнение предложений страховых компаний</li>
+                        <li class="advantages_item_list-item">Тратите время на поиск и сравнение предложений страховых компаний</li>
+                        <li class="advantages_item_list-item">Приобретете полис по максимальной цене</li>
                         <li class="advantages_item_list-item">Не будете знать всех тонкостей кредитного договора, можете ошибиться и тем самым испортить кредитную историю</li>
-                        <li class="advantages_item_list-item">Будете несколько раз переделывать документы для банка из-за ошибок в оформлении и терять время на дорогу для отправки исправленного документа, для подписания договора</li>
-                        <li class="advantages_item_list-item">Нет поддержки в решении вопросов со страховой при наступлении страхового случая</li>
+                        <li class="advantages_item_list-item">Рискуете оформить документы в ненадежной, неаккредитованной страховой компании; тратите время на дорогу для подписания договора</li>
+                        <li class="advantages_item_list-item">Нет поддержки в решении вопросов со страховой</li>
                     </ul>
                 </div>
             </div>
@@ -41,15 +41,15 @@
                             <span class="advantages_steps_item_num_text">1</span>
                         </div>
                         <h4 class="advantages_steps_item_title">Оставьте заявку</h4>
-                        <p class="advantages_steps_item_content">С вами свяжется наш менеджер для коррекции расчета и обсуждения доп скидки</p>
+                        <p class="advantages_steps_item_content">с вами свяжется наш менеджер для расчета и обсуждения условий страхования</p>
                     </div>
                     <img src="@/img/hypothec/advantages-steps-divider.svg" class="advantages_steps_divider">
                     <div class="advantages_steps_item">
                         <div class="advantages_steps_item_num">
                             <span class="advantages_steps_item_num_text">2</span>
                         </div>
-                        <h4 class="advantages_steps_item_title">За 1 день подберём предложения</h4>
-                        <p class="advantages_steps_item_content">От топ 10 страховых компаний и сопровождаем заключение договора</p>
+                        <h4 class="advantages_steps_item_title">Подберём предложения</h4>
+                        <p class="advantages_steps_item_content">от 9 ведущих страховых компаний</p>
                     </div>
                     <img src="@/img/hypothec/advantages-steps-divider.svg" class="advantages_steps_divider">
                     <div class="advantages_steps_item">
@@ -57,7 +57,7 @@
                             <span class="advantages_steps_item_num_text">3</span>
                         </div>
                         <h4 class="advantages_steps_item_title">Вы получаете договор страхования</h4>
-                        <p class="advantages_steps_item_content">Удобным для вас способом: в офисе, курьерской доставкой или в банке перед получением кредита</p>
+                        <p class="advantages_steps_item_content">удобным для вас способом: в офисе, курьерской доставкой</p>
                     </div>
                 </div>
             </div>
