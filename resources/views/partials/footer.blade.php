@@ -7,6 +7,11 @@
                 </a>
 
                 <a class="footer__vacancies" href="/job/"><span>Вакансии</span></a>
+
+                <br/>
+                <ul>
+                    <li class="footer__middle-item"><a href="/partners"><span>Наши партнёры</span></a></li>
+                </ul>
             </div>
 
             <div class="footer__middle">
@@ -50,7 +55,7 @@
                         <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Санкт-Петербург</p>
                     </div>
                     <div class="footer__contacts-item js-city-show city_nn hidden">
-                        <a class="footer__contacts-link footer__tel" href="tel:+78312809697">+7 831 280-96-97</a>
+                        <a class="footer__contacts-link footer__tel" href="tel:+78312003383">+7 831 200-33-83</a>
                         <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Нижний Новгород</p>
                     </div>
                     <div class="footer__contacts-item js-city-show city_ryazan hidden">
@@ -76,10 +81,6 @@
                     <div class="footer__contacts-item js-city-show city_krasnodar hidden">
                         <a class="footer__contacts-link footer__tel" href="tel:+78612982446">+7 (8612) 982-446</a>
                         <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Краснодар</p>
-                    </div>
-                    <div class="footer__contacts-item js-city-show city_lipetsk hidden">
-                        <a class="footer__contacts-link footer__tel" href="tel:+74742200745">+7 (4742) 200-745</a>
-                        <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Липецк</p>
                     </div>
                 </div>
 
