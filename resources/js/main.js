@@ -80,7 +80,7 @@ class Finist {
             });
         }
 
-        this.showCity();
+        //this.showCity();
 
         this.closeBtn = document.querySelectorAll('.js-contacts-close');
 

@@ -27,6 +27,7 @@
         </div>
 
         <div class="header__right header__right_vacancies">
+            <a class="header__phone phone800" href="tel:+78006008776">8 800 600-87-76</a>
             <a class="header__phone js-city-show city_moscow" href="tel:+74956600098">+7 495 660-00-98</a>
             <a class="header__phone js-city-show city_spb hidden" href="tel:+78124494325">+7 812 449-43-25</a>
             <a class="header__phone js-city-show city_nn hidden" href="tel:+78312003383">+7 831 200-33-83</a>

@@ -48,8 +48,8 @@
             </a>
             --}}
                 <picture>
-                    <source srcset="/icon/partners/vsk.jpg" media="(min-width: 768px)">
-                    <img src="/icon/partners/vsk.jpg" alt="ВСК" class="p-logo">
+                    <source srcset="/icon/partners/vsk-logo.png" media="(min-width: 768px)">
+                    <img src="/icon/partners/vsk-logo.png" alt="ВСК" class="p-logo">
                 </picture>
         </div>
         <h3 class="fs-26 text-center mb-20{{ isset($edit_mode) ? ' blockcrud-editable' : '' }}"

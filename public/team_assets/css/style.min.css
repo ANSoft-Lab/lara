@@ -2384,8 +2384,8 @@ button {
   width: 100%;
 }
 .team__photo {
-  max-width: 240px;
-  max-height: 240px;
+  width: 240px;
+  height: 240px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2397,6 +2397,7 @@ button {
   justify-content: center;
   border-radius: 100%;
   margin-bottom: 20px;
+  background-size: cover;
 }
 .team__photo img {
   width: 240px;

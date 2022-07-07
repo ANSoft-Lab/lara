@@ -141,11 +141,12 @@
     letter-spacing: 0.005em;
     color: #272727;
     text-decoration: none;
-    margin-right: 32px;
+    margin-right: 10px;
     -webkit-transition: 0.2s;
     transition: 0.2s;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
-    padding-right: 38px;
+    padding-right: 15px;
+    white-space: nowrap;
   }
   .header__phone:hover {
     color: rgba(39, 39, 39, 0.7);
@@ -276,9 +277,22 @@
       padding-top: 10px;
       padding-bottom: 12px;
     }
+
     .header__right_vacancies {
-      max-width: 109px;
+      max-width: 200px;
     }
+
+    .header__phone {
+      display: none;
+    }
+    .header__phone.phone800 {
+      display: block;
+      margin-right: 10px;
+      padding-right: 10px;
+      padding-top: 12px;
+      font-size: 16px;
+    }
+/*
     .header__phone {
       -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -294,6 +308,7 @@
       background-size: auto;
       margin-right: 0;
     }
+*/
     .header__phone:hover {
       background-color: #f0f1f3;
     }
@@ -377,6 +392,7 @@
     }
   }
   @media (max-width: 767px) {
+/*
     .header__right {
       max-width: 168px;
       padding-top: 10px;
@@ -385,6 +401,7 @@
     .header__right_vacancies {
       max-width: 109px;
     }
+*/
   }
   .menu {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);

@@ -496,7 +496,7 @@ button {
 }
 .finist__subtitle {
   font-weight: 300;
-  font-size: 76px;
+  font-size: 60px;
   line-height: 96px;
   letter-spacing: 0.005em;
   color: #000;
@@ -704,6 +704,7 @@ button {
   max-width: 420px;
   width: 100%;
   cursor: pointer;
+  min-height: 370px;
 }
 .views__item:hover .views__link {
   background-color: #f2cb4d;
@@ -750,6 +751,7 @@ button {
   margin-bottom: 17px;
 }
 .views__text {
+  min-height: 80px;
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;

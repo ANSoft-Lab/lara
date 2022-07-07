@@ -36,7 +36,7 @@
             <div class="footer__right">
                 <div class="footer__social">
                     <a class="footer__social-link footer__social-link_vkontakte" href="https://vk.com/gkfinist"></a>
-                    <a class="footer__social-link footer__social-link_whatsapp" href="https://wa.me/+79156257342"></a>
+                    <a class="footer__social-link footer__social-link_whatsapp" href="https://wa.me/+79060347987"></a>
                     <a class="footer__social-link footer__social-link_telegram" href="https://t.me/spfinist"></a>
                 </div>
 

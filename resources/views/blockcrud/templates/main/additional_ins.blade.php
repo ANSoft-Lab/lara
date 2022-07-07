@@ -27,5 +27,10 @@
                 <p class="additional__subtitle">Страхование потребительских кредитов</p>
             </div>
         </a>
+        <a class="additional__item" href="/services/legalservices">
+            <div class="additional__content">
+                <p class="additional__subtitle">Юридические услуги</p>
+            </div>
+        </a>
     </div>
 </section>
