@@ -67,7 +67,7 @@ class Finist {
         if (Cookies.get('city')) {
             this.city = Cookies.get('city');
         } else {
-            $('.header__location:first-child').click();
+            //$('.header__location:first-child').click();
         }
 
         if (th.city && this.cityModal) {
@@ -80,7 +80,7 @@ class Finist {
             });
         }
 
-        //this.showCity();
+        this.showCity();
 
         this.closeBtn = document.querySelectorAll('.js-contacts-close');
 
