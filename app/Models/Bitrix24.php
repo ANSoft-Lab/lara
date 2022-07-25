@@ -21,9 +21,15 @@ class Bitrix24 extends Model {
 
         $params = self::prepareFields($order);
 
+        $source_suffix = "";
+        if(preg_match("|services/legalservices|i", getenv("HTTP_REFERER")))
+        {
+            $source_suffix = " [Юр.услуги]";
+        }
+
         $postData = [
             'UF_CRM_1530097598' => "Web",
-            'TITLE' => "finist.ru " . date("d.m.Y H:i") . " ({$order->name})", // заголовок для лида
+            'TITLE' => "finist.ru{$source_suffix} " . date("d.m.Y H:i") . " ({$order->name})", // заголовок для лида
             'NAME' => $order->name,
 //            'LAST_NAME' => $order->lastname,
             'PHONE_MOBILE' => $order->phone,
