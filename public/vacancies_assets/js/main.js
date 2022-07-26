@@ -121,8 +121,18 @@ jQuery(function($){
     }
 
     if($('.js-filter-item').length) {
-      const currentCity = $('.header__location.js-city-show:not(".hidden")').text().toLowerCase();
       switchFilter();
+      let currentCity = $('.header__location.js-city-show:not(".hidden")').text().toLowerCase();
+      let currentVacancy = null;
+      let currentCategory = null;
+      
+      if(window.location.hash) {
+        currentVacancy = $(window.location.hash);
+        if(currentVacancy) {
+          currentCity = $('#' + currentVacancy.attr('data-city')).attr('data-city-name').toLowerCase();
+          currentCategory = currentVacancy.attr('data-category');
+        }
+      }
 
       if(currentCity) {
         $('.sale__filter-item[data-type=city]').each(function() {
@@ -135,6 +145,15 @@ jQuery(function($){
         });
       }
 
+      if(currentVacancy) {
+        $('#' + currentCategory).addClass('js-active_filter');
+        switchFilter();
+        $('.sale__item_active').removeClass('sale__item_active');
+        currentVacancy.addClass('sale__item_active');
+        $('html,body').animate({
+          scrollTop: currentVacancy.offset().top
+        }, 200);
+      }
     }
     
     const forms = $('.response__btn').closest('form');

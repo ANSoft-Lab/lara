@@ -25,9 +25,6 @@
             <li data-city="krasnodar" class="contacts__tab glide__bullet" data-glide-dir="=7">
                 краснодар
             </li>
-            <li data-city="lipetsk" class="contacts__tab glide__bullet" data-glide-dir="=8">
-                липецк
-            </li>
         </ul>
     </div>
     <div id="map-help" class="help">Кликните по метке для подробной информации.</div>
@@ -62,7 +59,7 @@
                 <div class="contacts__map-info">
                     <h3>Нижний Новгород</h3>
                     <p><b>Адрес:</b> г. Нижний Новгород, ул. Костина, д.3</p>
-                    <p><b>Телефон:</b> +7 (831) 280-96-97</p>
+                    <p><b>Телефон:</b> +7 (831) 200-33-83</p>
                     <p><b>График работы:</b> Пн-Вс: 9:00-19:00</p>
                 </div>
             </div>

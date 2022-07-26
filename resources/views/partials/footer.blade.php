@@ -2,11 +2,16 @@
     <div class="container">
         <div class="footer__top">
             <div class="footer__left">
-                <a href="#" class="footer__logo">
+                <a href="/" class="footer__logo">
                     <img src="/new/images/logo.png" alt="logo" />
                 </a>
 
                 <a class="footer__vacancies" href="/job/"><span>Вакансии</span></a>
+
+                <br/>
+                <ul>
+                    <li class="footer__middle-item"><a href="/partners"><span>Наши партнёры</span></a></li>
+                </ul>
             </div>
 
             <div class="footer__middle">
@@ -30,10 +35,8 @@
 
             <div class="footer__right">
                 <div class="footer__social">
-                    <a class="footer__social-link footer__social-link_facebook" href="https://www.facebook.com/gkfinist"></a>
                     <a class="footer__social-link footer__social-link_vkontakte" href="https://vk.com/gkfinist"></a>
-                    <a class="footer__social-link footer__social-link_instagram" href="https://www.instagram.com/p/CXD7NsLJRkr/"></a>
-                    <a class="footer__social-link footer__social-link_whatsapp" href="https://wa.me/+79156257342"></a>
+                    <a class="footer__social-link footer__social-link_whatsapp" href="https://wa.me/+79060347987"></a>
                     <a class="footer__social-link footer__social-link_telegram" href="https://t.me/spfinist"></a>
                 </div>
 
@@ -52,7 +55,7 @@
                         <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Санкт-Петербург</p>
                     </div>
                     <div class="footer__contacts-item js-city-show city_nn hidden">
-                        <a class="footer__contacts-link footer__tel" href="tel:+78312809697">+7 831 280-96-97</a>
+                        <a class="footer__contacts-link footer__tel" href="tel:+78312003383">+7 831 200-33-83</a>
                         <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Нижний Новгород</p>
                     </div>
                     <div class="footer__contacts-item js-city-show city_ryazan hidden">
@@ -67,6 +70,10 @@
                         <a class="footer__contacts-link footer__tel" href="tel:+78435671911">+7 (843) 567-19-11</a>
                         <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Казань</p>
                     </div>
+                    <div class="footer__contacts-item js-city-show city_ekaterinburg hidden">
+                        <a class="footer__contacts-link footer__tel" href="tel:+73433792092">+7 (343) 379-20-92</a>
+                        <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Екатеринбург</p>
+                    </div>
                     <div class="footer__contacts-item js-city-show city_samara hidden">
                         <a class="footer__contacts-link footer__tel" href="tel:+78463790582">+7 (8463) 790-582</a>
                         <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Самара</p>
@@ -75,17 +82,12 @@
                         <a class="footer__contacts-link footer__tel" href="tel:+78612982446">+7 (8612) 982-446</a>
                         <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Краснодар</p>
                     </div>
-                    <div class="footer__contacts-item js-city-show city_lipetsk hidden">
-                        <a class="footer__contacts-link footer__tel" href="tel:+74742200745">+7 (4742) 200-745</a>
-                        <p class="footer__contacts-text js-open-modal" data-modal="choose-city">Липецк</p>
-                    </div>
                 </div>
 
                 @include('blockcrud.modals.feedback', ['modal_title' => 'Обратный звонок', 'link' => false, 'btn_class' => 'footer__right-btn callback modal__btn'])
             </div>
         </div>
         <div class="footer__bottom">
-            <!-- <a class="footer__bottom-link" href="#"></a> -->
             <div class="footer__bottom-text">(С) 2003 — {{ date('Y') }} «Финист»</div>
             <div class="footer__bottom-text">
                 Сайт защищен reCAPTCHA с применением Политики конфиденциальности и Условий использования от Google.

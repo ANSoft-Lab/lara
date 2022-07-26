@@ -68,8 +68,8 @@
 			<div class="finist__inner">
 			<div class="finist__caption">Вкладываемся в сотрудников</div>
 			<div class="finist__text">
-				Тебе доступно обучение финансовой <br />
-				грамотности, тренинги по продажам, <br />
+				Тебе доступно обучение,<br/>
+				тренинги по продажам, <br />
 				а также база знаний для каждого отдела
 			</div>
 			</div>
@@ -93,15 +93,15 @@
 		<div class="finist__right">
 		<div class="finist__box">
 			<div class="finist__subtitle">11</div>
-			<div class="finist__descr"><span>Регионов</span>с офисами</div>
+			<div class="finist__descr">Регионов<br/>с&nbsp;офисами</div>
 		</div>
 		<div class="finist__box finist__box_item-2">
 			<div class="finist__subtitle">18</div>
-			<div class="finist__descr"><span>Лет</span>На рынке</div>
+			<div class="finist__descr">Лет<br/>на&nbsp;рынке</div>
 		</div>
 		<div class="finist__box finist__box_item-3">
-			<div class="finist__subtitle">600</div>
-			<div class="finist__descr"><span>Сотрудников</span>в штате</div>
+			<div class="finist__subtitle">550+</div>
+			<div class="finist__descr">Сотрудников<br/>в&nbsp;штате</div>
 		</div>
 		</div>
 	</div>
@@ -131,27 +131,28 @@
 	<div class="vc-slider__slider">
 	<div class="vc-slider__list">
 		<div class="vc-slider__item">
-			<img src="/vacancies_assets/images/vc-slider/photo1.jpg" alt="images" />
-		</div>
-
-		<div class="vc-slider__item">
-			<img src="/vacancies_assets/images/vc-slider/photo2.jpg" alt="images" />
+			<img src="/vacancies_assets/images/vc-slider/vac_photo8.jpg" alt="images" />
 		</div>
 		<div class="vc-slider__item">
-			<img src="/vacancies_assets/images/vc-slider/photo3.jpg" alt="images" />
-		</div>
-
-		<div class="vc-slider__item">
-			<img src="/vacancies_assets/images/vc-slider/photo4.jpg" alt="images" />
+			<img src="/vacancies_assets/images/vc-slider/vac_photo1.jpg" alt="images" />
 		</div>
 		<div class="vc-slider__item">
-			<img src="/vacancies_assets/images/vc-slider/photo5.jpg" alt="images" />
+			<img src="/vacancies_assets/images/vc-slider/vac_photo2.jpg" alt="images" />
 		</div>
 		<div class="vc-slider__item">
-			<img src="/vacancies_assets/images/vc-slider/photo6.jpg" alt="images" />
+			<img src="/vacancies_assets/images/vc-slider/vac_photo3.jpg" alt="images" />
 		</div>
 		<div class="vc-slider__item">
-			<img src="/vacancies_assets/images/vc-slider/photo7.jpg" alt="images" />
+			<img src="/vacancies_assets/images/vc-slider/vac_photo4.jpg" alt="images" />
+		</div>
+		<div class="vc-slider__item">
+			<img src="/vacancies_assets/images/vc-slider/vac_photo5.jpg" alt="images" />
+		</div>
+		<div class="vc-slider__item">
+			<img src="/vacancies_assets/images/vc-slider/vac_photo6.jpg" alt="images" />
+		</div>
+		<div class="vc-slider__item">
+			<img src="/vacancies_assets/images/vc-slider/vac_photo7.jpg" alt="images" />
 		</div>
 	</div>
 	</div>
@@ -247,5 +248,5 @@
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="/vacancies_assets/js/jquery.sticky-kit.js"></script>
-	<script src="/vacancies_assets/js/main.js"></script>
+	<script src="/vacancies_assets/js/main.js?ver=2.0"></script>
 @endsection

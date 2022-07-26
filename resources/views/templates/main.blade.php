@@ -325,7 +325,7 @@
                                 <span class="contacts__subtitle">Адрес: </span>Нижний Новгород, ул. Костина, д.3
                             </p>
                             <p class="contacts__item">
-                                <span class="contacts__subtitle">Телефон: </span>+7 (831) 280-96-97
+                                <span class="contacts__subtitle">Телефон: </span>+7 (831) 200-33-83
                             </p>
                             <p class="contacts__item">
                                 <span class="contacts__subtitle">График работы: </span>

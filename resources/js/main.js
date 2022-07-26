@@ -67,7 +67,7 @@ class Finist {
         if (Cookies.get('city')) {
             this.city = Cookies.get('city');
         } else {
-            $('.header__location__city-option').click();
+            //$('.header__location:first-child').click();
         }
 
         if (th.city && this.cityModal) {

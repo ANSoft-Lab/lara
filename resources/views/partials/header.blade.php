@@ -5,7 +5,7 @@
         <div class="header__wrap">
         <div class="header__left">
             <a class="header__logo" href="/">
-            <img src="/icon/finist_logo.svg" alt="finist">
+                <img src="/icon/finist_logo.svg" alt="finist">
             </a>
 
             <ul class="header__list">
@@ -19,7 +19,6 @@
                     <a class="header__location js-open-modal js-city-show city_ekaterinburg hidden" data-modal="choose-city">Екатеринбург</a>
                     <a class="header__location js-open-modal js-city-show city_krasnodar hidden" data-modal="choose-city">Краснодар</a>
                     <a class="header__location js-open-modal js-city-show city_samara hidden" data-modal="choose-city">Самара</a>
-                    <a class="header__location js-open-modal js-city-show city_lipetsk hidden" data-modal="choose-city">Липецк</a>
                 </li>
                 <li class="header__item">
                     <a href="https://finist.ru/chto-delat-pri-nastuplenii-strakhovogo-sluchaya"> Страховой случай</a>
@@ -32,16 +31,16 @@
         </div>
 
         <div class="header__right header__right_vacancies">
+            <a class="header__phone phone800" href="tel:+78006008776">8 800 600-87-76</a>
             <a class="header__phone js-city-show city_moscow" href="tel:+74956600098">+7 495 660-00-98</a>
             <a class="header__phone js-city-show city_spb hidden" href="tel:+78124494325">+7 812 449-43-25</a>
-            <a class="header__phone js-city-show city_nn hidden" href="tel:+78312809697">+7 831 280-96-97</a>
+            <a class="header__phone js-city-show city_nn hidden" href="tel:+78312003383">+7 831 200-33-83</a>
             <a class="header__phone js-city-show city_ryazan hidden" href="tel:+74912392016">+7 (4912) 392-016</a>
             <a class="header__phone js-city-show city_voronezh hidden" href="tel:+74732067297">+7 (473) 206-72-97</a>
             <a class="header__phone js-city-show city_kazan hidden" href="tel:+78435671911">+7 (843) 567-19-11</a>
             <a class="header__phone js-city-show city_ekaterinburg hidden" href="tel:+73433792092">+7 (343) 379-20-92</a>
             <a class="header__phone js-city-show city_krasnodar hidden" href="tel:+78612982446">+7 (8612) 982-446</a>
             <a class="header__phone js-city-show city_samara hidden" href="tel:+78463790582">+7 (8463) 790-582</a>
-            <a class="header__phone js-city-show city_lipetsk hidden" href="tel:+74742200745">+7 (4742) 200-745</a>
             @include('blockcrud.modals.feedback', ['modal_title' => 'Обратный звонок', 'link' => true, 'btn_class' => 'header__backcall callback'])
             <button class="header__sandwich js-burger">
             <span></span>
@@ -86,9 +85,19 @@
                         @endif
                     </li>
                 @endforeach
+                    <li class="menu__item">
+                        <a href="https://realty.finist.ru/" class="menu__link" target="_blank">
+                            Finist.Недвижимость
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="https://promoneyclub.ru/" class="menu__link" target="_blank">
+                            ProMoneyClub
+                        </a>
+                    </li>
             </ul>
 
-            <a class="menu__text" href="#">Страховой случай</a>
+            <a class="menu__text" href="/chto-delat-pri-nastuplenii-strakhovogo-sluchaya">Страховой случай</a>
             <div class="js-city-show city_moscow">
                 <a class="menu__phone" href="tel:+74956600098">+7 495 660-00-98</a>
                 <div class="menu__descr">Москва</div>
@@ -98,7 +107,7 @@
                 <div class="menu__descr">Санкт-Петербург</div>
             </div>
             <div class="js-city-show city_nn hidden">
-                <a class="menu__phone" href="tel:+78312809697">+7 831 280-96-97</a>
+                <a class="menu__phone" href="tel:+78312003383">+7 831 200-33-83</a>
                 <div class="menu__descr">Нижний Новгород</div>
             </div>
             <div class="js-city-show city_ryazan hidden">
@@ -124,10 +133,6 @@
             <div class="js-city-show city_samara hidden">
                 <a class="menu__phone" href="tel:+78463790582">+7 (8463) 790-582</a>
                 <div class="menu__descr">Самара</div>
-            </div>
-            <div class="js-city-show city_lipetsk hidden">
-                <a class="menu__phone" href="tel:+74742200745">+7 (4742) 200-745</a>
-                <div class="menu__descr">Липецк</div>
             </div>
         </div>
     </nav>
