@@ -39,7 +39,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="ahead_achievies_partners">
+                    <img src="/img/hy_partners.png" alt=""/>
+                </div>
             </section>
+
+            <!--
+
             <div class="ahead_achievies_carousels">
                 <div class="ahead_achievies_carousel-item">
                     <span class="ahead_achievies_carousel_title">Страховые-партнеры</span>
@@ -126,6 +132,9 @@
                     </div>
                 </div>
             </div>
+
+            -->
+
         </div>
     </div>
 </template>
@@ -337,6 +346,19 @@ export default {
                 br {
                     display: none;
                 }
+            }
+        }
+
+        > section {
+            display: flex;
+        }
+        &_partners {
+            @include m(1299) {
+                display: none;
+            }
+            max-width: 100%;
+            img {
+                max-width: 100%;
             }
         }
         &_mainCol {

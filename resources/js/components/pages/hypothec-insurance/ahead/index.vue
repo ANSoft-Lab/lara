@@ -2,11 +2,7 @@
     <div class="ahead">
         <section>
             <h2>Страхование ипотеки</h2>
-            <ul>
-                <li>Комплексная помощь по оформлению полиса</li>
-                <li>7 индивидуальных предложений от страховых для клиента</li>
-                <li>Даем дополнительные скидки до 30%</li>
-            </ul>
+            <p class="slogan">Обязательное условие для получения кредита в&nbsp;банке, а&nbsp;также способ защиты от&nbsp;материальных потерь для&nbsp;заёмщиков и&nbsp;банков.</p>
             <img src="@/img/hypothec/bg.png" alt="" class="ahead_bg">
         </section>
         <ahead-calculator />
@@ -98,6 +94,14 @@ export default {
                     border-radius: 50%;
                     margin-right: 17px;
                 }
+            }
+        }
+        .slogan {
+            padding: 20px 0;
+            line-height: 20px;
+            max-width: 50%;
+            @include m(767) {
+                max-width: 100%;
             }
         }
     }
