@@ -1,8 +1,8 @@
 <template>
     <div class="row">
         <div class="col-6 col-sm-12 calculator_result_firstBlock">
-            <h2 class="calculator_form_title">Ваши данные</h2>
-            <div class="calculator_result_chips">
+            <h2 class="calculator_form_title">Ваши данные отправлены!</h2>
+            <div class="calculator_result_chips" style="display:none;">
                 <div class="calculator_result_chip">
                     <svg class="calculator_result_chip_icon" width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15.364 15.364L9 21.728L2.636 15.364C1.37734 14.1053 0.520187 12.5017 0.172928 10.7559C-0.17433 9.01004 0.00390685 7.20044 0.685099 5.55591C1.36629 3.91139 2.51984 2.50579 3.99988 1.51686C5.47992 0.52793 7.21998 9.15527e-05 9 9.15527e-05C10.78 9.15527e-05 12.5201 0.52793 14.0001 1.51686C15.4802 2.50579 16.6337 3.91139 17.3149 5.55591C17.9961 7.20044 18.1743 9.01004 17.8271 10.7559C17.4798 12.5017 16.6227 14.1053 15.364 15.364ZM9 11C9.53044 11 10.0391 10.7893 10.4142 10.4142C10.7893 10.0392 11 9.53045 11 9.00001C11 8.46958 10.7893 7.96087 10.4142 7.5858C10.0391 7.21073 9.53044 7.00001 9 7.00001C8.46957 7.00001 7.96086 7.21073 7.58579 7.5858C7.21072 7.96087 7 8.46958 7 9.00001C7 9.53045 7.21072 10.0392 7.58579 10.4142C7.96086 10.7893 8.46957 11 9 11Z" fill="#221E1F"/>
@@ -42,6 +42,8 @@
             </div>
         </div>
         <div class="col-6 col-sm-12 calculator_result_lastBlock">
+            <h3 class="calculator_result_title">Мы свяжемся с вами в течение рабочего дня</h3>
+<!--
             <h3 class="calculator_result_title">Результаты расчета</h3>
             <span class="calculator_result_subtitle">Стоимость полиса в страховых</span>
             <div class="calculator_result_items">
@@ -70,6 +72,7 @@
                     <span class="calculator_result_item_title">3 750 ₽</span>
                 </div>
             </div>
+-->
         </div>
     </div>
 </template>

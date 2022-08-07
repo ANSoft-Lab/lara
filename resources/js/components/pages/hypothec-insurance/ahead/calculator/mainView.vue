@@ -1,7 +1,7 @@
 <template>
     <div class="row">
         <div class="col-lg-4 col-md-12 col-5">
-            <h2 class="calculator_form_title">Рассчитайте стоимость</h2>
+            <h2 class="calculator_form_title">Закажите расчёт стоимости</h2>
         </div>
         <div class="col-lg-8 col-md-12 col-7">
             <div class="row mt-35">
@@ -80,7 +80,22 @@
                         </template>
                     </custom-input>
                 </div>
+                <div class="col-6 col-sm-12">
+                    <custom-input
+                        v-model="formData.phone.value"
+                        :placeholder="'Контактный телефон'"
+                        :inputType="'text'"
+                        :error="formErrors.phone"
+                    >
+                        <template #icon>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 18H20V20H0V18ZM2 10H4V17H2V10ZM7 10H9V17H7V10ZM11 10H13V17H11V10ZM16 10H18V17H16V10ZM0 5L10 0L20 5V9H0V5ZM10 6C10.2652 6 10.5196 5.89464 10.7071 5.70711C10.8946 5.51957 11 5.26522 11 5C11 4.73478 10.8946 4.48043 10.7071 4.29289C10.5196 4.10536 10.2652 4 10 4C9.73478 4 9.48043 4.10536 9.29289 4.29289C9.10536 4.48043 9 4.73478 9 5C9 5.26522 9.10536 5.51957 9.29289 5.70711C9.48043 5.89464 9.73478 6 10 6Z" fill="#221E1F"/>
+                            </svg>
+                        </template>
+                    </custom-input>
+                </div>
             </div>
+<!--
             <div class="row mt-35">
                 <div class="col-6 col-sm-12">
                     <custom-switch
@@ -113,8 +128,9 @@
                     </custom-input>
                 </div>
             </div>
+-->
             <div class="row">
-                <button @click="validate" class="calculator_submit-btn">Сделать расчет</button>
+                <button @click="validate" class="calculator_submit-btn">Отправить заявку</button>
             </div>
         </div>
     </div>
@@ -147,6 +163,15 @@ export default {
             bank: {
                 value: ''
             },
+            phone: {
+                value: '',
+                validation: (v) => {
+                    if(v.replace(/[^0-9]/, '').match(/^[0-9]{10,11}/))
+                        return true
+                    else
+                        return false
+                }
+            },
             sex: {
                 value: 'М',
                 values: ['М', 'Ж']
@@ -160,14 +185,14 @@ export default {
                 }
             },
             risks: {
-                value: '',
+                value: 'Да',
                 values: [
                     'Да',
                     'Не да'
                 ]
             },
             haveCoBorrower: {
-                value: 'Да',
+                value: 'Нет',
                 values: [
                     'Да',
                     'Нет'
@@ -189,6 +214,7 @@ export default {
             bank: false,
             debtAmount: false,
             risks: false,
+            phone: false,
             coBorrowerPercent: false
         },
     }),
@@ -222,6 +248,10 @@ export default {
                     requestBody[key] = value.value
                 }
                 vm.$emit('onSuccess', requestBody)
+                console.log(requestBody)
+            } else {
+                console.log(errorsCount)
+                console.log(vm.formErrors)
             }
         }
     },

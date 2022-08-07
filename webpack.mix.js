@@ -21,13 +21,11 @@ mix.webpackConfig({
 
 mix.sass('resources/scss/style.scss', 'public/css')
     .options({
-        processCssUrls: false,
+//        processCssUrls: false,
         postCss: [
             require('postcss-css-variables')()
         ]
     }).version();
-
-//mix.sass('resources/scss/style.scss', 'public/css')
 
 mix
     .js('resources/js/main.js', 'public/js')
