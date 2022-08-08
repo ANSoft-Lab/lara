@@ -2,28 +2,31 @@
     <div class="contacts__scroll-wrap">
         <ul class="contacts__tablist js-tabs glide__bullets" data-glide-el="controls[nav]">
             <li data-city="msk" class="contacts__tab glide__bullet m-active" data-glide-dir="=0">
-                москва, центральный&nbsp;офис
+                Москва, центральный&nbsp;офис
             </li>
             <li data-city="spb" class="contacts__tab glide__bullet" data-glide-dir="=1">
-                санкт-петербург
+                Санкт-петербург
             </li>
             <li data-city="nnv" class="contacts__tab glide__bullet" data-glide-dir="=2">
-                нижний новгород
+                Нижний Новгород
             </li>
             <li data-city="ryz" class="contacts__tab glide__bullet" data-glide-dir="=3">
-                рязань
+                Рязань
             </li>
             <li data-city="voronezh" class="contacts__tab glide__bullet" data-glide-dir="=4">
-                воронеж
+                Воронеж
             </li>
             <li data-city="kazan" class="contacts__tab glide__bullet" data-glide-dir="=5">
-                казань
+                Казань
             </li>
             <li data-city="ekaterinburg" class="contacts__tab glide__bullet" data-glide-dir="=6">
-                екатеринбург
+                Екатеринбург
             </li>
             <li data-city="krasnodar" class="contacts__tab glide__bullet" data-glide-dir="=7">
-                краснодар
+                Краснодар
+            </li>
+            <li data-city="novosibirsk" class="contacts__tab glide__bullet" data-glide-dir="=8">
+                Новосибирск
             </li>
         </ul>
     </div>
@@ -65,7 +68,7 @@
             </div>
             <div class="contacts__map contacts__map--cp js-map glide__slide">
                 <div class="contacts__map-ym">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac9d10d3fe4225e5b31f6afd5a09a46aec8c68d8af738b81aa0516bee60923a9e&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=false"></script>
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4439221946b5c8b9d5a16b8ba0ebbf177ba2965cc7e5bd002999dbef5b5963d8&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
                 <div class="contacts__map-info">
                     <h3>Рязань</h3>
@@ -106,8 +109,18 @@
                 </div>
                 <div class="contacts__map-info">
                     <h3>Краснодар</h3>
-                    <p><b>Адрес:</b> г. Краснодар, ул. 40-летия Победы, 20/1, офис офис 506</p>
+                    <p><b>Адрес:</b> г. Краснодар, ул. 40-летия Победы, 20/1, офис 506</p>
                     <p><b>Телефон:</b> +7 (8612) 982-446</p>
+                </div>
+            </div>
+            <div class="contacts__map contacts__map--cp js-map glide__slide">
+                <div class="contacts__map js-map glide__slide">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adb69b42b91d2bcac8ace9e5aa69f98d7b79ff9a668d88fa3423ded5803ec41c5&amp;width=100%25&amp;height=445&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                <div class="contacts__map-info">
+                    <h3>Новосибирск</h3>
+                    <p><b>Адрес:</b> г. Новосибирск, ул.Депутатская, д. 48</p>
+                    <p><b>Телефон:</b> 8 800 600-87-76</p>
                 </div>
             </div>
         </div>

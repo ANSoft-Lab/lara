@@ -32,16 +32,16 @@
                 <label for="city-kazan" class="modal__label js-city">Казань</label>
             </div>
             <div class="modal__group">
-                <input id="city-samara" type="radio" name="city" value="samara" class="modal__checkbox">
-                <label for="city-samara" class="modal__label js-city">Самара</label>
-            </div>
-            <div class="modal__group">
                 <input id="city-ekaterinburg" type="radio" name="city" value="ekaterinburg" class="modal__checkbox">
                 <label for="city-ekaterinburg" class="modal__label js-city">Екатеринбург</label>
             </div>
             <div class="modal__group">
                 <input id="city-krasnodar" type="radio" name="city" value="krasnodar" class="modal__checkbox">
                 <label for="city-krasnodar" class="modal__label js-city">Краснодар</label>
+            </div>
+            <div class="modal__group">
+                <input id="city-novosibirsk" type="radio" name="city" value="novosibirsk" class="modal__checkbox">
+                <label for="city-novosibirsk" class="modal__label js-city">Новосибирск</label>
             </div>
             <button type="button" class="modal__btn js_set_city">Выбрать</button>
         </form>

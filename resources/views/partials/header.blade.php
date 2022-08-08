@@ -18,7 +18,7 @@
                     <a class="header__location js-open-modal js-city-show city_kazan hidden" data-modal="choose-city">Казань</a>
                     <a class="header__location js-open-modal js-city-show city_ekaterinburg hidden" data-modal="choose-city">Екатеринбург</a>
                     <a class="header__location js-open-modal js-city-show city_krasnodar hidden" data-modal="choose-city">Краснодар</a>
-                    <a class="header__location js-open-modal js-city-show city_samara hidden" data-modal="choose-city">Самара</a>
+                    <a class="header__location js-open-modal js-city-show city_novosibirsk hidden" data-modal="choose-city">Новосибирск</a>
                 </li>
                 <li class="header__item">
                     <a href="https://finist.ru/chto-delat-pri-nastuplenii-strakhovogo-sluchaya"> Страховой случай</a>
@@ -41,6 +41,7 @@
             <a class="header__phone js-city-show city_ekaterinburg hidden" href="tel:+73433792092">+7 (343) 379-20-92</a>
             <a class="header__phone js-city-show city_krasnodar hidden" href="tel:+78612982446">+7 (8612) 982-446</a>
             <a class="header__phone js-city-show city_samara hidden" href="tel:+78463790582">+7 (8463) 790-582</a>
+            <a class="header__phone js-city-show city_novosibirsk hidden" href="tel:+74956600098">+7 495 660-00-98</a>
             @include('blockcrud.modals.feedback', ['modal_title' => 'Обратный звонок', 'link' => true, 'btn_class' => 'header__backcall callback'])
             <button class="header__sandwich js-burger">
             <span></span>
@@ -132,6 +133,10 @@
             </div>
             <div class="js-city-show city_samara hidden">
                 <a class="menu__phone" href="tel:+78463790582">+7 (8463) 790-582</a>
+                <div class="menu__descr">Самара</div>
+            </div>
+            <div class="js-city-show city_novosibirsk hidden">
+                <a class="menu__phone" href="tel:+74956600098">+7 495 660-00-98</a>
                 <div class="menu__descr">Самара</div>
             </div>
         </div>

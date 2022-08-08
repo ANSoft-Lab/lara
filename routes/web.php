@@ -20,6 +20,8 @@ Route::get('job/{vacancy_slug}', 'PageController@showVacancy')->name('vacancy');
 
 //Auth::routes();
 
+Route::get('/kis', function() { return redirect('/hypothec-insurance'); });
+
 Route::get('/hypothec-insurance', function () {
     return view('templates.hypothec-insurance');
 });

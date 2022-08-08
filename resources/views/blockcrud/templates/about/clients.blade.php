@@ -1,4 +1,4 @@
-<section class="clients">
+<section class="clients" style="display:none;">
     <h2 class="about__title">
         Наши клиенты
     </h2>

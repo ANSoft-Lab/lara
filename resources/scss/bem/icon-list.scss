@@ -12,6 +12,11 @@
         justify-content: center;
         margin-bottom: 60px;
 
+        img {
+            max-width: 70%;
+            margin-left: 15%;
+        }
+
         &:last-of-type {
             margin-bottom: 0;
         }
