@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="/team_assets/css/style.min.css" />
 @endsection
 
+{{--
 <section class="sale" id="list">
 	<div class="container">
 		<div class="sale__filter">
@@ -76,6 +77,7 @@
 
     </div>
 </section>
+--}}
 
 <div class="sale__mobile-bg"></div>
 

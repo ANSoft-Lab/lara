@@ -3,7 +3,7 @@
 	   <tbody>
 	      <tr>
 	         <td width="200">
-	            <img class="alignleft" src="/img/group/finist_logo.jpeg" title="Страховое представительство «Финист»" unselectable="on" width="148">
+	            <!--<img class="alignleft" src="/img/group/finist_logo.jpeg" title="Страховое представительство «Финист»" unselectable="on" width="148">-->
 	            <h3>Страховое представительство «Финист»</h3>
 	            <p>Входит в ТОП-5 страховых брокеров России.<br>
 	               Мы обеспечиваем качественный сервис и высокие стандарты обслуживания с 2003 года
@@ -37,6 +37,25 @@
 	      <tr>
 	         <td>
 	            <p>
+	               <img src="/img/group/logo-freemont.png" alt="Фарго" unselectable="on"><br>
+	            </p>
+	            <p>
+	               Автотехцентр СТО «Фарго»
+	               <br>
+	               Телефон: +7 (495) 258-87-13
+	               <br>
+	               freemont@ro.ru
+	               <br>
+	               <a href="http://freemont.ru/" target="_blank">freemont.ru</a>
+	               <br>
+	               Адрес: Москва, Старообрядческая улица, д.28а, стр.1
+	            </p>
+	         </td>
+	      </tr>
+<!--
+	      <tr>
+	         <td>
+	            <p>
 	               <img src="/img/group/logo-freemont.png" alt="Фримонт" unselectable="on"><br>
 	            </p>
 	            <p>
@@ -52,6 +71,7 @@
 	            </p>
 	         </td>
 	      </tr>
+-->
 	      <tr>
 	         <td>
 	            <p>
@@ -97,22 +117,6 @@
 	               <a href="http://redmotors.ru/" target="_blank">redmotors.ru</a>
 	               <br>
 	               Адрес: г. Москва, Хлебозаводский проезд, д. 7А <br>
-	            </p>
-	         </td>
-	      </tr>
-	      <tr>
-	         <td>
-	            <p>
-	               <img src="/img/group/logo_avtor.png" alt="Avtor+" unselectable="on"><br>
-	            </p>
-	            <p>
-	               Автотехцентр «Автор+»
-	               <br>
-	               Телефон: +7 (812) 449-71-34
-	               <br>
-	               <a href="avtor-plus.com" target="_blank">avtor-plus.com</a>
-	               <br>
-	               Адрес: г. Санкт-Петербург, ул. Минеральная, д.13, лит.О
 	            </p>
 	         </td>
 	      </tr>
