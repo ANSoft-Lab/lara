@@ -96,6 +96,11 @@
                             ProMoneyClub
                         </a>
                     </li>
+                    <li class="menu__item">
+                        <a href="https://finistauto.ru/" class="menu__link" target="_blank">
+                            FinistAuto
+                        </a>
+                    </li>
             </ul>
 
             <a class="menu__text" href="/chto-delat-pri-nastuplenii-strakhovogo-sluchaya">Страховой случай</a>
