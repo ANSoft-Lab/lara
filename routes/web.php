@@ -20,11 +20,12 @@ Route::get('job/{vacancy_slug}', 'PageController@showVacancy')->name('vacancy');
 
 //Auth::routes();
 
-Route::get('/kis', function() { return redirect('/hypothec-insurance'); });
-
-Route::get('/hypothec-insurance', function () {
-    return view('templates.hypothec-insurance');
+Route::get('/kis', function () {
+    return redirect('/hypothec-insurance');
 });
+
+Route::get('/hypothec-insurance', 'HypothecInsuranceController@page');
+Route::post('/hypothec-insurance/form', 'HypothecInsuranceController@postForm');
 
 Route::group([
     'prefix' => config('backpack.base.route_prefix', 'admin'),
@@ -43,4 +44,3 @@ Route::get('{page}/{subs?}', ['uses' => 'PageController@index'])
 Route::get('/', function () {
     return view('templates.main');
 });
-
