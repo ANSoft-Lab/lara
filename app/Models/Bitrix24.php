@@ -4,6 +4,7 @@ namespace App\Models;
 
 use DB;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Request;
 use Log;
 use Session;
 
@@ -28,6 +29,8 @@ class Bitrix24 extends Model
         $comment[] = 'Возраст: ' . $data['age'];
         $comment[] = 'Пол: ' . $data['sex'];
         $comment[] = 'Сумма долга: ' . $data['debtAmount'];
+        $comment[] = 'IP: ' . Request::ip();
+        $comment[] = 'Host: ' . $_SERVER['HTTP_HOST'];
 
         $postData = [];
         $postData['fields'] = [
