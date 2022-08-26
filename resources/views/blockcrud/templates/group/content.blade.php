@@ -18,133 +18,39 @@
 	      </tr>
 	      <tr>
 	         <td>
-	            <p>
-	               <img src="/img/group/landa_logo.png" alt="Автотехцентр «Ланда»"><br>
-	            </p>
-	            <p>
-	               Автотехцентр «Ланда»
-	               <br>
-	               Телефон: (495)781-86-20; (495)781-86-21
-	               <br>
-	               landa2006@list.ru
-	               <br>
-	               <a href="http://landaservice.ru" target="_blank">landaservice.ru</a>
-	               <br>
-	               Адрес:г. Москва, Сигнальный проезд, д.18
-	            </p>
-	         </td>
-	      </tr>
-	      <tr>
-	         <td>
-	            <p>
-	               <img src="/img/group/logo-freemont.png" alt="Фарго" unselectable="on"><br>
-	            </p>
-	            <p>
-	               Автотехцентр СТО «Фарго»
-	               <br>
-	               Телефон: +7 (495) 258-87-13
-	               <br>
-	               freemont@ro.ru
-	               <br>
-	               <a href="http://freemont.ru/" target="_blank">freemont.ru</a>
-	               <br>
-	               Адрес: Москва, Старообрядческая улица, д.28а, стр.1
-	            </p>
-	         </td>
-	      </tr>
-<!--
-	      <tr>
-	         <td>
-	            <p>
-	               <img src="/img/group/logo-freemont.png" alt="Фримонт" unselectable="on"><br>
-	            </p>
-	            <p>
-	               Автотехцентр «Фримонт»
-	               <br>
-	               Телефон: +7 (495) 258-87-13
-	               <br>
-	               freemont@ro.ru
-	               <br>
-	               <a href="http://freemont.ru/" target="_blank">freemont.ru</a>
-	               <br>
-	               Адрес: г.Москва, ул. Ферганская, д.10
-	            </p>
-	         </td>
-	      </tr>
--->
-	      <tr>
-	         <td>
-	            <p>
-	               <img src="/img/group/logo_ddsmotors.png" alt="DDS Motors" unselectable="on"><br>
-	            </p>
-	            <p>
-	               Автотехцентр «DDS Motors»
-	               <br>
-	               Телефон: +7 (499) 394-77-53
-	               <br>
-	               <a href="http://ddsmotors.com/" target="_blank">ddsmotors.com</a>
-	               <br>
-	               Адрес: г. Москва, Тюменский проезд, д. 5, стр. 2
-	            </p>
-	         </td>
-	      </tr>
-	      <tr>
-	         <td>
-	            <p>
-	               <img src="/img/group/logo_autobest.png" alt="Авто-Бест" unselectable="on"><br>
-	            </p>
-	            <p>
-	               Автотехцентр «Авто-Бест»
-	               <br>
-	               Телефон: +7 (495) 220-20-17
-	               <br>
-	               <a href="http://autobest.msk.ru/" target="_blank">autobest.msk.ru</a>
-	               <br>
-	               Адрес: г.Москва, ул. Зенитчиков, д.10
-	            </p>
-	         </td>
-	      </tr>
-	      <tr>
-	         <td>
-	            <p>
-	               <img src="/img/group/logo_redmotors.png" alt="Red Motors" unselectable="on"><br>
-	            </p>
-	            <p>
-	               Автотехцентр «Red Motors»
-	               <br>
-	               Телефон: +7 (926) 668-62-24
-	               <br>
-	               <a href="http://redmotors.ru/" target="_blank">redmotors.ru</a>
-	               <br>
-	               Адрес: г. Москва, Хлебозаводский проезд, д. 7А <br>
-	            </p>
-	         </td>
-	      </tr>
-	      <tr>
-	         <td>
-	            <p>
-	               <img src="/img/group/logo_avtostyle.png" alt="Автостиль" unselectable="on"><br>
-	            </p>
-	            <p>
-	               Автотехцентр «Автостиль-Сервис»
-	               <br>
-	               Телефон: +7 (812) 445-79-82
-	               <br>
-	               <a href="avtostyl.ru" target="_blank">avtostyl.ru</a>
-	               <br>
-	               Адрес: г. Санкт-Петербург, ул. Краснопутиловская, д.65
-	            </p>
-	         </td>
-	      </tr>
-	      <tr>
-	         <td>
-	            <p></p>
-	            <hr />
-	            <p>Автотехцентр «Финист Юг»
-	            <br>
-	            Телефон: +7 (965) 424-56-00
-	            <br>
-	            Адрес: г. Москва, Нагатинский 1-й проезд, дом 15</p>
+<h3>Москва</h3>
+
+<h4>FINISTAUTO Юг</h4>
+<p>+7 (965) 424-56-00</p>
+<p>Адрес: Москва, Нагатинский 1-й проезд, дом 15</p>
+
+<h4>FINISTAUTO FARGO</h4>
+<p>+7 (965) 104-42-24</p>
+<p>Адрес: Москва, Старообрядческая улица, д.28а, стр.1</p>
+
+<h4>FINISTAUTO Ланда</h4>
+<p>+7 (495) 781-86-20</p>
+<p>Адрес: Москва, Сигнальный проезд, д.18</p>
+
+<h4>FINISTAUTO DDS</h4>
+<p>+7 (495) 128-91-91</p>
+<p>Адрес: Москва, Тюменский проезд, д. 5, стр. 2</p>
+
+<h4>FINISTAUTO Мобил-1</h4>
+<p>+7 (495) 220-20-17</p>
+<p>Адрес: Москва, ул. Зенитчиков, д.10</p>
+
+
+          <h3>Санкт-Петербург</h3>
+
+<h4>FINISTAUTO Автостиль</h4>
+<p>+7 (812) 445-79-82</p>
+<p>Адрес: Санкт-Петербург, ул. Краснопутиловская, д.65</p>
+
+          <h3>Нижний Новгород</h3>
+<h4>FINISTAUTO Нижний Новгород</h4>
+<p>+7 930 815-15-61</p>
+<p>Адрес: Нижний Новгород, Проспект Гагарина 65Б, к1</p>
 	         </td>
 	      </tr>
 	   </tbody>
