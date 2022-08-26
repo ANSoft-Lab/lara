@@ -42,7 +42,7 @@
             </div>
         </div>
         <div class="col-6 col-sm-12 calculator_result_lastBlock">
-            <h3 class="calculator_result_title">Мы свяжемся с вами в течение рабочего дня</h3>
+            <h3 class="calculator_result_title">Мы свяжемся с вами в ближайшее время</h3>
 <!--
             <h3 class="calculator_result_title">Результаты расчета</h3>
             <span class="calculator_result_subtitle">Стоимость полиса в страховых</span>
