@@ -15,10 +15,10 @@
         <div class="ahead_achievies">
             <section>
                 <div class="ahead_achievies_mainCol">
-                    <h2>Клиенты Finist уже <br />более 8&nbsp;лет получают</h2>
+                    <h2>Для клиентов Finist уже <br />более 8&nbsp;лет доступно</h2>
                     <div class="ahead_achievies_items">
                         <div class="ahead_achievies_item">
-                            <span class="ahead_achievies_item_title">Ипотечную страховку в самых надежных страховых компаниях</span>
+                            <span class="ahead_achievies_item_title">Ипотечное страхование в самых надежных страховых компаниях</span>
                             <p class="ahead_achievies_item_content">Мы работаем с основными банками ипотечными кредиторами, знаем специфику их работы, требования к оформлению документации</p>
                         </div>
                         <div class="ahead_achievies_item">
