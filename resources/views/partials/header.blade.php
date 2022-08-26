@@ -25,7 +25,7 @@
                 </li>
             </ul>
 
-            @if(request()->path() === 'hypothec-insurance')
+            @if(0 && request()->path() === 'hypothec-insurance')
             <a class="header__affiliate" href="/affiliate">Партнёрам</a>
             @endif
         </div>
