@@ -19,6 +19,7 @@ class Bitrix24ConnectorClass {
             case 1002:
                 $order['referer'] = 'мордвес.рф';
             case 1003:
+                exit;
                 $order['referer'] = 'gk-profit.ru';
             default:
                 $order['referer'] = 'partner'.intval($order['wid']);
