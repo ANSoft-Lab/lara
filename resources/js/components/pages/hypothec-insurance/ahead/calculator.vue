@@ -252,7 +252,7 @@ export default {
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: #E5E5E5;
+            background-color: #f0f2f3;
             @include m(767) {
                 background-color: #fff;
             }
