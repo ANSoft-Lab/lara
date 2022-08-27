@@ -38,7 +38,7 @@ class Bitrix24 extends Model
             'STATUS_ID' => "NEW",
             'OPENED' => "Y",
             'TITLE' => "finist.ru{$source_suffix} " . date("d.m.Y H:i"),
-            'PHONE_MOBILE' => $data['phone'],
+            "PHONE" => [["VALUE" => $data['phone'], "VALUE_TYPE" => "MOBILE"]],
             'UF_CRM_1540975152' => implode("\n", $comment),
         ];
 
