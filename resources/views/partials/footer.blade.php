@@ -90,7 +90,8 @@
         <div class="footer__bottom">
             <div class="footer__bottom-text">(С) 2003 — {{ date('Y') }} «Финист»</div>
             <div class="footer__bottom-text">
-                Сайт защищен reCAPTCHA с применением Политики конфиденциальности и Условий использования от Google.
+                <img src="/img/paykeeper_logo.jpg" alt="" style="max-width:100%;"/>
+                <!--Сайт защищен reCAPTCHA с применением Политики конфиденциальности и Условий использования от Google.-->
             </div>
             <button class="footer__scroll-top js-scroll-top"></button>
         </div>
